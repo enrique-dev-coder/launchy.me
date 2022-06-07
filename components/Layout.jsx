@@ -11,8 +11,10 @@ const Layout = ({ children }) => {
         <title>Launchy</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar />
-      {children}
+      <div className="relative">
+        <Navbar />
+        {children}
+      </div>
     </>
   );
 };

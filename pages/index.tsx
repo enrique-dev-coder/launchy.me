@@ -1,9 +1,12 @@
 import type { NextPage } from 'next';
-
-import Image from 'next/image';
+import HeroHomePage from '../components/HeroHomePage';
 
 const Home: NextPage = () => {
-  return <div>Hello World</div>;
+  return (
+    <div>
+      <HeroHomePage />
+    </div>
+  );
 };
 
 export default Home;
