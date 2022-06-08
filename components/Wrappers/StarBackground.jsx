@@ -4,15 +4,15 @@ import { Points, PointMaterial } from '@react-three/drei';
 import * as random from '../../node_modules/maath/random/dist/maath-random.esm';
 
 //NOTE el canvas se renderiza con dimensiones entonces se va a tener que usar una dimension para todos los compoentes
-export default function App({ children }) {
+export default function App({ children, height }) {
   return (
     <div className="relative">
       <Canvas
         camera={{ position: [0, 0, 1] }}
         style={{
-          height: '100vh',
+          height,
           background:
-            'radial-gradient(ellipse at bottom,#1b2735 0,#000422 100%',
+            'radial-gradient(ellipse at bottom,#000000 0,#000422 100%',
         }}
       >
         <Stars />

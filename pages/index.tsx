@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <HeroHomePage />
-      <StarBackground>
+      <StarBackground height="200vh">
         <ParteDosHome />
       </StarBackground>
     </div>
