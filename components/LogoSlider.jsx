@@ -68,7 +68,11 @@ const LogoSlider = () => {
         {logos.map((l) => (
           <SwiperSlide key={l.id}>
             <div className="h-[50px] flex flex-col justify-center">
-              <img src={`/img/logos/${l.name}.png`} className="mx-auto" />
+              <img
+                src={`/img/logos/${l.name}.png`}
+                alt={`logo de ${l.name}`}
+                className="mx-auto"
+              />
             </div>
           </SwiperSlide>
         ))}

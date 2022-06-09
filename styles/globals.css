@@ -40,3 +40,12 @@ canvas {
 .image_border {
   border-bottom: 1px solid white !important;
 }
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background: #8461a5 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #8461a5 !important;
+}

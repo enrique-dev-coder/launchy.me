@@ -5,6 +5,8 @@ import ParteDosHome from '../components/Parte2Home/index';
 import ParteTresHome from '../components/Parte3Home/index';
 import ParteCuatroHome from '../components/Parte4Home/index';
 import LogoSlider from '../components/LogoSlider';
+import ParteCincoHome from '../components/Parte5Home/index';
+
 const Home: NextPage = () => {
   return (
     <div>
@@ -14,6 +16,7 @@ const Home: NextPage = () => {
         <ParteTresHome />
         <ParteCuatroHome />
         <LogoSlider />
+        <ParteCincoHome />
       </StarBackground>
     </div>
   );
