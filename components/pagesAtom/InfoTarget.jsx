@@ -43,7 +43,7 @@ const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
                     <p>{three}</p>
                 </div>
 
-                {/* Fourth Square px-4 py-8 */}
+                {/* Fourth Square */}
                 <div className="flex flex-col gap-2 w-full md:w-1/4 border border-black p-8">
                     <div className={`w-[${width.four}px] h-[${height.four}px] mb-4`}>
                         <Image src={imgURL.four} width={width.four} height={height.four} alt={alt.one} />
