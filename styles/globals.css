@@ -49,3 +49,53 @@ canvas {
 .swiper-pagination-bullet-active {
   background: #8461a5 !important;
 }
+.team-background {
+  background: radial-gradient(
+    ellipse at bottom,
+    #f6b2a3,
+    #8461a5,
+    #c59cd8,
+    #abb3fc,
+    #9feddf,
+    #ffffff
+  );
+  background-size: 300% 300%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 31%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 31%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 31%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 31%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 31%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 31%;
+  }
+}
