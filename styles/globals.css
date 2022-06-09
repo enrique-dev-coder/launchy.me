@@ -14,10 +14,29 @@ body {
     inset 0px 0.507862px 20.3145px rgba(144, 156, 255, 0.4);
   backdrop-filter: blur(50.7862px);
   /* Note: backdrop-filter has minimal browser support */
-
+  transition: ease-in-out;
+  transition: all;
+  animation-duration: 500ms;
   border-radius: 20px;
 }
-
+.navbar_button:hover {
+  background: rgba(255, 28, 247, 0.596);
+  box-shadow: inset 0px 19.8066px 28.4403px -18.283px rgba(255, 255, 255, 0.5),
+    inset 0px 0.507862px 20.3145px rgba(144, 156, 255, 0.4);
+  backdrop-filter: blur(50.7862px);
+}
 canvas {
   height: auto;
+}
+
+.black_gradient {
+  background: linear-gradient(360deg, #000000 45.67%, rgba(0, 0, 0, 0) 110.78%);
+}
+
+.purple_gradient {
+  background: linear-gradient(94.27deg, #f28273 -14.44%, #4254a8 98.88%);
+}
+
+.image_border {
+  border-bottom: 1px solid white !important;
 }

@@ -12,7 +12,7 @@ export default function App({ children, height }) {
         style={{
           height,
           background:
-            'radial-gradient(ellipse at bottom,#000000 0,#000422 100%',
+            'radial-gradient(ellipse at bottom,#000000 0,#000000 100%',
         }}
       >
         <Stars />

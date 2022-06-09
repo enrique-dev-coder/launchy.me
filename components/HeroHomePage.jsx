@@ -9,16 +9,16 @@ const HeroHomePage = () => {
         <iframe
           className=" h-screen w-full"
           title="Chromatic Core"
-          frameborder="0"
-          allowfullscreen
+          frameBorder="0"
+          allowFullScreen
           scrolling="0"
           mozallowfullscreen="true"
           webkitallowfullscreen="true"
           allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
+          xr-spatial-tracking="true"
+          execution-while-out-of-viewport="true"
+          execution-while-not-rendered="true"
+          web-share="true"
           scrollwheel="0"
           hint={2}
           src="https://sketchfab.com/models/a9f0368eb94c475baae30579b704eed8/embed?autostart=1&scrollwheel=0&ui_animations=0&ui_infos=0&ui_stop=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0&dnt=1"
@@ -47,6 +47,7 @@ const HeroHomePage = () => {
             </div>
           </div>
         </div>
+        <div className="absolute w-full h-[5rem] -bottom-[12px] black_gradient"></div>
       </div>
     </div>
   );
