@@ -1,4 +1,5 @@
 import { Fragment } from "react"
+import Testimonial from "../../components/pagesAtom/Testimonial";
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 // import iconPic2 from '../../public/img/carbon_growth.png'
@@ -46,6 +47,8 @@ const Fichap = () => {
             desafioTexto={desafioTexto}
             imgData={imgData}
           />
+
+          <Testimonial />
       </Fragment>
   )
 }

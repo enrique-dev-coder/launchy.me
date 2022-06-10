@@ -1,9 +1,19 @@
 import { Fragment } from "react"
+import Image from 'next/image';
+import Testimonial from "../../components/pagesAtom/Testimonial";
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
+import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
-// import iconPic2 from '../../public/img/carbon_growth.png'
-// import iconPic3 from '../../public/img/icon-park-outline_graphic-design.png'
-// import iconPic4 from '../../public/img/fluent_calendar-today-28-regular.png'
+import ItgallProcess from "../../public/img/itgall/Proceso.png"
+import MobileHome from '../../public/img/itgall/mobile home.png'
+import MobileBlank from '../../public/img/itgall/mobile blank space.png'
+import MobileContact from '../../public/img/itgall/mobile contact us.png'
+import MobileIn4aha from '../../public/img/itgall/mobile in4aha.png'
+import MobileParticipation from '../../public/img/itgall/mobile participation.png'
+import DesktopFrame from '../../public/img/itgall/Rectangle 39388.png'
+import Projects from '../../public/img/itgall/Projects.png'
+import Partners from '../../public/img/itgall/Partners.png'
+import Map from '../../public/img/itgall/Map.png'
 
 const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
 
@@ -40,13 +50,167 @@ const imgData = {
 
 const Itgall = () => {
   return (
-      <Fragment>
+      <main className="2xl:container 2xl:mx-auto">
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}
             imgData={imgData}
           />
-      </Fragment>
+
+          {/* Paleta crómatica */}
+          <ColorPalette>
+            <div className="grid grid-cols-2 md:flex w-full">
+              <div className='bg-[#B75F9F] col-span-2 md:w-1/5 h-16'></div>
+              <div className='bg-[#8C1D82] col-span-1 md:w-1/5 h-16'></div>
+              <div className="bg-[#63257E] col-span-1 md:w-1/5 h-16"></div>
+              <div className="bg-[#37044E] col-span-1 md:w-1/5 h-16"></div>
+              <div className="bg-[#FFD000] col-span-1 md:w-1/5 h-16"></div>
+            </div>
+          </ColorPalette>
+
+          {/* Process */}
+          <div className="px-[8%]">
+            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>PROCESO</h2>
+            <p className='mb-[30px] md:mb-[40px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto quia fuga quos libero dolor eaque explicabo sed quasi sint, velit, reiciendis delectus? Reiciendis nemo deserunt enim corporis, cum voluptatem doloremque maiores? Inventore, quaerat dolore. Possimus magnam, adipisci accusamus laborum debitis id aut fugiat non deleniti veritatis eveniet, hic expedita temporibus nemo aspernatur consectetur reprehenderit esse, consequuntur asperiores. Quas temporibus libero, maiores sapiente esse asperiores.</p>
+          </div>
+
+          <div className="flex md:justify-center mb-[60px] md:mb-[80px]">
+            <Image 
+              src={ItgallProcess} 
+              width={903} height={329} 
+              alt={'Mockup de Itgall creado por Launchy'}
+              className='w-full'
+            />
+          </div>
+
+          {/* Solution */}
+          <div className="px-[8%]">
+            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>SOLUCIÓN</h2>
+            <p className='mb-[30px] md:mb-[40px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto quia fuga quos libero dolor eaque explicabo sed quasi sint, velit, reiciendis delectus? Reiciendis nemo deserunt enim corporis, cum voluptatem doloremque maiores? Inventore, quaerat dolore. Possimus magnam, adipisci accusamus laborum debitis id aut fugiat non deleniti veritatis eveniet, hic expedita temporibus nemo aspernatur consectetur reprehenderit esse, consequuntur asperiores. Quas temporibus libero, maiores sapiente esse asperiores.</p>
+
+            <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
+
+              <div className="flex first-section justify-center">
+
+              <div className='hidden lg:block'>
+                <Image
+                  src={MobileBlank}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de Itgall creado por Launchy'}
+                />
+              </div>
+
+              <Image
+                  src={MobileBlank}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de Itgall creado por Launchy'}
+              />
+
+              <Image
+                src={MobileHome}
+                width={283}
+                height={550}
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+
+              <Image
+                src={MobileBlank}
+                width={283}
+                height={550}
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+
+              <div className='hidden lg:block'>
+                <Image
+                  src={MobileBlank}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de Itgall creado por Launchy'}
+                />
+              </div>
+
+              </div>
+
+              <div className="flex second-section justify-center">
+              <Image
+                src={MobileParticipation}
+                width={283}
+                height={550}
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+
+              <Image
+                src={MobileIn4aha}
+                width={283}
+                height={550}
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+
+              <Image
+                src={MobileContact}
+                width={283}
+                height={550}
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+              </div>
+
+            </div>
+          
+          </div>
+
+          <div className="flex justify-center mb-[60px] md:mb-[80px]">
+
+            <div className="w-11/12 bg-[#D9D9D9]"></div>
+
+            <div className="w-1/12"></div>
+
+            <div className="relative right-[28%] my-[3%]">
+              <Image 
+                src={DesktopFrame}
+                width={936}
+                height={564}
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+            </div>
+
+          </div>
+
+          <div className="flex flex-col md:flex-row md:justify-center gap-4 mb-[30px] md:mb-[40px] px-[8%]">
+
+            <div className='border border-black p-4 pb-0'>
+              <Image 
+                src={Projects} 
+                width={349} height={488} 
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+            </div>   
+
+            <div className="border border-black p-4 pr-0">
+              <Image 
+                src={Partners} 
+                width={670} height={506} 
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+            </div>         
+
+          </div>
+
+          <div className="mb-[60px] md:mb-[80px] px-[8%]">
+
+            <div className="border border-black p-4 pb-0">
+              <Image 
+                src={Map} 
+                width={1139} height={521} 
+                alt={'Mockup de Itgall creado por Launchy'}
+              />
+            </div>
+
+          </div>
+
+          <Testimonial />
+      </main>
   )
 }
 

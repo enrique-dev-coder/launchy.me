@@ -1,5 +1,6 @@
 import { Fragment } from "react"
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
+import Testimonial from "../../components/pagesAtom/Testimonial";
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 // import iconPic2 from '../../public/img/carbon_growth.png'
 // import iconPic3 from '../../public/img/icon-park-outline_graphic-design.png'
@@ -46,6 +47,8 @@ const Community = () => {
             desafioTexto={desafioTexto}
             imgData={imgData}
           />
+
+          <Testimonial />
       </Fragment>
   )
 }

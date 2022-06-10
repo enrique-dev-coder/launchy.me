@@ -1,4 +1,3 @@
-import { Fragment } from "react"
 import Image from 'next/image';
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ColorPalette from "../../components/pagesAtom/ColorPalette"
@@ -27,6 +26,8 @@ import InfuyOnePage from '../../public/img/infuy/ONE PAGE - CASOS DE EXITO 3 1.p
 import InfuyOtherPic1 from '../../public/img/infuy/iOS IG Grid Mock 1.png'
 import InfuyOtherPic2 from '../../public/img/infuy/Group 4 8095914.png'
 import InfuyOtherPic3 from '../../public/img/infuy/Portadas.png'
+import InfuyPaletaGIF from '../../public/img/infuy/Infuy- Paleta cromatica.gif'
+import InfuyAnotherGIF from '../../public/img/infuy/Logo- Colores_1.gif'
 
 // InfoTarget props
 const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
@@ -62,26 +63,10 @@ const imgData = {
   }
 }
 
-// ColorPalette props [#F5C814]
-const colorBoxes = [
-  {
-    color: '[#F5C814]'
-  },
-  {
-    color: '[#05172F]'
-  },
-  {
-    color: '[#f30b19]'
-  },
-  {
-    color: '[#f97316]'
-  }
-];
-
 const Infuy = () => {
   return (
       <main className="2xl:container 2xl:mx-auto">
-        
+
           {/* objetivo y desafio */}
           <InfoTarget 
             objetivoTexto={objetivoTexto}
@@ -91,21 +76,18 @@ const Infuy = () => {
 
           {/* Paleta crómatica */}
           <ColorPalette>
-          <div className="flex flex-col w-full mb-[30px] md:mb-[40px]">
-            <div className="bg-[#639BE7] w-full h-20"></div>
+            <Image 
+              src={InfuyPaletaGIF} 
+              width={1439} height={140} 
+              alt={'Mockup de Infuy creado por Launchy'}
+              className='w-full'
+            />
             <div className="grid grid-cols-2 md:flex w-full">
-              <div className={`bg-${colorBoxes[0].color} col-span-1 md:w-1/4 h-16`}></div>
+              <div className='bg-[#F5C814] col-span-1 md:w-1/4 h-16'></div>
               <div className="bg-[#05172F] col-span-1 md:w-1/4 h-16"></div>
               <div className="bg-[#f30b19] col-span-1 md:w-1/4 h-16"></div>
               <div className="bg-[#f97316] col-span-1 md:w-1/4 h-16"></div>
             </div>
-          </div>
-          {/* Ver porque el componente no renderiza los colores */}
-            {/* {
-              colorBoxes.map((box) => (
-                <div className={`bg-${box.color} w-1/${colorBoxes.length} h-4`} key={box.color}></div>
-              ))
-            } */}
           </ColorPalette>
 
           {/* Fuentes  */}
