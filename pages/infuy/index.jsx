@@ -26,7 +26,7 @@ import InfuyOnePage from '../../public/img/infuy/ONE PAGE - CASOS DE EXITO 3 1.p
 import InfuyOtherPic1 from '../../public/img/infuy/iOS IG Grid Mock 1.png'
 import InfuyOtherPic2 from '../../public/img/infuy/Group 4 8095914.png'
 import InfuyOtherPic3 from '../../public/img/infuy/Portadas.png'
-import InfuyPaletaGIF from '../../public/img/infuy/Infuy- Paleta cromatica.gif'
+import InfuyPaletaGIF from '../../public/img/infuy/Paleta cromatica.gif'
 import InfuyAnotherGIF from '../../public/img/infuy/Logo- Colores_1.gif'
 
 // InfoTarget props
@@ -65,7 +65,7 @@ const imgData = {
 
 const Infuy = () => {
   return (
-      <main className="2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/* objetivo y desafio */}
           <InfoTarget 

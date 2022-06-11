@@ -7,7 +7,7 @@ const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
   const {one, two, three, four} = desafioTexto
 
   return (
-    <div className='my-[60px] md:my-[80px] px-[8%]'>
+    <div className='mb-[60px] md:mb-[80px] pt-[60px] md:pt-[80px] px-[8%]'>
 
         <div className="mb-[60px] md:mb-[80px]">
             <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>OBJETIVO</h2>

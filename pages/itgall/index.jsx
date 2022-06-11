@@ -1,8 +1,8 @@
-import { Fragment } from "react"
 import Image from 'next/image';
 import Testimonial from "../../components/pagesAtom/Testimonial";
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ColorPalette from "../../components/pagesAtom/ColorPalette"
+import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import ItgallProcess from "../../public/img/itgall/Proceso.png"
 import MobileHome from '../../public/img/itgall/mobile home.png'
@@ -50,7 +50,7 @@ const imgData = {
 
 const Itgall = () => {
   return (
-      <main className="2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}
@@ -69,10 +69,7 @@ const Itgall = () => {
           </ColorPalette>
 
           {/* Process */}
-          <div className="px-[8%]">
-            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>PROCESO</h2>
-            <p className='mb-[30px] md:mb-[40px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto quia fuga quos libero dolor eaque explicabo sed quasi sint, velit, reiciendis delectus? Reiciendis nemo deserunt enim corporis, cum voluptatem doloremque maiores? Inventore, quaerat dolore. Possimus magnam, adipisci accusamus laborum debitis id aut fugiat non deleniti veritatis eveniet, hic expedita temporibus nemo aspernatur consectetur reprehenderit esse, consequuntur asperiores. Quas temporibus libero, maiores sapiente esse asperiores.</p>
-          </div>
+          <ProcessOrSolution title='PROCESO'/>
 
           <div className="flex md:justify-center mb-[60px] md:mb-[80px]">
             <Image 
@@ -84,13 +81,11 @@ const Itgall = () => {
           </div>
 
           {/* Solution */}
-          <div className="px-[8%]">
-            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>SOLUCIÓN</h2>
-            <p className='mb-[30px] md:mb-[40px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto quia fuga quos libero dolor eaque explicabo sed quasi sint, velit, reiciendis delectus? Reiciendis nemo deserunt enim corporis, cum voluptatem doloremque maiores? Inventore, quaerat dolore. Possimus magnam, adipisci accusamus laborum debitis id aut fugiat non deleniti veritatis eveniet, hic expedita temporibus nemo aspernatur consectetur reprehenderit esse, consequuntur asperiores. Quas temporibus libero, maiores sapiente esse asperiores.</p>
+          <ProcessOrSolution title='SOLUCIÓN'>
 
-            <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
+          <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
 
-              <div className="flex first-section justify-center">
+            <div className="flex first-section justify-center">
 
               <div className='hidden lg:block'>
                 <Image
@@ -102,10 +97,10 @@ const Itgall = () => {
               </div>
 
               <Image
-                  src={MobileBlank}
-                  width={283}
-                  height={550}
-                  alt={'Mockup de Itgall creado por Launchy'}
+                src={MobileBlank}
+                width={283}
+                height={550}
+                alt={'Mockup de Itgall creado por Launchy'}
               />
 
               <Image
@@ -131,9 +126,9 @@ const Itgall = () => {
                 />
               </div>
 
-              </div>
+            </div>
 
-              <div className="flex second-section justify-center">
+            <div className="flex second-section justify-center">
               <Image
                 src={MobileParticipation}
                 width={283}
@@ -154,19 +149,19 @@ const Itgall = () => {
                 height={550}
                 alt={'Mockup de Itgall creado por Launchy'}
               />
-              </div>
-
             </div>
-          
+
           </div>
 
-          <div className="flex justify-center mb-[60px] md:mb-[80px]">
+          </ProcessOrSolution>
 
-            <div className="w-11/12 bg-[#D9D9D9]"></div>
+          <div className="flex mb-[60px] md:mb-[80px] relative h-[250px] sm:h-[350px] lg:h-[600px]">
 
-            <div className="w-1/12"></div>
+            <div className="w-7/12 bg-[#D9D9D9]"></div>
 
-            <div className="relative right-[28%] my-[3%]">
+            <div className="w-5/12"></div>
+
+            <div className="h-[195px] w-[315px] absolute right-[3%] top-[12%] sm:h-[295px] sm:w-[450px] sm:right-[20%] lg:h-[564px] lg:w-[800px] lg:top-[10%] xl:w-[936px] xl:top-[8%]">
               <Image 
                 src={DesktopFrame}
                 width={936}
@@ -179,7 +174,7 @@ const Itgall = () => {
 
           <div className="flex flex-col md:flex-row md:justify-center gap-4 mb-[30px] md:mb-[40px] px-[8%]">
 
-            <div className='border border-black p-4 pb-0'>
+            <div className='border p-4 pb-0'>
               <Image 
                 src={Projects} 
                 width={349} height={488} 
@@ -187,7 +182,7 @@ const Itgall = () => {
               />
             </div>   
 
-            <div className="border border-black p-4 pr-0">
+            <div className="border p-4 pr-0">
               <Image 
                 src={Partners} 
                 width={670} height={506} 
@@ -199,7 +194,7 @@ const Itgall = () => {
 
           <div className="mb-[60px] md:mb-[80px] px-[8%]">
 
-            <div className="border border-black p-4 pb-0">
+            <div className="border p-4 pb-0">
               <Image 
                 src={Map} 
                 width={1139} height={521} 
