@@ -3,6 +3,9 @@ import Testimonial from "../../components/pagesAtom/Testimonial";
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
+import Header from '../../components/pagesAtom/Header'
+import ITGallLogo from '../../public/img/itgall/Logo ITGall.png'
+import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import ItgallProcess from "../../public/img/itgall/Proceso.png"
 import MobileHome from '../../public/img/itgall/mobile home.png'
@@ -51,6 +54,25 @@ const imgData = {
 const Itgall = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+
+            <Header>
+
+              <Image 
+                src={ITGallLogo} 
+                width={324} height={103} 
+                alt={'Mockup de ITGall creado por Launchy'}
+              />
+
+              <div className="flex justify-center mt-14">
+                <Image 
+                  src={Flechitas} 
+                  width={25} height={25} 
+                  alt={'Mockup de ITGall creado por Launchy'}
+                />
+              </div>
+
+            </Header>
+
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}

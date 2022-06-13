@@ -2,6 +2,9 @@ import Image from 'next/image';
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import Testimonial from "../../components/pagesAtom/Testimonial";
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
+import Header from '../../components/pagesAtom/Header'
+import CommunityLogo from '../../public/img/community/Logo Community.png'
+import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import SolutionScreen1 from '../../public/img/community/Solution screen 1.png'
 import FirstInSecondParagraph from '../../public/img/community/First in second paragraph.png'
@@ -47,6 +50,25 @@ const imgData = {
 const Community = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+
+          <Header>
+
+            <Image 
+              src={CommunityLogo} 
+              width={315} height={109} 
+              alt={'Mockup de Fichap creado por Launchy'}
+            />
+
+            <div className="flex justify-center mt-14">
+              <Image 
+                src={Flechitas} 
+                width={25} height={25} 
+                alt={'Mockup de Fichap creado por Launchy'}
+              />
+            </div>
+
+          </Header>
+
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}

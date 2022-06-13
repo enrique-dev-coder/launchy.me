@@ -3,6 +3,9 @@ import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import FontBoxes from "../../components/pagesAtom/FontBoxes"
 import Testimonial from "../../components/pagesAtom/Testimonial";
+import Header from '../../components/pagesAtom/Header'
+import InfuyLogo from '../../public/img/infuy/Logo Infuy.png'
+import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/infuy/Group.png'
 import iconPic2 from '../../public/img/infuy/carbon_growth.png'
 import iconPic3 from '../../public/img/infuy/icon-park-outline_graphic-design.png'
@@ -66,6 +69,24 @@ const imgData = {
 const Infuy = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+
+          <Header>
+
+            <Image 
+              src={InfuyLogo} 
+              width={220} height={111} 
+              alt={'Mockup de Infuy creado por Launchy'}
+            />
+
+            <div className="flex justify-center mt-14">
+              <Image 
+                src={Flechitas} 
+                width={25} height={25} 
+                alt={'Mockup de Infuy creado por Launchy'}
+              />
+            </div>
+
+          </Header>
 
           {/* objetivo y desafio */}
           <InfoTarget 

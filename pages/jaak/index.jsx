@@ -3,6 +3,9 @@ import Testimonial from "../../components/pagesAtom/Testimonial";
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
+import Header from '../../components/pagesAtom/Header'
+import JaakLogo from '../../public/img/jaak/Logo JAAK.png'
+import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import JaakHome from '../../public/img/jaak/jaak home.png'
 import JaakStatistics1 from '../../public/img/jaak/JaakStatistics1.png'
@@ -53,6 +56,25 @@ const imgData = {
 const Jaak = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+
+          <Header>
+
+              <Image 
+                src={JaakLogo} 
+                width={212} height={98} 
+                alt={'Mockup de Jaak creado por Launchy'}
+              />
+
+              <div className="flex justify-center mt-4">
+                <Image 
+                  src={Flechitas} 
+                  width={25} height={25} 
+                  alt={'Mockup de Jaak creado por Launchy'}
+                />
+              </div>
+
+          </Header>
+
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}

@@ -2,6 +2,9 @@ import Image from 'next/image';
 import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import Testimonial from "../../components/pagesAtom/Testimonial";
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
+import Header from '../../components/pagesAtom/Header'
+import LigaMXLogo from '../../public/img/ligaMX/Logo Liga MX.png'
+import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import FirstFrame from '../../public/img/ligaMX/First Frame.png'
 import FirstFrameSecondParagraph from '../../public/img/ligaMX/First Frame Second Paragraph.png'
@@ -59,6 +62,25 @@ const imgData = {
 const LigaMX = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+
+          <Header>
+
+            <Image 
+              src={LigaMXLogo} 
+              width={283} height={51} 
+              alt={'Mockup de LigaMX creado por Launchy'}
+            />
+
+            <div className="flex justify-center mt-14">
+              <Image 
+                src={Flechitas} 
+                width={25} height={25} 
+                alt={'Mockup de LigaMX creado por Launchy'}
+              />
+            </div>
+
+          </Header>
+
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}
