@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
 }
+/*
+font-family: 'Roboto Condensed', sans-serif;
+*/
 
 .navbar_button {
   background: rgba(255, 255, 255, 0.1);
@@ -50,20 +53,20 @@ canvas {
   background: #8461a5 !important;
 }
 .team-background {
-  background: radial-gradient(
-    ellipse at bottom,
-    #f6b2a3,
-    #8461a5,
-    #c59cd8,
-    #abb3fc,
-    #9feddf,
-    #ffffff
+  background: linear-gradient(
+    101.45deg,
+    #691604 4.42%,
+    #520332 33.79%,
+    #079279 59.83%,
+    #01094d 86.98%,
+    #4b006e 110.81%
   );
   background-size: 300% 300%;
-
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
+  background-blend-mode: difference;
+  mix-blend-mode: screen;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -98,4 +101,17 @@ canvas {
   100% {
     background-position: 0% 31%;
   }
+}
+
+.resource_text {
+  -webkit-text-stroke: 1px white;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.roboto_condesed {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.background_experiment {
 }

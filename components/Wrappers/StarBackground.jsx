@@ -25,7 +25,7 @@ export default function App({ children, height }) {
 function Stars(props) {
   const ref = useRef();
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(5000), { radius: 1.5 })
+    random.inSphere(new Float32Array(10000), { radius: 1.5 })
   );
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10;
@@ -42,8 +42,8 @@ function Stars(props) {
       >
         <PointMaterial
           transparent
-          color="#e9e9e9"
-          size={0.005}
+          color="#AEAEAE"
+          size={0.001}
           sizeAttenuation={true}
           depthWrite={false}
         />
