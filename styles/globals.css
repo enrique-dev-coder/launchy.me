@@ -110,8 +110,26 @@ canvas {
 }
 
 .roboto_condesed {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-.background_experiment {
+.letter_spacing {
+  letter-spacing: 0.3rem;
+}
+
+.gradient_text_banner {
+  font-size: 1.375em;
+  background: -webkit-linear-gradient(#cc84ff, #ff1cf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
+.masterclass {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }

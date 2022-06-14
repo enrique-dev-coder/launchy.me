@@ -13,12 +13,12 @@ const index = () => {
           <div className="w-[90%] h-[70%] mx-auto flex flex-col items-center relative   justify-end">
             <div className="h-[80%] flex flex-col items-center justify-around">
               <h2
-                className=" text-4xl uppercase roboto_condesed font-thin "
+                className=" text-4xl uppercase roboto_condesed font-bold "
                 style={{ color: '#211539' }}
               >
                 Conoce al team
               </h2>
-              <p className="font-semibold text-center text-[15px] ">
+              <p className=" text-center text-[15px] ">
                 Somos buenas personas ¿eso importa? Si! Para nosotros es lo
                 elemental, nos hace empaticos, practivos y buenos compañeros.
                 Vas a amar trabajar con nosotros. Siempre buscamos soluciones

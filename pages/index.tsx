@@ -8,12 +8,15 @@ import LogoSlider from '../components/LogoSlider';
 import ParteCincoHome from '../components/Parte5Home/index';
 import ParteSeisHome from '../components/Parte6Home/index';
 import ParteSieteHome from '../components/Parte7Home/index';
-
+import BannerEventos from '../components/BannerEventos';
+import BannerPerrito from '../components/BannerPerrito';
+import SubscribeForm from '../components/SubscribeForm';
+import Footer from '../components/Footer';
 const Home: NextPage = () => {
   return (
     <div>
       <HeroHomePage />
-      <StarBackground height="400vh">
+      <StarBackground height="550vh">
         <ParteDosHome />
         <ParteTresHome />
         <ParteCuatroHome />
@@ -21,6 +24,10 @@ const Home: NextPage = () => {
         <ParteCincoHome />
         <ParteSeisHome />
         <ParteSieteHome />
+        <BannerEventos />
+        <BannerPerrito />
+        <SubscribeForm />
+        <Footer />
       </StarBackground>
     </div>
   );
