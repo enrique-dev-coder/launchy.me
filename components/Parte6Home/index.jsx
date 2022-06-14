@@ -10,6 +10,9 @@ const index = () => {
         <div className="bg-[url(/img/team/bg_img.png)] w-full h-[362px] absolute z-0"></div>
         <div className="team-background w-full h-[362px] absolute z-10"></div>
         <div className="w-full h-[362px] flex flex-col relative z-20 ">
+          <div className="absolute right-0  translate-x-[50px] -translate-y-[50px]   ">
+            <img src="/img/team/latino.png" alt="latino mami" />
+          </div>
           <div className="w-[90%] h-[70%] mx-auto flex flex-col items-center relative   justify-end">
             <div className="h-[80%] flex flex-col items-center justify-around">
               <h2

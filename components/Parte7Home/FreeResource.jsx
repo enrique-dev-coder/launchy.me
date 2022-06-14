@@ -49,8 +49,8 @@ const FreeResource = () => {
         <img src="/img/right.svg" alt="arrow" className="ml-4" />
       </div>
       <div className="flex justify-between">
-        {resourceData.map((r) => (
-          <ResourceCard img={r.img} title={r.title} />
+        {resourceData.map((r, i) => (
+          <ResourceCard key={i} img={r.img} title={r.title} />
         ))}
       </div>
     </div>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Card = ({ path, desc, video }) => {
   return (
     <div className="flex text-white flex-col border border-white w-[279px] h-[339px] mb-[40px]">
-      <div className="w-full ">
+      <div className="w-full  h-[266x]">
         {video ? (
           <video
             src={path}
@@ -23,10 +23,16 @@ const Card = ({ path, desc, video }) => {
         )}
       </div>
       <div className="h-full">
-        <div className="h-[40px] flex-col items-center image_border ">
+        <div
+          className={`${
+            video && 'mt-[4px]'
+          } h-[40px] flex-col items-center image_border`}
+        >
           <p className="uppercase text-[11px] w-11/12 mx-auto ">{desc}</p>
         </div>
-        <div className="text-[11px] h-full w-11/12 mx-auto flex justify-between cursor-pointer  mt-2">
+        <div
+          className={`text-[11px] h-full  w-11/12 mx-auto flex justify-between cursor-pointer  mt-2`}
+        >
           <p>Mirá el proyecto</p>
           <img src="/img/right.svg" className="w-[20px] h-[20px]"></img>
         </div>

@@ -31,8 +31,10 @@ const Footer = () => {
                 </p>
               </div>
               <div className="basis-1/3 flex flex-col  justify-between">
-                {linkData.map((l) => (
-                  <p className="roboto_condesed uppercase">{l.link}</p>
+                {linkData.map((l, i) => (
+                  <p key={i} className="roboto_condesed ml-5 uppercase">
+                    {l.link}
+                  </p>
                 ))}
               </div>
               <div className="basis-1/3 flex flex-col justify-end">

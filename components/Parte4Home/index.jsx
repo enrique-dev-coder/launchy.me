@@ -24,13 +24,13 @@ const data = [
   },
   {
     id: 4,
-    path: '/img/casos/community.png',
+    path: '/img/casos/community3.png',
     desc: 'SITE DE DOCUMENTACION PARA PROTOCOLO DE ENERGIA DE LOS ANGELES',
     video: false,
   },
   {
     id: 5,
-    path: '/img/casos/dasboard.mp4',
+    path: '/img/casos/JAAK.mp4',
     desc: 'DISEÑAMOS UN DASHBOARD PARA MEJORAR EL CUSTOMER SUCESS',
     video: true,
   },
@@ -49,8 +49,8 @@ const index = () => {
         <Title2Home title={'Y ESTO ES LO QUE HACEMOS Y AMAMOS...'} />
       </div>
       <div className="flex flex-wrap justify-between">
-        {data.map((d) => (
-          <Card path={d.path} desc={d.desc} video={d.video} />
+        {data.map((d, i) => (
+          <Card key={i} path={d.path} desc={d.desc} video={d.video} />
         ))}
       </div>
       <div className="w-full flex justify-center">
