@@ -2,11 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
 }
+/*
+font-family: 'Roboto Condensed', sans-serif;
+*/
 
 .navbar_button {
   background: rgba(255, 255, 255, 0.1);
@@ -14,6 +17,101 @@ body {
     inset 0px 0.507862px 20.3145px rgba(144, 156, 255, 0.4);
   backdrop-filter: blur(50.7862px);
   /* Note: backdrop-filter has minimal browser support */
-
+  transition: ease-in-out;
+  transition: all;
+  animation-duration: 500ms;
   border-radius: 20px;
+}
+.navbar_button:hover {
+  background: rgba(255, 28, 247, 0.596);
+  box-shadow: inset 0px 19.8066px 28.4403px -18.283px rgba(255, 255, 255, 0.5),
+    inset 0px 0.507862px 20.3145px rgba(144, 156, 255, 0.4);
+  backdrop-filter: blur(50.7862px);
+}
+canvas {
+  height: auto;
+}
+
+.black_gradient {
+  background: linear-gradient(360deg, #000000 45.67%, rgba(0, 0, 0, 0) 110.78%);
+}
+
+.purple_gradient {
+  background: linear-gradient(94.27deg, #f28273 -14.44%, #4254a8 98.88%);
+}
+
+.image_border {
+  border-bottom: 1px solid white !important;
+}
+
+.swiper-pagination-bullet {
+  width: 20px !important;
+  height: 20px !important;
+  background: #8461a5 !important;
+}
+.swiper-pagination-bullet-active {
+  background: #8461a5 !important;
+}
+.team-background {
+  background: linear-gradient(
+    101.45deg,
+    #691604 4.42%,
+    #520332 33.79%,
+    #079279 59.83%,
+    #01094d 86.98%,
+    #4b006e 110.81%
+  );
+  background-size: 300% 300%;
+  background-blend-mode: difference;
+  mix-blend-mode: screen;
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 31%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 31%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 31%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 31%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 31%;
+  }
+  50% {
+    background-position: 100% 70%;
+  }
+  100% {
+    background-position: 0% 31%;
+  }
+}
+
+.resource_text {
+  -webkit-text-stroke: 1px white;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.roboto_condesed {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.background_experiment {
 }
