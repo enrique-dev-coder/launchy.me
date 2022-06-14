@@ -11,7 +11,7 @@ const linkData = [
 
 const Footer = () => {
   return (
-    <div className="w-full border-y border-white mt-[100px] ">
+    <div className="w-full border-y border-white mt-[100px]  ">
       <div className="my-[40px] max-w-[906px] mx-auto">
         <div
           className="w-full flex flex-col justify-center"
