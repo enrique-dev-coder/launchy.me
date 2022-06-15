@@ -16,30 +16,58 @@ const images = [
 ];
 const AlienSlider = () => {
   return (
-    <Swiper
-      slidesPerView={10}
-      //cada que avance el slider avanza de a 3
-      slidesPerGroup={1}
-      loop={true}
-      className=""
-      autoplay={{
-        delay: 500,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay]}
-    >
-      {images.map((l) => (
-        <SwiperSlide key={l.id}>
-          <div className=" flex flex-col justify-center">
-            <img
-              src={`/img/team/${l.path}.png`}
-              alt={`logo de ${l.path}`}
-              className="mx-auto"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <>
+      {/*slider for desktop*/}
+      <Swiper
+        slidesPerView={10}
+        //cada que avance el slider avanza de a 3
+        slidesPerGroup={1}
+        loop={true}
+        className="md:block hidden"
+        autoplay={{
+          delay: 500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+      >
+        {images.map((l) => (
+          <SwiperSlide key={l.id}>
+            <div className=" flex flex-col justify-center">
+              <img
+                src={`/img/team/${l.path}.png`}
+                alt={`logo de ${l.path}`}
+                className="mx-auto"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/*slider for mobile*/}
+      <Swiper
+        slidesPerView={3}
+        //cada que avance el slider avanza de a 3
+        slidesPerGroup={1}
+        loop={true}
+        className="md:hidden"
+        autoplay={{
+          delay: 500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+      >
+        {images.map((l) => (
+          <SwiperSlide key={l.id}>
+            <div className=" flex flex-col justify-center">
+              <img
+                src={`/img/team/${l.path}.png`}
+                alt={`logo de ${l.path}`}
+                className="mx-auto"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
 

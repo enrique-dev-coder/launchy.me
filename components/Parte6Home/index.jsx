@@ -11,17 +11,21 @@ const index = () => {
         <div className="team-background w-full h-[362px] absolute z-10"></div>
         <div className="w-full h-[362px] flex flex-col relative z-20 ">
           <div className="absolute right-0  translate-x-[50px] -translate-y-[50px]   ">
-            <img src="/img/team/latino.png" alt="latino mami" />
+            <img
+              src="/img/team/latino.png"
+              alt="latino mami"
+              className="w-[85%] md:w-full"
+            />
           </div>
-          <div className="w-[90%] h-[70%] mx-auto flex flex-col items-center relative   justify-end">
-            <div className="h-[80%] flex flex-col items-center justify-around">
+          <div className="w-[90%] h-[70%] mx-auto flex flex-col items-center relative justify-center   md:justify-end">
+            <div className="h-[80%] flex flex-col items-center md:justify-around">
               <h2
-                className=" text-4xl uppercase roboto_condesed font-bold "
+                className=" text-[22px] md:text-4xl mb-[20px] md:mb-0 uppercase roboto_condesed font-bold "
                 style={{ color: '#211539' }}
               >
                 Conoce al team
               </h2>
-              <p className=" text-center text-[15px] ">
+              <p className=" text-center mb-[20px] text-[14px] md:text-[15px] ">
                 Somos buenas personas ¿eso importa? Si! Para nosotros es lo
                 elemental, nos hace empaticos, practivos y buenos compañeros.
                 Vas a amar trabajar con nosotros. Siempre buscamos soluciones

@@ -58,12 +58,24 @@ canvas {
 }
 
 .swiper-pagination-bullet {
-  width: 20px !important;
-  height: 20px !important;
-  background: #8461a5 !important;
+  width: 16px !important;
+  height: 16px !important;
+  border: 1px solid white !important;
+  background-color: #b8c6db11 !important;
+  background-image: linear-gradient(
+    315deg,
+    #b8c6db13 0%,
+    #f5f7fa 74%
+  ) !important;
 }
 .swiper-pagination-bullet-active {
-  background: #8461a5 !important;
+  background-color: #b8c6db11 !important;
+  background-image: linear-gradient(
+    315deg,
+    #b8c6db13 0%,
+    #f5f7fa 74%
+  ) !important;
+  border: 1px solid white !important;
 }
 .team-background {
   background: linear-gradient(

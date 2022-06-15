@@ -58,7 +58,32 @@ const LogoSlider = () => {
         //cada que avance el slider avanza de a 3
         slidesPerGroup={1}
         loop={true}
-        className="flex flex-col items-center"
+        className="hidden md:flex flex-col items-center"
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+      >
+        {logos.map((l) => (
+          <SwiperSlide key={l.id}>
+            <div className="h-[50px] flex flex-col justify-center">
+              <img
+                src={`/img/logos/${l.name}.png`}
+                alt={`logo de ${l.name}`}
+                className="mx-auto"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      {/*slider for mobile view*/}
+      <Swiper
+        slidesPerView={3}
+        //cada que avance el slider avanza de a 3
+        slidesPerGroup={1}
+        loop={true}
+        className="flex md:hidden flex-col items-center"
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
