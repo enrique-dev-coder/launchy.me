@@ -16,7 +16,7 @@ const resourceData = [
 const ResourceCard = ({ img, title }) => {
   return (
     <div
-      className={`w-[275px] h-[138px] ${
+      className={`w-full mb-[30px] md:mb-0 md:w-[275px] h-[138px] ${
         title === null && ' border-none'
       } flex  border border-white`}
     >
@@ -42,13 +42,13 @@ const ResourceCard = ({ img, title }) => {
 const FreeResource = () => {
   return (
     <div>
-      <div className="flex mb-[40px] ">
+      <div className="flex mb-[30px] md:mb-[40px] ">
         <h2 className="text-white uppercase text-xl  letter_spacing">
           FREE RESOURCES
         </h2>
         <img src="/img/right.svg" alt="arrow" className="ml-4" />
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row  justify-between">
         {resourceData.map((r, i) => (
           <ResourceCard key={i} img={r.img} title={r.title} />
         ))}
