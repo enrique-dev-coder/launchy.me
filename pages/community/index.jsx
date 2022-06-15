@@ -3,8 +3,8 @@ import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import Testimonial from "../../components/pagesAtom/Testimonial";
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
+import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import CommunityLogo from '../../public/img/community/Logo Community.png'
-import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import SolutionScreen1 from '../../public/img/community/Solution screen 1.png'
 import FirstInSecondParagraph from '../../public/img/community/First in second paragraph.png'
@@ -49,37 +49,34 @@ const imgData = {
 
 const Community = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto font-roboto">
+      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
+          {/*********************************       Header       *********************************/}
           <Header>
 
-            <Image 
-              src={CommunityLogo} 
-              width={315} height={109} 
-              alt={'Mockup de Fichap creado por Launchy'}
-            />
-
-            <div className="flex justify-center mt-14">
+            <div className="">
               <Image 
-                src={Flechitas} 
-                width={25} height={25} 
+                src={CommunityLogo} 
+                width={315} height={109} 
                 alt={'Mockup de Fichap creado por Launchy'}
               />
             </div>
 
           </Header>
 
+          {/**********************************  InfoTarget (Boxes) ********************************/}
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}
             imgData={imgData}
           />
 
-          {/* Solution */}
+          {/***********************************      Solution         *****************************/}
           <ProcessOrSolution title='SOLUCIÓN' />
 
-          {/* Starts with pictures */}
-          <div className="grid place-content-center mb-[30px] md:mb-[40px]">
+          {/*********************************** Rest of the pictures ***************************************/}
+          <FadeInElement>
+            <div className="grid place-content-center mb-[30px] md:mb-[40px]">
 
             <div className="grid place-content-center h-[190px] w-[310px] sm:w-[500px] h-[300px] md:w-[650px] md:h-[400px] lg:w-[902px] lg:h-[554px]">
               <Image 
@@ -90,52 +87,58 @@ const Community = () => {
               /> 
             </div>
             
-          </div>
+            </div>
+          </FadeInElement>
 
-          <div className="flex relative h-[340px] sm:h-[440px] lg:h-[610px] mb-[60px] md:mb-[80px]">
+          <FadeInElement>
+            <div className="flex relative h-[340px] sm:h-[440px] lg:h-[610px] mb-[60px] md:mb-[80px]">
 
-            <div className="w-5/12"></div>
+              <div className="w-5/12"></div>
 
-            <div className="w-7/12 bg-[#D9D9D9]"></div>
+              <div className="w-7/12 bg-[#D9D9D9]"></div>
 
-            <div className="right-[28%] sm:right-[35%] top-[6%] xl:right-[39%] 2xl:right-[47%] z-10 absolute w-[310px] sm:w-[400px] lg:w-[588px] lg:h-[355px]">
+              <div className="right-[28%] sm:right-[35%] top-[6%] xl:right-[39%] 2xl:right-[47%] z-10 absolute w-[310px] sm:w-[400px] lg:w-[588px] lg:h-[355px]">
               <Image 
                 src={FirstInSecondParagraph}
                 width={588}
                 height={355}
                 alt={'Mockup de Community creado por Launchy'}
               />
-            </div>
+              </div>
 
-            <div className="right-[2%] sm:right-[12%] top-[36%] xl:right-[15%] 2xl:right-[27%] z-20 absolute w-[310px] sm:w-[400px] lg:w-[588px] lg:h-[355px]">
+              <div className="right-[2%] sm:right-[12%] top-[36%] xl:right-[15%] 2xl:right-[27%] z-20 absolute w-[310px] sm:w-[400px] lg:w-[588px] lg:h-[355px]">
               <Image 
                 src={NextInSecondParagraph}
                 width={588}
                 height={355}
                 alt={'Mockup de Community creado por Launchy'}
               />
+              </div>
+
+            </div>
+          </FadeInElement>
+
+          <FadeInElement>
+            <div className='mb-[30px] md:mb-[40px] px-[8%]'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at omnis impedit accusantium repudiandae unde, accusamus facere. Dolorum eveniet nisi sapiente, consequatur accusamus libero cumque in ipsam aliquam reprehenderit quas unde perferendis corrupti. Esse quis perferendis accusantium reiciendis magni, fugit nisi illo quo modi perspiciatis assumenda alias voluptatibus! Vero dicta quasi itaque sint, veniam consectetur blanditiis! Exercitationem quaerat quo accusantium pariatur! Commodi reiciendis culpa quod.
             </div>
 
-          </div>
-
-          <div className='mb-[30px] md:mb-[40px] px-[8%]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at omnis impedit accusantium repudiandae unde, accusamus facere. Dolorum eveniet nisi sapiente, consequatur accusamus libero cumque in ipsam aliquam reprehenderit quas unde perferendis corrupti. Esse quis perferendis accusantium reiciendis magni, fugit nisi illo quo modi perspiciatis assumenda alias voluptatibus! Vero dicta quasi itaque sint, veniam consectetur blanditiis! Exercitationem quaerat quo accusantium pariatur! Commodi reiciendis culpa quod.
-          </div>
-
-          <div className="mb-[60px] md:mb-[80px] flex justify-center">
+            <div className="mb-[60px] md:mb-[80px] flex justify-center">
             <Image 
               src={ThirdParagraph}
               width={1440}
               height={574}
               alt={'Mockup de Community creado por Launchy'}
             />
-          </div>
+            </div>
+          </FadeInElement>
 
-          <div className='mb-[30px] md:mb-[40px] px-[8%]'>
+          <FadeInElement>
+            <div className='mb-[30px] md:mb-[40px] px-[8%]'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at omnis impedit accusantium repudiandae unde, accusamus facere. Dolorum eveniet nisi sapiente, consequatur accusamus libero cumque in ipsam aliquam reprehenderit quas unde perferendis corrupti. Esse quis perferendis accusantium reiciendis magni, fugit nisi illo quo modi perspiciatis assumenda alias voluptatibus! Vero dicta quasi itaque sint, veniam consectetur blanditiis! Exercitationem quaerat quo accusantium pariatur! Commodi reiciendis culpa quod.
-          </div>
+            </div>
 
-          <div className="mb-[60px] lg:mb-[80px] flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 px-[8%] lg:px-[4%]">
+            <div className="mb-[60px] lg:mb-[80px] flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 px-[8%] lg:px-[4%]">
 
             <div className="rounded-lg shadow-xl w-full lg:w-1/2 flex justify-center pt-8 border">
               <Image 
@@ -155,8 +158,10 @@ const Community = () => {
               />
             </div>
 
-          </div>
+            </div>
+          </FadeInElement>
 
+          {/***********************************  Testimonial  *******************************/}
           <Testimonial />
       </main>
   )

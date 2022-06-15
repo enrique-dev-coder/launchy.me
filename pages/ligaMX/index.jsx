@@ -3,8 +3,8 @@ import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import Testimonial from "../../components/pagesAtom/Testimonial";
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
+import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import LigaMXLogo from '../../public/img/ligaMX/Logo Liga MX.png'
-import Flechitas from '../../public/img/Flechitas.png'
 import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
 import FirstFrame from '../../public/img/ligaMX/First Frame.png'
 import FirstFrameSecondParagraph from '../../public/img/ligaMX/First Frame Second Paragraph.png'
@@ -26,13 +26,13 @@ import TransparentScreen4 from '../../public/img/ligaMX/Second Part in Fourth Pa
 import TransparentScreenMain from '../../public/img/ligaMX/Second Part in Fourth Paragraph - MAIN.png'
 import LastFrame from '../../public/img/ligaMX/Last Frame.png'
 
-const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
+const objetivoTexto = "Crear una propuesta de Fan ID para el uso de reconocimiento facial en los estadios de México, en pos de mejorar la experiencia y agilidad del proceso de entrada. Preservando la seguridad y la eficiencia a través de una aplicación con dos versiones."
 
 const desafioTexto = {
-  one: 'Crear un espacio virtual de concentracion para los living labs de Galicia - España.',
-  two: 'Transmitir',
-  three: 'Impactar en la cultura interna de INFUY gráficamente a partir de inciativas que sumaran al equipo de People.',
-  four: 'Hacer una marca que se use en el día a día.'
+  one: 'Crear una aplicación distintiva con dos usuarios distintos: El fan y el operario.',
+  two: 'Construir flujos accesibles para la carga de data por parte del fan: para el mismo y para menores de edad.',
+  three: 'Crear procedicimientos agiles e intuitivos para un onboarding facil para los operarios.',
+  four: 'Generar '
 } 
 
 const imgData = {
@@ -59,34 +59,35 @@ const imgData = {
   }
 }
 
+// Testimonial props
+const textTestimonial = 'Crear e implementar un roadmap de diseño que resuelva las prioridades de cada area. Establecimos un manual de marca, realizamos presentaciones institucionales, casos de estudio a través de infografías, diseño de feed de la marca, generando así un sistema de identidad marcaria completo y accesible para los clientes.'
+
 const LigaMX = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
+          {/*********************************       Header       *********************************/}
           <Header>
-
-            <Image 
-              src={LigaMXLogo} 
-              width={283} height={51} 
-              alt={'Mockup de LigaMX creado por Launchy'}
-            />
-
-            <div className="flex justify-center mt-14">
+            
+            <div className="mb-10">
               <Image 
-                src={Flechitas} 
-                width={25} height={25} 
+                src={LigaMXLogo} 
+                width={283} height={51} 
                 alt={'Mockup de LigaMX creado por Launchy'}
-              />
+              />  
             </div>
+            
 
           </Header>
 
+          {/**********************************  InfoTarget (Boxes) ********************************/}
           <InfoTarget 
             objetivoTexto={objetivoTexto}
             desafioTexto={desafioTexto}
             imgData={imgData}
           />
 
+          {/***********************************      Solution         *****************************/}
           <ProcessOrSolution title='SOLUCIÓN' paragraph={false}>
             <div className="flex flex-col lg:flex-row lg:gap-4 xl:gap-0 mb-[60px] lg:mb-[80px]">
 
@@ -101,63 +102,106 @@ const LigaMX = () => {
 
               </div>
               
-              <div className="lg:w-1/2 flex items-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, iusto quia fuga quos libero dolor eaque explicabo sed quasi sint, velit, reiciendis delectus? Reiciendis nemo deserunt enim corporis, cum voluptatem doloremque maiores? Inventore, quaerat dolore. Possimus magnam, adipisci accusamus laborum debitis id aut fugiat non deleniti veritatis eveniet, hic expedita temporibus nemo aspernatur consectetur reprehenderit esse, consequuntur asperiores. Quas temporibus libero, maiores sapiente esse asperiores.
+              <div className="lg:w-1/2 flex">
+              Ya que la aplicación aun esta en revisiones queremos compartirles una visualización de los flujos generales para que puedan ver parte de la inciativa y cómo integramos nuestra expertis de diseño a impactar en la vida de las personas.
               </div>
 
             </div>
           </ProcessOrSolution>
 
-          <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 mx-[8%]'>OPERARIO</h2>
+          {/*********************************** Rest of the pictures ***************************************/}
+          <FadeInElement>
+            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 mx-[8%]'>OPERARIO</h2>
 
-          <div className="flex justify-center mb-[60px] md:mb-[80px] bg-[#6BA736]">
+            <div className="flex justify-center mb-[60px] md:mb-[80px] bg-[#6BA736]">
 
-            <Image 
-              src={FirstFrameSecondParagraph} 
-              width={1029} 
-              height={509} 
-              alt={'Mockup de LigaMX creado por Launchy'}
-            />
+              <Image 
+                src={FirstFrameSecondParagraph} 
+                width={1029} 
+                height={509} 
+                alt={'Mockup de LigaMX creado por Launchy'}
+              />
 
-          </div>
+            </div>
+          </FadeInElement>
+          
+          <FadeInElement>
+            <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
 
-          <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
+              <div className="flex first-section justify-center">
 
-            <div className="flex first-section justify-center">
+                <div className="hidden lg:block">
+                  <Image
+                    src={WhiteScreenThirdParagraph}
+                    width={283}
+                    height={550}
+                    alt={'Mockup de LigaMX creado por Launchy'}
+                  />
+                </div>
 
-              <div className="hidden lg:block">
                 <Image
                   src={WhiteScreenThirdParagraph}
                   width={283}
                   height={550}
                   alt={'Mockup de LigaMX creado por Launchy'}
                 />
-              </div>
 
-              <Image
-                src={WhiteScreenThirdParagraph}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
+                <Image
+                  src={MainScreenThirdParagraph}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de LigaMX creado por Launchy'}
+                />
 
-              <Image
-                src={MainScreenThirdParagraph}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
-
-              <Image
-                src={WhiteScreenThirdParagraph}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
-
-              <div className='hidden lg:block'>
                 <Image
                   src={WhiteScreenThirdParagraph}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de LigaMX creado por Launchy'}
+                />
+
+                <div className='hidden lg:block'>
+                  <Image
+                    src={WhiteScreenThirdParagraph}
+                    width={283}
+                    height={550}
+                    alt={'Mockup de LigaMX creado por Launchy'}
+                  />
+                </div>
+
+              </div>
+
+              <div className="flex second-section justify-center">
+                <Image
+                  src={ThirdParagraph1}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de LigaMX creado por Launchy'}
+                />
+
+                <Image
+                  src={ThirdParagraph2}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de LigaMX creado por Launchy'}
+                />
+
+                <Image
+                  src={ThirdParagraph3}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de LigaMX creado por Launchy'}
+                />
+
+                <Image
+                  src={ThirdParagraph4}
+                  width={283}
+                  height={550}
+                  alt={'Mockup de LigaMX creado por Launchy'}
+                />
+
+                <Image
+                  src={ThirdParagraph5}
                   width={283}
                   height={550}
                   alt={'Mockup de LigaMX creado por Launchy'}
@@ -165,51 +209,14 @@ const LigaMX = () => {
               </div>
 
             </div>
+          </FadeInElement>
+          
+          <FadeInElement>
+            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 mx-[8%]'>CLIENTE</h2>
 
-            <div className="flex second-section justify-center">
-              <Image
-                src={ThirdParagraph1}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
+            <div className="flex flex-col lg:flex-row px-[8%] gap-4 mb-[30px] md:mb-[40px]">
 
-              <Image
-                src={ThirdParagraph2}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
-
-              <Image
-                src={ThirdParagraph3}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
-
-              <Image
-                src={ThirdParagraph4}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
-
-              <Image
-                src={ThirdParagraph5}
-                width={283}
-                height={550}
-                alt={'Mockup de LigaMX creado por Launchy'}
-              />
-            </div>
-
-          </div>
-
-          <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 mx-[8%]'>CLIENTE</h2>
-
-          <div className="flex flex-col lg:flex-row px-[8%] gap-4 mb-[30px] md:mb-[40px]">
-
-            <div className="border flex justify-center shadow-xl lg:w-1/2">
+              <div className="border flex justify-center shadow-xl lg:w-1/2">
 
               <Image 
                 src={FirstFrameFourthParagraph} 
@@ -218,18 +225,18 @@ const LigaMX = () => {
                 alt={'Mockup de LigaMX creado por Launchy'}
               />
 
-            </div>
+              </div>
 
-            <div className="border flex justify-center items-center shadow-xl relative h-[410px] lg:h-auto lg:w-1/2">
+              <div className="border flex justify-center items-center shadow-xl relative h-[410px] lg:h-auto lg:w-1/2">
 
-              <div className="absolute right-[15%] top-[14%] sm:top-[20%] md:right-[29%] lg:right-[19%] xl:right-[25%]">
+                <div className="absolute right-[15%] top-[14%] sm:top-[20%] md:right-[29%] lg:right-[19%] xl:right-[25%]">
                 <Image 
                   src={SecondFrameFourthParagraph3} 
                   width={402} 
                   height={297} 
                   alt={'Mockup de LigaMX creado por Launchy'}
                 />
-              </div>
+                </div>
               
               <div className="absolute right-[4%] sm:right-[16%] md:right-[29%] lg:right-[19%] xl:right-[25%]">
                 <Image 
@@ -249,11 +256,13 @@ const LigaMX = () => {
                 />
               </div>
 
+              </div>
+
             </div>
+          </FadeInElement>
 
-          </div>
-
-          <div className="flex mb-[60px] md:mb-[80px] justify-center">
+          <FadeInElement>
+            <div className="flex mb-[60px] md:mb-[80px] justify-center">
 
               <Image
                 src={TransparentScreen1}
@@ -290,20 +299,24 @@ const LigaMX = () => {
                 alt={'Mockup de LigaMX creado por Launchy'}
               />
 
-          </div>
+            </div>
+          </FadeInElement>
 
-          <div className="flex justify-center mb-[60px] md:mb-[80px] bg-[#060729]">
+          <FadeInElement>
+            <div className="flex justify-center mb-[60px] md:mb-[80px] bg-[#060729]">
 
-            <Image 
-              src={LastFrame} 
-              width={1440} 
-              height={509} 
-              alt={'Mockup de LigaMX creado por Launchy'}
-            />
+              <Image 
+                src={LastFrame} 
+                width={1440} 
+                height={509} 
+                alt={'Mockup de LigaMX creado por Launchy'}
+              />
 
-          </div>
+            </div>
+          </FadeInElement>
 
-          <Testimonial />
+          {/***********************************  Testimonial  *******************************/}
+          <Testimonial text={textTestimonial} />
       </main>
   )
 }

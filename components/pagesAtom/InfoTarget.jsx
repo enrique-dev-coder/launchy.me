@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import FadeInElement from "./FadeInElement"
 
 const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
 
@@ -7,7 +8,8 @@ const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
   const {one, two, three, four} = desafioTexto
 
   return (
-    <div className='mb-[60px] md:mb-[80px] pt-[60px] md:pt-[80px] px-[8%]'>
+    <FadeInElement>
+        <div className='mb-[60px] md:mb-[80px] pt-[60px] md:pt-[80px] px-[8%]'>
 
         <div className="mb-[60px] md:mb-[80px]">
             <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>OBJETIVO</h2>
@@ -15,6 +17,7 @@ const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
         </div>
 
         <div className="mb-[60px] md:mb-[80px]">
+
             <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>DESAFÍO</h2>
 
             <div className="flex flex-col md:flex-row gap-4 justify-between">
@@ -51,10 +54,12 @@ const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
                     <p>{four}</p>
                 </div>
 
+                </div>
             </div>
-        </div>
 
-    </div>
+        </div>
+    </FadeInElement>
+    
   )
 }
 
