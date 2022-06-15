@@ -19,7 +19,11 @@ const Input = ({ labelName, type }) => {
 const SubscribeForm = () => {
   return (
     <HomeSectionContainer>
-      <div className="w-full">
+      <div className="w-full relative">
+        <img
+          src="/img/planet.png"
+          className="absolute right-0  translate-x-[150px] -translate-y-[170px]"
+        />
         <p className="uppercase font-bold text-white text-[22px] roboto_condesed mb-[40px] ">
           SUSCRIBITE A NUESTRA NAVE!
         </p>
