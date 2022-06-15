@@ -16,15 +16,25 @@ const HeroHomePage = () => {
           webkitallowfullscreen="true"
           allow="autoplay; fullscreen; xr-spatial-tracking"
           xr-spatial-tracking="true"
+<<<<<<< HEAD
           execution-while-out-of-viewport="true"
           execution-while-not-rendered="true"
           web-share="true"
           scrollwheel="0"
           hint={2}
+=======
+          execution-while-out-of-viewport="false"
+          execution-while-not-rendered="true"
+          web-share="true"
+          hint={2}
+          scrollwheel="0"
+          sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+>>>>>>> main
           src="https://sketchfab.com/models/a9f0368eb94c475baae30579b704eed8/embed?autostart=1&scrollwheel=0&ui_animations=0&ui_infos=0&ui_stop=0&ui_inspector=0&ui_watermark_link=0&ui_watermark=0&ui_ar=0&ui_help=0&ui_settings=0&ui_vr=0&ui_fullscreen=0&ui_annotations=0&dnt=1"
         >
           {' '}
         </iframe>{' '}
+<<<<<<< HEAD
         <div className="absolute w-full top-[50vh] text-white">
           {/*contenedor limitante*/}
           <div className="max-w-[1180px] mx-auto flex items-end h-[110px] justify-between">
@@ -36,18 +46,40 @@ const HeroHomePage = () => {
             />
             <div className="flex items-end mr-12">
               <p className="text-white w-2/5 ml-auto">
+=======
+        <div className="absolute w-full top-[60vh] md:top-[50vh] text-white">
+          {/*contenedor limitante*/}
+          <div className="max-w-[1180px] w-4/5  mx-auto flex flex-col md:flex-row items-end md:h-[110px] justify-between">
+            <Image
+              src="/img/welaunch.png"
+              alt="we launch"
+              width="338px"
+              height="110px"
+              className=""
+            />
+            <div className="flex items-end mt-[30px] md:mt-0 mr-12">
+              <p className="text-white w-full md:w-2/5 ml-auto">
+>>>>>>> main
                 Te acampañamos: desarrollando, innovando y guiandote al infinito
                 y más allá.
               </p>
               <img
                 src="/img/down.svg"
                 alt="scroll down"
+<<<<<<< HEAD
                 className=" animate-bounce"
+=======
+                className=" animate-bounce hidden md:block"
+>>>>>>> main
               />
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         <div className="absolute w-full h-[5rem] -bottom-[12px] black_gradient"></div>
+=======
+        <div className="absolute w-full h-[5rem] -bottom-[12px] black_gradient"></div>{' '}
+>>>>>>> main
       </div>
     </div>
   );

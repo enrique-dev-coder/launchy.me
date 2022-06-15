@@ -15,7 +15,11 @@ const Scrollable = ({ id, title, options, onClick, actual }) => {
             id === actual && 'bg-white'
           } `}
         ></div>
+<<<<<<< HEAD
         <h2 ref={ref} className="uppercase text-lg">
+=======
+        <h2 ref={ref} className="uppercase text-[14px]  md:text-lg">
+>>>>>>> main
           {title}
         </h2>
         <img src="/img/right.svg" alt="right" />
@@ -25,7 +29,11 @@ const Scrollable = ({ id, title, options, onClick, actual }) => {
           {options.map((o, i) => (
             <div className="flex items-center space-x-3" key={i}>
               <div className="w-[15px] h-[15px] rounded-full border border-black "></div>
+<<<<<<< HEAD
               <p>{o}</p>
+=======
+              <p className="text-[14px]  md:text-lg">{o}</p>
+>>>>>>> main
             </div>
           ))}
         </div>

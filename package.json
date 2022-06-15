@@ -9,7 +9,10 @@
     "@react-spring/parallax": "^9.4.5",
     "@react-three/drei": "^9.13.0",
     "@react-three/fiber": "^8.0.22",
+<<<<<<< HEAD
     "framer-motion": "^6.3.11",
+=======
+>>>>>>> main
     "maath": "^0.0.2",
     "next": "latest",
     "react": "18.1.0",

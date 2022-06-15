@@ -91,6 +91,10 @@ const index = () => {
         <Title2Home
           title={'NOS ENCANTA SER PARTE DE TU EQUIPO Y ESCUCHARTE DECIR...'}
         />
+<<<<<<< HEAD
+=======
+        {/*slider for desktop*/}
+>>>>>>> main
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -102,7 +106,11 @@ const index = () => {
           }}
           navigation={true}
           modules={[Pagination]}
+<<<<<<< HEAD
           className="mySwiper h-[250px]"
+=======
+          className="mySwiper hidden md:block h-[250px]"
+>>>>>>> main
         >
           <SwiperSlide>
             <Slide1 />
@@ -111,6 +119,36 @@ const index = () => {
             <Slide2 />
           </SwiperSlide>
         </Swiper>
+<<<<<<< HEAD
+=======
+        {/*slider for mobile*/}
+        <Swiper
+          //ponerlo con decimales es para que se asome poquito el siguiente slide en lo que se ve una
+          slidesPerView={1.1}
+          spaceBetween={10}
+          slidesPerGroup={1}
+          loop={true}
+          loopFillGroupWithBlank={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination]}
+          className="mySwiper md:hidden   h-[250px]"
+        >
+          {data.map((d) => (
+            <SwiperSlide>
+              <TestimonialCard
+                key={d.id}
+                desc={d.desc}
+                empresa={d.empresa}
+                job={d.job}
+                foto={d.foto}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+>>>>>>> main
       </div>
     </HomeSectionContainer>
   );
