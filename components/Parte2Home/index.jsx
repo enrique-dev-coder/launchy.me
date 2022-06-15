@@ -32,10 +32,10 @@ const data = [
 const index = () => {
   return (
     <HomeSectionContainer>
-      <div className="w-full">
+      <div className="w-full ">
         <Title1Home title={'SI TE PASA O SUENA ALGO DE ESTO...'} />
         {/*card container*/}
-        <div className="flex">
+        <div className="flex overflow-x-scroll  ">
           {data.map((d, i) => (
             <Card key={i} path={d.path} desc={d.desc} />
           ))}

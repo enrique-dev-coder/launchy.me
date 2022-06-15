@@ -17,8 +17,8 @@ const Footer = () => {
           className="w-full flex flex-col justify-center"
           style={{ color: 'white' }}
         >
-          <div className="h-[150px] mb-[40px]">
-            <div className="flex h-full">
+          <div className="h-auto md:h-[150px] mb-[40px]">
+            <div className="flex flex-col md:flex-row h-full">
               <div className="basis-1/3 flex flex-col">
                 <div className="flex-1">
                   <img src="/img/logo.png" />

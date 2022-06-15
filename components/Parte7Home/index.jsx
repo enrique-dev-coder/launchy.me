@@ -10,7 +10,7 @@ const index = () => {
           ¡GRACIAS POR LLEGAR HASTA ACÁ! TEN ESTOS:
         </h2>
         <div>
-          <h2 className="text-black uppercase  text-center mb-[40px] roboto_condesed flex justify-between text-[105px]  resource_text">
+          <h2 className="text-black uppercase  text-center mb-[40px] roboto_condesed flex flex-col md:flex-row  justify-between text-[40px] md:text-[105px]  resource_text">
             <span>Free</span> <span>Resources</span>
           </h2>
         </div>

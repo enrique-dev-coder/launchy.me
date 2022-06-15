@@ -4,7 +4,7 @@ import HomeButton from './HomeButton';
 const BannerEventos = () => {
   return (
     <HomeSectionContainer>
-      <div className="w-full flex h-[205px]">
+      <div className="w-full flex flex-col md:flex-row h-auto md:h-[205px]">
         <div className=" basis-1/2 flex flex-col">
           <div className="flex mb-[40px] ">
             <h2 className="text-white uppercase text-lg  letter_spacing">
