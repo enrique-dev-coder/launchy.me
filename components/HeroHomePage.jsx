@@ -26,24 +26,25 @@ const HeroHomePage = () => {
         >
           {' '}
         </iframe>{' '}
-        <div className="absolute w-full top-[50vh] text-white">
+        <div className="absolute w-full top-[60vh] md:top-[50vh] text-white">
           {/*contenedor limitante*/}
-          <div className="max-w-[1180px] mx-auto flex items-end h-[110px] justify-between">
+          <div className="max-w-[1180px] w-4/5  mx-auto flex flex-col md:flex-row items-end md:h-[110px] justify-between">
             <Image
               src="/img/welaunch.png"
               alt="we launch"
-              width="336px"
+              width="338px"
               height="110px"
+              className=""
             />
-            <div className="flex items-end mr-12">
-              <p className="text-white w-2/5 ml-auto">
+            <div className="flex items-end mt-[30px] md:mt-0 mr-12">
+              <p className="text-white w-full md:w-2/5 ml-auto">
                 Te acampañamos: desarrollando, innovando y guiandote al infinito
                 y más allá.
               </p>
               <img
                 src="/img/down.svg"
                 alt="scroll down"
-                className=" animate-bounce"
+                className=" animate-bounce hidden md:block"
               />
             </div>
           </div>

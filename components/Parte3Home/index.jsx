@@ -43,17 +43,17 @@ const index = () => {
       <div className="w-full">
         <Title1Home title="ESTAMOS ACÁ PARA SER PARTE DE TU EQUIPO" />
         {/*gradient container*/}
-        <div className="w-full flex border-white border  border-solid purple_gradient  ">
+        <div className="w-full flex border-white border border-b-0  border-solid purple_gradient  rounded-tr-md ">
           <img src="/img/lupita.svg" alt="lupa" className="ml-4" />
-          <p className="text-white text-lg  p-2">
+          <p className="text-white text-[14px] md:text-lg   p-2">
             Hola! Somos Launchy, un equipo de especialistas en generar valor,
             <span className=" underline"> investigando</span>,
             <span className="underline"> desarrollando</span> y
           </p>
         </div>
-        <div className="w-full flex border-white border  border-solid mb-[40px]  ">
+        <div className="w-full flex border-white border border-t-0 border-solid mb-[40px]  rounded-br-md  ">
           <img src="/img/lupita_dark.svg" alt="lupa" className="ml-4" />
-          <p className="text-white text-lg  p-2">
+          <p className="text-white text-[14px] md:text-lg  p-2">
             <span className=" underline"> transformando</span>, empresas y
             proyectos con un giro 360 en :
           </p>

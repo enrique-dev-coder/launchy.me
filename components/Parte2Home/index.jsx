@@ -35,7 +35,7 @@ const index = () => {
       <div className="w-full ">
         <Title1Home title={'SI TE PASA O SUENA ALGO DE ESTO...'} />
         {/*card container*/}
-        <div className="flex overflow-x-scroll  ">
+        <div className="flex overflow-x-scroll md:overflow-x-hidden  ">
           {data.map((d, i) => (
             <Card key={i} path={d.path} desc={d.desc} />
           ))}

@@ -43,6 +43,19 @@ canvas {
 .image_border {
   border-bottom: 1px solid white !important;
 }
+.image_dimensions {
+  width: 280px;
+  height: 262px;
+}
+@media (max-width: 425px) {
+  .image_border {
+    border: 0px !important;
+  }
+  .image_dimensions {
+    width: 160px !important;
+    height: 150px !important;
+  }
+}
 
 .swiper-pagination-bullet {
   width: 20px !important;
@@ -109,8 +122,8 @@ canvas {
   letter-spacing: 0.1em;
 }
 
-.roboto_condesed {
-  font-family: 'Roboto Condensed', sans-serif;
+.roboto_normal {
+  font-family: 'Roboto', sans-serif;
 }
 
 .letter_spacing {

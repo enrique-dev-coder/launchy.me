@@ -27,8 +27,8 @@ const Links = [
 
 const Navbar = () => {
   return (
-    <nav className="w-full h-[70px] absolute z-20">
-      <div className="max-w-[1420px]   h-full mx-auto flex justify-between items-center">
+    <nav className="w-full h-[70px] absolute top-10 md:top-5 z-20">
+      <div className="max-w-[1420px] w-10/12  h-full mx-auto flex justify-between items-center">
         {/*image container*/}
         <div className=" cursor-pointer ">
           <Image
@@ -50,10 +50,14 @@ const Navbar = () => {
           ))}
         </div>
         {/*button */}
-        <div>
+        <div className="hidden md:block">
           <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
             Charlemos
           </button>
+        </div>
+        {/*mobile menu Icon*/}
+        <div className="md:hidden">
+          <img src="/img/menuicon.svg" alt="menu icon" />
         </div>
       </div>
     </nav>
