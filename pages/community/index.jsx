@@ -49,7 +49,7 @@ const imgData = {
 
 const Community = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto font-roboto">
 
           <Header>
 
