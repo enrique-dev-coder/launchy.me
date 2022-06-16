@@ -1,7 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar';
+import { useMenu } from '../context/MenuContext';
+import MobileMenu from './MobileMenu';
 const Layout = ({ children }) => {
+  const { isOpen, setisOpen } = useMenu();
   return (
     <>
       <Head>
@@ -21,8 +24,10 @@ const Layout = ({ children }) => {
           rel="stylesheet"
         />
       </Head>
+
       <div className="relative">
         <Navbar />
+        <MobileMenu isOpen={isOpen} />
         {children}
       </div>
     </>

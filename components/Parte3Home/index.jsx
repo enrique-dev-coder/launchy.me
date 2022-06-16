@@ -59,17 +59,29 @@ const index = () => {
           </p>
         </div>
         {/*scrollable section*/}
-        <div className="mb-[40px]">
-          {data.map((d) => (
-            <Scrollable
-              key={d.id}
-              id={d.id}
-              title={d.title}
-              options={d.options}
-              onClick={() => setActual(d.id)}
-              actual={actual}
+        <div className="mb-[40px] flex flex-col md:flex-row">
+          <div className="md:w-1/2">
+            {data.map((d) => (
+              <Scrollable
+                key={d.id}
+                id={d.id}
+                title={d.title}
+                options={d.options}
+                onClick={() => setActual(d.id)}
+                actual={actual}
+              />
+            ))}
+          </div>
+          <div className="md:w-1/2 h-full bg-white">
+            <video
+              src="/img/services.mp4"
+              autoPlay
+              loop
+              playsInline={true}
+              muted
+              className="w-full h-full"
             />
-          ))}
+          </div>
         </div>
         <HomeButton title={'Ir a Servicios'} />
       </div>

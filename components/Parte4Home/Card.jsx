@@ -2,8 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 const Card = ({ path, desc, video }) => {
   return (
-    <div className="flex text-white md:flex-col  border border-white w-full h-[152px] md:w-[279px] md:h-[339px] mb-[30px] md:mb-[40px]">
-      <div className="w-full  h-[152px] md:h-[266px]">
+    <div className="flex text-white md:flex-col  border border-white w-full md:w-[279px] md:h-[339px] mb-[30px] md:mb-[40px]">
+      <div className="w-full   md:h-[266px]">
         {video ? (
           <video
             src={path}
@@ -27,7 +27,7 @@ const Card = ({ path, desc, video }) => {
             video && 'mt-[4px]'
           } h-[100px] md:h-[40px] flex flex-col items-center justify-center image_border`}
         >
-          <p className="uppercase text-[14px] md:text-[11px] w-11/12 mx-auto ">
+          <p className="uppercase text-[12px] md:text-[11px] w-11/12 mx-auto ">
             {desc}
           </p>
         </div>
