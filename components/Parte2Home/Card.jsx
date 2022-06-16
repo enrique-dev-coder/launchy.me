@@ -3,11 +3,6 @@ import Image from 'next/image';
 
 const Card = ({ title, path, desc }) => {
   return (
-<<<<<<< HEAD
-    <div className="flex flex-col items-center">
-      <Image src={path} alt="servicios" width="96px" height="96px" />
-      <p className="text-white w-[180px] text-center mt-[20px]">{desc}</p>
-=======
     <div className="flex flex-col justify-center space-x-10 md:space-x-0 items-center">
       <div className="flex justify-center w-[220px]">
         <Image src={path} alt="servicios" width="96px" height="96px" />
@@ -18,7 +13,6 @@ const Card = ({ title, path, desc }) => {
       >
         <p className="w-11/12 mx-auto">{desc}</p>
       </div>
->>>>>>> main
     </div>
   );
 };

@@ -91,10 +91,7 @@ const index = () => {
         <Title2Home
           title={'NOS ENCANTA SER PARTE DE TU EQUIPO Y ESCUCHARTE DECIR...'}
         />
-<<<<<<< HEAD
-=======
         {/*slider for desktop*/}
->>>>>>> main
         <Swiper
           slidesPerView={1}
           spaceBetween={30}
@@ -106,11 +103,7 @@ const index = () => {
           }}
           navigation={true}
           modules={[Pagination]}
-<<<<<<< HEAD
-          className="mySwiper h-[250px]"
-=======
           className="mySwiper hidden md:block h-[250px]"
->>>>>>> main
         >
           <SwiperSlide>
             <Slide1 />
@@ -119,8 +112,6 @@ const index = () => {
             <Slide2 />
           </SwiperSlide>
         </Swiper>
-<<<<<<< HEAD
-=======
         {/*slider for mobile*/}
         <Swiper
           //ponerlo con decimales es para que se asome poquito el siguiente slide en lo que se ve una
@@ -148,7 +139,6 @@ const index = () => {
             </SwiperSlide>
           ))}
         </Swiper>
->>>>>>> main
       </div>
     </HomeSectionContainer>
   );

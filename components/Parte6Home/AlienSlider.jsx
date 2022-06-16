@@ -16,32 +16,6 @@ const images = [
 ];
 const AlienSlider = () => {
   return (
-<<<<<<< HEAD
-    <Swiper
-      slidesPerView={10}
-      //cada que avance el slider avanza de a 3
-      slidesPerGroup={1}
-      loop={true}
-      className=""
-      autoplay={{
-        delay: 500,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay]}
-    >
-      {images.map((l) => (
-        <SwiperSlide key={l.id}>
-          <div className=" flex flex-col justify-center">
-            <img
-              src={`/img/team/${l.path}.png`}
-              alt={`logo de ${l.path}`}
-              className="mx-auto"
-            />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-=======
     <>
       {/*slider for desktop*/}
       <Swiper
@@ -94,7 +68,6 @@ const AlienSlider = () => {
         ))}
       </Swiper>
     </>
->>>>>>> main
   );
 };
 

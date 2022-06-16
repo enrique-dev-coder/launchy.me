@@ -27,13 +27,8 @@ const Links = [
 
 const Navbar = () => {
   return (
-<<<<<<< HEAD
-    <nav className="w-full h-[70px] absolute z-20">
-      <div className="max-w-[1420px]   h-full mx-auto flex justify-between items-center">
-=======
     <nav className="w-full h-[70px] absolute top-10 md:top-5 z-20">
       <div className="max-w-[1420px] w-10/12  h-full mx-auto flex justify-between items-center">
->>>>>>> main
         {/*image container*/}
         <div className=" cursor-pointer ">
           <Image

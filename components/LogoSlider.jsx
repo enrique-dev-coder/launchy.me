@@ -58,9 +58,6 @@ const LogoSlider = () => {
         //cada que avance el slider avanza de a 3
         slidesPerGroup={1}
         loop={true}
-<<<<<<< HEAD
-        className="flex flex-col items-center"
-=======
         className="hidden md:flex flex-col items-center"
         autoplay={{
           delay: 1500,
@@ -87,7 +84,6 @@ const LogoSlider = () => {
         slidesPerGroup={1}
         loop={true}
         className="flex md:hidden flex-col items-center"
->>>>>>> main
         autoplay={{
           delay: 1500,
           disableOnInteraction: false,
