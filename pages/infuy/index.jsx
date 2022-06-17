@@ -6,6 +6,7 @@ import Testimonial from "../../components/pagesAtom/Testimonial";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import Footer from '../../components/Footer'
+import FAQ from '../../components/pagesAtom/FAQ'
 import InfuyLogo from '../../public/img/infuy/Logo Infuy.png'
 import iconPic1 from '../../public/img/infuy/Group.png'
 import iconPic2 from '../../public/img/infuy/carbon_growth.png'
