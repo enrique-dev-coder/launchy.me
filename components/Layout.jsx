@@ -10,14 +10,14 @@ const Layout = ({ children }) => {
     <>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-6P2X9Y8X5Y`}
       />
       <Script strategy="lazyOnload">
         {`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    gtag('config', 'G-6P2X9Y8X5Y', {
                     page_path: window.location.pathname,
                     });
                 `}
