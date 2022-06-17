@@ -29,7 +29,7 @@ const blogData = [
 
 const BlogCard = ({ img, category, title, author, authorImg, read }) => {
   return (
-    <div className="w-[275px] h-[138px] border flex border-white">
+    <div className="w-full md:w-[275px] mb-[30px] md:mb-0 h-[138px] border flex border-white">
       <img src={img} />
       <div className="flex-1 border-l border-white flex flex-col justify-center">
         <div className="w-[80%] h-[80%]   mx-auto ">
@@ -55,13 +55,13 @@ const BlogCard = ({ img, category, title, author, authorImg, read }) => {
 const Blog = () => {
   return (
     <div className="mb-[40px]">
-      <div className="flex mb-[40px] ">
+      <div className="flex mb-[30px] md:mb-[40px] ">
         <h2 className="text-white uppercase text-xl  letter_spacing">
           LAUNCH BLOG
         </h2>
         <img src="/img/right.svg" alt="arrow" className="ml-4" />
       </div>
-      <div className="flex justify-between">
+      <div className="flex flex-col md:flex-row justify-between">
         {blogData.map((b, i) => (
           <BlogCard
             key={i}
