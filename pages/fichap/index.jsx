@@ -5,7 +5,10 @@ import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import FichapLogo from '../../public/img/fichap/Logo Fichap.png'
-import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
+import iconPic1 from '../../public/img/icons/Profile.svg'
+import iconPic2 from '../../public/img/icons/Ojito.svg'
+import iconPic3 from '../../public/img/icons/carbon_growth.svg'
+import iconPic4 from '../../public/img/icons/fluent_calendar-today-28-regular.svg'
 import FirstScreen from '../../public/img/fichap/First Frame.png'
 import FirstFrameSecondParagraph from '../../public/img/fichap/First Frame (2).png'
 import SecondFrameSecondParagraph from '../../public/img/fichap/Second Frame (2).png'
@@ -16,21 +19,21 @@ import FirstBanner from '../../public/img/fichap/Banner (1).png'
 import SecondBanner from '../../public/img/fichap/Banner (2).png'
 
 
-const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
+const objetivoTexto = "Generar una reorganización en la navegabilidad del sitio favoreciendo a una mayor conversión de formularios de contacto así como del entendimiento de la propuesta de valor del site."
 
 const desafioTexto = {
-  one: 'Crear un espacio virtual de concentracion para los living labs de Galicia - España.',
-  two: 'Transmitir',
-  three: 'Impactar en la cultura interna de INFUY gráficamente a partir de inciativas que sumaran al equipo de People.',
-  four: 'Hacer una marca que se use en el día a día.'
+  one: 'Investigar los puntos de calor del site así como los más frios para entender que conservar.',
+  two: 'Investigar a través de competidores los sectores de valor que el cliente estaba buscando.',
+  three: 'Generar un nuevo formulario con pasos secuenciales simples para mejorar la conversión.',
+  four: 'Impulsar al equipo de marketing a partir del research y ejecución de iniciaivas.'
 } 
 
 const imgData = {
   imgURL: {
     one: iconPic1,
-    two: iconPic1,
-    three: iconPic1,
-    four: iconPic1,
+    two: iconPic2,
+    three: iconPic3,
+    four: iconPic4,
   },
   height: {
     one: 32,
@@ -48,6 +51,15 @@ const imgData = {
     one: 'Icon created by Launchy Team'
   }
 }
+
+//Solution Text
+const solutionText = 'Generamos una investigación sobre webs de competencias de Fichap y encontramos que uno de los puntos claves eran los formularios y quitando carruseles para dar pase a la información de una manera más simple e intuitiva. Organizando el flujo del potencial cliente a través de la web. Asi cómo cooperamos en la optimización de las campañas y estrategias. '
+
+//AportandoValor text
+const aportandoValor = 'Parte del trabajo se trasladó a generar una guía para los potenciales clientes de Fichap la cual trabajamos en conjunto y la cual se dinfundió de manera orgánica de manera exitosa. Seguimos colaborando con su equipo interno, en búsquedas de constantes mejoras.'
+
+//Testimonial Props
+const testimonialText = 'Hemos aprendido mutuamente integrando metodologías y puntos de vistas en conjunto. Fichap es una empresa que tiene como misión digitalizar los recursos humanos de las empresas. Y nos sentimos más que motivados a ayudarlos que esto sea así.'
 
 const Fichap = () => {
   return (
@@ -75,7 +87,7 @@ const Fichap = () => {
           />
 
           {/***********************************      Solution         *****************************/}
-          <ProcessOrSolution title='SOLUCIÓN'>
+          <ProcessOrSolution title='SOLUCIÓN' text={solutionText}>
             <div className="flex justify-center mb-[60px] md:mb-[80px]">
               <Image 
                 src={FirstScreen} 
@@ -91,7 +103,7 @@ const Fichap = () => {
             <div className="px-[8%]">
             
               <div className='mb-[30px] md:mb-[40px]'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at omnis impedit accusantium repudiandae unde, accusamus facere. Dolorum eveniet nisi sapiente, consequatur accusamus libero cumque in ipsam aliquam reprehenderit quas unde perferendis corrupti. Esse quis perferendis accusantium reiciendis magni, fugit nisi illo quo modi perspiciatis assumenda alias voluptatibus! Vero dicta quasi itaque sint, veniam consectetur blanditiis! Exercitationem quaerat quo accusantium pariatur! Commodi reiciendis culpa quod.
+              Reformular puntos claves de contenido para la audiencia así como dar un rediseño a la página apegado al manual de marca que tienen ha sido una gran experiencia enriquecedora para ambos equipos. Fuimos mas allá de la web para colaborar con las estrategias digitales para el customer journey map del cliente.
               </div>
 
               <div className="flex flex-col md:flex-row items-center xl:justify-center mb-[30px] md:mb-[40px]">
@@ -136,7 +148,7 @@ const Fichap = () => {
             </div>
           </FadeInElement>
 
-          <ProcessOrSolution title='SOLUCIÓN'/>
+          <ProcessOrSolution title='APORTANDO VALOR...' text={aportandoValor}/>
 
           <FadeInElement>
             <div className="flex justify-center gap-4 mb-[30px] md:mb-[40px] bg-[#E6E6E6] py-2">
@@ -187,7 +199,7 @@ const Fichap = () => {
           </FadeInElement>
 
           {/***********************************  Testimonial  *******************************/}
-          <Testimonial />
+          <Testimonial text={testimonialText} />
       </main>
   )
 }

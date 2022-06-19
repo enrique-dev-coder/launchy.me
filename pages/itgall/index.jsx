@@ -6,7 +6,10 @@ import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import ITGallLogo from '../../public/img/itgall/Logo ITGall.png'
-import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
+import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
+import iconPic2 from '../../public/img/icons/Ojito.svg'
+import iconPic3 from '../../public/img/icons/Profile.svg'
+import iconPic4 from '../../public/img/icons/fluent_calendar-today-28-regular.svg'
 import ItgallProcess from "../../public/img/itgall/Proceso.png"
 import MobileHome from '../../public/img/itgall/mobile home.png'
 import MobileBlank from '../../public/img/itgall/mobile blank space.png'
@@ -30,9 +33,9 @@ const desafioTexto = {
 const imgData = {
   imgURL: {
     one: iconPic1,
-    two: iconPic1,
-    three: iconPic1,
-    four: iconPic1,
+    two: iconPic2,
+    three: iconPic3,
+    four: iconPic4,
   },
   height: {
     one: 32,

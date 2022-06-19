@@ -5,7 +5,10 @@ import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import LigaMXLogo from '../../public/img/ligaMX/Logo Liga MX.png'
-import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
+import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
+import iconPic2 from '../../public/img/icons/Profile.svg'
+import iconPic3 from '../../public/img/icons/Check.svg'
+import iconPic4 from '../../public/img/icons/Ojito.svg'
 import FirstFrame from '../../public/img/ligaMX/First Frame.png'
 import FirstFrameSecondParagraph from '../../public/img/ligaMX/First Frame Second Paragraph.png'
 import WhiteScreenThirdParagraph from '../../public/img/ligaMX/White Screen Thrid Paragraph.png'
@@ -32,15 +35,15 @@ const desafioTexto = {
   one: 'Crear una aplicación distintiva con dos usuarios distintos: El fan y el operario.',
   two: 'Construir flujos accesibles para la carga de data por parte del fan: para el mismo y para menores de edad.',
   three: 'Crear procedicimientos agiles e intuitivos para un onboarding facil para los operarios.',
-  four: 'Generar '
+  four: 'Un prototipo en constante mejora acorde a las necesidades del usuario y equipo técnico.'
 } 
 
 const imgData = {
   imgURL: {
     one: iconPic1,
-    two: iconPic1,
-    three: iconPic1,
-    four: iconPic1,
+    two: iconPic2,
+    three: iconPic3,
+    four: iconPic4,
   },
   height: {
     one: 32,
@@ -60,7 +63,7 @@ const imgData = {
 }
 
 // Testimonial props
-const textTestimonial = 'Crear e implementar un roadmap de diseño que resuelva las prioridades de cada area. Establecimos un manual de marca, realizamos presentaciones institucionales, casos de estudio a través de infografías, diseño de feed de la marca, generando así un sistema de identidad marcaria completo y accesible para los clientes.'
+const textTestimonial = 'Poder crear junto con un equipo técnico para que el reconocimiento facial pueda llegar a las personas a partir de procedimientos sencillos mejorando la experiencia con el usuario.'
 
 const LigaMX = () => {
   return (

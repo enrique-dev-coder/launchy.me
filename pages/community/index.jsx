@@ -5,7 +5,10 @@ import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import CommunityLogo from '../../public/img/community/Logo Community.png'
-import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
+import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
+import iconPic2 from '../../public/img/icons/icon-park-outline_graphic-design.svg'
+import iconPic3 from '../../public/img/icons/Ojito.svg'
+import iconPic4 from '../../public/img/icons/Check.svg'
 import SolutionScreen1 from '../../public/img/community/Solution screen 1.png'
 import FirstInSecondParagraph from '../../public/img/community/First in second paragraph.png'
 import NextInSecondParagraph from '../../public/img/community/Next in second paragraph.png'
@@ -14,21 +17,21 @@ import LastParagraphFirstFrame from '../../public/img/community/Last paragraph f
 import LastParagraphSecondFrame from '../../public/img/community/Last paragraph second frame.png'
 
 
-const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
+const objetivoTexto = "Relevar la documentación de Community Electricity, una empresa que se encarga de transformar, a través de un protocolo de blockchain, la energía en dinero para sus ciudadanos. Creando ecosistemas saludables."
 
 const desafioTexto = {
-  one: 'Crear un espacio virtual de concentracion para los living labs de Galicia - España.',
-  two: 'Transmitir',
-  three: 'Impactar en la cultura interna de INFUY gráficamente a partir de inciativas que sumaran al equipo de People.',
-  four: 'Hacer una marca que se use en el día a día.'
+  one: 'Mediar por la organización de textos documentativos, buscando un site web que pueda mostrar la iniciativa.',
+  two: 'Requisitos de elementos predispuestos por el cliente.',
+  three: 'Un control gráfico limitado a la guía del cliente hizo que tuvieramos que elaborar muchas propuestas.',
+  four: 'Compatibilizar la gráfica con la web para que sea más ilustrativa.'
 } 
 
 const imgData = {
   imgURL: {
     one: iconPic1,
-    two: iconPic1,
-    three: iconPic1,
-    four: iconPic1,
+    two: iconPic2,
+    three: iconPic3,
+    four: iconPic4,
   },
   height: {
     one: 32,
@@ -46,6 +49,12 @@ const imgData = {
     one: 'Icon created by Launchy Team'
   }
 }
+
+//Solution text
+const solutionText = 'Decidimos trabajar con bloques debido a la iteración del proyecto y lo variante que ha sido acorde al descubrimiento de uevas aplicaciones así como también nuevas iniciativas a partir de la primera.'
+
+// Testimonial props
+const textTestimonial = 'La comunicación fue clave para poder responder a la rápida y constante iteración que va surgiendo en el proyecto. Pero ver el avance de pilotos que estan teniendo en sedes de California como en otros paises nos pone felices ya que constribuimos en la comunicación de mejores prácticas para el cuidado ambiental de la energía.'
 
 const Community = () => {
   return (
@@ -72,7 +81,7 @@ const Community = () => {
           />
 
           {/***********************************      Solution         *****************************/}
-          <ProcessOrSolution title='SOLUCIÓN' />
+          <ProcessOrSolution title='SOLUCIÓN' text={solutionText}/>
 
           {/*********************************** Rest of the pictures ***************************************/}
           <FadeInElement>
@@ -120,7 +129,7 @@ const Community = () => {
 
           <FadeInElement>
             <div className='mb-[30px] md:mb-[40px] px-[8%]'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at omnis impedit accusantium repudiandae unde, accusamus facere. Dolorum eveniet nisi sapiente, consequatur accusamus libero cumque in ipsam aliquam reprehenderit quas unde perferendis corrupti. Esse quis perferendis accusantium reiciendis magni, fugit nisi illo quo modi perspiciatis assumenda alias voluptatibus! Vero dicta quasi itaque sint, veniam consectetur blanditiis! Exercitationem quaerat quo accusantium pariatur! Commodi reiciendis culpa quod.
+            Trabajamos con los elementos que el cliente decidió y tratando de ofrecer una guía en la distribución de información, logrando reducirla a un 60% de la original que iba a ser publicada.
             </div>
 
             <div className="mb-[60px] md:mb-[80px] flex justify-center">
@@ -135,7 +144,7 @@ const Community = () => {
 
           <FadeInElement>
             <div className='mb-[30px] md:mb-[40px] px-[8%]'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at omnis impedit accusantium repudiandae unde, accusamus facere. Dolorum eveniet nisi sapiente, consequatur accusamus libero cumque in ipsam aliquam reprehenderit quas unde perferendis corrupti. Esse quis perferendis accusantium reiciendis magni, fugit nisi illo quo modi perspiciatis assumenda alias voluptatibus! Vero dicta quasi itaque sint, veniam consectetur blanditiis! Exercitationem quaerat quo accusantium pariatur! Commodi reiciendis culpa quod.
+            Trabajamos en conjunto con el equipo técnico para ir solucionando las necesidades que fue presentando el proyecto conforme va avanzando en cuanto a la construcción de la documentación así como los pilotos técnicos.
             </div>
 
             <div className="mb-[60px] lg:mb-[80px] flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 px-[8%] lg:px-[4%]">
@@ -162,7 +171,7 @@ const Community = () => {
           </FadeInElement>
 
           {/***********************************  Testimonial  *******************************/}
-          <Testimonial />
+          <Testimonial text={textTestimonial} />
       </main>
   )
 }

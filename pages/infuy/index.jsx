@@ -8,10 +8,10 @@ import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import Footer from '../../components/Footer'
 import FAQ from '../../components/pagesAtom/FAQ'
 import InfuyLogo from '../../public/img/infuy/Logo Infuy.png'
-import iconPic1 from '../../public/img/infuy/Group.png'
-import iconPic2 from '../../public/img/infuy/carbon_growth.png'
-import iconPic3 from '../../public/img/infuy/icon-park-outline_graphic-design.png'
-import iconPic4 from '../../public/img/infuy/fluent_calendar-today-28-regular.png'
+import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
+import iconPic2 from '../../public/img/icons/carbon_growth.svg'
+import iconPic3 from '../../public/img/icons/icon-park-outline_graphic-design.svg'
+import iconPic4 from '../../public/img/icons/fluent_calendar-today-28-regular.svg'
 import InfuyLogo1 from '../../public/img/infuy/Construccion logo.png'
 import InfuyLogo2 from '../../public/img/infuy/Variantes de color logo.png'
 import InfuyMocukp from '../../public/img/infuy/Mockup.png'
@@ -52,16 +52,16 @@ const imgData = {
     four: iconPic4,
   },
   height: {
-    one: 17,
-    two: 30,
-    three: 31,
-    four: 28
+    one: 32,
+    two: 32,
+    three: 32,
+    four: 32
   },
   width: {
-    one: 26,
-    two: 30,
-    three: 31,
-    four: 28
+    one: 32,
+    two: 32,
+    three: 32,
+    four: 32
   },
   alt: {
     one: 'Icon created by Launchy Team'

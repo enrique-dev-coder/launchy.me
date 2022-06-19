@@ -6,7 +6,10 @@ import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import JaakLogo from '../../public/img/jaak/Logo JAAK.png'
-import iconPic1 from '../../public/img/fluent_web-asset-20-regular.png'
+import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
+import iconPic2 from '../../public/img/icons/Check.svg'
+import iconPic3 from '../../public/img/icons/Profile.svg'
+import iconPic4 from '../../public/img/icons/carbon_growth.svg'
 import JaakHome from '../../public/img/jaak/jaak home.png'
 import JaakStatistics1 from '../../public/img/jaak/JaakStatistics1.png'
 import JaakStatistics2 from '../../public/img/jaak/JaakStatistics2.png'
@@ -32,9 +35,9 @@ const desafioTexto = {
 const imgData = {
   imgURL: {
     one: iconPic1,
-    two: iconPic1,
-    three: iconPic1,
-    four: iconPic1,
+    two: iconPic2,
+    three: iconPic3,
+    four: iconPic4,
   },
   height: {
     one: 32,

@@ -24,7 +24,7 @@ const InfoTarget = ({objetivoTexto, desafioTexto, imgData}) => {
 
                 {/* First Square */}
                 <div className="flex flex-col gap-6 w-full md:w-1/4 border border-black p-8">
-                    <div className={`w-[${width.one}px] h-[${height.one}px] mb-4`}>
+                    <div className={`w-[${width.one}px] h-[${height.one}px] mb-0.5`}>
                         <Image src={imgURL.one} width={width.one} height={height.one} alt={alt.one} />
                     </div>
                     <p>{one}</p>
