@@ -3,10 +3,25 @@ import Head from 'next/head';
 import Navbar from './Navbar';
 import { useMenu } from '../context/MenuContext';
 import MobileMenu from './MobileMenu';
+import Script from 'next/script';
 const Layout = ({ children }) => {
   const { isOpen, setisOpen } = useMenu();
   return (
     <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-6P2X9Y8X5Y`}
+      />
+      <Script strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-6P2X9Y8X5Y', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
       <Head>
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
