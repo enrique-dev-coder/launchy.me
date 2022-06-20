@@ -5,7 +5,7 @@ import { useMenu } from '../context/MenuContext';
 import MobileMenu from './MobileMenu';
 import Script from 'next/script';
 const Layout = ({ children }) => {
-  const { isOpen, setisOpen } = useMenu();
+  const { isOpen, setisOpen, loading } = useMenu();
   return (
     <>
       <Script
@@ -40,7 +40,12 @@ const Layout = ({ children }) => {
         />
       </Head>
 
-      <div className="relative">
+      <div
+        //NOTE esta clase se pone porque cuando esta activa la pantalla de carga queremos desactivar el scroll
+        className={`relative ${
+          loading ? 'h-screen overflow-y-hidden' : 'h-auto overflow-y-visible'
+        }`}
+      >
         <Navbar />
         <MobileMenu isOpen={isOpen} />
         {children}

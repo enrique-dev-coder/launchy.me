@@ -1,8 +1,17 @@
-import React from 'react';
+import { useEffect } from 'react';
 import Image from 'next/image';
+import LoadingScreen from './LoadingScreen';
+import { useMenu } from '../context/MenuContext';
 const HeroHomePage = () => {
+  const { setLoading } = useMenu();
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
+
   return (
-    <div>
+    <div className="relative">
       {/*model iframe from sketch*/}
       <div className="sketchfab-embed-wrapper h-screen w-full relative z-10">
         {' '}
@@ -51,6 +60,8 @@ const HeroHomePage = () => {
         </div>
         <div className="absolute w-full h-[5rem] -bottom-[12px] black_gradient"></div>{' '}
       </div>
+      {/*NOTE el loading ya lo trae el componente por el global context*/}
+      <LoadingScreen />
     </div>
   );
 };
