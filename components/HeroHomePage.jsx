@@ -9,6 +9,7 @@ const HeroHomePage = () => {
       setLoading(false);
     }, 3000);
   }, []);
+  //comentario para ver si jala el deploy
 
   return (
     <div className="relative">
