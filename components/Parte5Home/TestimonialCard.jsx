@@ -7,7 +7,7 @@ const TestimonialCard = ({ desc, name, empresa, job, foto }) => {
         <img src="/img/testimonios/card_bg.svg" />
       </div>
       <div className="text-white relative flex flex-col justify-around w-10/12 h-[90%] m-auto">
-        <p className="text-[13px] roboto_normal">{desc}</p>
+        <p className="text-[13px] roboto_normal flex-1">{desc}</p>
         <div className="flex">
           <img src={foto} className="w-[40px] h-[40px] rounded-full" />
           <div className="flex-col ml-2">

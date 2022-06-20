@@ -11,19 +11,38 @@ const index = () => {
     {
       id: 1,
       title: 'research',
-      options: ['UX Research', 'Benchmarking', 'MVP testing'],
+      options: [
+        'UX Research',
+        'Benchmarking',
+        <span>
+          MVP testing y <span className="underline">Más</span>
+        </span>,
+      ],
       link: '/',
     },
     {
       id: 2,
       title: 'diseño',
-      options: ['Estrategia de Marca', 'Animación'],
+      options: [
+        'UI - UX',
+        'Estrategia de Marca',
+        'Diseño de Producto',
+        <span>
+          Animación y <span className="underline">Más</span>
+        </span>,
+      ],
       link: '/',
     },
     {
       id: 3,
       title: 'Desarrollo',
-      options: ['Desarrollo Web', 'Desarrollo de Software', 'IT Staffing'],
+      options: [
+        'Desarrollo Web',
+        'Desarrollo de Software',
+        <span>
+          IT Staffing y <span className="underline">Más</span>
+        </span>,
+      ],
       link: '/',
     },
     {
@@ -32,7 +51,9 @@ const index = () => {
       options: [
         'Auditoria de Funnel Comercial',
         'Optimización de CJM',
-        'Estrategias de escalabilidad',
+        <span>
+          Estrategias de escalabilidad y <span className="underline">Más</span>
+        </span>,
       ],
       link: '/',
     },

@@ -28,7 +28,7 @@ const Home: NextPage = () => {
         <BannerEventos />
         <BannerPerrito />
         <SubscribeForm />
-        <Footer />
+        <Footer blue={false} />
       </StarBackgroundCss>
     </div>
   );
