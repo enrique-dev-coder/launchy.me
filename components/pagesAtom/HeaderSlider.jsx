@@ -4,27 +4,21 @@ import 'swiper/css';
 
 const items = [
     'diseño de manual de marca',
-    '-',
     'banners',
-    '-',
     'feed',
-    '-',
     'presentaciones',
-    '-',
     'aplicaciones de marca',
-    '-',
     'infografías',
-    '-',
     'editables',
-    '-',
 ]
+
+//flex flex-1
 
 const HeaderSlider = () => {
   return (
     <ul className="max-w-[2800px] mx-auto border-y border-black z-10">
         <Swiper
-        slidesPerView={11}
-        slidesPerGroup={1}
+        slidesPerView={7}
         loop={true}
         className="flex w-full"
         autoplay={{
@@ -35,7 +29,7 @@ const HeaderSlider = () => {
       >
         {items.map((item, index) => (
           <SwiperSlide key={index}>
-            <li className="justify-center py-4 flex-1 flex uppercase">
+            <li className="justify-center py-4 uppercase">
               {item}
             </li>
           </SwiperSlide>

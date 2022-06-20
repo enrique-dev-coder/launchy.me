@@ -10,7 +10,6 @@ import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
 import iconPic2 from '../../public/img/icons/Profile.svg'
 import iconPic3 from '../../public/img/icons/Check.svg'
 import iconPic4 from '../../public/img/icons/Ojito.svg'
-import FirstFrame from '../../public/img/ligaMX/First Frame.png'
 import FirstFrameSecondParagraph from '../../public/img/ligaMX/First Frame Second Paragraph.png'
 import WhiteScreenThirdParagraph from '../../public/img/ligaMX/White Screen Thrid Paragraph.png'
 import MainScreenThirdParagraph from '../../public/img/ligaMX/Main Screen Third Paragraph.png'
@@ -94,18 +93,9 @@ const LigaMX = () => {
 
           {/***********************************      Solution         *****************************/}
           <ProcessOrSolution title='SOLUCIÓN' paragraph={false}>
-            <div className="flex flex-col lg:flex-row lg:gap-4 xl:gap-0 mb-[60px] lg:mb-[80px]">
+            <div className="flex flex-col lg:flex-row lg:gap-4 mb-[60px] lg:mb-[80px]">
 
-              <div className="lg:w-1/2 flex justify-center mb-[30px] lg:mb-0">
-
-                <Image 
-                  src={FirstFrame} 
-                  width={473} 
-                  height={269} 
-                  alt={'Mockup de LigaMX creado por Launchy'}
-                />
-
-              </div>
+              <video src="img/ligaMX/FAN ID (1) (1).mp4" className='shadow-2xl w-full lg:w-1/2 flex justify-center mb-[30px] lg:mb-0' autoPlay controls></video>
               
               <div className="lg:w-1/2 flex">
               Ya que la aplicación aun esta en revisiones queremos compartirles una visualización de los flujos generales para que puedan ver parte de la inciativa y cómo integramos nuestra expertis de diseño a impactar en la vida de las personas.

@@ -8,13 +8,13 @@ import 'swiper/css';
 
 const FontBoxes = ({title, text}) => {
   return (
-    <div className="mb-[60px] md:mb-[80px] overflow-hidden px-[8%]">
+    <div className="mb-[60px] md:mb-[80px] overflow-hidden px-[8%] hidden md:block">
       <div className='flex w-full gap-12 my-4'>
         <Swiper
           slidesPerView={3}
-          spaceBetween={50}
+          
           loop={true}
-          className="flex w-full hidden md:block"
+          className="flex w-full"
           autoplay={{
             delay: 1500,
             disableOnInteraction: false,

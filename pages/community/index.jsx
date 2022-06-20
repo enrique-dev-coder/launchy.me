@@ -13,9 +13,9 @@ import iconPic4 from '../../public/img/icons/Check.svg'
 import SolutionScreen1 from '../../public/img/community/Solution screen 1.png'
 import FirstInSecondParagraph from '../../public/img/community/First in second paragraph.png'
 import NextInSecondParagraph from '../../public/img/community/Next in second paragraph.png'
-import ThirdParagraph from '../../public/img/community/Thrid paragraph.png'
 import LastParagraphFirstFrame from '../../public/img/community/Last paragraph first frame.png'
 import LastParagraphSecondFrame from '../../public/img/community/Last paragraph second frame.png'
+import CommunityGif from '../../public/img/community/Video celus (1).gif'
 
 
 const objetivoTexto = "Relevar la documentación de Community Electricity, una empresa que se encarga de transformar, a través de un protocolo de blockchain, la energía en dinero para sus ciudadanos. Creando ecosistemas saludables."
@@ -136,11 +136,11 @@ const Community = () => {
 
             <div className="mb-[60px] md:mb-[80px] flex justify-center">
             <Image 
-              src={ThirdParagraph}
-              width={1440}
-              height={574}
-              alt={'Mockup de Community creado por Launchy'}
-            />
+                src={CommunityGif} 
+                width={1527} height={577} 
+                alt={'Mockup de Infuy creado por Launchy'}
+                className='w-full'
+              />
             </div>
           </FadeInElement>
 
