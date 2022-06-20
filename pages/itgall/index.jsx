@@ -5,6 +5,7 @@ import ColorPalette from '../../components/pagesAtom/ColorPalette';
 import ProcessOrSolution from '../../components/pagesAtom/ProcessOrSolution';
 import Header from '../../components/pagesAtom/Header';
 import FadeInElement from '../../components/pagesAtom/FadeInElement';
+import Footer from '../../components/Footer';
 import ITGallLogo from '../../public/img/itgall/Logo ITGall.png';
 import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg';
 import iconPic2 from '../../public/img/icons/Ojito.svg';
@@ -20,7 +21,7 @@ import DesktopFrame from '../../public/img/itgall/Rectangle 39388.png';
 import Projects from '../../public/img/itgall/Projects.png';
 import Partners from '../../public/img/itgall/Partners.png';
 import Map from '../../public/img/itgall/Map.png';
-import Footer from '../../components/Footer';
+
 const objetivoTexto =
   'Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo.';
 
@@ -51,6 +52,7 @@ const imgData = {
     three: 32,
     four: 32,
   },
+  color: 'from-purple-500 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team',
   },
@@ -72,11 +74,23 @@ const textSolution =
 const textTestimonial =
   'Nos encantó ser parte de esta experiencia, poder conectar necesidades mutuas entre distintas organizaciones para dar a luz este proyecto que tiene como objetivo ser un punto de encuentro con un interés en común: LAS PERSONAS.';
 
+// Header items
+const items = [
+  'diseño web',
+  'development',
+  'frontend',
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'comunicación',
+];
+
 const Itgall = () => {
   return (
     <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
       {/*********************************       Header       *********************************/}
-      <Header>
+      <Header items={items} quantity={7}>
         <div className="">
           <Image
             src={ITGallLogo}
@@ -97,11 +111,11 @@ const Itgall = () => {
       {/***********************************  ColorPalette     *********************************/}
       <ColorPalette title="APLICACION CROMÁTICA" text={textPalette}>
         <div className="grid grid-cols-2 md:flex w-full">
-          <div className="bg-[#B75F9F] col-span-2 md:w-1/5 h-16"></div>
-          <div className="bg-[#8C1D82] col-span-1 md:w-1/5 h-16"></div>
-          <div className="bg-[#63257E] col-span-1 md:w-1/5 h-16"></div>
-          <div className="bg-[#37044E] col-span-1 md:w-1/5 h-16"></div>
-          <div className="bg-[#FFD000] col-span-1 md:w-1/5 h-16"></div>
+          <div className="bg-[#B75F9F] col-span-2 md:w-1/5 h-12 md:h-[140px]"></div>
+          <div className="bg-[#8C1D82] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
+          <div className="bg-[#63257E] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
+          <div className="bg-[#37044E] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
+          <div className="bg-[#FFD000] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
         </div>
       </ColorPalette>
 
@@ -244,6 +258,8 @@ const Itgall = () => {
 
       {/***********************************  Testimonial  *******************************/}
       <Testimonial title="EL RESULTADO" text={textTestimonial} />
+
+      {/***********************************  Footer  ******************************/}
       <Footer blue />
     </main>
   );

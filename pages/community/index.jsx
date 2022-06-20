@@ -4,6 +4,7 @@ import Testimonial from '../../components/pagesAtom/Testimonial';
 import ProcessOrSolution from '../../components/pagesAtom/ProcessOrSolution';
 import Header from '../../components/pagesAtom/Header';
 import FadeInElement from '../../components/pagesAtom/FadeInElement';
+import Footer from '../../components/Footer';
 import CommunityLogo from '../../public/img/community/Logo Community.png';
 import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg';
 import iconPic2 from '../../public/img/icons/icon-park-outline_graphic-design.svg';
@@ -12,10 +13,9 @@ import iconPic4 from '../../public/img/icons/Check.svg';
 import SolutionScreen1 from '../../public/img/community/Solution screen 1.png';
 import FirstInSecondParagraph from '../../public/img/community/First in second paragraph.png';
 import NextInSecondParagraph from '../../public/img/community/Next in second paragraph.png';
-import ThirdParagraph from '../../public/img/community/Thrid paragraph.png';
 import LastParagraphFirstFrame from '../../public/img/community/Last paragraph first frame.png';
 import LastParagraphSecondFrame from '../../public/img/community/Last paragraph second frame.png';
-import Footer from '../../components/Footer';
+import CommunityGif from '../../public/img/community/Video celus (1).gif';
 
 const objetivoTexto =
   'Relevar la documentación de Community Electricity, una empresa que se encarga de transformar, a través de un protocolo de blockchain, la energía en dinero para sus ciudadanos. Creando ecosistemas saludables.';
@@ -47,6 +47,7 @@ const imgData = {
     three: 32,
     four: 32,
   },
+  color: 'from-indigo-500 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team',
   },
@@ -60,11 +61,22 @@ const solutionText =
 const textTestimonial =
   'La comunicación fue clave para poder responder a la rápida y constante iteración que va surgiendo en el proyecto. Pero ver el avance de pilotos que estan teniendo en sedes de California como en otros paises nos pone felices ya que constribuimos en la comunicación de mejores prácticas para el cuidado ambiental de la energía.';
 
+// Header items
+const items = [
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'ilustraciones',
+  'development',
+  'frontend',
+];
+
 const Community = () => {
   return (
     <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
       {/*********************************       Header       *********************************/}
-      <Header>
+      <Header items={items} quantity={6}>
         <div className="">
           <Image
             src={CommunityLogo}
@@ -134,10 +146,11 @@ const Community = () => {
 
         <div className="mb-[60px] md:mb-[80px] flex justify-center">
           <Image
-            src={ThirdParagraph}
-            width={1440}
-            height={574}
-            alt={'Mockup de Community creado por Launchy'}
+            src={CommunityGif}
+            width={1527}
+            height={577}
+            alt={'Mockup de Infuy creado por Launchy'}
+            className="w-full"
           />
         </div>
       </FadeInElement>
@@ -173,6 +186,8 @@ const Community = () => {
 
       {/***********************************  Testimonial  *******************************/}
       <Testimonial text={textTestimonial} />
+
+      {/***********************************  Footer  ******************************/}
       <Footer blue />
     </main>
   );

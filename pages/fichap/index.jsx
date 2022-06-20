@@ -4,6 +4,7 @@ import InfoTarget from '../../components/pagesAtom/InfoTarget';
 import ProcessOrSolution from '../../components/pagesAtom/ProcessOrSolution';
 import Header from '../../components/pagesAtom/Header';
 import FadeInElement from '../../components/pagesAtom/FadeInElement';
+import Footer from '../../components/Footer';
 import FichapLogo from '../../public/img/fichap/Logo Fichap.png';
 import iconPic1 from '../../public/img/icons/Profile.svg';
 import iconPic2 from '../../public/img/icons/Ojito.svg';
@@ -17,7 +18,6 @@ import FirstFrameFourthParagraph from '../../public/img/fichap/First Frame (4).p
 import SecondFrameFourthParagraph from '../../public/img/fichap/Second Frame (4).png';
 import FirstBanner from '../../public/img/fichap/Banner (1).png';
 import SecondBanner from '../../public/img/fichap/Banner (2).png';
-import Footer from '../../components/Footer';
 
 const objetivoTexto =
   'Generar una reorganización en la navegabilidad del sitio favoreciendo a una mayor conversión de formularios de contacto así como del entendimiento de la propuesta de valor del site.';
@@ -49,6 +49,7 @@ const imgData = {
     three: 32,
     four: 32,
   },
+  color: 'from-green-400 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team',
   },
@@ -66,11 +67,23 @@ const aportandoValor =
 const testimonialText =
   'Hemos aprendido mutuamente integrando metodologías y puntos de vistas en conjunto. Fichap es una empresa que tiene como misión digitalizar los recursos humanos de las empresas. Y nos sentimos más que motivados a ayudarlos que esto sea así.';
 
+// Header items
+const items = [
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'development',
+  'frontend',
+  'pixel perfect',
+  'rediseño',
+];
+
 const Fichap = () => {
   return (
     <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
       {/*********************************       Header       *********************************/}
-      <Header>
+      <Header items={items} quantity={7}>
         <div className="mb-10">
           <Image
             src={FichapLogo}
@@ -196,6 +209,8 @@ const Fichap = () => {
 
       {/***********************************  Testimonial  *******************************/}
       <Testimonial text={testimonialText} />
+
+      {/***********************************  Footer  ******************************/}
       <Footer blue />
     </main>
   );
