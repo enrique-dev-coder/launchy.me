@@ -66,12 +66,22 @@ const imgData = {
 // Testimonial props
 const textTestimonial = 'Poder crear junto con un equipo técnico para que el reconocimiento facial pueda llegar a las personas a partir de procedimientos sencillos mejorando la experiencia con el usuario.'
 
+// Header items
+const items = [
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'diseño para diferentes públicos',
+  'writing',
+]
+
 const LigaMX = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/*********************************       Header       *********************************/}
-          <Header>
+          <Header items={items} quantity={5}>
             
             <div className="mb-10">
               <Image 

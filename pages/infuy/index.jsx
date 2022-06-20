@@ -75,12 +75,23 @@ const textPalette = 'Partiamos de una marca con una necesidad clara de diferenci
 // Testimonial props
 const textTestimonial = 'Crear e implementar un roadmap de diseño que resuelva las prioridades de cada area. Establecimos un manual de marca, realizamos presentaciones institucionales, casos de estudio a través de infografías, diseño de feed de la marca, generando así un sistema de identidad marcaria completo y accesible para los clientes.'
 
+//Header items
+const items = [
+  'diseño de manual de marca',
+  'banners',
+  'feed',
+  'presentaciones',
+  'aplicaciones de marca',
+  'infografías',
+  'editables',
+]
+
 const Infuy = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/*********************************       Header       *********************************/}
-          <Header>
+          <Header quantity={6} items={items}>
 
              <div className="">
               <Image 

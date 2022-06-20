@@ -63,12 +63,24 @@ const aportandoValor = 'Parte del trabajo se trasladó a generar una guía para 
 //Testimonial Props
 const testimonialText = 'Hemos aprendido mutuamente integrando metodologías y puntos de vistas en conjunto. Fichap es una empresa que tiene como misión digitalizar los recursos humanos de las empresas. Y nos sentimos más que motivados a ayudarlos que esto sea así.'
 
+// Header items
+const items = [
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'development',
+  'frontend',
+  'pixel perfect',
+  'rediseño',
+]
+
 const Fichap = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/*********************************       Header       *********************************/}
-          <Header>
+          <Header items={items} quantity={7}>
 
             <div className="mb-10">
               <Image 

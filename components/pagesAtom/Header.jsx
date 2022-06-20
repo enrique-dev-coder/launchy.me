@@ -3,7 +3,7 @@ import HeaderSlider from "./HeaderSlider"
 import Flechitas from '../../public/img/Flechitas.png'
 import FadeInElement from "./FadeInElement"
 
-const Header = ({children}) => {
+const Header = ({children, quantity, items}) => {
   return (
     <FadeInElement>
       <div className='flex flex-col items-center w-full overflow-hidden relative'>
@@ -19,7 +19,7 @@ const Header = ({children}) => {
               />
             </div>
         </div>
-        <HeaderSlider />
+        <HeaderSlider slidesQuantity={quantity} slidesItems={items} />
       </div>
     </FadeInElement>
     

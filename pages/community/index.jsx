@@ -58,12 +58,23 @@ const solutionText = 'Decidimos trabajar con bloques debido a la iteración del 
 // Testimonial props
 const textTestimonial = 'La comunicación fue clave para poder responder a la rápida y constante iteración que va surgiendo en el proyecto. Pero ver el avance de pilotos que estan teniendo en sedes de California como en otros paises nos pone felices ya que constribuimos en la comunicación de mejores prácticas para el cuidado ambiental de la energía.'
 
+// Header items
+const items = [
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'ilustraciones',
+  'development',
+  'frontend',
+]
+
 const Community = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/*********************************       Header       *********************************/}
-          <Header>
+          <Header items={items} quantity={6}>
 
             <div className="">
               <Image 

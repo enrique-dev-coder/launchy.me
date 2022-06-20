@@ -67,12 +67,23 @@ const textSolution = 'Reformulamos el dashboard de manera que tuviera un uso mas
 // Testimonial Props
 const textTestimonial = 'Hemos aprendido muchisimo de la experiencia técnica del equipo de JAAk así como hemos ofrecido una nueva dirección creativa a la hora de manifestar los productos y la planeación de los mismos.'
 
+// Header items
+const items = [
+  'diseño de banners',
+  'mantenimiento de feed',
+  'diseño UX',
+  'diseño UI',
+  'writing',
+  'prototipado',
+  'iteración',
+]
+
 const Jaak = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/*********************************       Header       *********************************/}
-          <Header>
+          <Header items={items} quantity={6}>
 
               <div className="">
                 <Image 

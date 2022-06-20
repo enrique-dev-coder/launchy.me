@@ -68,12 +68,24 @@ const textSolution = 'Pese a que las barras de navegación no están en lugares 
 // Testimonial props
 const textTestimonial = 'Nos encantó ser parte de esta experiencia, poder conectar necesidades mutuas entre distintas organizaciones para dar a luz este proyecto que tiene como objetivo ser un punto de encuentro con un interés en común: LAS PERSONAS.'
 
+// Header items
+const items = [
+  'diseño web',
+  'development',
+  'frontend',
+  'diseño UX',
+  'diseño UI',
+  'prototipado',
+  'iteración',
+  'comunicación'
+]
+
 const Itgall = () => {
   return (
       <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
 
           {/*********************************       Header       *********************************/}
-          <Header>
+          <Header items={items} quantity={7}>
 
             <div className="">
               <Image 
