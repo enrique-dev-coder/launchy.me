@@ -5,6 +5,7 @@ import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
+import Footer from '../../components/Footer'
 import ITGallLogo from '../../public/img/itgall/Logo ITGall.png'
 import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
 import iconPic2 from '../../public/img/icons/Ojito.svg'
@@ -49,6 +50,7 @@ const imgData = {
     three: 32,
     four: 32
   },
+  color: 'from-purple-500 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team'
   }
@@ -96,11 +98,11 @@ const Itgall = () => {
             text={textPalette}
           >
             <div className="grid grid-cols-2 md:flex w-full">
-              <div className='bg-[#B75F9F] col-span-2 md:w-1/5 h-16'></div>
-              <div className='bg-[#8C1D82] col-span-1 md:w-1/5 h-16'></div>
-              <div className="bg-[#63257E] col-span-1 md:w-1/5 h-16"></div>
-              <div className="bg-[#37044E] col-span-1 md:w-1/5 h-16"></div>
-              <div className="bg-[#FFD000] col-span-1 md:w-1/5 h-16"></div>
+              <div className='bg-[#B75F9F] col-span-2 md:w-1/5 h-12 md:h-[140px]'></div>
+              <div className='bg-[#8C1D82] col-span-1 md:w-1/5 h-12 md:h-[140px]'></div>
+              <div className="bg-[#63257E] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
+              <div className="bg-[#37044E] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
+              <div className="bg-[#FFD000] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
             </div>
           </ColorPalette>
 
@@ -261,6 +263,9 @@ const Itgall = () => {
             title='EL RESULTADO'
             text={textTestimonial}
           />
+
+          {/***********************************  Footer  ******************************/}
+          <Footer />
       </main>
   )
 }

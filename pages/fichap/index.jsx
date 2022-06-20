@@ -4,6 +4,7 @@ import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
+import Footer from '../../components/Footer'
 import FichapLogo from '../../public/img/fichap/Logo Fichap.png'
 import iconPic1 from '../../public/img/icons/Profile.svg'
 import iconPic2 from '../../public/img/icons/Ojito.svg'
@@ -47,6 +48,7 @@ const imgData = {
     three: 32,
     four: 32
   },
+  color: 'from-green-400 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team'
   }
@@ -200,6 +202,9 @@ const Fichap = () => {
 
           {/***********************************  Testimonial  *******************************/}
           <Testimonial text={testimonialText} />
+
+          {/***********************************  Footer  ******************************/}
+          <Footer />
       </main>
   )
 }

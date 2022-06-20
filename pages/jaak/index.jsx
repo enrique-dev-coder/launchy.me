@@ -5,6 +5,7 @@ import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
+import Footer from '../../components/Footer'
 import JaakLogo from '../../public/img/jaak/Logo JAAK.png'
 import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
 import iconPic2 from '../../public/img/icons/Check.svg'
@@ -51,6 +52,7 @@ const imgData = {
     three: 32,
     four: 32
   },
+  color: 'from-[#606B9D] via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team'
   }
@@ -94,12 +96,12 @@ const Jaak = () => {
             text={textPalette}
           >
             <div className="grid grid-cols-2 md:flex w-full">
-              <div className='bg-[#4239A7] col-span-1 md:w-1/6 h-16'></div>
-              <div className='bg-[#212A45] col-span-1 md:w-1/6 h-16'></div>
-              <div className='bg-[#3BBBC9] col-span-1 md:w-1/6 h-16'></div>
-              <div className="bg-[#5C5BA5] col-span-1 md:w-1/6 h-16"></div>
-              <div className="bg-[#655DC6] col-span-1 md:w-1/6 h-16"></div>
-              <div className="bg-[#00829B] col-span-1 md:w-1/6 h-16"></div>
+              <div className='bg-[#4239A7] col-span-1 md:w-1/6 h-12 md:h-[140px]'></div>
+              <div className='bg-[#212A45] col-span-1 md:w-1/6 h-12 md:h-[140px]'></div>
+              <div className='bg-[#3BBBC9] col-span-1 md:w-1/6 h-12 md:h-[140px]'></div>
+              <div className="bg-[#5C5BA5] col-span-1 md:w-1/6 h-12 md:h-[140px]"></div>
+              <div className="bg-[#655DC6] col-span-1 md:w-1/6 h-12 md:h-[140px]"></div>
+              <div className="bg-[#00829B] col-span-1 md:w-1/6 h-12 md:h-[140px]"></div>
             </div>
           </ColorPalette>
 
@@ -251,6 +253,9 @@ const Jaak = () => {
           
           {/***********************************  Testimonial  *******************************/}
           <Testimonial text={textTestimonial} />
+
+          {/***********************************  Footer  ******************************/}
+          <Footer />
       </main>
   )
 }

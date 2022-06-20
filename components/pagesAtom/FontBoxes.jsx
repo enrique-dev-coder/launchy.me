@@ -14,7 +14,7 @@ const FontBoxes = ({title, text}) => {
           slidesPerView={3}
           spaceBetween={50}
           loop={true}
-          className="flex w-full"
+          className="flex w-full hidden md:block"
           autoplay={{
             delay: 1500,
             disableOnInteraction: false,

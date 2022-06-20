@@ -63,6 +63,7 @@ const imgData = {
     three: 32,
     four: 32
   },
+  color: 'from-indigo-400 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team'
   }
@@ -103,17 +104,18 @@ const Infuy = () => {
             title='COLORES Y APLICACIÓN'
             text={textPalette}
           >
-            <Image 
-              src={InfuyPaletaGIF} 
-              width={1439} height={140} 
-              alt={'Mockup de Infuy creado por Launchy'}
-              className='w-full'
-            />
+              <Image 
+                src={InfuyPaletaGIF} 
+                width={1439} height={140} 
+                alt={'Mockup de Infuy creado por Launchy'}
+                className='w-full'
+              />
+            
               <div className="grid grid-cols-2 md:flex w-full">
-              <div className='bg-[#F5C814] col-span-1 md:w-1/4 h-16'></div>
-              <div className="bg-[#05172F] col-span-1 md:w-1/4 h-16"></div>
-              <div className="bg-[#f30b19] col-span-1 md:w-1/4 h-16"></div>
-              <div className="bg-[#f97316] col-span-1 md:w-1/4 h-16"></div>
+              <div className='bg-[#F5C814] col-span-1 md:w-1/4 h-12 md:h-[140px]'></div>
+              <div className="bg-[#05172F] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
+              <div className="bg-[#f30b19] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
+              <div className="bg-[#f97316] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
             </div>
           </ColorPalette>
 

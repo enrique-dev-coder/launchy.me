@@ -4,6 +4,7 @@ import Testimonial from "../../components/pagesAtom/Testimonial";
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
+import Footer from '../../components/Footer'
 import CommunityLogo from '../../public/img/community/Logo Community.png'
 import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
 import iconPic2 from '../../public/img/icons/icon-park-outline_graphic-design.svg'
@@ -45,6 +46,7 @@ const imgData = {
     three: 32,
     four: 32
   },
+  color: 'from-indigo-500 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team'
   }
@@ -172,6 +174,9 @@ const Community = () => {
 
           {/***********************************  Testimonial  *******************************/}
           <Testimonial text={textTestimonial} />
+
+          {/***********************************  Footer  ******************************/}
+          <Footer />
       </main>
   )
 }
