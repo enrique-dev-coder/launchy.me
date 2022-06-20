@@ -8,36 +8,42 @@ const data = [
     id: 1,
     path: '/img/casos/ITGALL.mp4',
     desc: 'DESARROLLAMOS EL PUNTO DE ENCUENTRO VIRTUAL DE LOS LIVING LABS EN GALICIA',
+    link: '/itgall',
     video: true,
   },
   {
     id: 2,
     path: '/img/casos/app_deportiva.png',
     desc: 'DISEÑAMOS LA EXPERIENCIA EN ESTADIOS DEPORTIVOS CON EL DISEÑO DE UNA APP',
+    link: '/ligaMX',
     video: false,
   },
   {
     id: 3,
     path: '/img/casos/fichap.png',
     desc: 'REORGANIZAMOS EL SITE DE FICHAP PARA UNA MEJOR PERFORMANCE ',
+    link: '/fichap',
     video: false,
   },
   {
     id: 4,
     path: '/img/casos/community3.png',
     desc: 'SITE DE DOCUMENTACION PARA PROTOCOLO DE ENERGIA DE LOS ANGELES',
+    link: '/community',
     video: false,
   },
   {
     id: 5,
     path: '/img/casos/JAAK.mp4',
     desc: 'DISEÑAMOS UN DASHBOARD PARA MEJORAR EL CUSTOMER SUCESS',
+    link: '/jaak',
     video: true,
   },
   {
     id: 6,
     path: '/img/casos/infuy.png',
     desc: 'ESTRATEGIA Y APLICACIÓN PARA INFUY: PIONERA EN DESARROLLO BLOCKCHAIN',
+    link: '/infuy',
     video: false,
   },
 ];
@@ -50,7 +56,13 @@ const index = () => {
       </div>
       <div className="flex flex-wrap justify-between">
         {data.map((d, i) => (
-          <Card key={i} path={d.path} desc={d.desc} video={d.video} />
+          <Card
+            key={i}
+            link={d.link}
+            path={d.path}
+            desc={d.desc}
+            video={d.video}
+          />
         ))}
       </div>
       <div className="w-full flex justify-center">
