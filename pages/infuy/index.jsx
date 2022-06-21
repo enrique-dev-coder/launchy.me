@@ -1,33 +1,49 @@
 import Image from 'next/image';
-import Testimonial from '../../components/pagesAtom/Testimonial';
 import InfoTarget from '../../components/pagesAtom/InfoTarget';
-import ProcessOrSolution from '../../components/pagesAtom/ProcessOrSolution';
+import ColorPalette from '../../components/pagesAtom/ColorPalette';
+import FontBoxes from '../../components/pagesAtom/FontBoxes';
+import Testimonial from '../../components/pagesAtom/Testimonial';
 import Header from '../../components/pagesAtom/Header';
 import FadeInElement from '../../components/pagesAtom/FadeInElement';
 import Footer from '../../components/Footer';
-import FichapLogo from '../../public/img/fichap/Logo Fichap.png';
-import iconPic1 from '../../public/img/icons/Profile.svg';
-import iconPic2 from '../../public/img/icons/Ojito.svg';
-import iconPic3 from '../../public/img/icons/carbon_growth.svg';
+import FAQ from '../../components/pagesAtom/FAQ';
+import InfuyLogo from '../../public/img/infuy/Logo Infuy.png';
+import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg';
+import iconPic2 from '../../public/img/icons/carbon_growth.svg';
+import iconPic3 from '../../public/img/icons/icon-park-outline_graphic-design.svg';
 import iconPic4 from '../../public/img/icons/fluent_calendar-today-28-regular.svg';
-import FirstScreen from '../../public/img/fichap/First Frame.png';
-import FirstFrameSecondParagraph from '../../public/img/fichap/First Frame (2).png';
-import SecondFrameSecondParagraph from '../../public/img/fichap/Second Frame (2).png';
-import FirstFrameThirdParagraph from '../../public/img/fichap/First Frame (3).png';
-import FirstFrameFourthParagraph from '../../public/img/fichap/First Frame (4).png';
-import SecondFrameFourthParagraph from '../../public/img/fichap/Second Frame (4).png';
-import FirstBanner from '../../public/img/fichap/Banner (1).png';
-import SecondBanner from '../../public/img/fichap/Banner (2).png';
+import InfuyLogo1 from '../../public/img/infuy/Construccion logo.png';
+import InfuyLogo2 from '../../public/img/infuy/Variantes de color logo.png';
+import InfuyMocukp from '../../public/img/infuy/Mockup.png';
+import InfuyPic1 from '../../public/img/infuy/60 1.png';
+import InfuyPic2 from '../../public/img/infuy/60 2.png';
+import InfuyPic3 from '../../public/img/infuy/60 5.png';
+import InfuyPic4 from '../../public/img/infuy/60 6.png';
+import InfuyPic5 from '../../public/img/infuy/60 7.png';
+import InfuyPic6 from '../../public/img/infuy/60 8.png';
+import InfuyPic7 from '../../public/img/infuy/60 9.png';
+import InfuyPic8 from '../../public/img/infuy/60 10.png';
+import InfuyPic9 from '../../public/img/infuy/60 11.png';
+import InfuyPic10 from '../../public/img/infuy/60 12.png';
+import InfuyPic11 from '../../public/img/infuy/60 13.png';
+import InfuyPic12 from '../../public/img/infuy/60 14.png';
+import InfuyOnePage from '../../public/img/infuy/ONE PAGE - CASOS DE EXITO 3 1.png';
+import InfuyOtherPic1 from '../../public/img/infuy/iOS IG Grid Mock 1.png';
+import InfuyOtherPic2 from '../../public/img/infuy/Group 4 8095914.png';
+import InfuyOtherPic3 from '../../public/img/infuy/Portadas.png';
+import InfuyPaletaGIF from '../../public/img/infuy/Paleta cromatica.gif';
+import InfuyAnotherGIF from '../../public/img/infuy/Logo- Colores_1.gif';
 
+// InfoTarget props
 const objetivoTexto =
-  'Generar una reorganización en la navegabilidad del sitio favoreciendo a una mayor conversión de formularios de contacto así como del entendimiento de la propuesta de valor del site.';
+  'Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo.';
 
 const desafioTexto = {
-  one: 'Investigar los puntos de calor del site así como los más frios para entender que conservar.',
-  two: 'Investigar a través de competidores los sectores de valor que el cliente estaba buscando.',
+  one: 'Crear una identidad grafica sólida y consistente  que muestre a INFUY como lider y pionera en desarrollo blockchain.',
+  two: 'Generar presentaciones para el área de  GROWTH hablandole gráficamente a dos mercados distintos: empresas sólidas y startups.',
   three:
-    'Generar un nuevo formulario con pasos secuenciales simples para mejorar la conversión.',
-  four: 'Impulsar al equipo de marketing a partir del research y ejecución de iniciaivas.',
+    'Impactar en la cultura interna de INFUY gráficamente a partir de inciativas que sumaran al equipo de People.',
+  four: 'Hacer una marca que se use en el día a día.',
 };
 
 const imgData = {
@@ -49,47 +65,42 @@ const imgData = {
     three: 32,
     four: 32,
   },
-  color: 'from-green-400 via-white to-white',
+  color: 'from-indigo-400 via-white to-white',
   alt: {
     one: 'Icon created by Launchy Team',
   },
 };
 
-//Solution Text
-const solutionText =
-  'Generamos una investigación sobre webs de competencias de Fichap y encontramos que uno de los puntos claves eran los formularios y quitando carruseles para dar pase a la información de una manera más simple e intuitiva. Organizando el flujo del potencial cliente a través de la web. Asi cómo cooperamos en la optimización de las campañas y estrategias. ';
+// ColorPalette Props
+const textPalette =
+  'Partiamos de una marca con una necesidad clara de diferenciación pero con ya con colores prestablecidos que necesitaban perdurar para no perder el posicionamiento que han ganado. Planteamos gradientes sutiles para dar dinamismo a los elementos, así como dar un PROPÓSITO  a los mismos: una cara corporativa y otra disrruptiva, apuntada a dos públicos objetivos de Infuy.';
 
-//AportandoValor text
-const aportandoValor =
-  'Parte del trabajo se trasladó a generar una guía para los potenciales clientes de Fichap la cual trabajamos en conjunto y la cual se dinfundió de manera orgánica de manera exitosa. Seguimos colaborando con su equipo interno, en búsquedas de constantes mejoras.';
+// Testimonial props
+const textTestimonial =
+  'Crear e implementar un roadmap de diseño que resuelva las prioridades de cada area. Establecimos un manual de marca, realizamos presentaciones institucionales, casos de estudio a través de infografías, diseño de feed de la marca, generando así un sistema de identidad marcaria completo y accesible para los clientes.';
 
-//Testimonial Props
-const testimonialText =
-  'Hemos aprendido mutuamente integrando metodologías y puntos de vistas en conjunto. Fichap es una empresa que tiene como misión digitalizar los recursos humanos de las empresas. Y nos sentimos más que motivados a ayudarlos que esto sea así.';
-
-// Header items
+//Header items
 const items = [
-  'diseño UX',
-  'diseño UI',
-  'prototipado',
-  'iteración',
-  'development',
-  'frontend',
-  'pixel perfect',
-  'rediseño',
+  'diseño de manual de marca',
+  'banners',
+  'feed',
+  'presentaciones',
+  'aplicaciones de marca',
+  'infografías',
+  'editables',
 ];
 
-const Fichap = () => {
+const Infuy = () => {
   return (
     <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
       {/*********************************       Header       *********************************/}
-      <Header items={items} quantity={7}>
-        <div className="mb-10">
+      <Header quantity={6} items={items}>
+        <div className="">
           <Image
-            src={FichapLogo}
-            width={262}
-            height={51}
-            alt={'Mockup de Fichap creado por Launchy'}
+            src={InfuyLogo}
+            width={220}
+            height={111}
+            alt={'Mockup de Infuy creado por Launchy'}
           />
         </div>
       </Header>
@@ -101,119 +112,239 @@ const Fichap = () => {
         imgData={imgData}
       />
 
-      {/***********************************      Solution         *****************************/}
-      <ProcessOrSolution title="SOLUCIÓN" text={solutionText}>
-        <div className="flex justify-center mb-[60px] md:mb-[80px]">
-          <Image
-            src={FirstScreen}
-            width={933}
-            height={540}
-            alt={'Mockup de Fichap creado por Launchy'}
-          />
-        </div>
-      </ProcessOrSolution>
+      {/***********************************  ColorPalette     *********************************/}
+      <ColorPalette title="COLORES Y APLICACIÓN" text={textPalette}>
+        <Image
+          src={InfuyPaletaGIF}
+          width={1439}
+          height={140}
+          alt={'Mockup de Infuy creado por Launchy'}
+          className="w-full"
+        />
 
-      {/*********************************** Rest of the pictures ***************************************/}
+        <div className="grid grid-cols-2 md:flex w-full">
+          <div className="bg-[#F5C814] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
+          <div className="bg-[#05172F] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
+          <div className="bg-[#f30b19] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
+          <div className="bg-[#f97316] col-span-1 md:w-1/4 h-12 md:h-[140px]"></div>
+        </div>
+      </ColorPalette>
+
+      {/***********************************  Font Boxes (Slider) *******************************/}
+      <FadeInElement>
+        {/* Fuentes  */}
+        <FontBoxes
+          title="Monserrat"
+          text="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+              abcdefghijklmnñopqrstuvwxyz
+              1234567890"
+        />
+        <hr />
+        <FontBoxes
+          title="Red Hat Display"
+          text="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
+              abcdefghijklmnñopqrstuvwxyz
+              1234567890"
+        />
+      </FadeInElement>
+
+      {/***********************************   Logo and gallery *****************************************/}
       <FadeInElement>
         <div className="px-[8%]">
-          <div className="mb-[30px] md:mb-[40px]">
-            Reformular puntos claves de contenido para la audiencia así como dar
-            un rediseño a la página apegado al manual de marca que tienen ha
-            sido una gran experiencia enriquecedora para ambos equipos. Fuimos
-            mas allá de la web para colaborar con las estrategias digitales para
-            el customer journey map del cliente.
-          </div>
+          <h2 className="mb-[30px] md:mb-[40px] border border-black p-2 pl-6">
+            OBJETIVO
+          </h2>
 
-          <div className="flex flex-col md:flex-row items-center xl:justify-center mb-[30px] md:mb-[40px]">
-            <div className="flex justify-center">
+          {/* Two Infuy logo pics */}
+          <div className="flex flex-col gap-6 w-full items-center lg:flex-row px-[8%] mb-[60px] md:mb-[80px]">
+            <div className="w-[300px] h-[160px] md:w-[437px] md:h-[227px] mb-4 lg:mb-0">
               <Image
-                src={FirstFrameSecondParagraph}
-                width={511}
-                height={338}
-                alt={'Mockup de Fichap creado por Launchy'}
+                src={InfuyLogo1}
+                width={437}
+                height={227}
+                alt={'Logotipo de Infuy creado por Launchy'}
               />
             </div>
 
-            <div className="flex justify-center">
+            <div className="w-[300px] h-[160px] md:w-[437px] md:h-[227px] mb-4 lg:mb-0">
               <Image
-                src={SecondFrameSecondParagraph}
-                width={511}
-                height={338}
-                alt={'Mockup de Fichap creado por Launchy'}
+                src={InfuyLogo2}
+                width={437}
+                height={227}
+                alt={'Logotipo de Infuy creado por Launchy'}
               />
             </div>
           </div>
         </div>
-      </FadeInElement>
 
-      <FadeInElement>
-        <div className="relative h-[320px] md:h-[420px] lg:h-[620px] xl:h-[640px] mb-[60px] md:mb-[80px] flex justify-center">
-          <div className="hidden sm:block absolute z-10 bg-[#C9F8DC] w-2/3 h-[50%] right-0 bottom-[2%] lg:bottom-[7%] xl:bottom-0"></div>
-
-          <div className="absolute z-20 top-[0%] h-[200px] w-[300px] sm:w-[500px] sm:h-[300px] md:w-[650px] md:h-[400px] lg:w-[900px] lg:h-[600px] xl:w-[982px] xl:h-[621px]">
+        {/* Gallery (Grid) */}
+        <div className="flex flex-col mb-[60px] md:mb-[80px] lg:flex-row gap-4">
+          <div className="mb-[30px] flex justify-center md:mb-[60px] lg:mb-0 lg:w-1/3">
             <Image
-              src={FirstFrameThirdParagraph}
-              width={982}
-              height={621}
-              alt={'Mockup de Fichap creado por Launchy'}
+              src={InfuyMocukp}
+              width={576}
+              height={463}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="w-full"
+            />
+          </div>
+
+          <div className="grid grid-cols-2 gap-8 md:place-items-center px-[8%] lg:w-2/3 lg:px-0 lg:grid-cols-4 lg:gap-2">
+            <Image
+              src={InfuyPic1}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic2}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic5}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic7}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic9}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic11}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic3}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic4}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic6}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic8}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic10}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
+            />
+
+            <Image
+              src={InfuyPic12}
+              width={250}
+              height={145}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="col-span-1"
             />
           </div>
         </div>
       </FadeInElement>
 
-      <ProcessOrSolution title="APORTANDO VALOR..." text={aportandoValor} />
-
-      <FadeInElement>
-        <div className="flex justify-center gap-4 mb-[30px] md:mb-[40px] bg-[#E6E6E6] py-2">
-          <div className="w-[115px] sm:w-[200px] md:w-[300px] lg:w-[400px] xl:w-[425px]">
+      {/*********************************** Rest of the pictures ***************************************/}
+      <div className="flex flex-col mb-[60px] md:mb-[80px]">
+        <FadeInElement>
+          <div className="mb-[60px] md:mb-[80px] px-[8%] lg:px-0 lg:grid lg:place-content-center">
             <Image
-              src={FirstFrameFourthParagraph}
-              width={425}
-              height={467}
-              alt={'Mockup de Fichap creado por Launchy'}
+              src={InfuyOnePage}
+              width={977}
+              height={580}
+              alt={'Mockup de Infuy creado por Launchy'}
+              className="w-full"
             />
           </div>
+        </FadeInElement>
 
-          <div className="w-[180px] sm:w-[280px] md:w-[450px] lg:w-[550px] xl:w-[611] flex">
-            <Image
-              src={SecondFrameFourthParagraph}
-              width={611}
-              height={450}
-              alt={'Mockup de Fichap creado por Launchy'}
-            />
-          </div>
-        </div>
-      </FadeInElement>
+        <FadeInElement>
+          <div className="flex flex-col lg:flex-row lg:pr-[12%] lg:mb-[80px] xl:pl-[7%] xl:pr-[17%]">
+            <div className="px-[8%] mb-[30px] md:mb-0 flex justify-center lg:px-0 lg:w-1/2 lg:h-[665px] lg:justify-end">
+              <Image
+                src={InfuyOtherPic1}
+                width={414}
+                height={723}
+                alt={'Mockup de Infuy creado por Launchy'}
+                className="w-full"
+              />
+            </div>
 
-      <FadeInElement>
-        <div className="flex flex-col gap-2 lg:flex-row justify-center px-[8%] lg:px-0 mb-[60px] md:mb-[80px]">
-          <div className="flex justify-center">
-            <Image
-              src={FirstBanner}
-              width={540}
-              height={213}
-              alt={'Mockup de Fichap creado por Launchy'}
-            />
+            <div className="px-[8%] mb-[30px] md:mb-0 flex justify-center lg:px-0 lg:w-1/2 lg:h-[665px]">
+              <Image
+                src={InfuyOtherPic2}
+                width={538}
+                height={665}
+                alt={'Mockup de Infuy creado por Launchy'}
+                className="w-full"
+              />
+            </div>
           </div>
+        </FadeInElement>
 
-          <div className="flex justify-center">
-            <Image
-              src={SecondBanner}
-              width={540}
-              height={213}
-              alt={'Mockup de Fichap creado por Launchy'}
-            />
-          </div>
-        </div>
-      </FadeInElement>
+        <FadeInElement>
+          <Image
+            src={InfuyOtherPic3}
+            width={1440}
+            height={582}
+            alt={'Mockup de Infuy creado por Launchy'}
+            className="w-full"
+          />
+        </FadeInElement>
+      </div>
 
       {/***********************************  Testimonial  *******************************/}
-      <Testimonial text={testimonialText} />
+      <Testimonial title="SOLUCION" text={textTestimonial} />
 
       {/***********************************  Footer  ******************************/}
-      <Footer blue />
+      <Footer />
     </main>
   );
 };
 
-export default Fichap;
+export default Infuy;

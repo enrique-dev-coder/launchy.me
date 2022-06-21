@@ -211,7 +211,7 @@ const Fichap = () => {
       <Testimonial text={testimonialText} />
 
       {/***********************************  Footer  ******************************/}
-      <Footer blue />
+      <Footer />
     </main>
   );
 };

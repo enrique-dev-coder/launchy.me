@@ -1,8 +1,8 @@
 import HomeSectionContainer from './Wrappers/HomeSectionContainer';
 
-import React from 'react';
-
-const Input = ({ labelName, type }) => {
+import { useState } from 'react';
+import SubscribeModal from '../components/subscribeModal';
+const Input = ({ labelName, type, value, onChange }) => {
   return (
     <div className="flex w-full mb-[30px] md:mb-0 md:w-[50%] flex-col">
       <label className="text-white mb-2">
@@ -10,6 +10,8 @@ const Input = ({ labelName, type }) => {
       </label>
       <input
         type={type}
+        value={value}
+        onChange={onChange}
         className="bg-transparent border border-white w-[90%] text-white caret-white px-3 py-2"
       />
     </div>
@@ -17,9 +19,69 @@ const Input = ({ labelName, type }) => {
 };
 
 const SubscribeForm = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [form, setFormConfirm] = useState(false);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    //iniciar peticion de xhr
+    let xhr = new XMLHttpRequest();
+    //peticion a url  al formulario de hubspot
+    let url =
+      'https://api.hsforms.com/submissions/v3/integration/submit/21108231/49338c35-6171-47d7-ba12-aab045c28a5f';
+    //array con los valores del estado
+    let data = {
+      fields: [
+        {
+          name: 'firstname',
+          value: name,
+        },
+        {
+          name: 'email',
+          value: email,
+        },
+      ],
+      context: {
+        pageUri: 'http://localhost:3000/',
+        pageName: 'Launchy',
+      },
+    };
+    //pasamos el dato a JSON para enviar
+    let final_data = JSON.stringify(data);
+    //metodo de postear  a la url de hubspot
+    xhr.open('POST', url);
+    //mandar peticion de typo application/json
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    //funcion que sirce para verificar que se haya mandado el form
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log(xhr.responseText);
+        setFormConfirm(true);
+      } else if (xhr.readyState === 4 && xhr.status === 403) {
+        console.log(xhr.responseText);
+      }
+    };
+    //mandar a emailjs
+    //el emailjs recibe los datos de la ref del form con los parametros de el servide id y el form id
+    //los datos del correo vienen del atributo de name
+
+    //mandar la request final a la api de hubspot
+    xhr.send(final_data);
+    //dejar vacio el estado que mandael form
+    setEmail('');
+    setName('');
+  };
   return (
     <HomeSectionContainer>
-      <div className="w-full relative">
+      <div className="w-full relative ">
+        {form && (
+          <SubscribeModal
+            background={
+              'linear-gradient(180deg, rgba(176, 152, 240, 0.59) 100%, rgba(134, 20, 130, 0.2) 100%)'
+            }
+            closeModal={() => setFormConfirm(false)}
+          />
+        )}
         <img
           src="/img/planet.png"
           className="absolute right-0 z-0 translate-x-[150px] -translate-y-[110px]  md:-translate-y-[170px]"
@@ -31,10 +93,20 @@ const SubscribeForm = () => {
           Te enviaremos recursos gratuitos y novedades que AMARAS e impulsarán
           tu empresa. NO SPAM, I SWEAR.
         </p>
-        <form className="relative">
+        <form className="relative" onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row w-full md:w-[80%]">
-            <Input labelName={'Name'} type="text" />
-            <Input labelName={'Mail'} type="mail" />
+            <Input
+              labelName={'Name'}
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+            <Input
+              labelName={'Mail'}
+              type="mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
           </div>
           <button
             type="submit"

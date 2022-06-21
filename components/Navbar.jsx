@@ -32,14 +32,16 @@ const Navbar = () => {
       <nav className="w-full h-[70px] absolute top-10 md:top-5 z-20">
         <div className="max-w-[1420px] w-10/12  h-full mx-auto flex justify-between items-center">
           {/*image container*/}
-          <div className=" cursor-pointer ">
-            <Image
-              src="/img/logo.png"
-              alt="Launchy Logo"
-              width="140px"
-              height="40px"
-            />
-          </div>
+          <Link href={'/'}>
+            <div className=" cursor-pointer ">
+              <Image
+                src="/img/logo.png"
+                alt="Launchy Logo"
+                width="140px"
+                height="40px"
+              />
+            </div>
+          </Link>
           {/*links container*/}
           <div className="md:flex space-x-4 hidden  ">
             {Links.map((l) => (
