@@ -4,6 +4,7 @@ import InfoTarget from "../../components/pagesAtom/InfoTarget"
 import ColorPalette from "../../components/pagesAtom/ColorPalette"
 import ProcessOrSolution from "../../components/pagesAtom/ProcessOrSolution";
 import Header from '../../components/pagesAtom/Header'
+import Pictures from '../../components/pagesAtom/Itgall/Pictures';
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import Footer from '../../components/Footer'
 import ITGallLogo from '../../public/img/itgall/Logo ITGall.png'
@@ -12,15 +13,8 @@ import iconPic2 from '../../public/img/icons/Ojito.svg'
 import iconPic3 from '../../public/img/icons/Profile.svg'
 import iconPic4 from '../../public/img/icons/fluent_calendar-today-28-regular.svg'
 import ItgallProcess from "../../public/img/itgall/Proceso.png"
-import MobileHome from '../../public/img/itgall/mobile home.png'
-import MobileBlank from '../../public/img/itgall/mobile blank space.png'
-import MobileContact from '../../public/img/itgall/mobile contact us.png'
-import MobileIn4aha from '../../public/img/itgall/mobile in4aha.png'
-import MobileParticipation from '../../public/img/itgall/mobile participation.png'
-import DesktopFrame from '../../public/img/itgall/Rectangle 39388.png'
-import Projects from '../../public/img/itgall/Projects.png'
-import Partners from '../../public/img/itgall/Partners.png'
-import Map from '../../public/img/itgall/Map.png'
+import MobilePictures from '../../components/pagesAtom/Itgall/MobilePictures';
+
 
 const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
 
@@ -119,10 +113,7 @@ const Itgall = () => {
           </ColorPalette>
 
           {/***********************************      Process          *****************************/}
-          <ProcessOrSolution 
-            title='PROCESO'
-            text={textProccess}
-          />
+          <ProcessOrSolution title='PROCESO' text={textProccess} />
 
           <FadeInElement>
             <div className="flex md:justify-center mb-[60px] md:mb-[80px]">
@@ -137,144 +128,18 @@ const Itgall = () => {
           
 
           {/***********************************      Solution         *****************************/}
-          <ProcessOrSolution 
-            title='SOLUCIÓN'
-            text={textSolution}
-          >
-
-          <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
-
-            <div className="flex first-section justify-center">
-
-              <div className='hidden lg:block'>
-                <Image
-                  src={MobileBlank}
-                  width={283}
-                  height={550}
-                  alt={'Mockup de Itgall creado por Launchy'}
-                />
-              </div>
-
-              <Image
-                src={MobileBlank}
-                width={283}
-                height={550}
-                alt={'Mockup de Itgall creado por Launchy'}
-              />
-
-              <Image
-                src={MobileHome}
-                width={283}
-                height={550}
-                alt={'Mockup de Itgall creado por Launchy'}
-              />
-
-              <Image
-                src={MobileBlank}
-                width={283}
-                height={550}
-                alt={'Mockup de Itgall creado por Launchy'}
-              />
-
-              <div className='hidden lg:block'>
-                <Image
-                  src={MobileBlank}
-                  width={283}
-                  height={550}
-                  alt={'Mockup de Itgall creado por Launchy'}
-                />
-              </div>
-
-            </div>
-
-            <div className="flex second-section justify-center">
-              <Image
-                src={MobileParticipation}
-                width={283}
-                height={550}
-                alt={'Mockup de Itgall creado por Launchy'}
-              />
-
-              <Image
-                src={MobileIn4aha}
-                width={283}
-                height={550}
-                alt={'Mockup de Itgall creado por Launchy'}
-              />
-
-              <Image
-                src={MobileContact}
-                width={283}
-                height={550}
-                alt={'Mockup de Itgall creado por Launchy'}
-              />
-            </div>
-
-          </div>
+          <ProcessOrSolution title='SOLUCIÓN' text={textSolution}>
+          
+            {/* Mobile screen pictures */}
+            <MobilePictures />
 
           </ProcessOrSolution>
 
           {/*********************************** Rest of the pictures ***************************************/}
-          <FadeInElement>
-            <div className="flex mb-[60px] md:mb-[80px] relative h-[250px] sm:h-[350px] lg:h-[600px]">
-
-              <div className="w-7/12 bg-[#D9D9D9]"></div>
-
-              <div className="w-5/12"></div>
-
-              <div className="h-[195px] w-[315px] absolute right-[3%] top-[12%] sm:h-[295px] sm:w-[450px] sm:right-[20%] lg:h-[564px] lg:w-[800px] lg:top-[10%] xl:w-[936px] xl:top-[8%]">
-                <Image 
-                  src={DesktopFrame}
-                  width={936}
-                  height={564}
-                  alt={'Mockup de Itgall creado por Launchy'}
-                />
-              </div>
-
-            </div>
-          </FadeInElement>
-          
-          <FadeInElement>
-            <div className="flex flex-col md:flex-row md:justify-center gap-4 mb-[30px] md:mb-[40px] px-[8%]">
-
-              <div className='border p-4 pb-0'>
-                <Image 
-                  src={Projects} 
-                  width={349} height={488} 
-                  alt={'Mockup de Itgall creado por Launchy'}
-                />
-              </div>   
-
-              <div className="border p-4 pr-0">
-                <Image 
-                  src={Partners} 
-                  width={670} height={506} 
-                  alt={'Mockup de Itgall creado por Launchy'}
-                />
-              </div>         
-
-            </div>
-          </FadeInElement>
-          
-          <FadeInElement>
-            <div className="mb-[60px] md:mb-[80px] px-[8%]">
-
-              <div className="border p-4 pb-0">
-                <Image 
-                  src={Map} 
-                  width={1139} height={521} 
-                  alt={'Mockup de Itgall creado por Launchy'}
-                />
-              </div>
-
-            </div>
-          </FadeInElement>
+          <Pictures />
 
           {/***********************************  Testimonial  *******************************/}
-          <Testimonial
-            title='EL RESULTADO'
-            text={textTestimonial}
-          />
+          <Testimonial title='EL RESULTADO' text={textTestimonial} />
 
           {/***********************************  Footer  ******************************/}
           <Footer />
