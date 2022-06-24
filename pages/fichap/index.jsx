@@ -200,7 +200,7 @@ const Fichap = () => {
           <Testimonial text={testimonialText} />
 
           {/***********************************  Footer  ******************************/}
-          <Footer />
+          <Footer blue />
       </main>
   )
 }

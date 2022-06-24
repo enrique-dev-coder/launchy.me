@@ -104,7 +104,7 @@ const LigaMX = () => {
           <Testimonial text={textTestimonial} />
 
           {/***********************************  Footer  ******************************/}
-          <Footer />
+          <Footer blue />
       </main>
   )
 }

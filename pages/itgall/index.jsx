@@ -142,7 +142,7 @@ const Itgall = () => {
           <Testimonial title='EL RESULTADO' text={textTestimonial} />
 
           {/***********************************  Footer  ******************************/}
-          <Footer />
+          <Footer blue />
       </main>
   )
 }

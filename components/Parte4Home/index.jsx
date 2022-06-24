@@ -6,7 +6,7 @@ import HomeButton from '../HomeButton';
 const data = [
   {
     id: 1,
-    path: '/img/casos/ITGALL.mp4',
+    path: '/img/casos/ITGALL2.mp4',
     desc: 'DESARROLLAMOS EL PUNTO DE ENCUENTRO VIRTUAL DE LOS LIVING LABS EN GALICIA',
     link: '/itgall',
     video: true,

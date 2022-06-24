@@ -11,45 +11,51 @@ import 'swiper/css/pagination';
 const data = [
   {
     id: 1,
-    desc: 'El programa de aceleración nos ha ampliado las expectativas de oportunidades en el mercado con nuevas estrategias. De oportunidades en el mercado con.',
-    empresa: 'Revenue B2B',
-    job: 'CEO',
-    foto: '/img/testimonios/michael.jpg',
+    desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar con un equipo como el de ellos!',
+    empresa: 'Infuy',
+    job: 'CMO',
+    name: 'Victoria Noriega',
+    foto: '/img/testimonios/Victoria.png',
   },
   {
     id: 2,
-    desc: 'El programa de aceleración nos ha ampliado las expectativas de oportunidades en el mercado con nuevas estrategias. De oportunidades en el mercado con.',
-    empresa: 'Revenue B2B',
-    job: 'CEO',
-    foto: '/img/testimonios/michael.jpg',
+    desc: 'Son muy dedicados y amables. Creo que hay una escucha continua con el equipo que permite las devoluciones correctamente.',
+    empresa: 'Fichap',
+    job: 'CMO',
+    name: 'Sofía Corvalo',
+    foto: '/img/testimonios/sofia.png',
   },
   {
     id: 3,
-    desc: 'El programa de aceleración nos ha ampliado las expectativas de oportunidades en el mercado con nuevas estrategias. De oportunidades en el mercado con.',
-    empresa: 'Revenue B2B',
+    desc: 'La imagen de la empresa está cambiando a una más moderna y limpia gracias al compromiso del equipo de diseño. Super contenta.',
+    empresa: 'Jaak',
     job: 'CEO',
-    foto: '/img/testimonios/michael.jpg',
+    name: 'Ariadna Quezada',
+    foto: '/img/testimonios/Ariadna.png',
   },
   {
     id: 4,
-    desc: 'El programa de aceleración nos ha ampliado las expectativas de oportunidades en el mercado con nuevas estrategias. De oportunidades en el mercado con.',
-    empresa: 'Revenue B2B',
+    desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar con un equipo como el de ellos!',
+    empresa: 'Community',
+    name: 'Helena Donoso',
     job: 'CEO',
-    foto: '/img/testimonios/michael.jpg',
+    foto: '/img/testimonios/Helena.png',
   },
   {
     id: 5,
-    desc: 'El programa de aceleración nos ha ampliado las expectativas de oportunidades en el mercado con nuevas estrategias. De oportunidades en el mercado con.',
-    empresa: 'Revenue B2B',
-    job: 'CEO',
-    foto: '/img/testimonios/michael.jpg',
+    desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar!',
+    empresa: 'Infuy',
+    job: 'CGO',
+    name: 'Joaquín del Torchio',
+    foto: '/img/testimonios/Infuy.png',
   },
   {
     id: 6,
-    desc: 'El programa de aceleración nos ha ampliado las expectativas de oportunidades en el mercado con nuevas estrategias. De oportunidades en el mercado con.',
-    empresa: 'Revenue B2B',
-    job: 'CEO',
-    foto: '/img/testimonios/michael.jpg',
+    desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar!',
+    empresa: 'Itgall',
+    job: 'Gerente CSG',
+    name: 'Gisella García',
+    foto: '/img/testimonios/Gisella.png',
   },
 ];
 
@@ -63,6 +69,7 @@ const Slide1 = () => {
           empresa={d.empresa}
           job={d.job}
           foto={d.foto}
+          name={d.name}
         />
       ))}
     </div>
@@ -79,6 +86,7 @@ const Slide2 = () => {
           empresa={d.empresa}
           job={d.job}
           foto={d.foto}
+          name={d.name}
         />
       ))}
     </div>
@@ -135,6 +143,7 @@ const index = () => {
                 empresa={d.empresa}
                 job={d.job}
                 foto={d.foto}
+                name={d.name}
               />
             </SwiperSlide>
           ))}

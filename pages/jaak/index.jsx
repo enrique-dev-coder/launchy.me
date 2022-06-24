@@ -118,7 +118,7 @@ const Jaak = () => {
           <Testimonial text={textTestimonial} />
 
           {/***********************************  Footer  ******************************/}
-          <Footer />
+          <Footer blue />
       </main>
   )
 }

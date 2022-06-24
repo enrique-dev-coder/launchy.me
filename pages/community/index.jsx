@@ -96,7 +96,7 @@ const Community = () => {
           <Testimonial text={textTestimonial} />
 
           {/***********************************  Footer  ******************************/}
-          <Footer />
+          <Footer blue />
       </main>
   )
 }

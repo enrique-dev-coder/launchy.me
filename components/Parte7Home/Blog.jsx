@@ -33,14 +33,14 @@ const BlogCard = ({ img, category, title, author, authorImg, read }) => {
       <img src={img} />
       <div className="flex-1 border-l border-white flex flex-col justify-center">
         <div className="w-[80%] h-[80%]   mx-auto ">
-          <p className="uppercase text-white font-thin mb-[10px] text-[10px]">
+          <p className="uppercase text-white font-thin mb-[10px] text-[10px] roboto_normal">
             {category}
           </p>
-          <p className="text-white h-[50px] text-xs">{title}</p>
+          <p className="text-white h-[50px] text-xs roboto_normal">{title}</p>
           <div className="flex mb-[10px]">
             <div className="flex flex-1 flex-col">
-              <p className="text-white  text-[10px]">{author}</p>
-              <p className="text-white text-[10px]">{read}</p>
+              <p className="text-white  text-[10px] roboto_normal">{author}</p>
+              <p className="text-white text-[10px] roboto_normal">{read}</p>
             </div>
             <div className="">
               <img src={authorImg} />

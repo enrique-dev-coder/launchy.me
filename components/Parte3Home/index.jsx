@@ -11,19 +11,38 @@ const index = () => {
     {
       id: 1,
       title: 'research',
-      options: ['UX Research', 'Benchmarking', 'MVP testing'],
+      options: [
+        'UX Research',
+        'Benchmarking',
+        <span>
+          MVP testing y <span className="underline">Más</span>
+        </span>,
+      ],
       link: '/',
     },
     {
       id: 2,
       title: 'diseño',
-      options: ['Estrategia de Marca', 'Animación'],
+      options: [
+        'UI - UX',
+        'Estrategia de Marca',
+        'Diseño de Producto',
+        <span>
+          Animación y <span className="underline">Más</span>
+        </span>,
+      ],
       link: '/',
     },
     {
       id: 3,
       title: 'Desarrollo',
-      options: ['Desarrollo Web', 'Desarrollo de Software', 'IT Staffing'],
+      options: [
+        'Desarrollo Web',
+        'Desarrollo de Software',
+        <span>
+          IT Staffing y <span className="underline">Más</span>
+        </span>,
+      ],
       link: '/',
     },
     {
@@ -32,7 +51,9 @@ const index = () => {
       options: [
         'Auditoria de Funnel Comercial',
         'Optimización de CJM',
-        'Estrategias de escalabilidad',
+        <span>
+          Estrategias de escalabilidad y <span className="underline">Más</span>
+        </span>,
       ],
       link: '/',
     },
@@ -45,7 +66,7 @@ const index = () => {
         {/*gradient container*/}
         <div className="w-full flex border-white border border-b-0  border-solid purple_gradient  rounded-tr-md ">
           <img src="/img/lupita.svg" alt="lupa" className="ml-4" />
-          <p className="text-white text-[14px] md:text-lg   p-2">
+          <p className="text-white text-[14px] md:text-lg roboto_normal   p-2">
             Hola! Somos Launchy, un equipo de especialistas en generar valor,
             <span className=" underline"> investigando</span>,
             <span className="underline"> desarrollando</span> y
@@ -53,7 +74,7 @@ const index = () => {
         </div>
         <div className="w-full flex border-white border border-t-0 border-solid mb-[40px]  rounded-br-md  ">
           <img src="/img/lupita_dark.svg" alt="lupa" className="ml-4" />
-          <p className="text-white text-[14px] md:text-lg  p-2">
+          <p className="text-white text-[14px] md:text-lg roboto_normal  p-2">
             <span className=" underline"> transformando</span>, empresas y
             proyectos con un giro 360 en :
           </p>

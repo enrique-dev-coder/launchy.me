@@ -15,10 +15,10 @@ const ResourceCard = ({ img, title, renderOnMobile }) => {
           } border-white flex flex-col justify-center`}
         >
           <div className="w-[80%] h-[80%] flex flex-col  mx-auto">
-            <p className="text-white flex-1  text-sm ">{title}</p>
+            <p className="text-white flex-1  text-sm roboto_normal ">{title}</p>
             {title && (
               <div className="flex mb-[10px]">
-                <p className="text-white  text-[10px] mr-4 uppercase">
+                <p className="text-white  text-[10px] mr-4 uppercase roboto_normal">
                   ACCEDER
                 </p>
                 <img src="/img/right.svg" />

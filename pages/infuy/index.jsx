@@ -162,7 +162,7 @@ const Infuy = () => {
           <Testimonial title='SOLUCION' text={textTestimonial} />
 
           {/***********************************  Footer  ******************************/}
-          <Footer />
+          <Footer blue />
       </main>
   )
 }
