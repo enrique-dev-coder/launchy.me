@@ -23,13 +23,13 @@ const Pictures = () => {
                 Reformular puntos claves de contenido para la audiencia así como dar un rediseño a la página apegado al manual de marca que tienen ha sido una gran experiencia enriquecedora para ambos equipos. Fuimos mas allá de la web para colaborar con las estrategias digitales para el customer journey map del cliente.
                 </div>
 
-                <div className="flex flex-col md:flex-row items-center xl:justify-center mb-[30px] md:mb-[40px]">
+                <div className="flex gap-6 flex-col md:flex-row items-center xl:justify-center mb-[30px] md:mb-[40px]">
 
                     <div className="flex justify-center">
                         <Image 
                             src={FirstFrameSecondParagraph} 
-                            width={511} 
-                            height={338} 
+                            width={421} 
+                            height={244} 
                             alt={'Mockup de Fichap creado por Launchy'}
                         />
                     </div>
@@ -37,8 +37,8 @@ const Pictures = () => {
                     <div className="flex justify-center">
                         <Image 
                             src={SecondFrameSecondParagraph} 
-                            width={511} 
-                            height={338} 
+                            width={421} 
+                            height={244} 
                             alt={'Mockup de Fichap creado por Launchy'}
                         />
                     </div>
@@ -49,15 +49,16 @@ const Pictures = () => {
         </FadeInElement>
 
         <FadeInElement>
-            <div className="relative h-[320px] md:h-[420px] lg:h-[620px] xl:h-[640px] mb-[60px] md:mb-[80px] flex justify-center">
+            
+            <div className="relative h-[220px] sm:h-[320px] lg:h-[600px] mb-[30px] md:mb-[40px] flex justify-center px-[8%]">
 
-                <div className="hidden sm:block absolute z-10 bg-[#C9F8DC] w-2/3 h-[50%] right-0 bottom-[2%] lg:bottom-[7%] xl:bottom-0"></div>
-
-                <div className="absolute z-20 top-[0%] h-[200px] w-[300px] sm:w-[500px] sm:h-[300px] md:w-[650px] md:h-[400px] lg:w-[900px] lg:h-[600px] xl:w-[982px] xl:h-[621px]">
+                <div className="hidden sm:block absolute z-10 bg-[#C9F8DC] w-2/3 h-[50%] right-0 bottom-[2%] lg:bottom-[7%]"></div>
+                
+                <div className="absolute z-20 top-[0%] h-[200px] w-[300px] sm:w-[500px] sm:h-[300px] lg:w-[871px] lg:h-[506px]">
                     <Image 
                         src={FirstFrameThirdParagraph} 
-                        width={982} 
-                        height={621} 
+                        width={871} 
+                        height={506} 
                         alt={'Mockup de Fichap creado por Launchy'}
                     />
                 </div>
@@ -79,11 +80,12 @@ const Pictures = () => {
                     />
                 </div>
                 
-                <div className="w-[180px] sm:w-[280px] md:w-[450px] lg:w-[550px] xl:w-[611] flex">
+                <div className="w-[180px] sm:w-[280px] md:w-[450px] flex">
                     <Image 
                         src={SecondFrameFourthParagraph} 
                         width={611} 
-                        height={450} 
+                        height={450}
+                        className="w-full h-full"
                         alt={'Mockup de Fichap creado por Launchy'}
                     />
                 </div>
