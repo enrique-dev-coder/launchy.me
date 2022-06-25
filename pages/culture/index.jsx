@@ -4,23 +4,11 @@ import Cards from '../../components/pagesAtom/culture/Cards'
 import StarBackgroundCss from '../../components/Wrappers/StarBackgroundCss'
 import Footer from '../../components/Footer'
 
-// Header items
-const items = [
-    'diseño UX',
-    'diseño UI',
-    'prototipado',
-    'iteración',
-    'development',
-    'frontend',
-    'pixel perfect',
-    'rediseño',
-]
-
 const Culture = () => {
   return (
     <main className="2xl:container 2xl:mx-auto">
-        <Header items={items} quantity={7} show={false}>
-            <h2 className='z-10 text-white text-4xl tracking-wider uppercase'>Culture</h2>
+        <Header show={false}>
+            <h2 className='z-10 text-white text-4xl tracking-wider uppercase mt-5'>Culture</h2>
         </Header>
 
         <StarBackgroundCss>
