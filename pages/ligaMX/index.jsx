@@ -66,14 +66,13 @@ const LigaMX = () => {
           {/*********************************       Header       *********************************/}
           <Header items={items} quantity={5}>
             
-            <div className="mb-10">
+            <div className="mb-5">
               <Image 
                 src={LigaMXLogo} 
                 width={283} height={51} 
                 alt={'Mockup de LigaMX creado por Launchy'}
               />  
             </div>
-            
 
           </Header>
 

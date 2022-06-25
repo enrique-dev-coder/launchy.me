@@ -6,6 +6,7 @@ import Testimonial from "../../components/pagesAtom/Testimonial";
 import Header from '../../components/pagesAtom/Header'
 import Gallery from '../../components/pagesAtom/Infuy/Gallery';
 import Pictures from '../../components/pagesAtom/Infuy/Pictures';
+import Logos from '../../components/pagesAtom/Infuy/Logos'
 import FadeInElement from '../../components/pagesAtom/FadeInElement'
 import Footer from '../../components/Footer'
 import FAQ from '../../components/pagesAtom/FAQ'
@@ -14,8 +15,6 @@ import iconPic1 from '../../public/img/icons/fluent_web-asset-20-regular.svg'
 import iconPic2 from '../../public/img/icons/carbon_growth.svg'
 import iconPic3 from '../../public/img/icons/icon-park-outline_graphic-design.svg'
 import iconPic4 from '../../public/img/icons/fluent_calendar-today-28-regular.svg'
-import InfuyLogo1 from '../../public/img/infuy/Construccion logo.png'
-import InfuyLogo2 from '../../public/img/infuy/Variantes de color logo.png'
 import InfuyPaletaGIF from '../../public/img/infuy/Paleta cromatica.gif'
 import InfuyAnotherGIF from '../../public/img/infuy/Logo- Colores_1.gif'
 
@@ -77,15 +76,11 @@ const Infuy = () => {
 
           {/*********************************       Header       *********************************/}
           <Header quantity={6} items={items}>
-
-             <div className="">
               <Image 
                 src={InfuyLogo} 
                 width={220} height={111} 
                 alt={'Mockup de Infuy creado por Launchy'}
               />
-            </div>
-
           </Header>
 
           {/**********************************  InfoTarget (Boxes) ********************************/}
@@ -112,9 +107,7 @@ const Infuy = () => {
             </div>
           </ColorPalette>
 
-          {/***********************************  Font Boxes (Slider) *******************************/}
           <FadeInElement>
-            {/* Fuentes  */}
             <FontBoxes
               title='Monserrat' 
               text='ABCDEFGHIJKLMNÑOPQRSTUVWXYZ
@@ -129,29 +122,9 @@ const Infuy = () => {
               1234567890' 
             />
           </FadeInElement>
-          
 
-          {/***********************************   Logo and gallery *****************************************/}
           <FadeInElement>
-            {/* First Element */}
-            <div className="px-[8%]">
-              <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>OBJETIVO</h2>
-
-              {/* Two Infuy logo pics */}
-              <div className="flex flex-col gap-6 w-full items-center lg:flex-row px-[8%] mb-[60px] md:mb-[80px]">
-
-                <div className="w-[300px] h-[160px] md:w-[437px] md:h-[227px] mb-4 lg:mb-0">
-                  <Image src={InfuyLogo1} width={437} height={227} alt={'Logotipo de Infuy creado por Launchy'} />
-                </div>
-
-                <div className='w-[300px] h-[160px] md:w-[437px] md:h-[227px] mb-4 lg:mb-0'>
-                  <Image src={InfuyLogo2} width={437} height={227} alt={'Logotipo de Infuy creado por Launchy'} />
-                </div>
-              </div>
-
-            </div>
-
-            {/* Second Element - Gallery (Grid) */}
+            <Logos />
             <Gallery />
           </FadeInElement>
 
@@ -163,6 +136,7 @@ const Infuy = () => {
 
           {/***********************************  Footer  ******************************/}
           <Footer blue />
+
       </main>
   )
 }

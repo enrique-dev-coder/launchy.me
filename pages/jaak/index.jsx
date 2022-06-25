@@ -73,15 +73,11 @@ const Jaak = () => {
 
           {/*********************************       Header       *********************************/}
           <Header items={items} quantity={6}>
-
-              <div className="">
                 <Image 
                   src={JaakLogo} 
                   width={212} height={98} 
                   alt={'Mockup de Jaak creado por Launchy'}
-                />
-              </div>       
-
+                />      
           </Header>
 
           {/**********************************  InfoTarget (Boxes) ********************************/}

@@ -80,15 +80,11 @@ const Itgall = () => {
 
           {/*********************************       Header       *********************************/}
           <Header items={items} quantity={7}>
-
-            <div className="">
               <Image 
                 src={ITGallLogo} 
                 width={324} height={103} 
                 alt={'Mockup de ITGall creado por Launchy'}
               />
-            </div>
-
           </Header>
 
           {/**********************************  InfoTarget (Boxes) ********************************/}
@@ -126,13 +122,9 @@ const Itgall = () => {
             </div>
           </FadeInElement>
           
-
           {/***********************************      Solution         *****************************/}
           <ProcessOrSolution title='SOLUCIÓN' text={textSolution}>
-          
-            {/* Mobile screen pictures */}
             <MobilePictures />
-
           </ProcessOrSolution>
 
           {/*********************************** Rest of the pictures ***************************************/}
