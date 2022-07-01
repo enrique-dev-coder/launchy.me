@@ -19,7 +19,7 @@ const data = [
   },
   {
     id: 2,
-    desc: 'Son muy dedicados y amables. Creo que hay una escucha continua con el equipo que permite las devoluciones correctamente.',
+    desc: 'Haber conocido y trabajar con el equipo de Launchy es un verdadero placer. Aportaron valor a Fichap tanto con su equipo de Desarrollo y Diseño como el de Marketing. Estamos muy contentos de trabajar con ellos.',
     empresa: 'Fichap',
     job: 'CMO',
     name: 'Sofía Corvalo',
@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: 4,
-    desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar con un equipo como el de ellos!',
+    desc: 'Muy bueno trabajar con ellos. Gracias por toda la paciencia y buen ánimo al enfrentar los cambios y feedback.',
     empresa: 'Community',
     name: 'Helena Donoso',
     job: 'CEO',

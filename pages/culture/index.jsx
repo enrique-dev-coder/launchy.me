@@ -2,6 +2,7 @@ import Header from '../../components/pagesAtom/Header'
 import Mission from '../../components/pagesAtom/Culture/Mission'
 import Cards from '../../components/pagesAtom/culture/Cards'
 import TeamPictures from '../../components/pagesAtom/Culture/TeamPictures'
+import Together from '../../components/pagesAtom/Culture/Together'
 import StarBackgroundCss from '../../components/Wrappers/StarBackgroundCss'
 import Footer from '../../components/Footer'
 
@@ -16,6 +17,7 @@ const Culture = () => {
             <Mission />
             <Cards />
             <TeamPictures />
+            <Together />
             <Footer />
         </StarBackgroundCss>
     </main>

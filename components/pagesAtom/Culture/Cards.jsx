@@ -16,7 +16,7 @@ const Cards = () => {
 
         <h2 className='uppercase text-white text-3xl tracking-wider mb-[30px] md:mb-[40px] text-center'>somos de otro planeta y amamos estar en este viaje</h2>
 
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {
             aliens.map(alien => (
                 <Card 

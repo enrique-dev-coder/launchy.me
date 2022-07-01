@@ -7,7 +7,7 @@ const Mission = () => {
     <div className="px-[8%] mt-[60px] md:mt-[80px] flex flex-col">
         <h2 className='text-white text-center text-xl tracking-wider mb-[40px] md:mb-[60px]'>Apostamos por ser especialistas en diversas areas para formar equipos multidisciplinarios que aporten mas valor</h2>
 
-        <div className="flex">
+        <div className="flex flex-col md:flex-row">
             <MissionBox
                 src={MisionIcon}
                 title='Misión'
