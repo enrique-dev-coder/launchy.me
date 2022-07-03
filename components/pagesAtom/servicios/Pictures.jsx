@@ -5,15 +5,17 @@ import GraficoFinal from '../../../public/img/Grafico final.png'
 const Pictures = () => {
   return (
     <Fragment>
-        <div className="px-[8%] overflow-visible overscroll-x-auto flex flex-col lg:items-center mb-[40px] md:mb-[60px]">
+        <div className="px-[8%] flex flex-col lg:items-center mb-[40px] md:mb-[60px]">
 
-            <div className="border py-[4%] px-[10%] mb-[30px] md:mb-[40px] w-[800px] lg:w-full lg:flex lg:justify-center">
-                <Image 
-                    width={776}
-                    height={393}
-                    src={GraficoFinal}
-                    className='w-full'
-                />
+            <div className="border py-[4%] px-[10%] mb-[30px] md:mb-[40px] lg:w-full lg:flex lg:justify-center hidden sm:block">
+
+                    <Image 
+                        width={776}
+                        height={393}
+                        src={GraficoFinal}
+                        className='w-full'
+                    />
+                
             </div>
 
             <div className="bg-[url(/img/Fondo.png)] bg-cover flex flex-col p-[4%] gap-4 max-w-full">

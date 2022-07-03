@@ -2,7 +2,9 @@ import React from 'react'
 
 const FlippingCard = () => {
   return (
-    <div>FlippingCard</div>
+    <div>
+      Flipping Card
+    </div>
   )
 }
 

@@ -14,7 +14,7 @@ const Cards = () => {
   return (
     <div className='px-[8%] mt-[60px] md:mt-[80px]'>
 
-        <h2 className='uppercase text-white text-3xl tracking-wider mb-[30px] md:mb-[40px] text-center'>somos de otro planeta y amamos estar en este viaje</h2>
+        <h2 className='text-white text-center text-xl tracking-wider mb-[40px] md:mb-[60px]'>Apostamos por ser especialistas en diversas areas para formar equipos multidisciplinarios que aporten mas valor</h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {

@@ -14,9 +14,9 @@ const Culture = () => {
         </Header>
 
         <StarBackgroundCss>
-            <Mission />
             <Cards />
             <TeamPictures />
+            <Mission />
             <Together />
             <Footer />
         </StarBackgroundCss>

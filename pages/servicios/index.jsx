@@ -2,6 +2,7 @@ import Header from '../../components/pagesAtom/Header'
 import StarBackgroundCss from '../../components/Wrappers/StarBackgroundCss'
 import ServicesText from '../../components/pagesAtom/servicios/ServicesText'
 import Cases from '../../components/pagesAtom/servicios/Cases'
+import Circle from '../../components/pagesAtom/servicios/Circle'
 import StackSlider from '../../components/pagesAtom/servicios/StackSlider'
 import OtherCases from '../../components/pagesAtom/servicios/OtherCases'
 import Pictures from '../../components/pagesAtom/servicios/Pictures'
@@ -36,6 +37,15 @@ const words = [
   'MEJORAR' ,
 ]
 
+//Circle
+const circles = [
+  {number: 1, text: 'ROAD MAP'},
+  {number: 2, text: 'RECOPILACION DE DATOS'},
+  {number: 3, text: 'Análisis'},
+  {number: 4, text: 'TESTEO'},
+  {number: 5, text: 'Iteración'}
+]
+
 const Servicios = () => {
   return (
     <main className="2xl:container 2xl:mx-auto">
@@ -53,6 +63,12 @@ const Servicios = () => {
                 <li className='text-slate-100'>Data Analisis Marketing</li>
               </ul>
             </ServicesText>
+
+            <div className="px-[8%] flex justify-around flex-wrap gap-4">
+            {
+              circles.map(circle => <Circle key={circle.number} number={circle.number} text={circle.text} />)
+            }
+            </div>
 
             <ServicesText title='design' text={texts.design}>
               <ul>
