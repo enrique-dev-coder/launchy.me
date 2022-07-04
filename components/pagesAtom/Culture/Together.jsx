@@ -29,15 +29,22 @@ const Together = () => {
 
         </div>
 
-        <div className="bg-[url(/img/Fondo.png)] mb-[30px] md:mb-[40px] bg-cover w-full p-[4%] relative z-30">
-            <div className="flex gap-3 flex-col sm:flex-row">
-                <div className="bg-slate-500 h-[50px] w-[100px] mr-10"></div>
+        <div className="flex flex-col sm:flex-row gap-3 lg:h-[250px] mb-[60px] md:mb-0">
 
-                <div className="">
-                    <h2>¿Por qué se fundó launchy?</h2>
-                    <p>Existen 2 factores claves para tener una empresa de exito: <br /> 1&#41; Tener un buen equipo. <br /> 2&#41; Tener una buena idea. <br /><br /> Launchy es la unión de un grupo increible de profesionales con el plan de llevar la mayor cantidad de grandes ideas a otra galaxia </p>
+            <img src="/img/team fotos/WhatsApp Image 2022-07-03 at 2.58 2.png" alt="" className='z-30 hidden lg:block'/>
+
+            <div className="bg-[url(/img/Fondo.png)] mb-[30px] md:mb-[40px] bg-cover w-full p-[4%] relative z-30 h-full">
+                <div className="flex gap-8 flex-col md:flex-row items-center">
+
+                    <img src="/img/team fotos/WhatsApp Image 2022-07-03 at 2.58 2.png" alt="" className='z-30 block lg:hidden h-[150px] sm:h-[200px] md:h-[225px] rounded-full md:rounded-none'/>
+
+                    <div className="">
+                        <h2 className='font-bold text-[#211539] text-xl uppercase tracking-wide text-center md:text-left'>¿Por qué se fundó launchy?</h2><br />
+                        <p className='text-[#211539] text-center md:text-left'>Existen 2 factores claves para tener una empresa de exito: <br /> 1&#41; Tener un buen equipo. <br /> 2&#41; Tener una buena idea. <br /><br /> Launchy es la unión de un grupo increible de profesionales con el plan de llevar la mayor cantidad de grandes ideas a otra galaxia </p>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
   )

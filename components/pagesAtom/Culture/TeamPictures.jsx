@@ -5,7 +5,7 @@ const TeamPictures = () => {
   return (
     <Fragment>
 
-        <h2 className=' relative uppercase border-y-2 border-white text-white text-center my-[60px] md:my-[80px] py-[2%] text-4xl tracking-wider font-bold'>
+        <h2 className=' relative uppercase border-y-2 border-white resource_text text-center my-[60px] md:my-[80px] py-[3%] text-3xl sm:text-4xl xl:text-5xl xl:py-[2%] tracking-wider font-bold'>
             Somos <span className='text-white'>talento latino</span>
             <div className="absolute left-[5%] -top-[34%] h-[50px] w-[50px] md:h-[60px] md:w-[60px] lg:h-[80px] lg:w-[80px] hidden sm:block ">
                 <img
