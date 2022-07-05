@@ -13,7 +13,7 @@ const Links = [
   },
   {
     title: 'cultura',
-    src: '/',
+    src: '/culture',
   },
   {
     title: 'blog',
@@ -45,12 +45,14 @@ const Navbar = () => {
           {/*links container*/}
           <div className="md:flex space-x-4 hidden  ">
             {Links.map((l) => (
-              <p
-                className="text-white uppercase text-sm cursor-pointer"
-                key={l.title}
-              >
-                {l.title}
-              </p>
+              <Link href={l.src}>
+                <p
+                  className="text-white uppercase text-sm cursor-pointer"
+                  key={l.title}
+                >
+                  {l.title}
+                </p>
+              </Link>
             ))}
           </div>
           {/*button */}
