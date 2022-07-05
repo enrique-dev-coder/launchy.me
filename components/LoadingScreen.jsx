@@ -1,5 +1,4 @@
 import { useMenu } from '../context/MenuContext';
-import useLockBodyScroll from '../helpers/use-lock-body-scroll.js';
 const LoadingScreen = () => {
   const { loading } = useMenu();
 
