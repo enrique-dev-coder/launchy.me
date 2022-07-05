@@ -6,7 +6,9 @@ import Circle from '../../components/pagesAtom/servicios/Circle'
 import StackSlider from '../../components/pagesAtom/servicios/StackSlider'
 import OtherCases from '../../components/pagesAtom/servicios/OtherCases'
 import Pictures from '../../components/pagesAtom/servicios/Pictures'
+import CJMPicture from '../../components/pagesAtom/servicios/CJMPicture'
 import HeaderSlider from '../../components/pagesAtom/HeaderSlider'
+import FlippingCard from '../../components/pagesAtom/servicios/FlippingCard'
 import Footer from '../../components/Footer'
 
 // Header items
@@ -31,10 +33,15 @@ const texts = {
 //Words Slider
 const words = [
   'INVESTIGAR',
+  '-',
   'PROTOTIPAR',
+  '-',
   'ITERAR',
+  '-',
   'TESTEAR',
+  '-',
   'MEJORAR' ,
+  '-',
 ]
 
 //Circle
@@ -46,15 +53,30 @@ const circles = [
   {number: 5, text: 'Iteración'}
 ]
 
+//Flipping Cards
+const flipping = [
+  {number: 1, src: '/img/team/Research.mp4', title: 'research', video: true},
+  {number: 2, src: '/img/team/Diseño.png', title: 'diseño', video: false},
+  {number: 3, src: '/img/team/Desarrollo.png', title: 'desarrollo', video: false},
+  {number: 4, src: '/img/team/Bussiness consulting.png', title: 'bussiness consulting', video: false},
+]
+
 const Servicios = () => {
   return (
-    <main className="2xl:container 2xl:mx-auto">
+    <main className="2xl:container 2xl:mx-auto roboto_normal scroll-smooth">
         <Header items={items} quantity={6}>
             <h2 className='z-10 text-white text-xl sm:text-4xl mt-3'>SERVICIOS: ¿CÓMO EMPEZAMOS?</h2>
         </Header>
 
         <StarBackgroundCss>
-            <ServicesText title='research' text={texts.research}>
+
+            <div className="flex items-center lg:justify-center overflow-x-auto scrollbar py-[1rem] px-[6%] gap-6 xl:gap-14 mt-[60px]">
+            {
+              flipping.map(card => <FlippingCard key={card.number} picture={card.src} title={card.title} link={card.title} video={card.video} />)
+            }
+            </div>
+
+            <ServicesText title='research' text={texts.research} picture='/img/team/We research.png' id='research'>
               <ul>
                 <li className='text-slate-100'>Product Discovery</li><br />
                 <li className='text-slate-100'>Benchmaking</li><br />
@@ -64,13 +86,13 @@ const Servicios = () => {
               </ul>
             </ServicesText>
 
-            <div className="px-[8%] flex justify-around flex-wrap gap-4">
+            <div className="px-[8%] flex justify-center flex-wrap">
             {
               circles.map(circle => <Circle key={circle.number} number={circle.number} text={circle.text} />)
             }
             </div>
 
-            <ServicesText title='design' text={texts.design}>
+            <ServicesText title='design' text={texts.design} picture='/img/team/We design.png' id='diseño'>
               <ul>
                 <li className='text-slate-100'>Diseño UX</li><br />
                 <li className='text-slate-100'>Diseño UI</li><br />
@@ -81,11 +103,11 @@ const Servicios = () => {
               </ul>
             </ServicesText>
 
-            <HeaderSlider slidesItems={words} slidesQuantity={4} styles='max-h-[200px] flex w-full border-y z-10 text-white border-white mb-[60px] md:mb-[80px]' />
+            <HeaderSlider slidesItems={words} slidesQuantity={3} slidesMobiles={1} styles='max-h-[200px] flex w-full z-10 tracking-wider text-[50px] sm:text-[70px] mb-[60px] md:mb-[80px] resource_text' />
 
             <OtherCases />
 
-            <ServicesText title='develop' text={texts.develop}>
+            <ServicesText title='develop' text={texts.develop} picture='/img/team/We develop.png' id='desarrollo'>
               <ul>
                 <li className='text-slate-100'>Website app development</li><br />
                 <li className='text-slate-100'>Frontend speciality</li><br />
@@ -99,7 +121,7 @@ const Servicios = () => {
 
             <Cases />
 
-            <ServicesText title='do bussiness consulting' text={texts.doBussiness}>
+            <ServicesText title='do bussiness consulting' text={texts.doBussiness} picture='/img/team/We do bussiness.png' id='bussiness consulting'>
               <ul>
                 <li className='text-slate-100'>Product Discovery</li><br />
                 <li className='text-slate-100'>Benchmaking</li><br />
@@ -110,6 +132,8 @@ const Servicios = () => {
             </ServicesText>
 
             <Pictures />
+
+            <CJMPicture />
 
             <Footer />
         </StarBackgroundCss>

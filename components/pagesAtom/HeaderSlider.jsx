@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
 import 'swiper/css';
 
-const HeaderSlider = ({slidesQuantity, slidesItems, styles}) => {
+const HeaderSlider = ({slidesQuantity, slidesItems, styles, slidesMobiles = 3}) => {
   return (
     <ul className={`${styles? styles : 'max-h-[90px] flex w-full border-y border-black z-10'}`}>
       {/* DESKTOP */}
@@ -26,7 +26,7 @@ const HeaderSlider = ({slidesQuantity, slidesItems, styles}) => {
       </Swiper>
       {/* MOBILE */}
       <Swiper
-        slidesPerView={3}
+        slidesPerView={slidesMobiles}
         loop={true}
         className="flex w-full gap-4 md:hidden"
         autoplay={{

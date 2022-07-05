@@ -22,7 +22,7 @@ const images = [
 ];
 const StackSlider = () => {
   return (
-    <div className='my-[60px] md:my-[80px] border-y border-white py-[2%]'>
+    <div className='my-[60px] md:my-[80px] border-y border-white py-[1%]'>
       {/*slider for desktop*/}
       <Swiper
         slidesPerView={10}

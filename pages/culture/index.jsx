@@ -8,9 +8,9 @@ import Footer from '../../components/Footer'
 
 const Culture = () => {
   return (
-    <main className="2xl:container 2xl:mx-auto">
+    <main className="2xl:container 2xl:mx-auto roboto_normal">
         <Header show={false}>
-            <h2 className='z-10 text-white text-4xl tracking-wider uppercase mt-5'>Culture</h2>
+            <h2 className='z-10 text-white tracking-wider uppercase mt-5 text-[30px]'>Culture</h2>
         </Header>
 
         <StarBackgroundCss>
