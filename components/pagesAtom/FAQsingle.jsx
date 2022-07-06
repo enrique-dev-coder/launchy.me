@@ -1,21 +1,40 @@
-const FAQsingle = ({text, answer, type, show, showDispatch}) => {
-  return (
-    <div className="flex border w-full py-[.5%] relative items-center mb-[4rem]" onClick={() => {
-        showDispatch({
-            type
-        })
-      }}>
-      <div className="ml-[2%] transition-all">
-        {text}
-      </div>
+//ELi en general la logica del componente esta bien implementada pero el CSS tenia unos problemas
+//sobre todo que como eran cajas absolutas tenias que dejar mucho espacio entre cada renglos
+//por que cuando estaban juntas se juntaban los renglones , puse todo en un mismo contenedor para que cada renglon
+// agarre su espacio
 
-      <div className={`flex border w-full p-[1%] absolute top-[100%] pointer-events-none ${show? 'block' : 'hidden'} bg-black`}>
+const FAQsingle = ({ text, answer, type, show, showDispatch }) => {
+  return (
+    <div
+      className="flex border flex-col w-full  relative  mb-[5px] rounded"
+      onClick={() => {
+        showDispatch({
+          type,
+        });
+      }}
+    >
+      <div className=" transition-all py-[5px] w-[90%] mx-auto  ">{text}</div>
+
+      <div
+        className={`flex  pointer-events-none w-[90%] py-[5px] mx-auto ${
+          show ? 'block' : 'hidden'
+        } bg-black`}
+      >
         {answer}
       </div>
-
-      <div className={`ml-auto w-[.7rem] h-[.7rem] inline-block border-white border-solid border-t-[2px] border-r-[2px] transition-all transform ${show? 'rotate-[320deg] mt-[.3%]' : 'rotate-[136deg] mb-[.3%]'} mr-[5%]`}></div>
+      {/*ELi aqui cambie la flechita por un icono y solo le deje la logica con los giros*/}
+      <div
+        className={`  absolute right-0 translate-y-1 transition-all transform ${
+          show ? 'rotate-[180deg] ' : 'rotate-[0deg] '
+        } mr-[5%]`}
+      >
+        <img
+          src="/img/ep_arrow-down.svg"
+          className="w-[24.5px] h-[24.5px] cursor-pointer"
+        />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default FAQsingle
+export default FAQsingle;

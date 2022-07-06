@@ -45,7 +45,7 @@ const Navbar = () => {
           {/*links container*/}
           <div className="md:flex space-x-4 hidden  ">
             {Links.map((l) => (
-              <Link href={l.src}>
+              <Link href={l.src} key={l.title}>
                 <p
                   className="text-white uppercase text-sm cursor-pointer"
                   key={l.title}
