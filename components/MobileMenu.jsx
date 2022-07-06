@@ -57,7 +57,7 @@ const MobileMenu = ({ isOpen }) => {
         </div>
         <div className="w-10/12 mx-auto h-[450px] mb-[30px] flex flex-col justify-around">
           {menuData.map((m) => (
-            <div className="relative">
+            <div className="relative" key={m.title}>
               <p
                 key={m.id}
                 className="uppercase text-white mb-[30px] text-[20px]"
