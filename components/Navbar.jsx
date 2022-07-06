@@ -56,11 +56,13 @@ const Navbar = () => {
             ))}
           </div>
           {/*button */}
-          <div className="hidden md:block">
-            <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
-              Charlemos
-            </button>
-          </div>
+          <Link href="/contact">
+            <div className="hidden md:block">
+              <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
+                Charlemos
+              </button>
+            </div>
+          </Link>
           {/*mobile menu Icon*/}
           <div className="md:hidden">
             <img
