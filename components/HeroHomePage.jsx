@@ -1,29 +1,13 @@
-import { useEffect } from 'react';
 import Image from 'next/image';
 import LoadingScreen from './LoadingScreen';
-import { useMenu } from '../context/MenuContext';
-import { useInView } from 'react-hook-inview';
 
 const HeroHomePage = () => {
-  const { setLoading } = useMenu();
-  const [ref, isVisible] = useInView({
-    threshold: 1,
-  });
-  console.log(isVisible);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
   //comentario para ver si jala el deploy
 
   return (
     <div className="relative">
       {/*model iframe from sketch*/}
-      <div
-        className="sketchfab-embed-wrapper h-screen w-full relative z-10"
-        ref={ref}
-      >
+      <div className="sketchfab-embed-wrapper h-screen w-full relative z-10">
         {' '}
         <iframe
           className=" h-screen w-full"

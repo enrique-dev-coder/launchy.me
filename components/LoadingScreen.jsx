@@ -1,6 +1,15 @@
 import { useMenu } from '../context/MenuContext';
+import { useEffect } from 'react';
+
 const LoadingScreen = () => {
   const { loading } = useMenu();
+  const { setLoading } = useMenu();
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
   return (
     <div

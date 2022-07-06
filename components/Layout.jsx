@@ -4,8 +4,13 @@ import Navbar from './Navbar';
 import { useMenu } from '../context/MenuContext';
 import MobileMenu from './MobileMenu';
 import Script from 'next/script';
+import { useRouter } from 'next/router';
 const Layout = ({ children }) => {
-  const { isOpen, setisOpen, loading } = useMenu();
+  const { isOpen, setisOpen, loading, setLoading } = useMenu();
+  const { asPath } = useRouter();
+  //NOTE se uso el hook de userouter para recibir los parametros de la ruta, el asPath trae el path de la pagina, con esto le decimos que si la pagina es diferente a la home no ponga el estado de la pantalla de carga
+  asPath != '/' && setLoading(false);
+
   return (
     <>
       <Script
