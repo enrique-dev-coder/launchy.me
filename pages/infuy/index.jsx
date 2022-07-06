@@ -11,6 +11,7 @@ import Footer from '../../components/Footer'
 import FAQ from '../../components/pagesAtom/FAQ'
 import InfuyPaletaGIF from '../../public/img/infuy/Paleta cromatica.gif'
 import InfuyAnotherGIF from '../../public/img/infuy/Logo- Colores_1.gif'
+import { Fragment } from 'react';
 
 // ColorPalette Props
 const textPalette = 'Partiamos de una marca con una necesidad clara de diferenciación pero con ya con colores prestablecidos que necesitaban perdurar para no perder el posicionamiento que han ganado. Planteamos gradientes sutiles para dar dinamismo a los elementos, así como dar un PROPÓSITO  a los mismos: una cara corporativa y otra disrruptiva, apuntada a dos públicos objetivos de Infuy.'
@@ -20,8 +21,9 @@ const textTestimonial = 'Crear e implementar un roadmap de diseño que resuelva 
 
 const Infuy = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
-          <HeaderAndBoxes />
+    <main className='bg-[#F1F1F1] roboto_normal'>
+        <HeaderAndBoxes />
+        <div className="max-w-[1440px] mx-auto">
           <ColorPalette title='COLORES Y APLICACIÓN' text={textPalette}>
             <Image 
               src={InfuyPaletaGIF} 
@@ -59,7 +61,8 @@ const Infuy = () => {
           <Pictures />
           <Testimonial title='SOLUCION' text={textTestimonial} />
           <Footer blue />
-      </main>
+      </div>
+    </main>
   )
 }
 

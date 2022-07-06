@@ -6,7 +6,7 @@ import 'swiper/css';
 const images = [
   { id: 1, path: 'Angular' },
   { id: 2, path: 'css' },
-  { id: 3, path: 'firebase' },
+  { id: 3, path: 'react' },
   { id: 4, path: 'java' },
   { id: 5, path: 'javascript' },
   { id: 6, path: 'MongoDB' },
@@ -42,7 +42,7 @@ const StackSlider = () => {
               <img
                 src={`/img/stack/${l.path}.png`}
                 alt={`logo de ${l.path}`}
-                className="mx-auto"
+                className="mx-auto h-[20px]"
               />
             </div>
           </SwiperSlide>
@@ -67,7 +67,7 @@ const StackSlider = () => {
               <img
                 src={`/img/stack/${l.path}.png`}
                 alt={`logo de ${l.path}`}
-                className="mx-auto"
+                className="mx-auto h-[20px]"
               />
             </div>
           </SwiperSlide>

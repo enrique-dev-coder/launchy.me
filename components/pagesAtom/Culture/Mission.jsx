@@ -4,7 +4,7 @@ import OjitoIcon from '../../../public/img/icons/Ojo.svg'
 
 const Mission = () => {
   return (
-    <div className="px-[8%] mt-[60px] md:mt-[80px] flex flex-col">
+    <div className="mt-[60px] md:mt-[80px] flex flex-col">
 
         <div className="flex flex-col md:flex-row gap-5">
             <MissionBox

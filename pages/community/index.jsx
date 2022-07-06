@@ -12,11 +12,13 @@ const textTestimonial = 'La comunicación fue clave para poder responder a la r�
 
 const Community = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] roboto_normal">
           <HeaderAndBoxes />
-          <ProcessOrSolution title='SOLUCIÓN' text={solutionText}/>
-          <Pictures />
-          <Testimonial text={textTestimonial} />
+          <div className="max-w-[1440px] mx-auto">
+            <ProcessOrSolution title='SOLUCIÓN' text={solutionText}/>
+            <Pictures />
+            <Testimonial text={textTestimonial} />
+          </div>
           <Footer blue />
       </main>
   )

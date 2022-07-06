@@ -7,6 +7,7 @@ import LastParagraphFirstFrame from '../../../public/img/community/Last paragrap
 import LastParagraphSecondFrame from '../../../public/img/community/Last paragraph second frame.png'
 import CommunityGif from '../../../public/img/community/Video celus (1).gif'
 import FadeInElement from '../FadeInElement'
+import Wrapper from '../Wrapper';
 
 const Pictures = () => {
   return (
@@ -55,9 +56,11 @@ const Pictures = () => {
         </FadeInElement>
 
         <FadeInElement>
-            <div className='mb-[30px] md:mb-[40px] px-[8%]'>
-            Trabajamos con los elementos que el cliente decidió y tratando de ofrecer una guía en la distribución de información, logrando reducirla a un 60% de la original que iba a ser publicada.
-            </div>
+            <Wrapper>
+                <div className='mb-[30px] md:mb-[40px]'>
+                Trabajamos con los elementos que el cliente decidió y tratando de ofrecer una guía en la distribución de información, logrando reducirla a un 60% de la original que iba a ser publicada.
+                </div>
+            </Wrapper>
 
             <div className="mb-[60px] md:mb-[80px] flex justify-center">
                 <Image 
@@ -70,9 +73,11 @@ const Pictures = () => {
         </FadeInElement>
 
         <FadeInElement>
-            <div className='mb-[30px] md:mb-[40px] px-[8%]'>
-            Trabajamos en conjunto con el equipo técnico para ir solucionando las necesidades que fue presentando el proyecto conforme va avanzando en cuanto a la construcción de la documentación así como los pilotos técnicos.
-            </div>
+            <Wrapper>
+                <div className='mb-[30px] md:mb-[40px]'>
+                Trabajamos en conjunto con el equipo técnico para ir solucionando las necesidades que fue presentando el proyecto conforme va avanzando en cuanto a la construcción de la documentación así como los pilotos técnicos.
+                </div>
+            </Wrapper>
 
             <div className="mb-[60px] lg:mb-[80px] flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 px-[8%] lg:px-[4%]">
 

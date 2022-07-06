@@ -1,10 +1,11 @@
 import Image from 'next/image';
 import InfuyLogo1 from '../../../public/img/infuy/Construccion logo.png'
 import InfuyLogo2 from '../../../public/img/infuy/Variantes de color logo.png'
+import Wrapper from '../Wrapper';
 
 const Logos = () => {
   return (
-    <div className="px-[8%]">
+    <Wrapper>
 
             <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>OBJETIVO</h2>
 
@@ -21,7 +22,7 @@ const Logos = () => {
 
             </div>
 
-    </div>
+    </Wrapper>
   )
 }
 

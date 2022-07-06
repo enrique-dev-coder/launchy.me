@@ -9,6 +9,7 @@ import FirstFrameFourthParagraph from '../../../public/img/fichap/First Frame (4
 import SecondFrameFourthParagraph from '../../../public/img/fichap/Second Frame (4).png'
 import FirstBanner from '../../../public/img/fichap/Banner (1).png'
 import SecondBanner from '../../../public/img/fichap/Banner (2).png'
+import Wrapper from '../Wrapper';
 
 //AportandoValor text
 const aportandoValor = 'Parte del trabajo se trasladó a generar una guía para los potenciales clientes de Fichap la cual trabajamos en conjunto y la cual se dinfundió de manera orgánica de manera exitosa. Seguimos colaborando con su equipo interno, en búsquedas de constantes mejoras.'
@@ -17,8 +18,7 @@ const Pictures = () => {
   return (
     <Fragment>
         <FadeInElement>
-            <div className="px-[8%]">
-            
+            <Wrapper>
                 <div className='mb-[30px] md:mb-[40px]'>
                 Reformular puntos claves de contenido para la audiencia así como dar un rediseño a la página apegado al manual de marca que tienen ha sido una gran experiencia enriquecedora para ambos equipos. Fuimos mas allá de la web para colaborar con las estrategias digitales para el customer journey map del cliente.
                 </div>
@@ -44,8 +44,7 @@ const Pictures = () => {
                     </div>
 
                 </div>
-              
-            </div>
+            </Wrapper>
         </FadeInElement>
 
         <FadeInElement>

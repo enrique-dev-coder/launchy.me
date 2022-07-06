@@ -19,7 +19,7 @@ const textTestimonial =
 
 const Jaak = () => {
   return (
-    <main className="bg-[#f1f1f1]">
+    <main className="bg-[#f1f1f1] roboto_normal">
       <HeaderAndBoxes />
 
       <div className="max-w-[1440px]  mx-auto">
