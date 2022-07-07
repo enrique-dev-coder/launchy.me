@@ -9,21 +9,23 @@ const textTestimonial = 'Poder crear junto con un equipo técnico para que el re
 
 const LigaMX = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] roboto_normal">
           <HeaderAndBoxes />
-          <ProcessOrSolution title='SOLUCIÓN' paragraph={false}>
-            <div className="flex flex-col lg:flex-row lg:gap-4 mb-[60px] lg:mb-[80px]">
+          <div className="max-w-[1440px] mx-auto">
+            <ProcessOrSolution title='SOLUCIÓN' paragraph={false}>
+              <div className="flex flex-col lg:flex-row lg:gap-4 mb-[60px] lg:mb-[80px]">
 
-              <video src="img/ligaMX/FAN ID (1) (1).mp4" className='shadow-2xl w-full lg:w-1/2 flex justify-center mb-[30px] lg:mb-0' autoPlay controls></video>
+                <video src="img/ligaMX/FAN ID (1) (1).mp4" className='shadow-2xl w-full lg:w-1/2 flex justify-center mb-[30px] lg:mb-0' autoPlay controls></video>
               
-              <div className="lg:w-1/2 flex">
-              Ya que la aplicación aun esta en revisiones queremos compartirles una visualización de los flujos generales para que puedan ver parte de la inciativa y cómo integramos nuestra expertis de diseño a impactar en la vida de las personas.
-              </div>
+                <div className="lg:w-1/2 flex">
+                Ya que la aplicación aun esta en revisiones queremos compartirles una visualización de los flujos generales para que puedan ver parte de la inciativa y cómo integramos nuestra expertis de diseño a impactar en la vida de las personas.
+                </div>
 
-            </div>
-          </ProcessOrSolution>
-          <Pictures />
-          <Testimonial text={textTestimonial} />
+              </div>
+            </ProcessOrSolution>
+            <Pictures />
+            <Testimonial text={textTestimonial} />
+          </div>
           <Footer blue />
       </main>
   )

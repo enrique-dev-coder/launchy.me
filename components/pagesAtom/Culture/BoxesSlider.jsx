@@ -12,7 +12,7 @@ const texts = [
 
 const BoxesSlider = () => {
   return (
-    <div className='w-full flex items-center overflow-x-auto scrollbar py-[1rem] border border-white mt-[60px] md:mt-[80px]'>
+    <div className='w-full flex items-center overflow-x-auto scrollbar py-[1rem] border-y border-white mt-[60px] md:mt-[80px]'>
       {
         texts.map(text => <div key={text.id} className='mx-[1rem] text-white border border-white shrink-0 h-[150px] w-[300px] p-[2%] flex items-center text-center bg-gradient-to-b from-gray-600 via-gray-600 to-[#E3DEFF]'>{text.text}</div>)
       }

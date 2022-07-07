@@ -19,12 +19,16 @@ import TransparentScreen4 from '../../../public/img/ligaMX/Second Part in Fourth
 import TransparentScreenMain from '../../../public/img/ligaMX/Second Part in Fourth Paragraph - MAIN.png'
 import LastFrame from '../../../public/img/ligaMX/Last Frame.png'
 import FadeInElement from '../FadeInElement'
+import Wrapper from '../Wrapper';
 
 const Pictures = () => {
   return (
     <Fragment>
         <FadeInElement>
-                <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 mx-[8%]'>OPERARIO</h2>
+                <Wrapper>
+                    <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>OPERARIO</h2>
+                </Wrapper>
+                
 
                 <div className="flex justify-center mb-[60px] md:mb-[80px] bg-[#6BA736]">
 
@@ -125,7 +129,9 @@ const Pictures = () => {
         </FadeInElement>
           
         <FadeInElement>
-                <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 mx-[8%]'>CLIENTE</h2>
+                <Wrapper>
+                    <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>CLIENTE</h2>
+                </Wrapper>
 
                 <div className="flex flex-col lg:flex-row px-[8%] gap-4 mb-[30px] md:mb-[40px]">
 

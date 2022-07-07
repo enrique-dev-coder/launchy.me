@@ -24,8 +24,8 @@ const texts = [
 
 const index = () => {
   return (
-    <main className="2xl:container 2xl:mx-auto">
             <StarBackgroundCss>
+              <div className="max-w-[1440px] mx-auto">
               
                 <div className="flex flex-col my-20 pt-14 pb-20 border-b">
 
@@ -48,10 +48,11 @@ const index = () => {
                   : <p className='text-white mt-[30px]'>{text.p}</p> )
                 }
                 </div>
+              
+              </div>
                 
-                <Footer />
+              <Footer />
             </StarBackgroundCss>
-    </main>
   )
 }
 

@@ -13,13 +13,15 @@ const testimonialText = 'Hemos aprendido mutuamente integrando metodologías y p
 
 const Fichap = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] roboto_normal">
           <HeaderAndBoxes />
-          <ProcessOrSolution title='SOLUCIÓN' text={solutionText}>
-            <FirstScreen />
-          </ProcessOrSolution>
-          <Pictures />
-          <Testimonial text={testimonialText} />
+          <div className="max-w-[1440px] mx-auto">
+            <ProcessOrSolution title='SOLUCIÓN' text={solutionText}>
+              <FirstScreen />
+            </ProcessOrSolution>
+            <Pictures />
+            <Testimonial text={testimonialText} />
+          </div>
           <Footer blue />
       </main>
   )

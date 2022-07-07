@@ -1,4 +1,5 @@
 import Card from '../../Parte4Home/Card'
+import Wrapper from '../Wrapper';
 
 const data = [
     {
@@ -23,19 +24,21 @@ const data = [
 
 const OtherCases = () => {
     return (
-        <div className='px-[8%]'>
+        <Wrapper>
+            <div className='px-[2%]'>
 
-            <div className="flex flex-wrap justify-between">
-                {data.map((d, i) => (
-                    <Card
+                <div className="flex flex-wrap justify-between">
+                    {data.map((d, i) => (
+                        <Card
                         key={i}
                         link={d.link}
                         path={d.path}
                         video={d.video}
                     />
-                ))}
+                    ))}
+                </div>
             </div>
-        </div>
+        </Wrapper>
     )
 }
 

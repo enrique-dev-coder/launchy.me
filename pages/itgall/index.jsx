@@ -23,9 +23,10 @@ const textTestimonial = 'Nos encantó ser parte de esta experiencia, poder conec
 
 const Itgall = () => {
   return (
-      <main className="bg-[#F1F1F1] 2xl:container 2xl:mx-auto">
+      <main className="bg-[#F1F1F1] roboto_normal">
           <HeaderAndBoxes />
-          <ColorPalette
+          <div className="max-w-[1440px] mx-auto">
+            <ColorPalette
             title='APLICACION CROMÁTICA'
             text={textPalette}
           >
@@ -36,9 +37,9 @@ const Itgall = () => {
               <div className="bg-[#37044E] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
               <div className="bg-[#FFD000] col-span-1 md:w-1/5 h-12 md:h-[140px]"></div>
             </div>
-          </ColorPalette>
-          <ProcessOrSolution title='PROCESO' text={textProccess} />
-          <FadeInElement>
+            </ColorPalette>
+            <ProcessOrSolution title='PROCESO' text={textProccess} />
+            <FadeInElement>
             <div className="flex md:justify-center mb-[60px] md:mb-[80px]">
               <Image 
                 src={ItgallProcess} 
@@ -47,12 +48,13 @@ const Itgall = () => {
                 className='w-full'
               />
             </div>
-          </FadeInElement>
-          <ProcessOrSolution title='SOLUCIÓN' text={textSolution}>
+            </FadeInElement>
+            <ProcessOrSolution title='SOLUCIÓN' text={textSolution}>
             <MobilePictures />
-          </ProcessOrSolution>
-          <Pictures />
-          <Testimonial title='EL RESULTADO' text={textTestimonial} />
+            </ProcessOrSolution>
+            <Pictures />
+            <Testimonial title='EL RESULTADO' text={textTestimonial} />
+          </div>
           <Footer blue />
       </main>
   )

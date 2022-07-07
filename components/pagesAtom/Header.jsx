@@ -24,7 +24,7 @@ const Header = ({ children, quantity, items, show = true }) => {
         {show ? (
           <HeaderSlider slidesQuantity={quantity} slidesItems={items} />
         ) : (
-          <div className="w-full flex justify-between">
+          <div className="w-full flex justify-between max-w-[1440px]">
             <AlienSlider />
           </div>
         )}
