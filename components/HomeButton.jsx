@@ -1,10 +1,12 @@
 import React from 'react';
-
-const HomeButton = ({ title }) => {
+import Link from 'next/link';
+const HomeButton = ({ title, link }) => {
   return (
-    <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
-      {title}
-    </button>
+    <Link href={link}>
+      <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
+        {title}
+      </button>
+    </Link>
   );
 };
 

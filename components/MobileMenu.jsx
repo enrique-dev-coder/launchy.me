@@ -73,7 +73,7 @@ const MobileMenu = ({ isOpen }) => {
           ))}
         </div>
         <div className="w-10/12 mx-auto">
-          <HomeButton title={'charlemos'} />
+          <HomeButton link={'/contact'} title={'charlemos'} />
         </div>
       </div>
     </div>

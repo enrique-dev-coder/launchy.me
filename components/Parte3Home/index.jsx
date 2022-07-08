@@ -3,6 +3,7 @@ import Title1Home from '../Title1Home';
 import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
 import HomeButton from '../HomeButton';
 import Scrollable from './Scrollable';
+import Link from 'next/link';
 
 const index = () => {
   const [actual, setActual] = useState(1);
@@ -104,7 +105,9 @@ const index = () => {
             />
           </div>
         </div>
-        <HomeButton title={'Ir a Servicios'} />
+        <a href="/services">
+          <HomeButton link={'/services'} title={'Ir a Servicios'} />
+        </a>
       </div>
     </HomeSectionContainer>
   );

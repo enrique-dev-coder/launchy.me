@@ -18,7 +18,7 @@ const BannerEventos = () => {
             </h2>
           </div>
           <div className="flex mb-[30px] md:mb-0">
-            <HomeButton title={'Reserva tu entrada'} />
+            <HomeButton link={'/contact'} title={'Reserva tu entrada'} />
           </div>
         </div>
         <div className="flex basis-1/2 bg-[url(/img/banner_eventos.png)] h-[200px] md:h-full bg-center  bg-no-repeat bg-cover">

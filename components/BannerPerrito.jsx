@@ -18,7 +18,7 @@ const BannerPerrito = () => {
             su adopción.
           </p>
           <div className="w-full flex justify-center ">
-            <HomeButton title={'Conócelos'} />
+            <HomeButton link={'/contact'} title={'Conócelos'} />
           </div>
         </div>
       </div>

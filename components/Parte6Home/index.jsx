@@ -31,7 +31,7 @@ const index = () => {
                 Vas a amar trabajar con nosotros. Siempre buscamos soluciones
                 con la mejor actitud.
               </p>
-              <HomeButton title={'conócenos :)'} />
+              <HomeButton link={'/culture'} title={'conócenos :)'} />
             </div>
           </div>
           <div

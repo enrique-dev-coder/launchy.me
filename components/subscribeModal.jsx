@@ -35,7 +35,10 @@ const subscribeModal = ({ background, closeModal }) => {
               tu suscripción fue realizada correctamente
             </p>
             <div className="flex justify-center md:justify-start">
-              <HomeButton title={'explora nuestros free resources'} />
+              <HomeButton
+                link={'/'}
+                title={'explora nuestros free resources'}
+              />
             </div>
           </div>
         </div>

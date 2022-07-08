@@ -5,7 +5,7 @@ import FreeResources from './FreeResource';
 const index = () => {
   return (
     <HomeSectionContainer>
-      <div className="w-full h-full">
+      <div className="w-full h-full" id="free-resources">
         <h2 className="text-white text-center   font-medium mb-[30px] md:mb-[40px] uppercase ">
           ¡GRACIAS POR LLEGAR HASTA ACÁ! TEN ESTOS:
         </h2>

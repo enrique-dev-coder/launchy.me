@@ -51,7 +51,7 @@ const data = [
 const index = () => {
   return (
     <HomeSectionContainer>
-      <div className="w-full">
+      <div className="w-full" id="proyectos">
         <Title2Home title={'Y ESTO ES LO QUE HACEMOS Y AMAMOS...'} />
       </div>
       <div className="flex flex-wrap justify-between">
@@ -66,7 +66,7 @@ const index = () => {
         ))}
       </div>
       <div className="w-full flex justify-center">
-        <HomeButton title={'CONVIERTETE EN UNO'} />
+        <HomeButton link={'/contact'} title={'CONVIERTETE EN UNO'} />
       </div>
     </HomeSectionContainer>
   );
