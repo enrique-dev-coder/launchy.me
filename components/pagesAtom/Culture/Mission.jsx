@@ -6,7 +6,7 @@ const Mission = () => {
   return (
     <div className="mt-[60px] md:mt-[80px] flex flex-col">
 
-        <div className="flex flex-col md:flex-row gap-5">
+        <div className="flex flex-col md:flex-row gap-5 md:gap-0">
             <MissionBox
                 src={MisionIcon}
                 title='Misión'

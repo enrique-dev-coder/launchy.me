@@ -34,15 +34,10 @@ const texts = {
 //Words Slider
 const words = [
   'INVESTIGAR',
-  '-',
   'PROTOTIPAR',
-  '-',
   'ITERAR',
-  '-',
   'TESTEAR',
-  '-',
-  'MEJORAR' ,
-  '-',
+  'MEJORAR',
 ]
 
 //Circle
@@ -79,11 +74,11 @@ const Servicios = () => {
                 </div>
 
                 <ServicesText title='research' text={texts.research} picture='/img/team/We-research.png' id='research'>
-                  <ul>
-                    <li className='text-slate-100'>Product Discovery</li><br />
-                    <li className='text-slate-100'>Benchmaking</li><br />
-                    <li className='text-slate-100'>UX Research</li><br />
-                    <li className='text-slate-100'>Bussiness Model Research</li><br />
+                  <ul className='flex flex-col'>
+                    <li className='text-slate-100'>Product Discovery</li>
+                    <li className='text-slate-100'>Benchmaking</li>
+                    <li className='text-slate-100'>UX Research</li>
+                    <li className='text-slate-100'>Bussiness Model Research</li>
                     <li className='text-slate-100'>Data Analisis Marketing</li>
                   </ul>
                 </ServicesText>
@@ -95,26 +90,26 @@ const Servicios = () => {
                 </div>
 
                 <ServicesText title='design' text={texts.design} picture='/img/team/We-design.png' id='diseño'>
-                  <ul>
-                    <li className='text-slate-100'>Diseño UX</li><br />
-                    <li className='text-slate-100'>Diseño UI</li><br />
-                    <li className='text-slate-100'>Diseño de experiencias inmersivas</li><br />
-                    <li className='text-slate-100'>Estrategia de marca</li><br />
-                    <li className='text-slate-100'>Aplicaciones de marca con especialidad coorporativa</li><br />
+                  <ul className='flex flex-col'>
+                    <li className='text-slate-100'>Diseño UX</li>
+                    <li className='text-slate-100'>Diseño UI</li>
+                    <li className='text-slate-100'>Diseño de experiencias inmersivas</li>
+                    <li className='text-slate-100'>Estrategia de marca</li>
+                    <li className='text-slate-100'>Aplicaciones de marca con especialidad coorporativa</li>
                     <li className='text-slate-100'>Diseño de animaciones y audiovisual</li>
                   </ul>
                 </ServicesText>
 
-                <HeaderSlider slidesItems={words} slidesQuantity={3} slidesMobiles={1} styles='max-h-[200px] flex w-full z-10 tracking-wider text-[50px] sm:text-[70px] mb-[60px] md:mb-[80px] resource_text' />
+                <HeaderSlider slidesItems={words} slidesQuantity={2} slidesMobiles={1} styles='max-h-[200px] flex w-full z-10 tracking-wider text-[50px] sm:text-[70px] mb-[60px] md:mb-[80px] resource_text' />
 
                 <OtherCases />
 
                 <ServicesText title='develop' text={texts.develop} picture='/img/team/We-develop.png' id='desarrollo'>
-                  <ul>
-                    <li className='text-slate-100'>Website app development</li><br />
-                    <li className='text-slate-100'>Frontend speciality</li><br />
-                    <li className='text-slate-100'>3D inmersive experiences</li><br />
-                    <li className='text-slate-100'>Custome software development</li><br />
+                  <ul className='flex flex-col'>
+                    <li className='text-slate-100'>Website app development</li>
+                    <li className='text-slate-100'>Frontend speciality</li>
+                    <li className='text-slate-100'>3D inmersive experiences</li>
+                    <li className='text-slate-100'>Custome software development</li>
                     <li className='text-slate-100'>Web 3.0 development</li>
                   </ul>
                 </ServicesText>
@@ -124,11 +119,11 @@ const Servicios = () => {
                 <Cases />
 
                 <ServicesText title='do bussiness consulting' text={texts.doBussiness} picture='/img/team/We-do-bussiness.png' id='bussiness consulting'>
-                  <ul>
-                    <li className='text-slate-100'>Product Discovery</li><br />
-                    <li className='text-slate-100'>Benchmaking</li><br />
-                    <li className='text-slate-100'>UX Research</li><br />
-                    <li className='text-slate-100'>Bussiness Model Research</li><br />
+                  <ul className='flex flex-col'>
+                    <li className='text-slate-100'>Product Discovery</li>
+                    <li className='text-slate-100'>Benchmaking</li>
+                    <li className='text-slate-100'>UX Research</li>
+                    <li className='text-slate-100'>Bussiness Model Research</li>
                     <li className='text-slate-100'>Data Analisis Marketing</li>
                   </ul>
                 </ServicesText>

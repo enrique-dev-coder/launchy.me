@@ -8,7 +8,7 @@ const ServicesText = ({title, text, children, picture, id}) => {
 
           <div className="flex flex-col flex-1 items-center">
 
-            <h2 className='uppercase text-white lg:hidden text-3xl mb-[30px] text-center font-roboto'>{`WE ${title}`}</h2>
+            <h2 className='uppercase text-white lg:hidden text-[18px] sm:text-[28px] tracking-[.125rem] mb-[30px] text-center font-roboto'>{`WE ${title}`}</h2>
 
             <img src={picture} alt="" className='z-30 sm:max-w-[438px] sm:max-h-[259px] lg:ml-auto' />
 
@@ -16,13 +16,13 @@ const ServicesText = ({title, text, children, picture, id}) => {
 
           <div className="flex flex-col flex-1 lg:order-first gap-5">
 
-            <h2 className='uppercase text-white hidden lg:block text-3xl'>{`WE ${title}`}</h2>
+            <h2 className='uppercase text-white hidden lg:block text-[28px] '>{`WE ${title}`}</h2>
 
-            <p className='text-slate-100 pr-7'>{text}</p>
+            <p className='text-slate-100 text-[14px] roboto_normal'>{text}</p>
 
             {children}
 
-            <button className="text-white py-2 px-3 uppercase text-sm navbar_button w-2/4 mt-4">
+            <button className="text-white py-2 px-3 uppercase text-sm navbar_button mt-4 w-[134px] h-[38px]">
               Charlemos
             </button>
 

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const MissionBox = ({src, title, text}) => {
   return (
-    <div className="flex flex-col flex-1 gap-2 text-white border border-white p-[5%]">
+    <div className="flex flex-col flex-1 gap-2 text-white border border-white px-[5%] py-[5%] lg:py-[2%]">
 
             <div className="mr-auto">
                 <Image
@@ -13,9 +13,9 @@ const MissionBox = ({src, title, text}) => {
                 />
             </div>
 
-            <h2 className='uppercase text-[18px]'>{title}</h2>
+            <h2 className='uppercase text-[18px] font-roboto'>{title}</h2>
 
-            <p className='text-[14px]'>{text}</p>
+            <p className='text-[14px] roboto_normal'>{text}</p>
     </div>
   )
 }

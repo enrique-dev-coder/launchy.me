@@ -11,7 +11,7 @@ const Culture = () => {
   return (
     <main className="roboto_normal">
       <Header show={false}>
-        <h2 className="z-10 text-white tracking-wider uppercase mt-5 text-[30px]">
+        <h2 className="z-10 text-white tracking-widest uppercase mt-5 text-[30px] lg:text-[40px] roboto_normal">
           Culture
         </h2>
       </Header>
