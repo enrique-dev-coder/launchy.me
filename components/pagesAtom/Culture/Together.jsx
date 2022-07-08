@@ -3,7 +3,7 @@ import React from 'react'
 const Together = () => {
   return (
     <div className="">
-        <h2 className='my-[30px] md:my-[40px] border border-white pl-6 uppercase text-white tracking-widest text-[18px] lg:text-[22px] font-roboto h-[40px] flex items-center'>juntos cada día</h2>
+        <h2 className='my-[30px] md:my-[40px] border border-white pl-6 uppercase text-white tracking-widest text-[18px] lg:text-[22px] font-roboto h-[40px] flex items-center rounded-tr-md'>juntos cada día</h2>
 
         <div className="flex flex-col gap-4 my-[30px] md:my-[40px]">
 

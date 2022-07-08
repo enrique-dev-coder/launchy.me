@@ -75,11 +75,11 @@ const Servicios = () => {
 
                 <ServicesText title='research' text={texts.research} picture='/img/team/We-research.png' id='research'>
                   <ul className='flex flex-col'>
-                    <li className='text-slate-100'>Product Discovery</li>
-                    <li className='text-slate-100'>Benchmaking</li>
-                    <li className='text-slate-100'>UX Research</li>
-                    <li className='text-slate-100'>Bussiness Model Research</li>
-                    <li className='text-slate-100'>Data Analisis Marketing</li>
+                    <li className='text-slate-100 text-[14px]'>Product Discovery</li>
+                    <li className='text-slate-100 text-[14px]'>Benchmaking</li>
+                    <li className='text-slate-100 text-[14px]'>UX Research</li>
+                    <li className='text-slate-100 text-[14px]'>Bussiness Model Research</li>
+                    <li className='text-slate-100 text-[14px]'>Data Analisis Marketing</li>
                   </ul>
                 </ServicesText>
 
@@ -91,12 +91,12 @@ const Servicios = () => {
 
                 <ServicesText title='design' text={texts.design} picture='/img/team/We-design.png' id='diseño'>
                   <ul className='flex flex-col'>
-                    <li className='text-slate-100'>Diseño UX</li>
-                    <li className='text-slate-100'>Diseño UI</li>
-                    <li className='text-slate-100'>Diseño de experiencias inmersivas</li>
-                    <li className='text-slate-100'>Estrategia de marca</li>
-                    <li className='text-slate-100'>Aplicaciones de marca con especialidad coorporativa</li>
-                    <li className='text-slate-100'>Diseño de animaciones y audiovisual</li>
+                    <li className='text-slate-100 text-[14px]'>Diseño UX</li>
+                    <li className='text-slate-100 text-[14px]'>Diseño UI</li>
+                    <li className='text-slate-100 text-[14px]'>Diseño de experiencias inmersivas</li>
+                    <li className='text-slate-100 text-[14px]'>Estrategia de marca</li>
+                    <li className='text-slate-100 text-[14px]'>Aplicaciones de marca con especialidad coorporativa</li>
+                    <li className='text-slate-100 text-[14px]'>Diseño de animaciones y audiovisual</li>
                   </ul>
                 </ServicesText>
 
@@ -106,11 +106,11 @@ const Servicios = () => {
 
                 <ServicesText title='develop' text={texts.develop} picture='/img/team/We-develop.png' id='desarrollo'>
                   <ul className='flex flex-col'>
-                    <li className='text-slate-100'>Website app development</li>
-                    <li className='text-slate-100'>Frontend speciality</li>
-                    <li className='text-slate-100'>3D inmersive experiences</li>
-                    <li className='text-slate-100'>Custome software development</li>
-                    <li className='text-slate-100'>Web 3.0 development</li>
+                    <li className='text-slate-100 text-[14px]'>Website app development</li>
+                    <li className='text-slate-100 text-[14px]'>Frontend speciality</li>
+                    <li className='text-slate-100 text-[14px]'>3D inmersive experiences</li>
+                    <li className='text-slate-100 text-[14px]'>Custome software development</li>
+                    <li className='text-slate-100 text-[14px]'>Web 3.0 development</li>
                   </ul>
                 </ServicesText>
 
@@ -120,11 +120,11 @@ const Servicios = () => {
 
                 <ServicesText title='do bussiness consulting' text={texts.doBussiness} picture='/img/team/We-do-bussiness.png' id='bussiness consulting'>
                   <ul className='flex flex-col'>
-                    <li className='text-slate-100'>Product Discovery</li>
-                    <li className='text-slate-100'>Benchmaking</li>
-                    <li className='text-slate-100'>UX Research</li>
-                    <li className='text-slate-100'>Bussiness Model Research</li>
-                    <li className='text-slate-100'>Data Analisis Marketing</li>
+                    <li className='text-slate-100 text-[14px]'>Product Discovery</li>
+                    <li className='text-slate-100 text-[14px]'>Benchmaking</li>
+                    <li className='text-slate-100 text-[14px]'>UX Research</li>
+                    <li className='text-slate-100 text-[14px]'>Bussiness Model Research</li>
+                    <li className='text-slate-100 text-[14px]'>Data Analisis Marketing</li>
                   </ul>
                 </ServicesText>
 

@@ -19,37 +19,11 @@ const TeamPictures = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-[2%] max-w-[400px] mx-auto md:max-w-full">
 
-            {/* <div className="block md:hidden col-span-1 flex items-center overflow-x-auto scrollbar py-[1rem] px-[3%] gap-4">
-
-                    <img src='/img/team-fotos/Ivana-trabajando.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Flor-y-Jasu.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Flor.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Ivana.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Luis-jugando.png' alt=""  className='z-30 h-[200px]'/>
-
-                    <img src='/img/team-fotos/Jasu.png' alt=""  className='z-30 h-[200px]'/>
-
-                    <img src='/img/team-fotos/Tite.png' alt=""  className='z-30 h-[200px]'/>
-            
-                    <img src='/img/team-fotos/Leyendo.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Luis-cumple.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Eli.png' alt="" className='z-30 h-[200px]' />
-
-                    <img src='/img/team-fotos/Daily.png' alt="" className='z-30 h-[200px]' />
-            </div> */}
-
-            {/* hidden md: */}
             <div className="grid col-span-1 grid-cols-2 gap-4">
 
                 <img src='/img/team-fotos/Ivana-trabajando.png' alt="" className='col-span-1 h-full relative z-30 mx-auto' />
 
-                <img src='/img/team-fotos/Flor-y-Jasu.png' alt="" className='col-span-1 h-full relative z-30 mx-auto' />
+                <img src='/img/team-fotos/Flor-y-jasu.png' alt="" className='col-span-1 h-full relative z-30 mx-auto' />
 
                 <img src='/img/team-fotos/Flor.png' alt="" className='col-span-1 h-full relative z-30 mx-auto' />
 
