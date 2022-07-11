@@ -36,7 +36,7 @@ const HeroHomePage = () => {
               src="/img/welaunch.png"
               alt="we launch"
               width="338px"
-              height="110px"
+              height="120px"
               className=""
             />
             <div className="flex items-end mt-[30px] md:mt-0 mr-12">

@@ -47,7 +47,7 @@ const FreeResource = () => {
     },
     {
       img: '/img/team/autodiagnostico.png',
-      title: 'Autodiagnóstico para conocer el estado de tu empresa',
+      title: 'Check list UX/UI  para webs',
       renderOnMobile: true,
     },
     {

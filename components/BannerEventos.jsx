@@ -30,7 +30,7 @@ const BannerEventos = () => {
                 className=" text-right  "
                 style={{ color: '#211539', borderBottom: '1px solid #211539' }}
               >
-                7 de Julio - 18 pm ARG
+                4 de Agosto - 18 pm ARG
               </p>
             </div>
           </div>
