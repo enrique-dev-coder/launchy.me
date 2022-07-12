@@ -1,49 +1,47 @@
-import React from 'react';
-import HomeSectionContainer from './Wrappers/HomeSectionContainer';
-import InstaIcon from '../components/InstaIcon';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 const linkData = [
-  { id: 1, link: 'Soluciones', src: '/services' },
-  { id: 2, link: 'Proyectos', src: '#proyectos' },
-  { id: 3, link: 'Cultura', src: '/culture' },
-  { id: 4, link: 'Blog', src: '/' },
-  { id: 5, link: 'Free resources', src: '#free-resources' },
+  { id: 1, link: "Soluciones", src: "/services" },
+  { id: 2, link: "Proyectos", src: "#proyectos" },
+  { id: 3, link: "Cultura", src: "/culture" },
+  { id: 4, link: "Blog", src: "/" },
+  { id: 5, link: "Free resources", src: "#free-resources" },
 ];
 
 const whiteIcons = [
   {
-    src: 'https://www.instagram.com/launchy.me/',
-    path: '/img/socialMedia/insta.svg',
+    src: "https://www.instagram.com/launchy.me/",
+    path: "/img/socialMedia/insta.svg",
   },
   {
-    src: 'https://www.tiktok.com/@launchy.me',
-    path: '/img/socialMedia/tiktok.svg',
+    src: "https://www.tiktok.com/@launchy.me",
+    path: "/img/socialMedia/tiktok.svg",
   },
   {
-    src: 'https://twitter.com/Launchy_me',
-    path: '/img/socialMedia/twitter.svg',
+    src: "https://twitter.com/Launchy_me",
+    path: "/img/socialMedia/twitter.svg",
   },
   {
-    src: 'https://www.linkedin.com/company/launchy-me/',
-    path: '/img/socialMedia/linkedin.svg',
+    src: "https://www.linkedin.com/company/launchy-me/",
+    path: "/img/socialMedia/linkedin.svg",
   },
 ];
 const blueIcons = [
   {
-    src: 'https://www.instagram.com/launchy.me/',
-    path: '/img/socialMedia/insta_blue.svg',
+    src: "https://www.instagram.com/launchy.me/",
+    path: "/img/socialMedia/insta_blue.svg",
   },
   {
-    src: 'https://www.tiktok.com/@launchy.me',
-    path: '/img/socialMedia/tiktok_blue.svg',
+    src: "https://www.tiktok.com/@launchy.me",
+    path: "/img/socialMedia/tiktok_blue.svg",
   },
   {
-    src: 'https://twitter.com/Launchy_me',
-    path: '/img/socialMedia/twitter_blue.svg',
+    src: "https://twitter.com/Launchy_me",
+    path: "/img/socialMedia/twitter_blue.svg",
   },
   {
-    src: 'https://www.linkedin.com/company/launchy-me/',
-    path: '/img/socialMedia/linkedin_blue.svg',
+    src: "https://www.linkedin.com/company/launchy-me/",
+    path: "/img/socialMedia/linkedin_blue.svg",
   },
 ];
 
@@ -51,13 +49,13 @@ const Footer = ({ blue }) => {
   return (
     <div
       className={`w-full border-y ${
-        blue ? 'border-[#211539]' : 'border-white'
+        blue ? "border-[#211539]" : "border-white"
       }   md:mt-[100px]`}
     >
       <div className="my-[40px] w-4/5 max-w-[906px] mx-auto">
         <div
           className="w-full flex flex-col justify-center"
-          style={{ color: `${blue ? '#211539' : 'white'}` }}
+          style={{ color: `${blue ? "#211539" : "white"}` }}
         >
           <div className="h-auto md:h-[150px] mb-[40px]">
             <div className="flex flex-col md:flex-row h-full">
@@ -72,22 +70,24 @@ const Footer = ({ blue }) => {
                 <p className=" uppercase cursor-pointer text-[22px] gradient_text_banner  md:text-[26px] underline roboto_condesed ">
                   READY TO LAUNCH?
                 </p>
-                <Link href={'/contact'}>
+                <Link href={"/contact"}>
                   <p className="uppercase cursor-pointer text-[22px]  md:text-[26px] underline roboto_condesed ">
-                    CHARLEMOS {'>>'}
+                    CHARLEMOS {">>"}
                   </p>
                 </Link>
               </div>
               <div className="basis-1/3 flex flex-col mb-[30px] md:mb-0  justify-between">
                 {linkData.map((l, i) => (
-                  <Link href={l.src}>
-                    <p
-                      key={i}
-                      className="roboto_condesed mb-[10px] md:mb-0  md:ml-5 uppercase cursor-pointer"
-                    >
-                      {l.link}
-                    </p>
-                  </Link>
+                  <a href={l.src}>
+                    <Link href={l.src}>
+                      <p
+                        key={i}
+                        className="roboto_condesed mb-[10px] md:mb-0  md:ml-5 uppercase cursor-pointer"
+                      >
+                        {l.link}
+                      </p>
+                    </Link>
+                  </a>
                 ))}
               </div>
               <div className="basis-1/3 md:flex flex-col   justify-end">
@@ -128,11 +128,13 @@ const Footer = ({ blue }) => {
             <p className="underline mb-5 md:mb-0">
               Trabajo inmersivo hecho en base a Tycho Magnetic Anomaly
             </p>
-            <Link href={'/privacy'}>
-              <p className="underline mb-5 md:mb-0 cursor-pointer">
-                Políticas de Privacidad
-              </p>
-            </Link>
+            <a href="/privacy">
+              <Link href={"/privacy"}>
+                <p className="underline mb-5 md:mb-0 cursor-pointer">
+                  Políticas de Privacidad
+                </p>
+              </Link>
+            </a>
           </div>
         </div>
       </div>

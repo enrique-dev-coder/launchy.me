@@ -1,7 +1,7 @@
-import React from 'react';
-import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
-import HomeButton from '../HomeButton';
-import AlienSlider from './AlienSlider';
+import React from "react";
+import HomeSectionContainer from "../Wrappers/HomeSectionContainer";
+import HomeButton from "../HomeButton";
+import AlienSlider from "./AlienSlider";
 
 const index = () => {
   return (
@@ -21,7 +21,7 @@ const index = () => {
             <div className="h-[80%] flex flex-col items-center md:justify-around">
               <h2
                 className=" text-[22px] md:text-4xl mb-[20px] md:mb-0 uppercase roboto_condesed font-bold "
-                style={{ color: '#211539' }}
+                style={{ color: "#211539" }}
               >
                 Conoce al team
               </h2>
@@ -31,12 +31,14 @@ const index = () => {
                 Vas a amar trabajar con nosotros. Siempre buscamos soluciones
                 con la mejor actitud.
               </p>
-              <HomeButton link={'/culture'} title={'conócenos :)'} />
+              <a href="/culture">
+                <HomeButton link={"/culture"} title={"conócenos :)"} />
+              </a>
             </div>
           </div>
           <div
             className="w-full  overflow-hidden relative  h-[30%]"
-            style={{ borderTop: '2px solid #211539' }}
+            style={{ borderTop: "2px solid #211539" }}
           >
             <div className="w-full flex absolute justify-between bottom-0 top-[30px] h-full">
               <AlienSlider />
