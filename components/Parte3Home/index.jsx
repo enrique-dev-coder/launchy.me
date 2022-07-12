@@ -97,7 +97,7 @@ const index = () => {
               <HomeButton link={"/services"} title={"Ir a Servicios"} />
             </a>
           </div>
-          <div className="md:w-1/2 h-full bg-white">
+          <div className="md:w-1/2 h-full bg-white mt-[30px] md:mt-0">
             <Link href={"/services"}>
               <video
                 src="/img/services.mp4"
