@@ -52,13 +52,13 @@ const BoxesSwiper = () => {
 
   return (
     <div
-      className={`w-full flex items-center py-[1rem] mt-[60px] md:mt-[80px]`}
+      className={`w-full flex items-center py-[1rem] mt-[60px] md:mt-[80px] hidden lg:block`}
     >
       {/* DESKTOP 1280px */}
       <Swiper
-        slidesPerView={4.5}
+        slidesPerView={3.5}
         loop={true}
-        className="flex w-full gap-4 hidden xl:block"
+        className="flex w-full gap-4 block"
         grabCursor={true}
         //modules={[FreeMode]}
         centeredSlides={true}
@@ -74,63 +74,6 @@ const BoxesSwiper = () => {
                   : 'bg-gradient-to-b from-gray-600 via-gray-600 to-[#E3DEFF] opacity-40'
               }  transition-opacity text-[14px] text-white roboto_normal border border-white shrink-0 h-[105px] w-[280px] p-[2%] flex items-center text-center `}
             >
-              {item.text}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/* DESKTOP 1024px */}
-      <Swiper
-        slidesPerView={3}
-        loop={true}
-        className="flex w-full gap-4 hidden lg:block xl:hidden"
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-      >
-        {texts.map((item, index) => (
-          <SwiperSlide key={index} className="flex justify-center">
-            <div className="text-white text-[14px] roboto_normal border border-white shrink-0 h-[105px] w-[280px] p-[2%] flex items-center text-center bg-gradient-to-b from-gray-600 via-gray-600 to-[#E3DEFF]">
-              {item.text}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/* TABLET 640px */}
-      <Swiper
-        slidesPerView={2}
-        loop={true}
-        className="flex w-full gap-4 hidden sm:block lg:hidden"
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-      >
-        {texts.map((item, index) => (
-          <SwiperSlide key={index} className="flex justify-center">
-            <div className="text-white text-[14px] roboto_normal border border-white shrink-0 h-[105px] w-[280px] p-[2%] flex items-center text-center bg-gradient-to-b from-gray-600 via-gray-600 to-[#E3DEFF]">
-              {item.text}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-      {/* MOBILE 320px */}
-      <Swiper
-        slidesPerView={1}
-        loop={true}
-        className="flex w-full gap-4 sm:hidden"
-        autoplay={{
-          delay: 1500,
-          disableOnInteraction: false,
-        }}
-        modules={[Autoplay]}
-      >
-        {texts.map((item, index) => (
-          <SwiperSlide key={index} className="flex justify-center">
-            <div className="text-white text-[14px] roboto_normal border border-white shrink-0 h-[105px] w-[280px] p-[2%] flex items-center text-center bg-gradient-to-b from-gray-600 via-gray-600 to-[#E3DEFF]">
               {item.text}
             </div>
           </SwiperSlide>

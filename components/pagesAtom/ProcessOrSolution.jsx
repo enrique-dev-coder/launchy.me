@@ -7,9 +7,9 @@ const ProcessOrSolution = ({title, text = null, children, paragraph = true}) => 
   return (
     <FadeInElement>
       <Wrapper>
-        <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>{title}</h2>
+        <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 rounded-tr-[.2rem] font-roboto text-[16px] lg:text-[22px]'>{title}</h2>
         {
-          paragraph && <p className='mb-[30px] md:mb-[40px]'> {text ? text : defaultText} </p>
+          paragraph && <p className='mb-[30px] md:mb-[40px] roboto_normal text-[14px]'> {text ? text : defaultText} </p>
         }
         {children}
       </Wrapper>

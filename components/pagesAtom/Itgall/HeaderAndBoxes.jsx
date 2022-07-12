@@ -8,7 +8,7 @@ import iconPic2 from '../../../public/img/icons/Ojito.svg'
 import iconPic3 from '../../../public/img/icons/Profile.svg'
 import iconPic4 from '../../../public/img/icons/fluent_calendar-today-28-regular.svg'
 
-const objetivoTexto = "Generar un Manual de marca y aplicaciones comerciales que apoyen los objetivos comerciales de la empresa así como solificar juntos la estrategia de marca de Infuy. Para ello brindaremos un Diseño aplicado con propósito y que permita escalar a la marca a largo plazo."
+const objetivoTexto = "ITGALL es una empresa que nace para dar visibilidad a todos los living labs empezando por Galicia y actualmente expandiendose por el mundo. Y ese es el punto de esta web, dar a conocer a cada uno, dando una visión macro a esta iniciativa que busca revolucionar el campo de la salud."
 
 const desafioTexto = {
   one: 'Centralizar los living labs desde la web localizandolos geográficamente desde una visión macro del ecosistema de salud.',

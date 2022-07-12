@@ -12,9 +12,9 @@ const Card = ({ path, link }) => {
               alt="casos de exito"
             />
         </div>
-        <div className="w-full h-full">
+        <div className="w-full h-full flex ">
           <div
-            className={`text-[12px] md:text-[13px] w-11/12 mx-auto flex md:justify-between cursor-pointer mt-2`}
+            className={`text-[12px] md:text-[13px] w-full py-[5%] md:py-0 pl-[10%] md:pl-0 md:w-11/12 mx-auto flex md:justify-between cursor-pointer mt-auto md:mt-2 border-t border-white md:border-0`}
           >
             <p>Ver caso completo</p>
             <img

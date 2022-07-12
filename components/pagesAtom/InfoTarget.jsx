@@ -13,14 +13,14 @@ const InfoTarget = ({ objetivoTexto, desafioTexto, imgData }) => {
       <Wrapper>
         <div className="mb-[60px] md:mb-[80px] pt-[30px] md:pt-[40px] max-w-[1440px] mx-auto">
           <div className="mb-[60px] md:mb-[80px]">
-            <h2 className="mb-[30px] md:mb-[40px] border border-black p-2 pl-6">
+            <h2 className="mb-[30px] md:mb-[40px] border border-black p-2 pl-6 rounded-tr-[.2rem] font-roboto text-[16px] lg:text-[22px]">
               OBJETIVO
             </h2>
-            <p>{objetivoTexto}</p>
+            <p className='roboto_normal text-[14px]'>{objetivoTexto}</p>
           </div>
 
           <div className="mb-[60px] md:mb-[80px]">
-            <h2 className="mb-[30px] md:mb-[40px] border border-black p-2 pl-6">
+            <h2 className="mb-[30px] md:mb-[40px] border border-black p-2 pl-6 rounded-tr-[.2rem] font-roboto text-[16px] lg:text-[22px]">
               DESAFÍO
             </h2>
 
@@ -32,6 +32,7 @@ const InfoTarget = ({ objetivoTexto, desafioTexto, imgData }) => {
                 width={width.one}
                 height={height.one}
                 color={color}
+                alt={alt}
               />
 
               {/* Second Square */}
@@ -41,24 +42,27 @@ const InfoTarget = ({ objetivoTexto, desafioTexto, imgData }) => {
                 width={width.two}
                 height={height.two}
                 color={color}
+                alt={alt}
               />
 
               {/* Thrid Square */}
               <InfotTargetBox 
-                number={two}
+                number={three}
                 imgURL={imgURL.three}
                 width={width.three}
                 height={height.three}
                 color={color}
+                alt={alt}
               />
 
               {/* Fourth Square */}
               <InfotTargetBox 
-                number={two}
+                number={four}
                 imgURL={imgURL.four}
                 width={width.four}
                 height={height.four}
                 color={color}
+                alt={alt}
               />
               
             </div>

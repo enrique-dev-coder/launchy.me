@@ -15,7 +15,7 @@ const desafioTexto = {
   one: 'Crear una identidad grafica sólida y consistente  que muestre a INFUY como lider y pionera en desarrollo blockchain.',
   two: 'Generar presentaciones para el área de  GROWTH hablandole gráficamente a dos mercados distintos: empresas sólidas y startups.',
   three: 'Impactar en la cultura interna de INFUY gráficamente a partir de inciativas que sumaran al equipo de People.',
-  four: 'Hacer una marca que se use en el día a día.'
+  four: 'Hacer una marca que se use en el día a día. Capacitando a cada departamento y obteniendo un espacio co-creativo.'
 } 
 
 const imgData = {
@@ -45,11 +45,11 @@ const imgData = {
 
 //Header items
 const items = [
-    'diseño de manual de marca',
+    'diseño',
     'banners',
     'feed',
     'presentaciones',
-    'aplicaciones de marca',
+    'aplicaciones',
     'infografías',
     'editables',
 ]

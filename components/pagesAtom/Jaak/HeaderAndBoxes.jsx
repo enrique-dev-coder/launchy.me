@@ -46,8 +46,8 @@ const imgData = {
 
 // Header items
 const items = [
-  'diseño de banners',
-  'mantenimiento de feed',
+  'diseño',
+  'mantenimiento',
   'diseño UX',
   'diseño UI',
   'writing',

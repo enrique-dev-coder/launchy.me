@@ -48,7 +48,7 @@ const items = [
     'diseño UI',
     'prototipado',
     'iteración',
-    'diseño para diferentes públicos',
+    'diseño',
     'writing',
 ]
 

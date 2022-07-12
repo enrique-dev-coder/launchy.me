@@ -29,7 +29,7 @@ const HeaderSlider = ({
       >
         {slidesItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <li className="text-center py-4 uppercase">{item}</li>
+            <li className="text-center py-4 uppercase font-roboto text-[16px]">{item}</li>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -46,7 +46,7 @@ const HeaderSlider = ({
       >
         {slidesItems.map((item, index) => (
           <SwiperSlide key={index}>
-            <li className="text-center py-4 uppercase">{item}</li>
+            <li className="text-center py-4 uppercase font-roboto text-[14px]">{item}</li>
           </SwiperSlide>
         ))}
       </Swiper>

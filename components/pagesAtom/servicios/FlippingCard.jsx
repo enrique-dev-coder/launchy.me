@@ -21,12 +21,12 @@ const FlippingCard = ({picture, title, link, video}) => {
         {
           video?
           <video 
-          className='z-30 relative' 
+          className='z-20 relative' 
           src={picture} 
           autoPlay
           loop
           muted></video>:
-          <img src={picture} alt="" className='z-30 relative' />
+          <img src={picture} alt="" className='z-20 relative' />
         }
       </a>
       <h3 className='font-roboto border-t border-white text-white text-center text-[18px] uppercase py-[4%]'>{title}</h3>

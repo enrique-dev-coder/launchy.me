@@ -7,7 +7,7 @@ const Logos = () => {
   return (
     <Wrapper>
 
-            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6'>OBJETIVO</h2>
+            <h2 className='mb-[30px] md:mb-[40px] border border-black p-2 pl-6 rounded-tr-[.2rem]'>OBJETIVO</h2>
 
             {/* Two Infuy logo pics */}
             <div className="flex flex-col gap-6 w-full items-center lg:flex-row px-[8%] mb-[60px] md:mb-[80px]">

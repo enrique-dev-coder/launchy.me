@@ -42,7 +42,7 @@ const StackSlider = () => {
               <img
                 src={`/img/stack/${l.path}.png`}
                 alt={`logo de ${l.path}`}
-                className="mx-auto h-[20px]"
+                className="mx-auto h-[25px]"
               />
             </div>
           </SwiperSlide>
@@ -67,7 +67,7 @@ const StackSlider = () => {
               <img
                 src={`/img/stack/${l.path}.png`}
                 alt={`logo de ${l.path}`}
-                className="mx-auto h-[20px]"
+                className="mx-auto h-[25px]"
               />
             </div>
           </SwiperSlide>

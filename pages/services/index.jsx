@@ -17,7 +17,7 @@ const items = [
     'PROACTIVOS',
     'ANALITICOS',
     'MAKERS',
-    'PIZZA & GAME LOVERS',
+    'PIZZA',
     'DREAMERS',
     'ENTUSIASTAS',
     'APASIONADOS',

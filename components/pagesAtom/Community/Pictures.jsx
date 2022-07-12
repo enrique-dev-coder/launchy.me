@@ -57,7 +57,7 @@ const Pictures = () => {
 
         <FadeInElement>
             <Wrapper>
-                <div className='mb-[30px] md:mb-[40px]'>
+                <div className='mb-[30px] md:mb-[40px] roboto_normal text-[14px]'>
                 Trabajamos con los elementos que el cliente decidió y tratando de ofrecer una guía en la distribución de información, logrando reducirla a un 60% de la original que iba a ser publicada.
                 </div>
             </Wrapper>
@@ -74,7 +74,7 @@ const Pictures = () => {
 
         <FadeInElement>
             <Wrapper>
-                <div className='mb-[30px] md:mb-[40px]'>
+                <div className='mb-[30px] md:mb-[40px] roboto_normal text-[14px]'>
                 Trabajamos en conjunto con el equipo técnico para ir solucionando las necesidades que fue presentando el proyecto conforme va avanzando en cuanto a la construcción de la documentación así como los pilotos técnicos.
                 </div>
             </Wrapper>

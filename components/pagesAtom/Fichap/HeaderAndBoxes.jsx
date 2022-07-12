@@ -50,7 +50,7 @@ const items = [
     'iteración',
     'development',
     'frontend',
-    'pixel perfect',
+    'pixel',
     'rediseño',
 ]
 

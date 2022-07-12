@@ -19,7 +19,7 @@ const Pictures = () => {
     <Fragment>
         <FadeInElement>
             <Wrapper>
-                <div className='mb-[30px] md:mb-[40px]'>
+                <div className='mb-[30px] md:mb-[40px] roboto_normal text-[14px]'>
                 Reformular puntos claves de contenido para la audiencia así como dar un rediseño a la página apegado al manual de marca que tienen ha sido una gran experiencia enriquecedora para ambos equipos. Fuimos mas allá de la web para colaborar con las estrategias digitales para el customer journey map del cliente.
                 </div>
 
