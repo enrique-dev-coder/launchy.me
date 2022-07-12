@@ -10,7 +10,7 @@ const menuData = [
   },
   {
     id: 2,
-    link: "#proyectos",
+    link: "/#proyectos",
     title: "proyectos",
   },
 
@@ -26,7 +26,7 @@ const menuData = [
   },
   {
     id: 5,
-    link: "#free-resources",
+    link: "/#free-resources",
     title: "free resources",
   },
 ];

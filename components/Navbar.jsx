@@ -9,7 +9,7 @@ const Links = [
   },
   {
     title: "proyectos",
-    src: "#proyectos",
+    src: "/#proyectos",
   },
   {
     title: "cultura",
@@ -21,7 +21,7 @@ const Links = [
   },
   {
     title: "free resources",
-    src: "#free-resources",
+    src: "/#free-resources",
   },
 ];
 
