@@ -5,7 +5,6 @@ import StarBackgroundCss from '../components/Wrappers/StarBackgroundCss';
 import ParteDosHome from '../components/Parte2Home/index';
 import ParteTresHome from '../components/Parte3Home/index';
 import ParteCuatroHome from '../components/Parte4Home/index';
-import LogoSlider from '../components/LogoSlider';
 import ParteCincoHome from '../components/Parte5Home/index';
 import ParteSeisHome from '../components/Parte6Home/index';
 import ParteSieteHome from '../components/Parte7Home/index';
@@ -21,7 +20,6 @@ const Home: NextPage = () => {
         <ParteDosHome />
         <ParteTresHome />
         <ParteCuatroHome />
-        <LogoSlider />
         <ParteCincoHome />
         <ParteSeisHome />
         <ParteSieteHome />

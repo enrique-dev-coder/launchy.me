@@ -3,6 +3,7 @@ import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
 import Title2Home from '../Title2Home';
 import Card from './Card';
 import HomeButton from '../HomeButton';
+import LogoSlider from '../LogoSlider';
 const data = [
   {
     id: 1,
@@ -50,25 +51,30 @@ const data = [
 
 const index = () => {
   return (
-    <HomeSectionContainer>
-      <div className="w-full" id="proyectos">
-        <Title2Home title={'Y ESTO ES LO QUE HACEMOS Y AMAMOS...'} />
+    <>
+      <HomeSectionContainer>
+        <div className="w-full" id="proyectos">
+          <Title2Home title={'Y ESTO ES LO QUE HACEMOS Y AMAMOS...'} />
+        </div>
+        <div className="flex flex-wrap justify-between">
+          {data.map((d, i) => (
+            <Card
+              key={i}
+              link={d.link}
+              path={d.path}
+              desc={d.desc}
+              video={d.video}
+            />
+          ))}
+        </div>
+        <div className="w-full flex justify-center">
+          <HomeButton link={'/contact'} title={'CONVIERTETE EN UNO'} />
+        </div>
+      </HomeSectionContainer>
+      <div className="mt-[-40px] mb-[120px]">
+        <LogoSlider />
       </div>
-      <div className="flex flex-wrap justify-between">
-        {data.map((d, i) => (
-          <Card
-            key={i}
-            link={d.link}
-            path={d.path}
-            desc={d.desc}
-            video={d.video}
-          />
-        ))}
-      </div>
-      <div className="w-full flex justify-center">
-        <HomeButton link={'/contact'} title={'CONVIERTETE EN UNO'} />
-      </div>
-    </HomeSectionContainer>
+    </>
   );
 };
 

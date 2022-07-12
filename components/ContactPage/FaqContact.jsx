@@ -4,7 +4,7 @@ import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
 const FaqContact = () => {
   return (
     <HomeSectionContainer>
-      <div className="w-[550px]">
+      <div className="w-full max-w-[550px]">
         <FAQ />
       </div>
     </HomeSectionContainer>

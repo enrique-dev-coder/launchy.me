@@ -1,21 +1,22 @@
 import { useEffect } from 'react';
 import HomeButton from './HomeButton';
 import { useMenu } from '../context/MenuContext';
+import Link from 'next/link';
 const menuData = [
   {
     id: 1,
-    link: '/',
+    link: '/services',
     title: 'soluciones',
   },
   {
     id: 2,
-    link: '/',
+    link: '#proyectos',
     title: 'proyectos',
   },
 
   {
     id: 3,
-    link: '/',
+    link: '/culture',
     title: 'cultura',
   },
   {
@@ -25,7 +26,7 @@ const menuData = [
   },
   {
     id: 5,
-    link: '/',
+    link: '#free-resources',
     title: 'free resources',
   },
 ];
@@ -57,22 +58,24 @@ const MobileMenu = ({ isOpen }) => {
         </div>
         <div className="w-10/12 mx-auto h-[450px] mb-[30px] flex flex-col justify-around">
           {menuData.map((m) => (
-            <div className="relative" key={m.title}>
-              <p
-                key={m.id}
-                className="uppercase text-white mb-[30px] text-[20px]"
-              >
-                {m.title}
-              </p>
-              <div
-                className={`bg-white w-full transition-all duration-500  h-[1.5px] absolute   ${
-                  lineAnimation ? 'left-0' : 'left-[100%]'
-                }`}
-              ></div>
-            </div>
+            <Link href={m.link} key={m.title}>
+              <div className="relative" onClick={() => setisOpen(false)}>
+                <p
+                  key={m.id}
+                  className="uppercase text-white mb-[30px] text-[20px]"
+                >
+                  {m.title}
+                </p>
+                <div
+                  className={`bg-white w-full transition-all duration-500  h-[1.5px] absolute   ${
+                    lineAnimation ? 'left-0' : 'left-[100%]'
+                  }`}
+                ></div>
+              </div>
+            </Link>
           ))}
         </div>
-        <div className="w-10/12 mx-auto">
+        <div className="w-10/12 mx-auto" onClick={() => setisOpen(false)}>
           <HomeButton link={'/contact'} title={'charlemos'} />
         </div>
       </div>

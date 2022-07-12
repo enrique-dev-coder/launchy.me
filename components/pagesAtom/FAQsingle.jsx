@@ -6,17 +6,17 @@
 const FAQsingle = ({ text, answer, type, show, showDispatch }) => {
   return (
     <div
-      className="flex border flex-col w-full  relative  mb-[5px] rounded"
+      className="flex border flex-col w-full text-sm md:text-base  relative  mb-[5px] rounded"
       onClick={() => {
         showDispatch({
           type,
         });
       }}
     >
-      <div className=" transition-all py-[5px] w-[90%] mx-auto  ">{text}</div>
+      <div className=" transition-all py-[5px] w-[85%] mx-auto  ">{text}</div>
 
       <div
-        className={`flex  pointer-events-none w-[90%] py-[5px] mx-auto ${
+        className={`flex  pointer-events-none w-[85%] py-[5px] mx-auto ${
           show ? 'block' : 'hidden'
         } bg-black`}
       >

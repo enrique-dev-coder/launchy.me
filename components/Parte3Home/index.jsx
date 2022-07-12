@@ -69,8 +69,8 @@ const index = () => {
           <img src="/img/lupita.svg" alt="lupa" className="ml-4" />
           <p className="text-white text-[14px] md:text-lg roboto_normal   p-2">
             Hola! Somos Launchy, un equipo de especialistas en generar valor,
-            <span className=" underline"> investigando</span>,
-            <span className="underline"> desarrollando</span> y
+            <span className=""> investigando</span>,
+            <span className=""> desarrollando</span> y
           </p>
         </div>
         <div className="w-full flex border-white border border-t-0 border-solid mb-[40px]  rounded-br-md  ">
@@ -93,6 +93,9 @@ const index = () => {
                 actual={actual}
               />
             ))}
+            <a href="/services">
+              <HomeButton link={'/services'} title={'Ir a Servicios'} />
+            </a>
           </div>
           <div className="md:w-1/2 h-full bg-white">
             <video
@@ -105,9 +108,6 @@ const index = () => {
             />
           </div>
         </div>
-        <a href="/services">
-          <HomeButton link={'/services'} title={'Ir a Servicios'} />
-        </a>
       </div>
     </HomeSectionContainer>
   );
