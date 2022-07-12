@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import HomeSectionContainer from "../../components/Wrappers/HomeSectionContainer";
-import SubscribeModal from "../subscribeModal";
+import React, { useState } from 'react';
+import HomeSectionContainer from '../../components/Wrappers/HomeSectionContainer';
+import SubscribeModal from '../subscribeModal';
 const InputContactForm = ({
   title,
   type,
@@ -28,11 +28,11 @@ const InputContactForm = ({
 
 const ContactForm = () => {
   const [formValues, setFormValues] = useState({
-    name: "",
-    mail: "",
-    select1: "",
-    select2: "",
-    message: "",
+    name: '',
+    mail: '',
+    select1: '',
+    select2: '',
+    message: '',
   });
   const { name, mail, select1, select2, message } = formValues;
   const [formConfirmation, setFormConfirm] = useState(false);
@@ -42,42 +42,42 @@ const ContactForm = () => {
     let xhr = new XMLHttpRequest();
     //peticion a url  al formulario de hubspot
     let url =
-      "https://api.hsforms.com/submissions/v3/integration/submit/21108231/c217499f-c774-47a5-ae7c-b16a8201b566";
+      'https://api.hsforms.com/submissions/v3/integration/submit/21108231/c217499f-c774-47a5-ae7c-b16a8201b566';
     //array con los valores del estado
     let data = {
       fields: [
         {
-          name: "firstname",
+          name: 'firstname',
           value: name,
         },
         {
-          name: "email",
+          name: 'email',
           value: mail,
         },
         {
-          name: "necesidades",
+          name: 'necesidades',
           value: select1,
         },
         {
-          name: "solcuiones2",
+          name: 'solcuiones2',
           value: select2,
         },
         {
-          name: "message",
+          name: 'message',
           value: message,
         },
       ],
       context: {
-        pageUri: "http://localhost:3000/",
-        pageName: "Launchy",
+        pageUri: 'http://localhost:3000/',
+        pageName: 'Launchy',
       },
     };
     //pasamos el dato a JSON para enviar
     let final_data = JSON.stringify(data);
     //metodo de postear  a la url de hubspot
-    xhr.open("POST", url);
+    xhr.open('POST', url);
     //mandar peticion de typo application/json
-    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader('Content-Type', 'application/json');
     //funcion que sirce para verificar que se haya mandado el form
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4 && xhr.status === 200) {
@@ -95,11 +95,11 @@ const ContactForm = () => {
     xhr.send(final_data);
     //dejar vacio el estado que mandael form
     setFormValues({
-      name: "",
-      mail: "",
-      select1: "",
-      select2: "",
-      message: "",
+      name: '',
+      mail: '',
+      select1: '',
+      select2: '',
+      message: '',
     });
   };
 
@@ -122,7 +122,7 @@ const ContactForm = () => {
           {formConfirmation && (
             <SubscribeModal
               background={
-                "linear-gradient(180deg, rgba(176, 152, 240, 0.59) 100%, rgba(134, 20, 130, 0.2) 100%)"
+                'linear-gradient(180deg, rgba(176, 152, 240, 0.59) 100%, rgba(134, 20, 130, 0.2) 100%)'
               }
               closeModal={() => setFormConfirm(false)}
             />
@@ -133,16 +133,16 @@ const ContactForm = () => {
           <form className="w-full" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row justify-between">
               <InputContactForm
-                type={"text"}
-                title={"¿Cómo te llamas? *"}
+                type={'text'}
+                title={'¿Cómo te llamas? *'}
                 placeholder="Nicolas Tesla"
                 name="name"
                 value={name}
                 onChangeFunction={handleInputChange}
               />
               <InputContactForm
-                type={"mail"}
-                title={"Tu Mail *"}
+                type={'mail'}
+                title={'Tu Mail *'}
                 placeholder="nicolas@empresacool.com"
                 name="mail"
                 value={mail}
@@ -150,8 +150,8 @@ const ContactForm = () => {
               />
             </div>
             {/*select*/}
-            <div className="flex justify-between mb-[20px]  flex-col md:flex-row">
-              <div className="flex flex-col w-full md:w-[45%] mb-[20px]">
+            <div className="flex justify-between mb-[20px]  flex-col ">
+              <div className="flex flex-col w-full  mb-[20px]">
                 <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
                   Quisieras:
                 </label>
@@ -172,7 +172,7 @@ const ContactForm = () => {
                   <option value="Otros">Otros</option>
                 </select>
               </div>
-              <div className="flex flex-col w-full md:w-[45%]">
+              <div className="flex flex-col w-full ">
                 <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
                   ¿Qué solución te interesó?
                 </label>

@@ -116,7 +116,12 @@ const SubscribeForm = () => {
           </button>
           <p className="mt-[20px] text-sm" style={{ color: '#DCDCDC' }}>
             Acepto las{' '}
-            <span className="underline">Politicas de Privacidad </span> al
+            <a href="/privacy">
+              <span className="underline cursor-pointer">
+                Politicas de Privacidad{' '}
+              </span>{' '}
+              al
+            </a>
             suscribirme.
           </p>
         </form>

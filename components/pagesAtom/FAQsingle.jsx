@@ -17,15 +17,15 @@ const FAQsingle = ({ text, answer, type, show, showDispatch }) => {
 
       <div
         className={`flex  pointer-events-none w-[85%] py-[15px] mx-auto ${
-          show ? "block" : "hidden"
-        } bg-black`}
+          show ? 'block' : 'hidden'
+        } `}
       >
         {answer}
       </div>
       {/*ELi aqui cambie la flechita por un icono y solo le deje la logica con los giros*/}
       <div
         className={`  absolute right-0 translate-y-1 transition-all transform ${
-          show ? "rotate-[180deg] " : "rotate-[0deg] "
+          show ? 'rotate-[180deg] ' : 'rotate-[0deg] '
         } mr-[5%]`}
       >
         <img

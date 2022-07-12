@@ -1,32 +1,36 @@
 import { useEffect, useState } from 'react';
 
-const ResourceCard = ({ img, title, renderOnMobile }) => {
+const ResourceCard = ({ img, title, renderOnMobile, link }) => {
   return (
     renderOnMobile && (
-      <div
-        className={`w-full mb-[30px] md:mb-0 md:w-[275px] h-[138px] ${
-          title === null && ' border-none'
-        } flex  border border-white`}
-      >
-        <img src={img} />
+      <a href={link} target="_blank" rel="noopener noreferrer ">
         <div
-          className={`flex-1 border-l ${
+          className={`w-full mb-[30px] md:mb-0 md:w-[275px] h-[138px] cursor-pointer ${
             title === null && ' border-none'
-          } border-white flex flex-col justify-center`}
+          } flex  border border-white`}
         >
-          <div className="w-[80%] h-[80%] flex flex-col  mx-auto">
-            <p className="text-white flex-1  text-sm roboto_normal ">{title}</p>
-            {title && (
-              <div className="flex mb-[10px]">
-                <p className="text-white  text-[10px] mr-4 uppercase roboto_normal">
-                  ACCEDER
-                </p>
-                <img src="/img/right.svg" />
-              </div>
-            )}
+          <img src={img} />
+          <div
+            className={`flex-1 border-l ${
+              title === null && ' border-none'
+            } border-white flex flex-col justify-center`}
+          >
+            <div className="w-[80%] h-[80%] flex flex-col  mx-auto">
+              <p className="text-white flex-1  text-sm roboto_normal ">
+                {title}
+              </p>
+              {title && (
+                <div className="flex mb-[10px]">
+                  <p className="text-white  text-[10px] mr-4 uppercase roboto_normal">
+                    ACCEDER
+                  </p>
+                  <img src="/img/right.svg" />
+                </div>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      </a>
     )
   );
 };
@@ -44,11 +48,13 @@ const FreeResource = () => {
       img: '/img/team/customer.png',
       title: 'Plantilla para hacer tu customer journey map 🚀 ',
       renderOnMobile: true,
+      link: 'https://launchy-21017130.hubspotpagebuilder.com/customer-journey-map',
     },
     {
-      img: '/img/team/autodiagnostico.png',
-      title: 'Check list UX/UI  para webs',
+      img: '/img/checklist-ux-ui.png',
+      title: 'Check list UX/UI  para webs-apps',
       renderOnMobile: true,
+      link: 'https://launchy-21017130.hubspotpagebuilder.com/checklist-ux-ui',
     },
     {
       img: '',
@@ -71,6 +77,7 @@ const FreeResource = () => {
           //esto es para que no renderice la tarjeta en blacno
 
           <ResourceCard
+            link={r.link}
             key={i}
             img={r.img}
             title={r.title}
