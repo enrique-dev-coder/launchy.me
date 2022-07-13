@@ -7,9 +7,6 @@ import Pictures from '../../components/pagesAtom/Infuy/Pictures';
 import Logos from '../../components/pagesAtom/Infuy/Logos';
 import FadeInElement from '../../components/pagesAtom/FadeInElement';
 import Footer from '../../components/Footer';
-import FAQ from '../../components/pagesAtom/FAQ';
-import InfuyPaletaGIF from '../../public/img/infuy/Paleta cromatica.gif';
-import InfuyAnotherGIF from '../../public/img/infuy/Logo- Colores_1.gif';
 import { Fragment } from 'react';
 
 // ColorPalette Props
@@ -27,7 +24,7 @@ const Infuy = () => {
       <div className="max-w-[1440px] mx-auto">
         <ColorPalette title="COLORES Y APLICACIÓN" text={textPalette}>
           <img
-            src={InfuyPaletaGIF}
+            src="/img/infuy/Paleta cromatica.gif"
             width={1439}
             height={140}
             alt={'Mockup de Infuy creado por Launchy'}

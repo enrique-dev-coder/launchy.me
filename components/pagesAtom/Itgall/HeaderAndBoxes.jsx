@@ -1,11 +1,6 @@
 import React, { Fragment } from 'react';
 import InfoTarget from '../InfoTarget';
 import Header from '../Header';
-import ITGallLogo from '../../../public/img/itgall/Logo ITGall.png';
-import iconPic1 from '../../../public/img/icons/fluent_web-asset-20-regular.svg';
-import iconPic2 from '../../../public/img/icons/Ojito.svg';
-import iconPic3 from '../../../public/img/icons/Profile.svg';
-import iconPic4 from '../../../public/img/icons/fluent_calendar-today-28-regular.svg';
 
 const objetivoTexto =
   'ITGALL es una empresa que nace para dar visibilidad a todos los living labs empezando por Galicia y actualmente expandiendose por el mundo. Y ese es el punto de esta web, dar a conocer a cada uno, dando una visión macro a esta iniciativa que busca revolucionar el campo de la salud.';
@@ -20,10 +15,10 @@ const desafioTexto = {
 
 const imgData = {
   imgURL: {
-    one: iconPic1,
-    two: iconPic2,
-    three: iconPic3,
-    four: iconPic4,
+    one: "/img/icons/fluent_web-asset-20-regular.svg",
+    two: "/img/icons/Ojito.svg",
+    three: "/img/icons/Profile.svg",
+    four: "/img/icons/fluent_calendar-today-28-regular.svg",
   },
   height: {
     one: 32,
@@ -60,7 +55,7 @@ const HeaderAndBoxes = () => {
     <Fragment>
       <Header items={items} quantity={7}>
         <img
-          src={ITGallLogo}
+          src="/img/itgall/Logo ITGall.png"
           width={324}
           height={103}
           alt={'Mockup de ITGall creado por Launchy'}

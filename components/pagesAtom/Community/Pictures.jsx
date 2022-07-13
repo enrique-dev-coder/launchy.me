@@ -1,10 +1,4 @@
 import React, { Fragment } from 'react';
-import SolutionScreen1 from '../../../public/img/community/Solution screen 1.png';
-import FirstInSecondParagraph from '../../../public/img/community/First in second paragraph.png';
-import NextInSecondParagraph from '../../../public/img/community/Next in second paragraph.png';
-import LastParagraphFirstFrame from '../../../public/img/community/Last paragraph first frame.png';
-import LastParagraphSecondFrame from '../../../public/img/community/Last paragraph second frame.png';
-import CommunityGif from '../../../public/img/community/Video celus (1).gif';
 import FadeInElement from '../FadeInElement';
 import Wrapper from '../Wrapper';
 
@@ -15,7 +9,7 @@ const Pictures = () => {
         <div className="grid place-content-center mb-[30px] md:mb-[40px]">
           <div className="grid place-content-center h-[190px] w-[310px] sm:w-[500px] h-[300px] md:w-[650px] md:h-[400px] lg:w-[902px] lg:h-[554px]">
             <img
-              src={SolutionScreen1}
+              src="/img/community/Solution screen 1.png"
               width={902}
               height={554}
               alt={'Mockup de Community creado por Launchy'}
@@ -32,7 +26,7 @@ const Pictures = () => {
 
           <div className="right-[28%] sm:right-[35%] top-[6%] xl:right-[39%] 2xl:right-[47%] z-10 absolute w-[310px] sm:w-[400px] lg:w-[588px] lg:h-[355px]">
             <img
-              src={FirstInSecondParagraph}
+              src="/img/community/First in second paragraph.png"
               width={588}
               height={355}
               alt={'Mockup de Community creado por Launchy'}
@@ -41,7 +35,7 @@ const Pictures = () => {
 
           <div className="right-[2%] sm:right-[12%] top-[36%] xl:right-[15%] 2xl:right-[27%] z-20 absolute w-[310px] sm:w-[400px] lg:w-[588px] lg:h-[355px]">
             <img
-              src={NextInSecondParagraph}
+              src="/img/community/Next in second paragraph.png"
               width={588}
               height={355}
               alt={'Mockup de Community creado por Launchy'}
@@ -61,7 +55,7 @@ const Pictures = () => {
 
         <div className="mb-[60px] md:mb-[80px] flex justify-center">
           <img
-            src={CommunityGif}
+            src="/img/community/Video celus (1).gif"
             width={1527}
             height={577}
             alt={'Mockup de Infuy creado por Launchy'}
@@ -83,7 +77,7 @@ const Pictures = () => {
         <div className="mb-[60px] lg:mb-[80px] flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 px-[8%] lg:px-[4%]">
           <div className="rounded-lg shadow-xl w-full lg:w-1/2 flex justify-center pt-8 border">
             <img
-              src={LastParagraphFirstFrame}
+              src="/img/community/Last paragraph first frame.png"
               width={355}
               height={536}
               alt={'Mockup de Community creado por Launchy'}
@@ -92,7 +86,7 @@ const Pictures = () => {
 
           <div className="rounded-lg shadow-xl w-full lg:w-1/2 border flex items-center">
             <img
-              src={LastParagraphSecondFrame}
+              src="/img/community/Last paragraph second frame.png"
               width={635}
               height={436}
               alt={'Mockup de Community creado por Launchy'}

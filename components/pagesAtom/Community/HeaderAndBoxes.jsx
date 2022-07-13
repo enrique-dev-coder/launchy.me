@@ -1,11 +1,6 @@
 import React, { Fragment } from 'react';
 import InfoTarget from '../InfoTarget';
 import Header from '../Header';
-import CommunityLogo from '../../../public/img/community/Logo Community.png';
-import iconPic1 from '../../../public/img/icons/fluent_web-asset-20-regular.svg';
-import iconPic2 from '../../../public/img/icons/icon-park-outline_graphic-design.svg';
-import iconPic3 from '../../../public/img/icons/Ojito.svg';
-import iconPic4 from '../../../public/img/icons/Check.svg';
 
 const objetivoTexto =
   'Relevar la documentación de Community Electricity, una empresa que se encarga de transformar, a través de un protocolo de blockchain, la energía en dinero para sus ciudadanos. Creando ecosistemas saludables.';
@@ -20,10 +15,10 @@ const desafioTexto = {
 
 const imgData = {
   imgURL: {
-    one: iconPic1,
-    two: iconPic2,
-    three: iconPic3,
-    four: iconPic4,
+    one: "/img/icons/fluent_web-asset-20-regular.svg",
+    two: "/img/icons/icon-park-outline_graphic-design.svg",
+    three: "/img/icons/Ojito.svg",
+    four: "/img/icons/Check.svg",
   },
   height: {
     one: 32,
@@ -60,7 +55,7 @@ const HeaderAndBoxes = () => {
       <Header items={items} quantity={6}>
         <div className="">
           <img
-            src={CommunityLogo}
+            src="/img/community/Logo Community.png"
             width={315}
             height={109}
             alt={'Mockup de Fichap creado por Launchy'}

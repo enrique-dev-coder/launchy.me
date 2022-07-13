@@ -1,11 +1,6 @@
 import { Fragment } from 'react';
 import InfoTarget from '../InfoTarget';
 import Header from '../Header';
-import iconPic1 from '../../../public/img/icons/Profile.svg';
-import iconPic2 from '../../../public/img/icons/Ojito.svg';
-import iconPic3 from '../../../public/img/icons/carbon_growth.svg';
-import iconPic4 from '../../../public/img/icons/fluent_calendar-today-28-regular.svg';
-import FichapLogo from '../../../public/img/fichap/Logo Fichap.png';
 
 const objetivoTexto =
   'Generar una reorganización en la navegabilidad del sitio favoreciendo a una mayor conversión de formularios de contacto así como del entendimiento de la propuesta de valor del site.';
@@ -20,10 +15,10 @@ const desafioTexto = {
 
 const imgData = {
   imgURL: {
-    one: iconPic1,
-    two: iconPic2,
-    three: iconPic3,
-    four: iconPic4,
+    one: "/img/icons/Profile.svg",
+    two: "/img/icons/Ojito.svg",
+    three: "/img/icons/carbon_growth.svg",
+    four: "/img/icons/fluent_calendar-today-28-regular.svg",
   },
   height: {
     one: 32,
@@ -61,7 +56,7 @@ const HeaderAndBoxes = () => {
       <Header items={items} quantity={7}>
         <div className="mb-5">
           <img
-            src={FichapLogo}
+            src="/img/fichap/Logo Fichap.png"
             width={262}
             height={51}
             alt={'Mockup de Fichap creado por Launchy'}

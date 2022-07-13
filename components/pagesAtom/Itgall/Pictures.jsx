@@ -1,7 +1,3 @@
-import DesktopFrame from '../../../public/img/itgall/Rectangle 39388.png';
-import Projects from '../../../public/img/itgall/Projects.png';
-import Partners from '../../../public/img/itgall/Partners.png';
-import Map from '../../../public/img/itgall/Map.png';
 import FadeInElement from '../FadeInElement';
 import { Fragment } from 'react';
 
@@ -16,7 +12,7 @@ const Pictures = () => {
 
           <div className="h-[195px] w-[315px] absolute right-[3%] top-[12%] sm:h-[295px] sm:w-[450px] sm:right-[20%] lg:h-[564px] lg:w-[800px] lg:top-[10%] xl:w-[936px] xl:top-[8%]">
             <img
-              src={DesktopFrame}
+              src="/img/itgall/Rectangle 39388.png"
               width={936}
               height={564}
               alt={'Mockup de Itgall creado por Launchy'}
@@ -29,7 +25,7 @@ const Pictures = () => {
         <div className="flex flex-col md:flex-row md:justify-center gap-4 mb-[30px] md:mb-[40px] px-[8%]">
           <div className="border p-4 pb-0">
             <img
-              src={Projects}
+              src="/img/itgall/Projects.png"
               width={349}
               height={488}
               alt={'Mockup de Itgall creado por Launchy'}
@@ -38,7 +34,7 @@ const Pictures = () => {
 
           <div className="border p-4 pr-0">
             <img
-              src={Partners}
+              src="/img/itgall/Partners.png"
               width={670}
               height={506}
               alt={'Mockup de Itgall creado por Launchy'}
@@ -51,7 +47,7 @@ const Pictures = () => {
         <div className="mb-[60px] md:mb-[80px] px-[8%]">
           <div className="border p-4 pb-0">
             <img
-              src={Map}
+              src="/img/itgall/Map.png"
               width={1139}
               height={521}
               alt={'Mockup de Itgall creado por Launchy'}

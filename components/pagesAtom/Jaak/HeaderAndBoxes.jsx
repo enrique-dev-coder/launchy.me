@@ -1,11 +1,6 @@
 import React, { Fragment } from 'react';
 import InfoTarget from '../InfoTarget';
 import Header from '../Header';
-import JaakLogo from '../../../public/img/jaak/Logo JAAK.png';
-import iconPic1 from '../../../public/img/icons/fluent_web-asset-20-regular.svg';
-import iconPic2 from '../../../public/img/icons/Check.svg';
-import iconPic3 from '../../../public/img/icons/Profile.svg';
-import iconPic4 from '../../../public/img/icons/carbon_growth.svg';
 
 const objetivoTexto =
   'Generar un dashboard que pueda facilitar el customer care y success. Trabajar junto con JAAK, una empresa lider en el rubro de reconocimiento facial, integrando nuestra expertis en diseño con su expertis tecnológica en busqueda de una plataforma que centralice los datos de sus clientes.';
@@ -20,10 +15,10 @@ const desafioTexto = {
 
 const imgData = {
   imgURL: {
-    one: iconPic1,
-    two: iconPic2,
-    three: iconPic3,
-    four: iconPic4,
+    one: "/img/icons/fluent_web-asset-20-regular.svg",
+    two: "/img/icons/Check.svg",
+    three: "/img/icons/Profile.svg",
+    four: "/img/icons/carbon_growth.svg",
   },
   height: {
     one: 32,
@@ -59,7 +54,7 @@ const HeaderAndBoxes = () => {
     <Fragment>
       <Header items={items} quantity={6}>
         <img
-          src={JaakLogo}
+          src="/img/jaak/Logo JAAK.png"
           width={212}
           height={98}
           alt={'Mockup de Jaak creado por Launchy'}

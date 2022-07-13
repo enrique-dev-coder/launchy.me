@@ -19,7 +19,7 @@ const Pictures = () => {
       <FadeInElement>
         <div className="flex md:justify-center mb-[30px] md:mb-[40px] bg-[#606B9D] py-6">
           <img
-            src={JaakHome}
+            src="/img/jaak/jaak home.png"
             width={822}
             height={510}
             alt={'Mockup de Jaak creado por Launchy'}
@@ -32,7 +32,7 @@ const Pictures = () => {
         <div className="flex flex-col items-center lg:flex-row lg:justify-center mb-[30px] md:mb-[40px] px-[8%] sm:gap-4">
           <div className="w-[320px] sm:w-[555px] h-[267px] flex items-end lg:items-center">
             <img
-              src={JaakStatistics1}
+              src="/img/jaak/JaakStatistics1.png"
               width={555}
               height={267}
               alt={'Mockup de Jaak creado por Launchy'}
@@ -41,7 +41,7 @@ const Pictures = () => {
 
           <div className="w-[320px] sm:w-[555px] h-[267px] flex items-center">
             <img
-              src={JaakStatistics2}
+              src="/img/jaak/JaakStatistics2.png"
               width={555}
               height={267}
               alt={'Mockup de Jaak creado por Launchy'}
@@ -55,7 +55,7 @@ const Pictures = () => {
           <div className="flex w-full gap-4 py-[1.5rem]">
             <div className="w-[244px] lg:h-[251px]">
               <img
-                src={Wallet1}
+                src="/img/jaak/Wallet1.png"
                 width={244}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -65,7 +65,7 @@ const Pictures = () => {
 
             <div className="w-[446px] lg:h-[251px]">
               <img
-                src={Wallet2}
+                src="/img/jaak/Wallet2.png"
                 width={446}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -75,7 +75,7 @@ const Pictures = () => {
 
             <div className="w-[446px] lg:h-[251px]">
               <img
-                src={Wallet3}
+                src="/img/jaak/Wallet3.png"
                 width={446}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -85,7 +85,7 @@ const Pictures = () => {
 
             <div className="w-[244px] lg:h-[251px]">
               <img
-                src={Wallet4}
+                src="/img/jaak/Wallet4.png"
                 width={244}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -97,7 +97,7 @@ const Pictures = () => {
           <div className="flex w-full gap-4 py-[1.5rem]">
             <div className="w-[446px] lg:h-[251px]">
               <img
-                src={Wallet5}
+                src="/img/jaak/Wallet5.png"
                 width={446}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -107,7 +107,7 @@ const Pictures = () => {
 
             <div className="w-[446px] lg:h-[251px]">
               <img
-                src={Wallet6}
+                src="/img/jaak/Wallet6.png"
                 width={446}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -117,7 +117,7 @@ const Pictures = () => {
 
             <div className="w-[446px] lg:h-[251px]">
               <img
-                src={Wallet7}
+                src="/img/jaak/Wallet7.png"
                 width={446}
                 height={251}
                 alt={'Mockup de Jaak creado por Launchy'}
@@ -136,7 +136,7 @@ const Pictures = () => {
 
           <div className="right-[15%] lg:right-[24%] xl:right-[35%] top-[6%] z-10 absolute w-[300px] h-[220px] sm:w-[500px] sm:h-[300px] md:w-[547px] md:h-[339px]">
             <img
-              src={DesktopWhite1}
+              src="/img/jaak/Desktop-white (2) 2.png"
               width={547}
               height={339}
               alt={'Mockup de Itgall creado por Launchy'}
@@ -145,7 +145,7 @@ const Pictures = () => {
 
           <div className="right-[5%] lg:right-[10%] xl:right-[25%] top-[38%] z-20 absolute w-[280px] h-[180px] sm:w-[460px] sm:h-[241px] lg:w-[507px]">
             <img
-              src={DesktopWhite2}
+              src="/img/jaak/Screen.png"
               width={507}
               height={241}
               alt={'Mockup de Itgall creado por Launchy'}

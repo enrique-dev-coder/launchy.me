@@ -1,22 +1,4 @@
 import React, { Fragment } from 'react';
-import FirstFrameSecondParagraph from '../../../public/img/ligaMX/First Frame Second Paragraph.png';
-import WhiteScreenThirdParagraph from '../../../public/img/ligaMX/White Screen Thrid Paragraph.png';
-import MainScreenThirdParagraph from '../../../public/img/ligaMX/Main Screen Third Paragraph.png';
-import ThirdParagraph1 from '../../../public/img/ligaMX/Second In Third Paragraph (1).png';
-import ThirdParagraph2 from '../../../public/img/ligaMX/Second In Third Paragraph (2).png';
-import ThirdParagraph3 from '../../../public/img/ligaMX/Second In Third Paragraph (3).png';
-import ThirdParagraph4 from '../../../public/img/ligaMX/Second In Third Paragraph (4).png';
-import ThirdParagraph5 from '../../../public/img/ligaMX/Second In Third Paragraph (5).png';
-import FirstFrameFourthParagraph from '../../../public/img/ligaMX/First Frame in Fourth Paragraph.png';
-import SecondFrameFourthParagraph1 from '../../../public/img/ligaMX/Second Frame in Fourth Paragraph (1).png';
-import SecondFrameFourthParagraph2 from '../../../public/img/ligaMX/Second Frame in Fourth Paragraph (2).png';
-import SecondFrameFourthParagraph3 from '../../../public/img/ligaMX/Second Frame in Fourth Paragraph (3).png';
-import TransparentScreen1 from '../../../public/img/ligaMX/Second Part in Fourth Paragraph (1).png';
-import TransparentScreen2 from '../../../public/img/ligaMX/Second Part in Fourth Paragraph (2).png';
-import TransparentScreen3 from '../../../public/img/ligaMX/Second Part in Fourth Paragraph (3).png';
-import TransparentScreen4 from '../../../public/img/ligaMX/Second Part in Fourth Paragraph (4).png';
-import TransparentScreenMain from '../../../public/img/ligaMX/Second Part in Fourth Paragraph - MAIN.png';
-import LastFrame from '../../../public/img/ligaMX/Last Frame.png';
 import FadeInElement from '../FadeInElement';
 import Wrapper from '../Wrapper';
 
@@ -99,21 +81,21 @@ const Pictures = () => {
             />
 
             <img
-              src={ThirdParagraph3}
+              src="/img/ligaMX/Second In Third Paragraph (3).png"
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
             />
 
             <img
-              src={ThirdParagraph4}
+              src="/img/ligaMX/Second In Third Paragraph (4).png"
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
             />
 
             <img
-              src={ThirdParagraph5}
+              src="/img/ligaMX/Second In Third Paragraph (5).png"
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
@@ -132,7 +114,7 @@ const Pictures = () => {
         <div className="flex flex-col lg:flex-row px-[8%] gap-4 mb-[30px] md:mb-[40px]">
           <div className="border flex justify-center shadow-xl lg:w-1/2">
             <img
-              src={FirstFrameFourthParagraph}
+              src="/img/ligaMX/First Frame in Fourth Paragraph.png"
               width={355}
               height={536}
               alt={'Mockup de LigaMX creado por Launchy'}
@@ -142,7 +124,7 @@ const Pictures = () => {
           <div className="border flex justify-center items-center shadow-xl relative h-[410px] lg:h-auto lg:w-1/2">
             <div className="absolute right-[15%] top-[14%] sm:top-[20%] md:right-[29%] lg:right-[19%] xl:right-[25%]">
               <img
-                src={SecondFrameFourthParagraph3}
+                src="/img/ligaMX/Second Frame in Fourth Paragraph (3).png"
                 width={402}
                 height={297}
                 alt={'Mockup de LigaMX creado por Launchy'}
@@ -151,7 +133,7 @@ const Pictures = () => {
 
             <div className="absolute right-[4%] sm:right-[16%] md:right-[29%] lg:right-[19%] xl:right-[25%]">
               <img
-                src={SecondFrameFourthParagraph2}
+                src="/img/ligaMX/Second Frame in Fourth Paragraph (2).png"
                 width={336}
                 height={325}
                 alt={'Mockup de LigaMX creado por Launchy'}
@@ -160,7 +142,7 @@ const Pictures = () => {
 
             <div className="absolute right-[5%] sm:right-[15%] md:right-[28%] lg:right-[18%] xl:right-[24%]">
               <img
-                src={SecondFrameFourthParagraph1}
+                src="/img/ligaMX/Second Frame in Fourth Paragraph (1).png"
                 width={251}
                 height={393}
                 alt={'Mockup de LigaMX creado por Launchy'}
@@ -173,35 +155,35 @@ const Pictures = () => {
       <FadeInElement>
         <div className="flex mb-[60px] md:mb-[80px] justify-center">
           <img
-            src={TransparentScreen1}
+            src="/img/ligaMX/Second Part in Fourth Paragraph (1).png"
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
           />
 
           <img
-            src={TransparentScreen2}
+            src="/img/ligaMX/Second Part in Fourth Paragraph (2).png"
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
           />
 
           <img
-            src={TransparentScreenMain}
+            src="/img/ligaMX/Second Part in Fourth Paragraph - MAIN.png"
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
           />
 
           <img
-            src={TransparentScreen3}
+            src="/img/ligaMX/Second Part in Fourth Paragraph (3).png"
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
           />
 
           <img
-            src={TransparentScreen4}
+            src="/img/ligaMX/Second Part in Fourth Paragraph (4).png"
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
@@ -212,7 +194,7 @@ const Pictures = () => {
       <FadeInElement>
         <div className="flex justify-center mb-[60px] md:mb-[80px] bg-[#060729]">
           <img
-            src={LastFrame}
+            src="/img/ligaMX/Last Frame.png"
             width={1440}
             height={509}
             alt={'Mockup de LigaMX creado por Launchy'}

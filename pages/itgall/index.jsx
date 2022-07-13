@@ -5,7 +5,6 @@ import ProcessOrSolution from '../../components/pagesAtom/ProcessOrSolution';
 import Pictures from '../../components/pagesAtom/Itgall/Pictures';
 import FadeInElement from '../../components/pagesAtom/FadeInElement';
 import Footer from '../../components/Footer';
-import ItgallProcess from '../../public/img/itgall/Proceso.png';
 import MobilePictures from '../../components/pagesAtom/Itgall/MobilePictures';
 
 // ColorPalette Props
@@ -42,7 +41,7 @@ const Itgall = () => {
         <FadeInElement>
           <div className="flex md:justify-center mb-[60px] md:mb-[80px]">
             <img
-              src={ItgallProcess}
+              src="/img/itgall/Proceso.png"
               width={903}
               height={329}
               alt={'Mockup de Itgall creado por Launchy'}

@@ -10,64 +10,72 @@ const MobilePictures = () => {
       <div className="flex first-section justify-center">
         <div className="hidden lg:block">
           <img
-            src={MobileBlank}
+            src="/img/itgall/mobile blank space.png"
             width={283}
             height={550}
             alt={'Mockup de Itgall creado por Launchy'}
+            className="w-1/2 md:w-full"
           />
         </div>
 
         <img
-          src={MobileBlank}
+          src="/img/itgall/mobile blank space.png"
           width={283}
           height={550}
           alt={'Mockup de Itgall creado por Launchy'}
+          className="w-1/3 md:w-full"
         />
 
         <img
-          src={MobileHome}
+          src="/img/itgall/mobile home.png"
           width={283}
           height={550}
           alt={'Mockup de Itgall creado por Launchy'}
+          className="w-1/3 md:w-full"
         />
 
         <img
-          src={MobileBlank}
+          src="/img/itgall/mobile blank space.png"
           width={283}
           height={550}
           alt={'Mockup de Itgall creado por Launchy'}
+          className="w-1/3 md:w-full"
         />
 
         <div className="hidden lg:block">
           <img
-            src={MobileBlank}
+            src="/img/itgall/mobile blank space.png"
             width={283}
             height={550}
             alt={'Mockup de Itgall creado por Launchy'}
+            className="w-1/2 md:w-full"
           />
         </div>
       </div>
 
       <div className="flex second-section justify-center">
         <img
-          src={MobileParticipation}
+          src="/img/itgall/mobile participation.png"
           width={283}
           height={550}
           alt={'Mockup de Itgall creado por Launchy'}
+          className="w-1/3 md:w-full"
         />
 
         <img
-          src={MobileIn4aha}
+          src="/img/itgall/mobile in4aha.png"
           width={283}
           height={550}
           alt={'Mockup de Itgall creado por Launchy'}
+          className="w-1/3 md:w-full"
         />
 
         <img
-          src={MobileContact}
+          src="/img/itgall/mobile contact us.png"
           width={283}
           height={550}
           alt={'Mockup de Itgall creado por Launchy'}
+          className="w-1/3 md:w-full"
         />
       </div>
     </div>

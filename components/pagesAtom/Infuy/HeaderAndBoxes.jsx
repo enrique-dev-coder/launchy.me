@@ -1,11 +1,6 @@
 import { Fragment } from 'react';
 import InfoTarget from '../InfoTarget';
 import Header from '../Header';
-import InfuyLogo from '../../../public/img/infuy/Logo Infuy.png';
-import iconPic1 from '../../../public/img/icons/fluent_web-asset-20-regular.svg';
-import iconPic2 from '../../../public/img/icons/carbon_growth.svg';
-import iconPic3 from '../../../public/img/icons/icon-park-outline_graphic-design.svg';
-import iconPic4 from '../../../public/img/icons/fluent_calendar-today-28-regular.svg';
 
 // InfoTarget props
 const objetivoTexto =
@@ -21,10 +16,10 @@ const desafioTexto = {
 
 const imgData = {
   imgURL: {
-    one: iconPic1,
-    two: iconPic2,
-    three: iconPic3,
-    four: iconPic4,
+    one: "/img/icons/fluent_web-asset-20-regular.svg",
+    two: "/img/icons/carbon_growth.svg",
+    three: "/img/icons/icon-park-outline_graphic-design.svg",
+    four: "/img/icons/fluent_calendar-today-28-regular.svg"
   },
   height: {
     one: 32,
@@ -60,7 +55,7 @@ const HeaderAndBoxes = () => {
     <Fragment>
       <Header quantity={6} items={items}>
         <img
-          src={InfuyLogo}
+          src="/img/infuy/Logo Infuy.png"
           width={220}
           height={111}
           alt={'Mockup de Infuy creado por Launchy'}

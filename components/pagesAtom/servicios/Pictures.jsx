@@ -1,4 +1,3 @@
-import GraficoFinal from '../../../public/img/Grafico-final.png';
 import Wrapper from '../Wrapper';
 
 const Pictures = () => {
@@ -9,8 +8,8 @@ const Pictures = () => {
       }
     >
       <div className="mb-[40px] md:mb-[60px] overflow-x-auto">
-        <div className="border py-[3%] mb-[30px] md:mb-[40px] w-[800px] flex justify-center shrink-0 scrollbar lg:w-full">
-          <img width={776} height={393} src={GraficoFinal} className="w-full" />
+        <div className="border pl-4 py-[3%] mb-[30px] md:mb-[40px] w-[800px] flex justify-center shrink-0 scrollbar lg:w-full">
+          <img width={776} height={393} src="/img/Grafico-final.png" className="w-full" />
         </div>
       </div>
 
