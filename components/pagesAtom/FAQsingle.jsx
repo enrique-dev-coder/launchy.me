@@ -16,9 +16,9 @@ const FAQsingle = ({ text, answer, type, show, showDispatch }) => {
       <div className=" transition-all py-[5px] w-[85%] mx-auto  ">{text}</div>
 
       <div
-        className={`flex  pointer-events-none w-[85%] py-[5px] mx-auto ${
+        className={`flex  pointer-events-none w-[85%] py-[15px] mx-auto ${
           show ? 'block' : 'hidden'
-        } bg-black`}
+        } `}
       >
         {answer}
       </div>

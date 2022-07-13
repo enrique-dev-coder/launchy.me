@@ -1,6 +1,5 @@
-import { useRef, useLayoutEffect, useEffect } from 'react';
-import HomeButton from '../HomeButton';
-
+import { useRef, useLayoutEffect, useEffect } from "react";
+import Link from "next/link";
 const Scrollable = ({ id, title, options, onClick, actual }) => {
   const areaRef = useRef();
   const ref = useRef();
@@ -14,7 +13,7 @@ const Scrollable = ({ id, title, options, onClick, actual }) => {
         >
           <div
             className={`w-[15px] h-[15px] rounded-full transition-all duration-1000 border  border-white ${
-              id === actual && 'bg-white'
+              id === actual && "bg-white"
             } `}
           ></div>
           <h2 ref={ref} className="uppercase text-[14px]  md:text-lg">
@@ -25,10 +24,15 @@ const Scrollable = ({ id, title, options, onClick, actual }) => {
         {id === actual && (
           <div className="">
             {options.map((o, i) => (
-              <div className="flex items-center space-x-3" key={i}>
-                <div className="w-[15px] h-[15px] rounded-full border border-black "></div>
-                <p className="text-[14px]  md:text-lg">{o}</p>
-              </div>
+              <Link href={"/services"}>
+                <div
+                  className="flex items-center space-x-3 cursor-pointer"
+                  key={i}
+                >
+                  <div className="w-[15px] h-[15px] rounded-full border border-black "></div>
+                  <p className="text-[14px]  md:text-lg">{o}</p>
+                </div>
+              </Link>
             ))}
           </div>
         )}

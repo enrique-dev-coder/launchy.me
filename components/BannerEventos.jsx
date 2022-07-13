@@ -1,6 +1,6 @@
-import React from 'react';
-import HomeSectionContainer from './Wrappers/HomeSectionContainer';
-import HomeButton from './HomeButton';
+import React from "react";
+import HomeSectionContainer from "./Wrappers/HomeSectionContainer";
+
 const BannerEventos = () => {
   return (
     <HomeSectionContainer>
@@ -18,7 +18,11 @@ const BannerEventos = () => {
             </h2>
           </div>
           <div className="flex mb-[30px] md:mb-0">
-            <HomeButton link={'/contact'} title={'Reserva tu entrada'} />
+            <a href="/contact">
+              <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
+                Reserva tu entrada
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex basis-1/2 bg-[url(/img/banner_eventos.png)] h-[200px] md:h-full bg-center  bg-no-repeat bg-cover">
@@ -28,7 +32,7 @@ const BannerEventos = () => {
               <p className="masterclass">Masterclass</p>
               <p
                 className=" text-right  "
-                style={{ color: '#211539', borderBottom: '1px solid #211539' }}
+                style={{ color: "#211539", borderBottom: "1px solid #211539" }}
               >
                 4 de Agosto - 18 pm ARG
               </p>

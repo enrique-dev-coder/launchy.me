@@ -92,7 +92,7 @@ const FAQ = () => {
   const { porque, proyectos, especialidad, aliens, partners, referidos } = show;
 
   return (
-    <div className="flex flex-col bg-black text-white gap-6 w-full max-w-[550px] ">
+    <div className="flex flex-col  text-white gap-6 w-full max-w-[550px] ">
       <h2 className="text-white font-medium uppercase text-[28px]   mb-[30px]">
         NOS SUELEN PREGUNTAR...
       </h2>

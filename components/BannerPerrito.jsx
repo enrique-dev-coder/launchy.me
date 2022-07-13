@@ -1,6 +1,6 @@
-import React from 'react';
-import HomeSectionContainer from './Wrappers/HomeSectionContainer';
-import HomeButton from './HomeButton';
+import React from "react";
+import HomeSectionContainer from "./Wrappers/HomeSectionContainer";
+import HomeButton from "./HomeButton";
 const BannerPerrito = () => {
   return (
     <HomeSectionContainer>
@@ -18,7 +18,15 @@ const BannerPerrito = () => {
             su adopción.
           </p>
           <div className="w-full flex justify-center ">
-            <HomeButton link={'/contact'} title={'Conócelos'} />
+            <a
+              href="https://instagram.com/danosunapatamdp?igshid=YmMyMTA2M2Y="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
+                Conócelos
+              </button>
+            </a>
           </div>
         </div>
       </div>

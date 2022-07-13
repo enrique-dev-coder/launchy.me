@@ -112,112 +112,114 @@ const ContactForm = () => {
 
   return (
     <HomeSectionContainer>
-      <div className=" w-full max-w-[550px] relative">
+      <div className="w-full relative">
         <img
           src="/img/Nave.png"
           alt="nave contacto"
-          className="fixed right-0 z-30 hidden lg:block animate-pulse "
+          className="fixed  z-30 hidden lg:block animate-pulse alien_position "
         />
-        {formConfirmation && (
-          <SubscribeModal
-            background={
-              'linear-gradient(180deg, rgba(176, 152, 240, 0.59) 100%, rgba(134, 20, 130, 0.2) 100%)'
-            }
-            closeModal={() => setFormConfirm(false)}
-          />
-        )}
-        <h2 className=" text-white font-medium uppercase text-[28px] mb-[30px]">
-          Ready to Launch?
-        </h2>
-        <form className="w-full" onSubmit={handleSubmit}>
-          <div className="flex flex-col md:flex-row justify-between">
-            <InputContactForm
-              type={'text'}
-              title={'¿Cómo te llamas? *'}
-              placeholder="Nicolas Tesla"
-              name="name"
-              value={name}
-              onChangeFunction={handleInputChange}
+        <div className=" w-full max-w-[550px] relative">
+          {formConfirmation && (
+            <SubscribeModal
+              background={
+                'linear-gradient(180deg, rgba(176, 152, 240, 0.59) 100%, rgba(134, 20, 130, 0.2) 100%)'
+              }
+              closeModal={() => setFormConfirm(false)}
             />
-            <InputContactForm
-              type={'mail'}
-              title={'Tu Mail *'}
-              placeholder="nicolas@empresacool.com"
-              name="mail"
-              value={mail}
-              onChangeFunction={handleInputChange}
-            />
-          </div>
-          {/*select*/}
-          <div className="flex justify-between mb-[20px]  flex-col md:flex-row">
-            <div className="flex flex-col w-full md:w-[45%] mb-[20px]">
-              <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-                Quisieras:
-              </label>
-              <select
-                name="select1"
-                value={select1}
-                onChange={handleInputChange}
-                className=" bg-black border border-white   rounded text-white/70 roboto_normal p-2 "
-              >
-                <option value="Agendar una reunión de diagnóstico y roadmap con nosotros">
-                  Agendar una reunión de diagnóstico y roadmap con nosotros
-                </option>
-                <option value="Que me contacten para evaluar su propuesta">
-                  Que me contacten para evaluar su propuesta
-                </option>
-                <option value="Ser partners">Ser partners</option>
-                <option value="Ser un Launcher">Ser un Launcher</option>
-                <option value="Otros">Otros</option>
-              </select>
+          )}
+          <h2 className=" text-white font-medium uppercase text-[28px] mb-[30px]">
+            Ready to Launch?
+          </h2>
+          <form className="w-full" onSubmit={handleSubmit}>
+            <div className="flex flex-col md:flex-row justify-between">
+              <InputContactForm
+                type={'text'}
+                title={'¿Cómo te llamas? *'}
+                placeholder="Nicolas Tesla"
+                name="name"
+                value={name}
+                onChangeFunction={handleInputChange}
+              />
+              <InputContactForm
+                type={'mail'}
+                title={'Tu Mail *'}
+                placeholder="nicolas@empresacool.com"
+                name="mail"
+                value={mail}
+                onChangeFunction={handleInputChange}
+              />
             </div>
-            <div className="flex flex-col w-full md:w-[45%]">
-              <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-                ¿Qué solución te interesó?
-              </label>
-              <select
-                name="select2"
-                value={select2}
-                onChange={handleInputChange}
-                className=" bg-black border border-white   rounded text-white/70 roboto_normal p-2 "
-              >
-                <option value="Research (Benchmarking, Product Discovery...)">
-                  Research (Benchmarking, Product Discovery...)
-                </option>
-                <option value="Diseño (UI-UX, Estrategia de Marca...)">
-                  Diseño (UI-UX, Estrategia de Marca...)
-                </option>
-                <option value="Desarrollo (Desarrollo web, IT Staffing...)">
-                  Desarrollo (Desarrollo web, IT Staffing...)
-                </option>
-                <option value="Bussiness Consulting (Funnels comerciales, CJM...)">
-                  Bussiness Consulting (Funnels comerciales, CJM...)
-                </option>
-                <option value="Otras soluciones">Otras soluciones </option>
-              </select>
+            {/*select*/}
+            <div className="flex justify-between mb-[20px]  flex-col ">
+              <div className="flex flex-col w-full  mb-[20px]">
+                <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
+                  Quisieras:
+                </label>
+                <select
+                  name="select1"
+                  value={select1}
+                  onChange={handleInputChange}
+                  className=" bg-black border border-white   rounded text-white/70 roboto_normal p-2 "
+                >
+                  <option value="Agendar una reunión de diagnóstico y roadmap con nosotros">
+                    Agendar una reunión de diagnóstico y roadmap con nosotros
+                  </option>
+                  <option value="Que me contacten para evaluar su propuesta">
+                    Que me contacten para evaluar su propuesta
+                  </option>
+                  <option value="Ser partners">Ser partners</option>
+                  <option value="Ser un Launcher">Ser un Launcher</option>
+                  <option value="Otros">Otros</option>
+                </select>
+              </div>
+              <div className="flex flex-col w-full ">
+                <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
+                  ¿Qué solución te interesó?
+                </label>
+                <select
+                  name="select2"
+                  value={select2}
+                  onChange={handleInputChange}
+                  className=" bg-black border border-white   rounded text-white/70 roboto_normal p-2 "
+                >
+                  <option value="Research (Benchmarking, Product Discovery...)">
+                    Research (Benchmarking, Product Discovery...)
+                  </option>
+                  <option value="Diseño (UI-UX, Estrategia de Marca...)">
+                    Diseño (UI-UX, Estrategia de Marca...)
+                  </option>
+                  <option value="Desarrollo (Desarrollo web, IT Staffing...)">
+                    Desarrollo (Desarrollo web, IT Staffing...)
+                  </option>
+                  <option value="Bussiness Consulting (Funnels comerciales, CJM...)">
+                    Bussiness Consulting (Funnels comerciales, CJM...)
+                  </option>
+                  <option value="Otras soluciones">Otras soluciones </option>
+                </select>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col">
-            <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-              Cuéntanos cómo podemos impulsarte...
-            </label>
-            <textarea
-              name="message"
-              value={message}
-              onChange={handleInputChange}
-              className=" bg-transparent border border-white mb-[20px]   rounded text-white/70 roboto_normal p-2"
-              maxLength={300}
-              rows={4}
-              placeholder="Vamos a romper el hielo empezando por acá"
-            />
-          </div>
-          <button
-            type="submit"
-            className="roboto_normal text-white  py-2 px-3 uppercase text-sm navbar_button"
-          >
-            Charlemos
-          </button>
-        </form>
+            <div className="flex flex-col">
+              <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
+                Cuéntanos cómo podemos impulsarte...
+              </label>
+              <textarea
+                name="message"
+                value={message}
+                onChange={handleInputChange}
+                className=" bg-transparent border border-white mb-[20px]   rounded text-white/70 roboto_normal p-2"
+                maxLength={300}
+                rows={4}
+                placeholder="Vamos a romper el hielo empezando por acá"
+              />
+            </div>
+            <button
+              type="submit"
+              className="roboto_normal text-white  py-2 px-3 uppercase text-sm navbar_button"
+            >
+              Charlemos
+            </button>
+          </form>
+        </div>
       </div>
     </HomeSectionContainer>
   );

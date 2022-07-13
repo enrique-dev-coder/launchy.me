@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import Title1Home from '../Title1Home';
-import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
-import HomeButton from '../HomeButton';
-import Scrollable from './Scrollable';
-import Link from 'next/link';
+import { useState } from "react";
+import Title1Home from "../Title1Home";
+import HomeSectionContainer from "../Wrappers/HomeSectionContainer";
+import HomeButton from "../HomeButton";
+import Scrollable from "./Scrollable";
+import Link from "next/link";
 
 const index = () => {
   const [actual, setActual] = useState(1);
@@ -11,52 +11,52 @@ const index = () => {
   const data = [
     {
       id: 1,
-      title: 'research',
+      title: "research",
       options: [
-        'UX Research',
-        'Benchmarking',
+        "UX Research",
+        "Benchmarking",
         <span>
           MVP testing y <span className="underline">Más</span>
         </span>,
       ],
-      link: '/',
+      link: "/",
     },
     {
       id: 2,
-      title: 'diseño',
+      title: "diseño",
       options: [
-        'UI - UX',
-        'Estrategia de Marca',
-        'Diseño de Producto',
+        "UI - UX",
+        "Estrategia de Marca",
+        "Diseño de Producto",
         <span>
           Animación y <span className="underline">Más</span>
         </span>,
       ],
-      link: '/',
+      link: "/",
     },
     {
       id: 3,
-      title: 'Desarrollo',
+      title: "Desarrollo",
       options: [
-        'Desarrollo Web',
-        'Desarrollo de Software',
+        "Desarrollo Web",
+        "Desarrollo de Software",
         <span>
           IT Staffing y <span className="underline">Más</span>
         </span>,
       ],
-      link: '/',
+      link: "/",
     },
     {
       id: 4,
-      title: 'Bussiness Consulting',
+      title: "Bussiness Consulting",
       options: [
-        'Auditoria de Funnel Comercial',
-        'Optimización de CJM',
+        "Auditoria de Funnel Comercial",
+        "Optimización de CJM",
         <span>
           Estrategias de escalabilidad y <span className="underline">Más</span>
         </span>,
       ],
-      link: '/',
+      link: "/",
     },
   ];
 
@@ -94,18 +94,20 @@ const index = () => {
               />
             ))}
             <a href="/services">
-              <HomeButton link={'/services'} title={'Ir a Servicios'} />
+              <HomeButton link={"/services"} title={"Ir a Servicios"} />
             </a>
           </div>
-          <div className="md:w-1/2 h-full bg-white">
-            <video
-              src="/img/services.mp4"
-              autoPlay
-              loop
-              playsInline={true}
-              muted
-              className="w-full h-full"
-            />
+          <div className="md:w-1/2 h-full bg-white mt-[30px] md:mt-0">
+            <Link href={"/services"}>
+              <video
+                src="/img/services.mp4"
+                autoPlay
+                loop
+                playsInline={true}
+                muted
+                className="w-full h-full cursor-pointer"
+              />
+            </Link>
           </div>
         </div>
       </div>

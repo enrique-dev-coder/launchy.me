@@ -78,7 +78,16 @@ canvas {
   text-transform: uppercase;
 }
 
-@media (max-width: 425px) {
+.alien_position {
+  right: 110px;
+}
+@media (min-width: 1740px) {
+  .alien_position {
+    right: 150px;
+  }
+}
+
+@media (max-width: 426px) {
   .image_border {
     border: 0px !important;
   }
