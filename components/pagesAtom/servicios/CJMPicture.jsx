@@ -9,8 +9,8 @@ const CJMPicture = () => {
                   <img src="/img/atomo-animation.gif" alt="" className="w-[150px] h-[150px] sm:w-[300px] sm:h-[300px] mx-auto relative z-20" />
 
                   <div className="">
-                      <p className="text-[#211539] text-left relative z-20 text-[14px] lg:text-[12px] lg:font-medium">Es por eso que desde Launchy identificamos cada aspecto de tu CJM (Customer Journey Map). Involucrando desde tu propuesta de valor, buyer persona, competencias, partners, marketing inbound area, marketing outbound area, area comercial y el area mas Underrated “Customer success area”. Con el fin de encontrar esos accionables, tácticas o estrategias que puedan dar un giro 180° a tus indicadores de Revenue &amp; Profit.</p> <br /> 
-                      <h2 className="font-bold text-2xl text-left text-[#211539] relative z-20 lg:text-[18px]">Nuestras consultorias principales son:</h2><br />
+                      <p className="text-[#211539] text-left relative z-20 text-[14px] lg:text-[12px] lg:font-medium mb-[6px]">Es por eso que desde Launchy identificamos cada aspecto de tu CJM (Customer Journey Map). Involucrando desde tu propuesta de valor, buyer persona, competencias, partners, marketing inbound area, marketing outbound area, area comercial y el area mas Underrated “Customer success area”. Con el fin de encontrar esos accionables, tácticas o estrategias que puedan dar un giro 180° a tus indicadores de Revenue &amp; Profit.</p>
+                      <h2 className="font-bold text-2xl text-left text-[#211539] relative z-20 lg:text-[18px] mb-[6px]">Nuestras consultorias principales son:</h2>
                       <ul className="flex flex-col items-start relative z-20">
                           <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">- Auditoria Customer Journey Map</li>
                           <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">- Optimization B2B Outbound marketing Funnels</li>
