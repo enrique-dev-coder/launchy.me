@@ -76,7 +76,7 @@ const index = () => {
         <div className="w-full flex border-white border border-t-0 border-solid mb-[40px]  rounded-br-md  ">
           <img src="/img/lupita_dark.svg" alt="lupa" className="ml-4" />
           <p className="text-white text-[14px] md:text-lg roboto_normal  p-2">
-            <span className=" underline"> transformando</span>, empresas y
+            <span className=""> transformando</span>, empresas y
             proyectos con un giro 360 en :
           </p>
         </div>

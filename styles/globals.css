@@ -198,3 +198,10 @@ canvas {
   -webkit-text-fill-color: transparent;
   font-weight: 500;
 }
+
+.loading_text {
+  font-size: 1.375em;
+  background: -webkit-linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

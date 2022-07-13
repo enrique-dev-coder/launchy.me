@@ -15,13 +15,16 @@ const LoadingScreen = () => {
     <div
       className={`w-full h-screen absolute z-30 ${
         loading ? 'top-0' : '-top-[100%]'
-      }  transition-all duration-500 bg-black flex justify-center items-center`}
+      }  transition-all duration-500 bg-black flex flex-col justify-center items-center`}
     >
       <img
         src="/img/loading_image.png"
         alt="laoding screen"
         className="  animate-spin"
       />
+      <p className="text-white loading_text roboto_normal">
+        Cargando experiencias increibles ...
+      </p>
     </div>
   );
 };
