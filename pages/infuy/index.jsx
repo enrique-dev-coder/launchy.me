@@ -59,7 +59,7 @@ const Infuy = () => {
             <Gallery />
           </FadeInElement>
           <Pictures />
-          <Testimonial title='SOLUCION' text={textTestimonial} />
+          <Testimonial title='SOLUCIÓN' text={textTestimonial} />
           <Footer blue />
       </div>
     </main>

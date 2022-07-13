@@ -83,7 +83,7 @@ const Servicios = () => {
                   </ul>
                 </ServicesText>
 
-                <div className="px-[8%] flex justify-center flex-wrap">
+                <div className="px-[8%] py-[4%] flex justify-start md:justify-center overflow-x-auto scrollbar">
                 {
                 circles.map(circle => <Circle key={circle.number} number={circle.number} text={circle.text} />)
                 }
