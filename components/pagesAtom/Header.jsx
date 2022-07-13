@@ -14,7 +14,7 @@ const Header = ({ children, quantity, items, show = true }) => {
           {children}
           <div className="flex justify-center mt-8">
             <Image
-              src={Flechitas}
+              src={`process.env.NEXT_PUBLIC_URL + ${Flechitas}`}
               width={25}
               height={25}
               alt={'Mockup de ITGall creado por Launchy'}

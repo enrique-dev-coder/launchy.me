@@ -33,7 +33,7 @@ const HeroHomePage = () => {
           {/*contenedor limitante*/}
           <div className="max-w-[1180px] w-4/5  mx-auto flex flex-col md:flex-row items-end md:h-[110px] justify-between">
             <Image
-              src="/img/welaunch.png"
+              src={process.env.NEXT_PUBLIC_URL + '/img/welaunch.png'}
               alt="we launch"
               width="338px"
               height="120px"
