@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import LoadingScreen from './LoadingScreen';
 
 const HeroHomePage = () => {
@@ -32,7 +31,7 @@ const HeroHomePage = () => {
         <div className="absolute w-full top-[60vh] md:top-[50vh] text-white">
           {/*contenedor limitante*/}
           <div className="max-w-[1180px] w-4/5  mx-auto flex flex-col md:flex-row items-end md:h-[110px] justify-between">
-            <Image
+            <img
               src="/img/welaunch.png"
               alt="we launch"
               width="338px"

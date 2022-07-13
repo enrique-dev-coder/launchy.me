@@ -1,27 +1,27 @@
-import Link from "next/link";
-import { useState } from "react";
-import Image from "next/image";
-import { useMenu } from "../context/MenuContext";
+import Link from 'next/link';
+import { useState } from 'react';
+import Image from 'next/image';
+import { useMenu } from '../context/MenuContext';
 const Links = [
   {
-    title: "soluciones",
-    src: "/services",
+    title: 'soluciones',
+    src: '/services',
   },
   {
-    title: "proyectos",
-    src: "/#proyectos",
+    title: 'proyectos',
+    src: '/#proyectos',
   },
   {
-    title: "cultura",
-    src: "/culture",
+    title: 'cultura',
+    src: '/culture',
   },
   {
-    title: "blog",
-    src: "/",
+    title: 'blog',
+    src: '/',
   },
   {
-    title: "free resources",
-    src: "/#free-resources",
+    title: 'free resources',
+    src: '/#free-resources',
   },
 ];
 
@@ -32,9 +32,9 @@ const Navbar = () => {
       <nav className="w-full h-[70px] absolute top-10 md:top-5 z-20">
         <div className="max-w-[1420px] w-10/12  h-full mx-auto flex justify-between items-center">
           {/*image container*/}
-          <Link href={"/"}>
+          <Link href={'/'}>
             <div className=" cursor-pointer ">
-              <Image
+              <img
                 src="/img/logo.png"
                 alt="Launchy Logo"
                 width="140px"

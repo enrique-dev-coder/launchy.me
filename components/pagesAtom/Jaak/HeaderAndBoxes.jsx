@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import Image from 'next/image';
 import InfoTarget from '../InfoTarget';
 import Header from '../Header';
 import JaakLogo from '../../../public/img/jaak/Logo JAAK.png';
@@ -59,7 +58,7 @@ const HeaderAndBoxes = () => {
   return (
     <Fragment>
       <Header items={items} quantity={6}>
-        <Image
+        <img
           src={JaakLogo}
           width={212}
           height={98}
