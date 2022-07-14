@@ -5,7 +5,7 @@ const index = () => {
   const [categories, setCategories] = useState([]);
 
   const getCategories = () => {
-    const urlcat = 'http://blog.launchy.me/wp-json/wp/v2/categories';
+    const urlcat = 'https://blog.launchy.me/wp-json/wp/v2/categories';
     fetch(urlcat)
       .then((response) => response.json())
       .then((data) => setCategories(data));
