@@ -53,7 +53,7 @@ const TeamPictures = () => {
 
                 <img src='/img/team-fotos/Eli.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
-                <img src='/img/team-fotos/Daily.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Daily.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
             </div>
 
