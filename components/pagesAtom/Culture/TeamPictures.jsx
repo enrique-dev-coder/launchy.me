@@ -17,37 +17,41 @@ const TeamPictures = () => {
             </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-[2%] max-w-[400px] mx-auto md:max-w-full">
+        {/* gap-4 */}
+        <div className="grid grid-cols-1 md:grid-cols-3 px-[2%] max-w-[400px] mx-auto md:max-w-full">
 
-            <div className="grid col-span-1 grid-cols-2 gap-4">
+            {/* gap-4 */}
+            <div className="grid col-span-1 grid-cols-2">
 
-                <img src='/img/team-fotos/Ivana-trabajando.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Ivana-trabajando.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
-                <img src='/img/team-fotos/Flor-y-jasu.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Flor-y-jasu.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
-                <img src='/img/team-fotos/Flor.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Flor.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
-                <img src='/img/team-fotos/Ivana.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
-
-            </div>
-
-            <div className="grid col-span-1 grid-cols-2 grid-rows-2 gap-4">
-
-                <img src='/img/team-fotos/Luis-jugando.png' alt=""  className='row-span-2 col-span-1 h-full relative z-20'/>
-
-                <img src='/img/team-fotos/Jasu.png' alt=""  className='row-span-1 col-span-1 h-full relative z-20'/>
-
-                <img src='/img/team-fotos/Tite.png' alt=""  className='row-span-1 col-span-1 h-full relative z-20'/>
+                <img src='/img/team-fotos/Ivana.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
             </div>
 
-            <div className="grid col-span-1 grid-cols-2 gap-4">
+            {/* gap-4 */}
+            <div className="grid col-span-1 grid-cols-2 grid-rows-2">
 
-                <img src='/img/team-fotos/Leyendo.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Luis-jugando.png' alt=""  className='row-span-2 col-span-1 p-[8px] h-full relative z-20'/>
 
-                <img src='/img/team-fotos/Luis-cumple.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Jasu.png' alt=""  className='row-span-1 col-span-1 p-[8px] h-full relative z-20'/>
 
-                <img src='/img/team-fotos/Eli.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
+                <img src='/img/team-fotos/Tite.png' alt=""  className='row-span-1 col-span-1 p-[8px] h-full relative z-20'/>
+
+            </div>
+
+            {/* gap-4 */}
+            <div className="grid col-span-1 grid-cols-2">
+
+                <img src='/img/team-fotos/Leyendo.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
+
+                <img src='/img/team-fotos/Luis-cumple.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
+
+                <img src='/img/team-fotos/Eli.png' alt="" className='col-span-1 h-full p-[8px] relative z-20 mx-auto' />
 
                 <img src='/img/team-fotos/Daily.png' alt="" className='col-span-1 h-full relative z-20 mx-auto' />
 
