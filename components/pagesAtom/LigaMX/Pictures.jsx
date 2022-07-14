@@ -25,20 +25,21 @@ const Pictures = () => {
       <FadeInElement>
         <div className="flex flex-col justify-center mb-[60px] md:mb-[80px]">
           <div className="flex first-section justify-center">
-            <div className="hidden lg:block">
+
               <img
                 src="/img/ligaMX/White Screen Thrid Paragraph.png"
                 width={283}
                 height={550}
                 alt={'Mockup de LigaMX creado por Launchy'}
+                className='w-1/5'
               />
-            </div>
 
             <img
               src="/img/ligaMX/White Screen Thrid Paragraph.png"
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
             <img
@@ -46,6 +47,7 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
             <img
@@ -53,16 +55,17 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
-            <div className="hidden lg:block">
               <img
                 src="/img/ligaMX/White Screen Thrid Paragraph.png"
                 width={283}
                 height={550}
                 alt={'Mockup de LigaMX creado por Launchy'}
+                className='w-1/5'
               />
-            </div>
+
           </div>
 
           <div className="flex second-section justify-center">
@@ -71,6 +74,7 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
             <img
@@ -78,6 +82,7 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
             <img
@@ -85,6 +90,7 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
             <img
@@ -92,6 +98,7 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
 
             <img
@@ -99,6 +106,7 @@ const Pictures = () => {
               width={283}
               height={550}
               alt={'Mockup de LigaMX creado por Launchy'}
+              className='w-1/5'
             />
           </div>
         </div>
@@ -159,6 +167,7 @@ const Pictures = () => {
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
+            className="w-1/5"
           />
 
           <img
@@ -166,6 +175,7 @@ const Pictures = () => {
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
+            className="w-1/5"
           />
 
           <img
@@ -173,6 +183,7 @@ const Pictures = () => {
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
+            className="w-1/5"
           />
 
           <img
@@ -180,6 +191,7 @@ const Pictures = () => {
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
+            className="w-1/5"
           />
 
           <img
@@ -187,6 +199,7 @@ const Pictures = () => {
             width={287}
             height={556}
             alt={'Mockup de LigaMX creado por Launchy'}
+            className="w-1/5"
           />
         </div>
       </FadeInElement>
