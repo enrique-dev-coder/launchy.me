@@ -199,9 +199,29 @@ canvas {
   font-weight: 500;
 }
 
+.blog_title {
+  background: -webkit-linear-gradient(#cc84ff, #ff1cf7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 500;
+}
+
 .loading_text {
   font-size: 1.375em;
   background: -webkit-linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.blog_category_title {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.blog_category_title:hover p:after {
+  content: "'";
+}
+.blog_category_title:hover {
+  color: #ffe8fe;
+  text-shadow: 0 0 10px #ffe8fe, 0 0 20px #ffe8fe, 0 0 40px #ffe8fe,
+    0 0 80px #ffe8fe, 0 0 120px #ffe8fe;
 }
