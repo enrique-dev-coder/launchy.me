@@ -5,8 +5,11 @@ const index = () => {
   const [categories, setCategories] = useState([]);
 
   const getCategories = () => {
+    // el http://cors-anywhere.herokuapp.com es solo para development
+    //      'http://cors-anywhere.herokuapp.com/https://blog.launchy.me/wp-json/wp/v2/categories';
+
     const urlcat = 'https://blog.launchy.me/wp-json/wp/v2/categories';
-    fetch(urlcat)
+    fetch(urlcat, { method: 'GET' })
       .then((response) => response.json())
       .then((data) => setCategories(data));
   };
@@ -23,7 +26,6 @@ const index = () => {
 
   return (
     <div className="h-screen bg-black">
-      <div className="w-full h-[100px]"></div>
       <BlogHeader categories={categoryNames} />
     </div>
   );

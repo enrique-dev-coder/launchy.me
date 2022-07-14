@@ -17,7 +17,7 @@ const Links = [
   },
   {
     title: 'blog',
-    src: '/',
+    src: '/homeblog',
   },
   {
     title: 'free resources',

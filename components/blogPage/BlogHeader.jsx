@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../pagesAtom/Header';
 import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
 
 const CategoryMenu = ({ categoryData }) => (
-  <div className="w-full flex space-x-4 text-lg font-medium">
+  <div className="w-full flex space-x-6 text-lg font-medium">
     <p className="blog_category_title  cursor-pointer">TODOS</p>
     {categoryData.map((c) => (
       <p className="blog_category_title cursor-pointer " key={c.id}>
@@ -14,12 +15,16 @@ const CategoryMenu = ({ categoryData }) => (
 
 const BlogHeader = ({ categories }) => {
   return (
-    <HomeSectionContainer>
-      <h1 className="roboto_normal   text-[60px] text-white font-bold mb-[100px]   blog_title">
-        Launchy Blog
-      </h1>
-      <CategoryMenu categoryData={categories} />
-    </HomeSectionContainer>
+    <>
+      <Header show={false}>
+        <h2 className="z-10 text-white tracking-widest uppercase mt-5 text-[30px] lg:text-[40px] roboto_normal">
+          Launchy Blog
+        </h2>
+      </Header>
+      <HomeSectionContainer>
+        <CategoryMenu categoryData={categories} />
+      </HomeSectionContainer>
+    </>
   );
 };
 
