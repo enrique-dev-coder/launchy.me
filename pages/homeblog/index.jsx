@@ -14,7 +14,7 @@ const index = () => {
   useEffect(() => {
     getCategories();
   }, []);
-
+  console.log(categories);
   //funcion para obtner solo los datos que necesitamos
   const categoryNames = categories.map((c) => ({
     id: c.id,
