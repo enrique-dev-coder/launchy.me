@@ -28,7 +28,7 @@ const SubscribeForm = () => {
     let xhr = new XMLHttpRequest();
     //peticion a url  al formulario de hubspot
     let url =
-      'https://api.hsforms.com/submissions/v3/integration/submit/21108231/49338c35-6171-47d7-ba12-aab045c28a5f';
+      'https://api.hsforms.com/submissions/v3/integration/submit/21017130/e3742a1d-662b-49a6-a11e-eff333c9a3ca';
     //array con los valores del estado
     let data = {
       fields: [

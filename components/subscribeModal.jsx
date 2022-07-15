@@ -12,7 +12,7 @@ const subscribeModal = ({ background, closeModal }) => {
     },
   };
   return (
-    <div className="w-full flex items-center justify-center h-screen fixed z-20 inset-0 bg-black/75">
+    <div className="w-full flex items-center justify-center h-screen fixed z-40 inset-0 bg-black/75">
       <div
         className="bg-white w-4/5 h-[80vh] md:h-[450px] flex relative max-w-[910px] border border-white overflow-hidden"
         style={{ background }}
@@ -36,7 +36,7 @@ const subscribeModal = ({ background, closeModal }) => {
             </p>
             <div className="flex justify-center md:justify-start">
               <HomeButton
-                link={'/'}
+                link={'/#free-resources'}
                 title={'explora nuestros free resources'}
               />
             </div>

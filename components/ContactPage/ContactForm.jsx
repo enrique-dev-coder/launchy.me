@@ -42,7 +42,7 @@ const ContactForm = () => {
     let xhr = new XMLHttpRequest();
     //peticion a url  al formulario de hubspot
     let url =
-      'https://api.hsforms.com/submissions/v3/integration/submit/21108231/c217499f-c774-47a5-ae7c-b16a8201b566';
+      'https://api.hsforms.com/submissions/v3/integration/submit/21017130/aa0166ec-2aea-4752-9d8e-d09d5ae316f0';
     //array con los valores del estado
     let data = {
       fields: [
