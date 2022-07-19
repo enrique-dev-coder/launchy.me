@@ -36,9 +36,16 @@ const BlogPosts = ({ Posts }) => {
     <div className="flex flex-wrap ">
       {Posts.map((p) => (
         <PostCard
-          postTitle={p.title.rendered}
-          postLink={p.link}
-          featuredID={p.featured_media}
+          key={p.id}
+          date={p.date}
+          link={p.link}
+          title={p.title}
+          catID={p.catID}
+          authorFirstName={p.authorFirstName}
+          authorLastName={p.authorLastName}
+          authorAvatar={p.authorAvatar}
+          featuredImg={p.featuredImg}
+          catName={p.catName}
         />
       ))}
     </div>
