@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Moment from 'moment';
 
 const PostCard = ({
   key,
@@ -12,6 +13,8 @@ const PostCard = ({
   featuredImg,
   catName,
 }) => {
+  const formatDate = Moment(date).format('MMM Do YY');
+
   return (
     <div className="w-[33%] mb-[30px]">
       <div className="w-[282px] h-[250px] border-white flex flex-col  border rounded-sm">
@@ -24,16 +27,20 @@ const PostCard = ({
             <p className=" uppercase roboto_normal text-[10px] text-white">
               {catName}
             </p>
-            <p className="roboto_normal font-normal text-sm text-white">
-              {title}
-            </p>
+            <a href={link}>
+              <p className="roboto_normal font-normal text-sm text-white">
+                {title}
+              </p>
+            </a>
             {/*author container*/}
             <div className="flex">
               <div className="flex-1">
                 <p className="text-white roboto_normal text-[10px] ">
                   {authorFirstName} {authorLastName}
                 </p>
-                <p className="text-white roboto_normal text-[10px]">{date}</p>
+                <p className="text-white roboto_normal text-[10px]">
+                  {formatDate}
+                </p>
               </div>
               <div className="w-[30px] h-[30px] rounded-full bg-white">
                 <img
