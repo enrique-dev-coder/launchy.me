@@ -59,6 +59,7 @@ const Layout = ({ children }) => {
           href="https://fonts.googleapis.com/css2?family=Joan&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap"
           rel="stylesheet"
         />
+        <link rel="shortcut icon" href="/launchy.ico" />
       </Head>
 
       <div

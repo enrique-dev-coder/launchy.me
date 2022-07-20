@@ -5,7 +5,7 @@ const ResourceCard = ({ img, title, renderOnMobile, link }) => {
     renderOnMobile && (
       <a href={link} target="_blank" rel="noopener noreferrer ">
         <div
-          className={`w-full mb-[30px] md:mb-0 md:w-[275px] h-[138px] cursor-pointer ${
+          className={`w-full mb-[30px] md:mb-0 md:w-[275px] md:mr-[40px] h-[138px] cursor-pointer ${
             title === null && ' border-none'
           } flex  border border-white`}
         >
@@ -56,11 +56,6 @@ const FreeResource = () => {
       renderOnMobile: true,
       link: 'https://launchy-21017130.hubspotpagebuilder.com/checklist-ux-ui',
     },
-    {
-      img: '',
-      title: null,
-      renderOnMobile: mobile,
-    },
   ];
   //console.log(mobile);
   return (
@@ -71,7 +66,7 @@ const FreeResource = () => {
         </h2>
         <img src="/img/right.svg" alt="arrow" className="ml-4" />
       </div>
-      <div className="flex flex-col md:flex-row  justify-between">
+      <div className="flex flex-col md:flex-row  ">
         {resourceData.map((r, i) => (
           //NOTE: si el titulo es true y hay un valor en mobile entonces renderiza la tarjeta
           //esto es para que no renderice la tarjeta en blacno
