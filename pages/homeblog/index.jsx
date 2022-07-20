@@ -5,11 +5,13 @@ import { getCategoryData, getPostsData } from '../../query';
 const index = () => {
   const [categories, setCategories] = useState([]);
   const [posts, setPosts] = useState([]);
-  const [media, setMedia] = useState([]);
-
+  const [spinner, setSpinner] = useState(true);
   //se neceita una promesa para traer los datos las categorias desde graphql porque retorna una promesa
+
   const getCategories = async () => {
     const cats = await getCategoryData();
+    //dentro de esta funcion despues de la promesa cambiamos el estado del spinner para qeu sirva como loader en lo que carga la data
+    setSpinner(false);
     setCategories(cats);
     return console.log(cats);
   };
@@ -49,8 +51,15 @@ const index = () => {
 
   return (
     <div className="h-auto bg-black">
-      <BlogHeader categories={categoryNames} posts={postData} />
-      <Footer />
+      <>
+        <BlogHeader
+          categories={categoryNames}
+          posts={postData}
+          //el spinner se pasa caundo este en falso se quita por la promesa
+          spinner={spinner}
+        />
+        <Footer />
+      </>
     </div>
   );
 };

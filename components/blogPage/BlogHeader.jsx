@@ -45,7 +45,7 @@ const CategoryMenu = ({ categoryData }) => {
 const BlogPosts = ({ Posts }) => {
   const { categoryFilter } = useMenu();
   return (
-    <div className="flex flex-wrap ">
+    <div className="flex flex-wrap md:h-[570px] overflow-y-auto">
       {categoryFilter === 0
         ? Posts.map((p) => (
             <PostCard
@@ -82,7 +82,7 @@ const BlogPosts = ({ Posts }) => {
   );
 };
 
-const BlogHeader = ({ categories, posts }) => {
+const BlogHeader = ({ categories, posts, spinner }) => {
   return (
     <>
       <Header show={false}>
@@ -90,10 +90,23 @@ const BlogHeader = ({ categories, posts }) => {
           Launchy Blog
         </h1>
       </Header>
-      <HomeSectionContainer>
-        <CategoryMenu categoryData={categories} />
-        <BlogPosts Posts={posts} />
-      </HomeSectionContainer>
+      {spinner ? (
+        <div className="w-full flex flex-col justify-center items-center md:h-[570px]">
+          <img
+            src="/img/loading_image.png"
+            alt="laoding screen"
+            className="  animate-spin"
+          />
+          <p className="text-white loading_text roboto_normal">
+            Cargando recursos increibles ...
+          </p>
+        </div>
+      ) : (
+        <HomeSectionContainer>
+          <CategoryMenu categoryData={categories} />
+          <BlogPosts Posts={posts} />
+        </HomeSectionContainer>
+      )}
     </>
   );
 };
