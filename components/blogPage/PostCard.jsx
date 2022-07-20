@@ -16,8 +16,8 @@ const PostCard = ({
   const formatDate = Moment(date).format('MMM Do YY');
 
   return (
-    <div className="w-[33%] mb-[30px]">
-      <div className="w-[282px] h-[250px] border-white flex flex-col  border rounded-sm">
+    <div className="w-full flex justify-center md:justify-start md:w-[33%] mb-[30px]">
+      <div className="w-full max-w-[282px] h-[250px] border-white flex flex-col  border rounded-sm">
         <div className="w-full h-[137px]">
           <img src={featuredImg} alt={title} className="w-full h-full" />
         </div>

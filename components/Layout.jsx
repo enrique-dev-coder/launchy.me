@@ -42,10 +42,14 @@ const Layout = ({ children }) => {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="robots" content="all" />
-        <title>Launchy</title>
+        <meta
+          name="keywords"
+          content="Diseño ux, consultoria estrategica, asesoria empresarial, consultoria empresarial, consultoria de marketing, desarrollo web, auditoria de marketing, branding de marca, marketing digital, benchmarking, research"
+        />
+        <title>Launchy | Consultoría empresarial estratégica</title>
         <meta
           name="description"
-          content="Desarrollando e innovando hasta el infinito y mas allá."
+          content="Contamos con un equipo de especialistas en Consultoría, Research, Diseño & Desarrollo Web. Innovemos tu empresa hasta el infinito y más allá"
           key="desc"
         />
         <link rel="icon" href="/favicon.ico" />

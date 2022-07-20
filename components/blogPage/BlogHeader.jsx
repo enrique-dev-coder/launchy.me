@@ -18,7 +18,7 @@ const CategoryMenu = ({ categoryData }) => {
   };
 
   return (
-    <div className="w-full flex space-x-6 text-lg font-medium mb-[60px]">
+    <div className="w-full flex space-x-6 text-lg font-medium mb-[60px] overflow-x-auto">
       <p
         className={`blog_category_title  cursor-pointer ${
           activeCat === 0 && ' border-b-2 border-fuchsia-500'
@@ -45,7 +45,7 @@ const CategoryMenu = ({ categoryData }) => {
 const BlogPosts = ({ Posts }) => {
   const { categoryFilter } = useMenu();
   return (
-    <div className="flex flex-wrap md:h-[570px] overflow-y-auto">
+    <div className="flex flex-col md:flex-row flex-wrap md:h-[570px] overflow-y-auto">
       {categoryFilter === 0
         ? Posts.map((p) => (
             <PostCard
