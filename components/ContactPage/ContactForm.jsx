@@ -127,9 +127,9 @@ const ContactForm = () => {
               closeModal={() => setFormConfirm(false)}
             />
           )}
-          <h2 className=" text-white font-medium uppercase text-[28px] mb-[30px]">
+          <h1 className=" text-white font-medium uppercase text-[28px] mb-[30px]">
             Ready to Launch?
-          </h2>
+          </h1>
           <form className="w-full" onSubmit={handleSubmit}>
             <div className="flex flex-col md:flex-row justify-between">
               <InputContactForm

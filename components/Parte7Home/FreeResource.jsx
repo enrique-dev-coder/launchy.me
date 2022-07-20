@@ -9,7 +9,7 @@ const ResourceCard = ({ img, title, renderOnMobile, link }) => {
             title === null && ' border-none'
           } flex  border border-white`}
         >
-          <img src={img} />
+          <img src={img} alt="free resource" />
           <div
             className={`flex-1 border-l ${
               title === null && ' border-none'
@@ -24,7 +24,7 @@ const ResourceCard = ({ img, title, renderOnMobile, link }) => {
                   <p className="text-white  text-[10px] mr-4 uppercase roboto_normal">
                     ACCEDER
                   </p>
-                  <img src="/img/right.svg" />
+                  <img src="/img/right.svg" alt="right" />
                 </div>
               )}
             </div>

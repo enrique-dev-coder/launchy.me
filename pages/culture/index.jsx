@@ -11,13 +11,13 @@ const Culture = () => {
   return (
     <main className="roboto_normal">
       <Header show={false}>
-        <h2 className="z-10 text-white tracking-widest uppercase mt-5 text-[30px] lg:text-[40px] roboto_normal">
+        <h1 className="z-10 text-white tracking-widest uppercase mt-5 text-[30px] lg:text-[40px] roboto_normal">
           Culture
-        </h2>
+        </h1>
       </Header>
 
       <StarBackgroundCss>
-        <section className='max-w-[1440px] mx-auto'>
+        <section className="max-w-[1440px] mx-auto">
           <Cards />
           <TeamPictures />
           <Wrapper>

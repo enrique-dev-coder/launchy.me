@@ -46,9 +46,9 @@ const index = () => {
     <StarBackgroundCss>
       <div className="max-w-[1440px] mx-auto">
         <div className="flex flex-col my-20 pt-14 pb-20 border-b">
-          <h2 className="text-white text-center text-4xl tracking-wider uppercase mt-5">
+          <h1 className="text-white text-center text-4xl tracking-wider uppercase mt-5">
             Politicas de privacidad | CO
-          </h2>
+          </h1>
 
           <div className="flex justify-center mt-8">
             <img

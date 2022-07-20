@@ -39,10 +39,10 @@ const HeroHomePage = () => {
               className=""
             />
             <div className="flex items-end mt-[30px] md:mt-0 mr-12">
-              <p className="text-white w-full md:w-2/5 ml-auto">
+              <h1 className="text-white w-full md:w-2/5 ml-auto">
                 Te acampañamos: desarrollando, innovando y guiandote al infinito
                 y más allá.
-              </p>
+              </h1>
               <img
                 src="/img/down.svg"
                 alt="scroll down"

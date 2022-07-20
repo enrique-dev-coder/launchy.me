@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 const Card = ({ path, desc, video, link }) => {
   return (
     <a href={link}>
@@ -26,7 +26,7 @@ const Card = ({ path, desc, video, link }) => {
           <div className="w-full h-full">
             <div
               className={`${
-                video && "mt-[4px]"
+                video && 'mt-[4px]'
               } h-[100px] md:h-[40px] flex flex-col items-center justify-center image_border`}
             >
               <p className="uppercase text-[12px] md:text-[11px] w-11/12 mx-auto ">
@@ -39,6 +39,7 @@ const Card = ({ path, desc, video, link }) => {
               <p>Mirá el proyecto</p>
               <img
                 src="/img/right.svg"
+                alt="right"
                 className="w-[30px] md:w-[20px] h-[20px] ml-2 md:ml-0"
               ></img>
             </div>

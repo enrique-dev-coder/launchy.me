@@ -30,7 +30,7 @@ const blogData = [
 const BlogCard = ({ img, category, title, author, authorImg, read }) => {
   return (
     <div className="w-full md:w-[275px] mb-[30px] md:mb-0 h-[138px] border flex border-white">
-      <img src={img} />
+      <img src={img} alt={title} />
       <div className="flex-1 border-l border-white flex flex-col justify-center">
         <div className="w-[80%] h-[80%]   mx-auto ">
           <p className="uppercase text-white font-thin mb-[10px] text-[10px] roboto_normal">
@@ -43,7 +43,7 @@ const BlogCard = ({ img, category, title, author, authorImg, read }) => {
               <p className="text-white text-[10px] roboto_normal">{read}</p>
             </div>
             <div className="">
-              <img src={authorImg} />
+              <img src={authorImg} alt={author} />
             </div>
           </div>
         </div>

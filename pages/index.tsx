@@ -1,6 +1,5 @@
 import type { NextPage } from 'next';
 import HeroHomePage from '../components/HeroHomePage';
-import StarBackground from '../components/Wrappers/StarBackground';
 import StarBackgroundCss from '../components/Wrappers/StarBackgroundCss';
 import ParteDosHome from '../components/Parte2Home/index';
 import ParteTresHome from '../components/Parte3Home/index';

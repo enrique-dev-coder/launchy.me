@@ -30,6 +30,7 @@ const FAQsingle = ({ text, answer, type, show, showDispatch }) => {
       >
         <img
           src="/img/ep_arrow-down.svg"
+          alt="flechita"
           className="w-[24.5px] h-[24.5px] cursor-pointer"
         />
       </div>

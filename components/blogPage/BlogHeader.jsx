@@ -86,9 +86,9 @@ const BlogHeader = ({ categories, posts }) => {
   return (
     <>
       <Header show={false}>
-        <h2 className="z-10 text-white tracking-widest uppercase mt-5 text-[30px] lg:text-[40px] roboto_normal">
+        <h1 className="z-10 text-white tracking-widest uppercase mt-5 text-[30px] lg:text-[40px] roboto_normal">
           Launchy Blog
-        </h2>
+        </h1>
       </Header>
       <HomeSectionContainer>
         <CategoryMenu categoryData={categories} />

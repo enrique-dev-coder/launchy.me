@@ -45,6 +45,7 @@ const PostCard = ({
               <div className="w-[30px] h-[30px] rounded-full bg-white">
                 <img
                   src={authorAvatar}
+                  alt="autor avatar"
                   className="w-full h-full rounded-full"
                 />
               </div>

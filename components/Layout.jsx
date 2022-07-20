@@ -41,7 +41,13 @@ const Layout = ({ children }) => {
         <meta charSet="UTF-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="all" />
         <title>Launchy</title>
+        <meta
+          name="description"
+          content="Desarrollando e innovando hasta el infinito y mas allá."
+          key="desc"
+        />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link

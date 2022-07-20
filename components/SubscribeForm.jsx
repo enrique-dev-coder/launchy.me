@@ -84,6 +84,7 @@ const SubscribeForm = () => {
         )}
         <img
           src="/img/planet.png"
+          alt="planeta"
           className="absolute right-0 z-0 translate-x-[150px] -translate-y-[110px]  md:-translate-y-[170px]"
         />
         <p className="uppercase font-bold relative   text-white md:text-[22px] roboto_condesed mb-[30px] md:mb-[40px] ">

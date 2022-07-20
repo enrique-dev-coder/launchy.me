@@ -7,10 +7,7 @@ const Card = ({ path, link }) => {
     <Link href={link}>
       <div className="flex cursor-pointer text-white md:flex-col border border-white w-full md:w-[282px] md:h-[224px] mb-[30px] md:mb-[40px]">
         <div className="w-full">
-            <img
-              src={path}
-              alt="casos de exito"
-            />
+          <img src={path} alt="casos de exito" />
         </div>
         <div className="w-full h-full flex ">
           <div
@@ -20,12 +17,13 @@ const Card = ({ path, link }) => {
             <img
               src="/img/right.svg"
               className="w-[30px] md:w-[20px] h-[20px] ml-2 md:ml-0"
+              alt="right arrow"
             ></img>
           </div>
         </div>
       </div>
     </Link>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

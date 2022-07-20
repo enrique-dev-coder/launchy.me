@@ -19,6 +19,7 @@ const subscribeModal = ({ background, closeModal }) => {
       >
         <img
           src="/img/close.svg"
+          alt="close"
           className="absolute  right-0 cursor-pointer -translate-x-4 translate-y-5"
           onClick={() => closeModal()}
         />
