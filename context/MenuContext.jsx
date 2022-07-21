@@ -9,6 +9,7 @@ export const MenuProvider = ({ children }) => {
   const [lineAnimation, setLineAnimation] = useState(false);
   const [loading, setLoading] = useState(true);
   const [categoryFilter, setCategoryFilter] = useState(0);
+  const [english, setEnglish] = useState(false);
   return (
     <>
       <MenuContext.Provider
@@ -21,6 +22,8 @@ export const MenuProvider = ({ children }) => {
           setLoading,
           categoryFilter,
           setCategoryFilter,
+          english,
+          setEnglish,
         }}
       >
         {children}

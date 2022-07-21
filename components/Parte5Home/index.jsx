@@ -98,6 +98,7 @@ const index = () => {
       <div className="w-full">
         <Title2Home
           title={'NOS ENCANTA SER PARTE DE TU EQUIPO Y ESCUCHARTE DECIR...'}
+          titleENG={'WE WOULD LOVE TO BE IN YOUR TEAM AND HEAR YOU SAY...'}
         />
         {/*slider for desktop*/}
         <Swiper
