@@ -1,7 +1,6 @@
 import React from 'react';
 import StarBackgroundCss from '../../components/Wrappers/StarBackgroundCss';
 import Footer from '../../components/Footer';
-import Flechitas from '../../public/img/Flechitas.png';
 
 const texts = [
   {
@@ -52,7 +51,7 @@ const index = () => {
 
           <div className="flex justify-center mt-8">
             <img
-              src={Flechitas}
+              src='/img/Flechitas.png'
               width={25}
               height={25}
               alt={'Mockup de ITGall creado por Launchy'}
