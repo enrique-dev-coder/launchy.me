@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-const Card = ({ path, desc, video, link }) => {
+import TranslatedParagraph from '../TranslatedParagraph';
+const Card = ({ path, desc, video, link, descEng }) => {
   return (
     <a href={link}>
       <Link href={link}>
@@ -29,14 +30,22 @@ const Card = ({ path, desc, video, link }) => {
                 video && 'mt-[4px]'
               } h-[100px] md:h-[40px] flex flex-col items-center justify-center image_border`}
             >
-              <p className="uppercase text-[12px] md:text-[11px] w-11/12 mx-auto ">
-                {desc}
-              </p>
+              <TranslatedParagraph
+                textSpanish={desc}
+                textEnglish={descEng}
+                classes={
+                  'uppercase text-[12px] md:text-[11px] w-11/12 mx-auto '
+                }
+              />
             </div>
             <div
               className={`text-[12px] md:text-[13px]    w-11/12 mx-auto flex md:justify-between cursor-pointer  mt-2`}
             >
-              <p>Mirá el proyecto</p>
+              <TranslatedParagraph
+                textSpanish={'Mirá el proyecto'}
+                textEnglish={'Look the project'}
+              />
+              <p></p>
               <img
                 src="/img/right.svg"
                 alt="right"

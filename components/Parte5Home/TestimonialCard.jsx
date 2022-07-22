@@ -1,13 +1,18 @@
 import React from 'react';
-
-const TestimonialCard = ({ desc, name, empresa, job, foto }) => {
+import TranslatedParagraph from '../TranslatedParagraph';
+const TestimonialCard = ({ desc, name, empresa, job, foto, descEng }) => {
   return (
     <div className="w-[275px] h-[186px] border flex flex-col border-white relative overflow-hidden">
       <div className="absolute bottom-0 z-0">
         <img src="/img/testimonios/card_bg.svg" alt="testimonios" />
       </div>
       <div className="text-white relative flex flex-col justify-around w-10/12 h-[90%] m-auto">
-        <p className="text-[13px] roboto_normal flex-1">{desc}</p>
+        <TranslatedParagraph
+          textEnglish={descEng}
+          textSpanish={desc}
+          classes={'text-[13px] roboto_normal flex-1'}
+        />
+
         <div className="flex">
           <img
             src={foto}

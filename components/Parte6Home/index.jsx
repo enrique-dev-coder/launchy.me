@@ -1,9 +1,11 @@
-import React from "react";
-import HomeSectionContainer from "../Wrappers/HomeSectionContainer";
-import HomeButton from "../HomeButton";
-import AlienSlider from "./AlienSlider";
-
+import React from 'react';
+import HomeSectionContainer from '../Wrappers/HomeSectionContainer';
+import HomeButton from '../HomeButton';
+import AlienSlider from './AlienSlider';
+import TranslatedParagraph from '../TranslatedParagraph';
+import { useMenu } from '../../context/MenuContext';
 const index = () => {
+  const { english } = useMenu();
   return (
     <HomeSectionContainer>
       <div className="relative">
@@ -21,24 +23,27 @@ const index = () => {
             <div className="h-[80%] flex flex-col items-center md:justify-around">
               <h2
                 className=" text-[22px] md:text-4xl mb-[20px] md:mb-0 uppercase roboto_condesed font-bold "
-                style={{ color: "#211539" }}
+                style={{ color: '#211539' }}
               >
-                Conoce al team
+                {english ? 'Meet the team' : 'Conoce al team'}
               </h2>
-              <p className=" text-center mb-[20px] text-[14px] md:text-[15px] ">
-                Somos buenas personas ¿eso importa? Si! Para nosotros es lo
-                elemental, nos hace empaticos, practivos y buenos compañeros.
-                Vas a amar trabajar con nosotros. Siempre buscamos soluciones
-                con la mejor actitud.
-              </p>
+              <TranslatedParagraph
+                textSpanish={
+                  ' Somos buenas personas ¿eso importa? Si! Para nosotros es lo elemental, nos hace empaticos, practivos y buenos compañeros. Vas a amar trabajar con nosotros. Siempre buscamos soluciones con la mejor actitud.'
+                }
+                textEnglish={
+                  'We are good people ... does it matter? Yes! For us this is basic, it made us empathic, proactive, and good partners. You will love to work with us. We are always searching for new solutions with the best attitude.'
+                }
+                classes={' text-center mb-[20px] text-[14px] md:text-[15px] '}
+              />
               <a href="/culture">
-                <HomeButton link={"/culture"} title={"conócenos :)"} />
+                <HomeButton link={'/culture'} title={'conócenos :)'} />
               </a>
             </div>
           </div>
           <div
             className="w-full  overflow-hidden relative  h-[30%]"
-            style={{ borderTop: "2px solid #211539" }}
+            style={{ borderTop: '2px solid #211539' }}
           >
             <div className="w-full flex absolute justify-between bottom-0 top-[30px] h-full">
               <AlienSlider />

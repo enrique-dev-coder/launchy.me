@@ -1,6 +1,6 @@
 import React from 'react';
 import HomeSectionContainer from './Wrappers/HomeSectionContainer';
-import HomeButton from './HomeButton';
+import TranslatedParagraph from './TranslatedParagraph';
 const BannerPerrito = () => {
   return (
     <HomeSectionContainer>
@@ -8,19 +8,31 @@ const BannerPerrito = () => {
         <div className="w-full h-[60%] ">
           <div className="w-full flex justify-center mb-[10px]">
             <img src="/img/huella.png" alt="conocelos" />
-            <h2 className="text-white uppercase md:text-3xl roboto_condesed font-bold mx-4">
-              ¡QUEREMOS DAR UNA PATA!
-            </h2>
+            <TranslatedParagraph
+              textEnglish={'We want to give a paw !'}
+              textSpanish={'¡QUEREMOS DAR UNA PATA!'}
+              classes={
+                'text-white uppercase md:text-3xl roboto_condesed font-bold mx-4'
+              }
+            />
             <img
               src="/img/huella.png"
               alt="conocelos"
               className="  rotate-180"
             />
           </div>
-          <p className="text-white text-center w-4/5 md:w-[40%] mx-auto mb-[20px]">
-            El 5% de nuestro profit se destina a ayudar al rescate de animales y
-            su adopción.
-          </p>
+          <TranslatedParagraph
+            textEnglish={
+              '5% of our profit is destinated to help on the rescue of animals and their adoption.'
+            }
+            textSpanish={
+              'El 5% de nuestro profit se destina a ayudar al rescate de animales y su adopción.'
+            }
+            classes={
+              'text-white text-center w-4/5 md:w-[40%] mx-auto mb-[20px]'
+            }
+          />
+
           <div className="w-full flex justify-center ">
             <a
               href="https://instagram.com/danosunapatamdp?igshid=YmMyMTA2M2Y="

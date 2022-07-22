@@ -1,26 +1,30 @@
 import Link from 'next/link';
-import { useState } from 'react';
-import Image from 'next/image';
 import { useMenu } from '../context/MenuContext';
+import TranslatedParagraph from './TranslatedParagraph';
 const Links = [
   {
     title: 'soluciones',
+    titleEng: 'services',
     src: '/services',
   },
   {
     title: 'proyectos',
+    titleEng: 'projects',
     src: '/#proyectos',
   },
   {
     title: 'cultura',
+    titleEng: 'culture',
     src: '/culture',
   },
   {
     title: 'blog',
+    titleEng: 'blog',
     src: '/homeblog',
   },
   {
     title: 'free resources',
+    titleEng: 'free resources',
     src: '/#free-resources',
   },
 ];
@@ -47,12 +51,12 @@ const Navbar = () => {
             {Links.map((l) => (
               <a href={l.src}>
                 <Link href={l.src} key={l.title}>
-                  <p
-                    className="text-white uppercase text-sm cursor-pointer"
+                  <TranslatedParagraph
                     key={l.title}
-                  >
-                    {l.title}
-                  </p>
+                    textEnglish={l.titleEng}
+                    textSpanish={l.title}
+                    classes="text-white uppercase text-sm cursor-pointer"
+                  />
                 </Link>
               </a>
             ))}

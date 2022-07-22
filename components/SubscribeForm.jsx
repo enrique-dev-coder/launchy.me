@@ -2,6 +2,8 @@ import HomeSectionContainer from './Wrappers/HomeSectionContainer';
 
 import { useState } from 'react';
 import SubscribeModal from '../components/subscribeModal';
+import TranslatedParagraph from './TranslatedParagraph';
+import { useMenu } from '../context/MenuContext';
 const Input = ({ labelName, type, value, onChange }) => {
   return (
     <div className="flex w-full mb-[30px] md:mb-0 md:w-[50%] flex-col">
@@ -22,6 +24,7 @@ const SubscribeForm = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [form, setFormConfirm] = useState(false);
+  const { english } = useMenu();
   const handleSubmit = (e) => {
     e.preventDefault();
     //iniciar peticion de xhr
@@ -87,13 +90,23 @@ const SubscribeForm = () => {
           alt="planeta"
           className="absolute right-0 z-0 translate-x-[150px] -translate-y-[110px]  md:-translate-y-[170px]"
         />
-        <p className="uppercase font-bold relative   text-white md:text-[22px] roboto_condesed mb-[30px] md:mb-[40px] ">
-          SUSCRIBITE A NUESTRA NAVE!
-        </p>
-        <p className="text-white text-[14px] relative md:text-base mb-2 ">
-          Te enviaremos recursos gratuitos y novedades que AMARAS e impulsarán
-          tu empresa. NO SPAM, I SWEAR.
-        </p>
+        <TranslatedParagraph
+          textSpanish={'SUSCRIBITE A NUESTRA NAVE!'}
+          textEnglish="RIDE ON OUR SPACE SHIP!"
+          classes={
+            'uppercase font-bold relative   text-white md:text-[22px] roboto_condesed mb-[30px] md:mb-[40px] '
+          }
+        />
+        <TranslatedParagraph
+          textSpanish={
+            'Te enviaremos recursos gratuitos y novedades que AMARAS e impulsarán tu empresa. NO SPAM, I SWEAR.'
+          }
+          textEnglish={
+            'We will send you free resources and news taht you will LOVE also the will boost performance of your company. NO SPAM, I SWEAR.'
+          }
+          classes="text-white text-[14px] relative md:text-base mb-2"
+        />
+
         <form className="relative" onSubmit={handleSubmit}>
           <div className="flex flex-col md:flex-row w-full md:w-[80%]">
             <Input
@@ -115,16 +128,27 @@ const SubscribeForm = () => {
           >
             me uno a la nave
           </button>
-          <p className="mt-[20px] text-sm" style={{ color: '#DCDCDC' }}>
-            Acepto las{' '}
-            <a href="/privacy">
-              <span className="underline cursor-pointer">
-                Politicas de Privacidad{' '}
-              </span>{' '}
-              al
-            </a>
-            suscribirme.
-          </p>
+          {english ? (
+            <p className="mt-[20px] text-sm" style={{ color: '#DCDCDC' }}>
+              I accept{' '}
+              <a href="/privacy">
+                <span className="underline cursor-pointer">
+                  privacy policies{' '}
+                </span>{' '}
+              </a>
+              in my suscription.
+            </p>
+          ) : (
+            <p className="mt-[20px] text-sm" style={{ color: '#DCDCDC' }}>
+              Acepto las{' '}
+              <a href="/privacy">
+                <span className="underline cursor-pointer">
+                  Politicas de Privacidad{' '}
+                </span>{' '}
+              </a>
+              al suscribirme.
+            </p>
+          )}
         </form>
       </div>
     </HomeSectionContainer>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-
-const ResourceCard = ({ img, title, renderOnMobile, link }) => {
+import TranslatedParagraph from '../TranslatedParagraph';
+const ResourceCard = ({ img, title, renderOnMobile, link, titleEng }) => {
   return (
     renderOnMobile && (
       <a href={link} target="_blank" rel="noopener noreferrer ">
@@ -16,14 +16,20 @@ const ResourceCard = ({ img, title, renderOnMobile, link }) => {
             } border-white flex flex-col justify-center`}
           >
             <div className="w-[80%] h-[80%] flex flex-col  mx-auto">
-              <p className="text-white flex-1  text-sm roboto_normal ">
-                {title}
-              </p>
+              <TranslatedParagraph
+                textSpanish={title}
+                textEnglish={titleEng}
+                classes={'text-white flex-1  text-sm roboto_normal '}
+              />
               {title && (
                 <div className="flex mb-[10px]">
-                  <p className="text-white  text-[10px] mr-4 uppercase roboto_normal">
-                    ACCEDER
-                  </p>
+                  <TranslatedParagraph
+                    textEnglish={'find more'}
+                    textSpanish={'ACCEDER'}
+                    classes={
+                      'text-white  text-[10px] mr-4 uppercase roboto_normal'
+                    }
+                  />
                   <img src="/img/right.svg" alt="right" />
                 </div>
               )}
@@ -47,12 +53,14 @@ const FreeResource = () => {
     {
       img: '/img/team/customer.png',
       title: 'Plantilla para hacer tu customer journey map 🚀 ',
+      titleEng: 'Template for  your own customer journey map 🚀',
       renderOnMobile: true,
       link: 'https://launchy-21017130.hubspotpagebuilder.com/customer-journey-map',
     },
     {
       img: '/img/checklist-ux-ui.png',
       title: 'Check list UX/UI  para webs-apps',
+      titleEng: 'UX/UI checklist for web-apps',
       renderOnMobile: true,
       link: 'https://launchy-21017130.hubspotpagebuilder.com/checklist-ux-ui',
     },
@@ -76,6 +84,7 @@ const FreeResource = () => {
             key={i}
             img={r.img}
             title={r.title}
+            titleEng={r.titleEng}
             renderOnMobile={r.renderOnMobile}
           />
         ))}

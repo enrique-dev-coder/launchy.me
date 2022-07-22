@@ -1,7 +1,9 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import { tite, flor } from '../public/animation.json';
+import { flor } from '../public/animation.json';
 import HomeButton from './HomeButton';
+import TranslatedParagraph from './TranslatedParagraph';
+
 const subscribeModal = ({ background, closeModal }) => {
   const LottieOptions = {
     loop: true,
@@ -29,12 +31,18 @@ const subscribeModal = ({ background, closeModal }) => {
         <div className="w-[40%] hidden md:block"></div>
         <div className="w-full md:w-[60%] h-full flex justify-center items-center">
           <div className="text-white">
-            <h2 className="uppercase text-center md:text-left text-[30px] mb-[10px]">
-              ¡Gracias por suscribirte!
-            </h2>
-            <p className="uppercase text-center md:text-left text-lg mb-[20px]">
-              tu suscripción fue realizada correctamente
-            </p>
+            <TranslatedParagraph
+              textSpanish={'   ¡Gracias por suscribirte!'}
+              textEnglish={'Thanks for subscribing!'}
+              classes={
+                'uppercase text-center md:text-left text-[30px] mb-[10px]'
+              }
+            />
+            <TranslatedParagraph
+              textSpanish={'your suscription was a success'}
+              textEnglish={'tu suscripción fue realizada correctamente'}
+              classes={'uppercase text-center md:text-left text-lg mb-[20px]'}
+            />
             <div className="flex justify-center md:justify-start">
               <HomeButton
                 link={'/#free-resources'}

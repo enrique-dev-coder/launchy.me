@@ -12,6 +12,8 @@ const data = [
   {
     id: 1,
     desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar con un equipo como el de ellos!',
+    descEng:
+      'Working with Launchy is incredible. They are super fast and available, also they always positively receive feedback. It is a great pleasure to work with a team like them!',
     empresa: 'Infuy',
     job: 'CMO',
     name: 'Victoria Noriega',
@@ -20,6 +22,8 @@ const data = [
   {
     id: 2,
     desc: 'Haber conocido y trabajar con el equipo de Launchy es un verdadero placer. Aportaron valor a Fichap tanto con su equipo de Desarrollo y Diseño como el de Marketing. Estamos muy contentos de trabajar con ellos.',
+    descEng:
+      'It is a true pleasure to meet and work with Launchy Team. Market and development team five value added to Ficahp. We are really happy for choosing them.',
     empresa: 'Fichap',
     job: 'CMO',
     name: 'Sofía Corvalo',
@@ -28,6 +32,8 @@ const data = [
   {
     id: 3,
     desc: 'La imagen de la empresa está cambiando a una más moderna y limpia gracias al compromiso del equipo de diseño. Super contenta.',
+    descEng:
+      'Companie´s Image is changing to a more modern and cleaner thanks to Lauchy team commitment. Super glad.',
     empresa: 'Jaak',
     job: 'CEO',
     name: 'Ariadna Quezada',
@@ -36,6 +42,8 @@ const data = [
   {
     id: 4,
     desc: 'Muy bueno trabajar con ellos. Gracias por toda la paciencia y buen ánimo al enfrentar los cambios y feedback.',
+    descEng:
+      'Working with them is very good. Thanks for all the patience and good vibes at the moment of facing changes and feedback',
     empresa: 'Community',
     name: 'Helena Donoso',
     job: 'CEO',
@@ -44,6 +52,8 @@ const data = [
   {
     id: 5,
     desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar!',
+    descEng:
+      'Working with Launchy is incredible. They are super fast and available, also they always positively receive feedback. It is a great pleasure to work with a team like them!',
     empresa: 'Infuy',
     job: 'CGO',
     name: 'Joaquín del Torchio',
@@ -52,6 +62,8 @@ const data = [
   {
     id: 6,
     desc: 'Trabajar con los chicos de Launchy es increíble. Súper rápidos, dispuestos y reciben el feedback de manera positiva siempre. ¡Realmente es un placer trabajar!',
+    descEng:
+      'Working with Launchy is incredible. They are super fast and available, also they always positively receive feedback. It is a great pleasure to work with a team like them!',
     empresa: 'Itgall',
     job: 'Gerente CSG',
     name: 'Gisella García',
@@ -66,6 +78,7 @@ const Slide1 = () => {
         <TestimonialCard
           key={d.id}
           desc={d.desc}
+          descEng={d.descEng}
           empresa={d.empresa}
           job={d.job}
           foto={d.foto}
@@ -83,6 +96,7 @@ const Slide2 = () => {
         <TestimonialCard
           key={d.id}
           desc={d.desc}
+          descEng={d.descEng}
           empresa={d.empresa}
           job={d.job}
           foto={d.foto}
