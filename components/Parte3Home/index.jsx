@@ -141,7 +141,11 @@ const index = () => {
               />
             ))}
             <a href="/services">
-              <HomeButton link={'/services'} title={'Ir a Servicios'} />
+              <HomeButton
+                link={'/services'}
+                title={'Ir a Servicios'}
+                titleEng={'Go to Services'}
+              />
             </a>
           </div>
           <div className="md:w-1/2 h-full bg-white mt-[30px] md:mt-0">

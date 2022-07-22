@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { useMenu } from '../context/MenuContext';
 import TranslatedParagraph from './TranslatedParagraph';
+import HomeButton from './HomeButton';
 const Links = [
   {
     title: 'soluciones',
@@ -62,13 +63,11 @@ const Navbar = () => {
             ))}
           </div>
           {/*button */}
-          <Link href="/contact">
-            <div className="hidden md:block">
-              <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
-                Charlemos
-              </button>
-            </div>
-          </Link>
+          <HomeButton
+            link={'/contact'}
+            title="Charlemos"
+            titleEng={'Contact Us'}
+          />
           {/*mobile menu Icon*/}
           <div className="md:hidden">
             <img

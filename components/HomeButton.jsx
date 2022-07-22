@@ -1,10 +1,12 @@
-import React from "react";
-import Link from "next/link";
-const HomeButton = ({ title, link }) => {
+import React from 'react';
+import Link from 'next/link';
+import { useMenu } from '../context/MenuContext';
+const HomeButton = ({ title, titleEng, link }) => {
+  const { english } = useMenu();
   return (
     <Link href={link}>
       <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
-        {title}
+        {english ? titleEng : title}
       </button>
     </Link>
   );

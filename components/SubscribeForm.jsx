@@ -126,7 +126,7 @@ const SubscribeForm = () => {
             type="submit"
             className="text-white py-2 px-3 uppercase text-sm navbar_button md:mt-[40px]"
           >
-            me uno a la nave
+            {english ? 'I join the space ship' : 'me uno a la nave'}
           </button>
           {english ? (
             <p className="mt-[20px] text-sm" style={{ color: '#DCDCDC' }}>

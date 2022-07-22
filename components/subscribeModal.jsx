@@ -47,6 +47,7 @@ const subscribeModal = ({ background, closeModal }) => {
               <HomeButton
                 link={'/#free-resources'}
                 title={'explora nuestros free resources'}
+                titleEng={'find our free resources'}
               />
             </div>
           </div>

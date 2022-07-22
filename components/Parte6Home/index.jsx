@@ -37,7 +37,11 @@ const index = () => {
                 classes={' text-center mb-[20px] text-[14px] md:text-[15px] '}
               />
               <a href="/culture">
-                <HomeButton link={'/culture'} title={'conócenos :)'} />
+                <HomeButton
+                  link={'/culture'}
+                  title={'conócenos :)'}
+                  titleEng={'Meet us :)'}
+                />
               </a>
             </div>
           </div>

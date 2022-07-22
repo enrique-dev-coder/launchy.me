@@ -39,9 +39,11 @@ const BannerPerrito = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="text-white py-2 px-3 uppercase text-sm navbar_button">
-                Conócelos
-              </button>
+              <TranslatedParagraph
+                classes={'text-white py-2 px-3 uppercase text-sm navbar_button'}
+                textSpanish="Conócelos"
+                textEnglish="Know more"
+              />
             </a>
           </div>
         </div>

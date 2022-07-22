@@ -81,7 +81,11 @@ const index = () => {
         </div>
         <div className="w-full flex justify-center">
           <a href="/contact">
-            <HomeButton link={'/contact'} title={'CONVIERTETE EN UNO'} />
+            <HomeButton
+              link={'/contact'}
+              title={'CONVIERTETE EN UNO'}
+              titleEng={'BECOME ONE'}
+            />
           </a>
         </div>
       </HomeSectionContainer>

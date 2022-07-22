@@ -1,11 +1,17 @@
 import React from 'react';
 import Link from 'next/link';
+import TranslatedParagraph from './TranslatedParagraph';
 const linkData = [
-  { id: 1, link: 'Soluciones', src: '/services' },
-  { id: 2, link: 'Proyectos', src: '#proyectos' },
-  { id: 3, link: 'Cultura', src: '/culture' },
-  { id: 4, link: 'Blog', src: '/' },
-  { id: 5, link: 'Free resources', src: '#free-resources' },
+  { id: 1, link: 'Soluciones', linkEng: 'Services', src: '/services' },
+  { id: 2, link: 'Proyectos', linkEng: 'Projects', src: '#proyectos' },
+  { id: 3, link: 'Cultura', linkEng: 'Culture', src: '/culture' },
+  { id: 4, link: 'Blog', linkEng: 'Blog', src: '/homeblog' },
+  {
+    id: 5,
+    link: 'Free resources',
+    linkEng: 'Free resources',
+    src: '#free-resources',
+  },
 ];
 
 const whiteIcons = [
@@ -71,21 +77,25 @@ const Footer = ({ blue }) => {
                   READY TO LAUNCH?
                 </p>
                 <Link href={'/contact'}>
-                  <p className="uppercase cursor-pointer text-[22px]  md:text-[26px] underline roboto_condesed ">
-                    CHARLEMOS {'>>'}
-                  </p>
+                  <TranslatedParagraph
+                    textEnglish={'Contact us'}
+                    textSpanish="CHARLEMOS"
+                    classes={
+                      'uppercase cursor-pointer text-[22px]  md:text-[26px] underline roboto_condesed '
+                    }
+                  />
                 </Link>
               </div>
               <div className="basis-1/3 flex flex-col mb-[30px] md:mb-0  justify-between">
                 {linkData.map((l, i) => (
                   <a href={l.src}>
                     <Link href={l.src}>
-                      <p
+                      <TranslatedParagraph
                         key={i}
-                        className="roboto_condesed mb-[10px] md:mb-0  md:ml-5 uppercase cursor-pointer"
-                      >
-                        {l.link}
-                      </p>
+                        textSpanish={l.link}
+                        textEnglish={l.linkEng}
+                        classes="roboto_condesed mb-[10px] md:mb-0  md:ml-5 uppercase cursor-pointer"
+                      />
                     </Link>
                   </a>
                 ))}
@@ -124,17 +134,25 @@ const Footer = ({ blue }) => {
             </div>
           </div>
           <div className="w-full flex flex-col md:flex-row text-sm justify-between">
-            <p className="underline mb-5 md:mb-0">
-              Launchy 2022. Derechos reservados.
-            </p>
-            <p className="underline mb-5 md:mb-0">
-              Trabajo inmersivo hecho en base a Tycho Magnetic Anomaly
-            </p>
+            <TranslatedParagraph
+              textSpanish={'Launchy 2022. Derechos reservados.'}
+              textEnglish="Launchy 2022. All rights reserved"
+              classes={'underline mb-5 md:mb-0'}
+            />
+            <TranslatedParagraph
+              textSpanish={
+                'Trabajo inmersivo hecho en base a Tycho Magnetic Anomaly'
+              }
+              textEnglish={'Immersive work based on a Tycho Magnetic Anomaly'}
+              classes="underline mb-5 md:mb-0"
+            />
             <a href="/privacy">
               <Link href={'/privacy'}>
-                <p className="underline mb-5 md:mb-0 cursor-pointer">
-                  Políticas de Privacidad
-                </p>
+                <TranslatedParagraph
+                  textSpanish={'Políticas de Privacidad'}
+                  textEnglish={'Privacy Ploicies'}
+                  classes="underline mb-5 md:mb-0 cursor-pointer"
+                />
               </Link>
             </a>
           </div>
