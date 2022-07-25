@@ -23,13 +23,17 @@ const Layout = ({ children }) => {
       const data = await fetch('https://iplist.cc/api');
       const response = await data.json();
       setCountryCode(response.countrycode);
-      if (countryCode === 'US') {
-        setEnglish(true);
-      }
+
       return response;
     };
     getCountryCode();
   }, []);
+
+  if (countryCode === 'US') {
+    setEnglish(true);
+  }
+
+  // console.log(countryCode);
 
   return (
     <>

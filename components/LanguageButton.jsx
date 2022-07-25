@@ -10,7 +10,7 @@ const LanguageButton = () => {
   };
 
   return (
-    <div className="absolute  translate-y-12">
+    <div className="absolute hidden md:block  translate-y-12">
       <div className="cursor-pointer  flex items-center">
         <p className="text-white   text-sm mr-4 ">{english ? 'ENG' : 'ESP'}</p>
         <img
