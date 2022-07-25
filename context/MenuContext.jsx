@@ -10,6 +10,7 @@ export const MenuProvider = ({ children }) => {
   const [loading, setLoading] = useState(true);
   const [categoryFilter, setCategoryFilter] = useState(0);
   const [english, setEnglish] = useState(false);
+  const [countryCode, setCountryCode] = useState('');
   return (
     <>
       <MenuContext.Provider
@@ -24,6 +25,8 @@ export const MenuProvider = ({ children }) => {
           setCategoryFilter,
           english,
           setEnglish,
+          countryCode,
+          setCountryCode,
         }}
       >
         {children}

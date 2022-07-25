@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect } from 'react';
 import Head from 'next/head';
 import Navbar from './Navbar';
 import { useMenu } from '../context/MenuContext';
@@ -6,10 +6,30 @@ import MobileMenu from './MobileMenu';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
 const Layout = ({ children }) => {
-  const { isOpen, setisOpen, loading, setLoading } = useMenu();
+  const {
+    isOpen,
+    loading,
+    setLoading,
+    setEnglish,
+    countryCode,
+    setCountryCode,
+  } = useMenu();
   const { asPath } = useRouter();
   //NOTE se uso el hook de userouter para recibir los parametros de la ruta, el asPath trae el path de la pagina, con esto le decimos que si la pagina es diferente a la home no ponga el estado de la pantalla de carga
   asPath != '/' && setLoading(false);
+
+  useEffect(() => {
+    const getCountryCode = async () => {
+      const data = await fetch('https://iplist.cc/api');
+      const response = await data.json();
+      setCountryCode(response.countrycode);
+      if (countryCode === 'US') {
+        setEnglish(true);
+      }
+      return response;
+    };
+    getCountryCode();
+  }, []);
 
   return (
     <>
