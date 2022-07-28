@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
 import HomeSectionContainer from '../../components/Wrappers/HomeSectionContainer';
 import SubscribeModal from '../subscribeModal';
+import { useMenu } from '../../context/MenuContext';
 const InputContactForm = ({
   title,
+  titleEng,
   type,
   placeholder,
   name,
   onChangeFunction,
 }) => {
+  const { english } = useMenu();
   return (
     <div className="flex flex-col w-full md:w-[45%] mb-[20px]">
       <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-        {title}
+        {english ? titleEng : title}
       </label>
       <input
         type={type}
@@ -27,6 +30,7 @@ const InputContactForm = ({
 };
 
 const ContactForm = () => {
+  const { english } = useMenu();
   const [formValues, setFormValues] = useState({
     name: '',
     mail: '',
@@ -135,6 +139,7 @@ const ContactForm = () => {
               <InputContactForm
                 type={'text'}
                 title={'¿Cómo te llamas? *'}
+                titleEng={'What’s your name? *'}
                 placeholder="Nicolas Tesla"
                 name="name"
                 value={name}
@@ -143,6 +148,7 @@ const ContactForm = () => {
               <InputContactForm
                 type={'mail'}
                 title={'Tu Mail *'}
+                titleEng={'What’s your name? *'}
                 placeholder="nicolas@empresacool.com"
                 name="mail"
                 value={mail}
@@ -153,7 +159,7 @@ const ContactForm = () => {
             <div className="flex justify-between mb-[20px]  flex-col ">
               <div className="flex flex-col w-full  mb-[20px]">
                 <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-                  Quisieras:
+                  {english ? 'Your Situation:' : 'Quisieras:'}
                 </label>
                 <select
                   name="select1"
@@ -162,19 +168,29 @@ const ContactForm = () => {
                   className=" bg-black border border-white   rounded text-white/70 roboto_normal p-2 "
                 >
                   <option value="Agendar una reunión de diagnóstico y roadmap con nosotros">
-                    Agendar una reunión de diagnóstico y roadmap con nosotros
+                    {english
+                      ? 'Schedule a business meeting'
+                      : ' Agendar una reunión de diagnóstico y roadmap con nosotros'}
                   </option>
                   <option value="Que me contacten para evaluar su propuesta">
-                    Que me contacten para evaluar su propuesta
+                    {english
+                      ? 'Evaluate a business proposal'
+                      : 'Que me contacten para evaluar su propuesta'}
                   </option>
-                  <option value="Ser partners">Ser partners</option>
-                  <option value="Ser un Launcher">Ser un Launcher</option>
-                  <option value="Otros">Otros</option>
+                  <option value="Ser partners">
+                    {english ? 'Become partners' : 'Ser partners'}
+                  </option>
+                  <option value="Ser un Launcher">
+                    {english ? 'Become a Launcher' : 'Ser un Launcher'}
+                  </option>
+                  <option value="Otros">{english ? 'Other' : 'Otros'}</option>
                 </select>
               </div>
               <div className="flex flex-col w-full ">
                 <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-                  ¿Qué solución te interesó?
+                  {english
+                    ? 'What solution did you find interesting?'
+                    : '   ¿Qué solución te interesó?'}
                 </label>
                 <select
                   name="select2"
@@ -186,21 +202,29 @@ const ContactForm = () => {
                     Research (Benchmarking, Product Discovery...)
                   </option>
                   <option value="Diseño (UI-UX, Estrategia de Marca...)">
-                    Diseño (UI-UX, Estrategia de Marca...)
+                    {english
+                      ? 'Design (UI-UX, Branding Strategy...)'
+                      : 'Diseño (UI-UX, Estrategia de Marca...)'}
                   </option>
                   <option value="Desarrollo (Desarrollo web, IT Staffing...)">
-                    Desarrollo (Desarrollo web, IT Staffing...)
+                    {english
+                      ? 'Development (UI-UX, Branding Strategy...)'
+                      : 'Desarrollo (Desarrollo web, IT Staffing...)'}
                   </option>
                   <option value="Bussiness Consulting (Funnels comerciales, CJM...)">
                     Bussiness Consulting (Funnels comerciales, CJM...)
                   </option>
-                  <option value="Otras soluciones">Otras soluciones </option>
+                  <option value="Otras soluciones">
+                    {english ? 'Other Solutions' : '      Otras soluciones '}
+                  </option>
                 </select>
               </div>
             </div>
             <div className="flex flex-col">
               <label className="text-white font-normal text-base roboto_normal mb-[10px] ">
-                Cuéntanos cómo podemos impulsarte...
+                {english
+                  ? 'Tell us how we can boost you...'
+                  : ' Cuéntanos cómo podemos impulsarte...'}
               </label>
               <textarea
                 name="message"
@@ -216,7 +240,7 @@ const ContactForm = () => {
               type="submit"
               className="roboto_normal text-white  py-2 px-3 uppercase text-sm navbar_button"
             >
-              Charlemos
+              {english ? 'Let´s Talk' : 'Charlemos'}
             </button>
           </form>
         </div>
