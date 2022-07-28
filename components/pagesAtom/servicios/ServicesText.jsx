@@ -1,8 +1,18 @@
 import React from 'react';
 import Wrapper from '../Wrapper';
 import Link from 'next/link';
-
-const ServicesText = ({ title, text, children, picture, id }) => {
+import { useMenu } from '../../../context/MenuContext';
+const ServicesText = ({
+  title,
+  titleEng,
+  text,
+  textEng,
+  picture,
+  id,
+  options,
+  optionsEng,
+}) => {
+  const { english } = useMenu();
   return (
     <Wrapper>
       <div
@@ -10,7 +20,9 @@ const ServicesText = ({ title, text, children, picture, id }) => {
         id={`${id}`}
       >
         <div className="flex flex-col flex-1 items-center">
-          <h2 className="uppercase text-white lg:hidden text-[18px] tracking-[.125rem] mb-[30px] mr-auto font-roboto">{`WE ${title}`}</h2>
+          <h2 className="uppercase text-white lg:hidden text-[18px] tracking-[.125rem] mb-[30px] mr-auto font-roboto">{`WE ${
+            english ? titleEng : title
+          }`}</h2>
 
           <img
             src={picture}
@@ -22,13 +34,21 @@ const ServicesText = ({ title, text, children, picture, id }) => {
         <div className="flex flex-col flex-1 lg:order-first gap-5">
           <h2 className="uppercase text-white hidden lg:block text-[28px] ">{`WE ${title}`}</h2>
 
-          <p className="text-slate-100 text-[14px] roboto_normal">{text}</p>
+          <p className="text-slate-100 text-[14px] roboto_normal">
+            {english ? textEng : text}
+          </p>
 
-          {children}
+          <ul className="flex flex-col">
+            {(english ? optionsEng : options).map((o, i) => (
+              <li key={i} className="text-slate-100 text-[14px]">
+                {o}
+              </li>
+            ))}
+          </ul>
 
           <Link href="/contact">
             <button className="text-white py-2 px-3 uppercase text-sm navbar_button mt-4 w-[134px] h-[38px]">
-              Charlemos
+              {english ? 'Let´s talk' : 'Charlemos'}
             </button>
           </Link>
         </div>

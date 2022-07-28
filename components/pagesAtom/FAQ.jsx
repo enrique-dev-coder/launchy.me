@@ -111,7 +111,7 @@ const FAQ = () => {
       />
 
       <FAQsingle
-        text="¿Trabajan por proyectos unicamente o también como parte del equipo? "
+        text="¿Trabajan p or proyectos unicamente o también como parte del equipo? "
         textEng={'Do you work only by projects or also as part of the team? '}
         answer="Tomamos tanto proyectos a medidas como actividades que necesiten complementar en conjunto con un equipo interno. Indiferentemente de ambos escenarios somos conscientes que adaptarnos y colaborar con el equipo interno de cada empresa es de vital para el desarrollo de cada proyecto. "
         answerEng={

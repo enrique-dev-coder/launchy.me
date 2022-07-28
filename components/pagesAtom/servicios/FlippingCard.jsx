@@ -1,6 +1,6 @@
 import { useState } from 'react';
-
-const FlippingCard = ({ picture, title, link, video }) => {
+import { useMenu } from '../../../context/MenuContext';
+const FlippingCard = ({ picture, title, link, video, titleEng }) => {
   const [flip, setFlip] = useState(false);
 
   const handleFlipping = () => {
@@ -10,7 +10,7 @@ const FlippingCard = ({ picture, title, link, video }) => {
   const stopFlipping = () => {
     setFlip(false);
   };
-
+  const { english } = useMenu();
   return (
     <div
       className={`border border-white flex flex-col w-[200px] shrink-0 ${
@@ -33,7 +33,7 @@ const FlippingCard = ({ picture, title, link, video }) => {
         )}
       </a>
       <h3 className="font-roboto border-t border-white text-white text-center text-[18px] uppercase py-[4%]">
-        {title}
+        {english ? titleEng : title}
       </h3>
     </div>
   );

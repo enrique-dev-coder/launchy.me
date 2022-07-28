@@ -1,8 +1,13 @@
 import React from 'react';
 import Wrapper from '../Wrapper';
 import Lottie from 'react-lottie';
+import TranslatedParagraph from '../../TranslatedParagraph';
+import { listData } from '../../../public/Data';
+import { useMenu } from '../../../context/MenuContext';
 import { circulo } from '../../../public/animation.json';
+
 const CJMPicture = () => {
+  const { english } = useMenu();
   const LottieOptions = {
     loop: true,
     autoplay: true,
@@ -18,45 +23,36 @@ const CJMPicture = () => {
           <div>
             <Lottie options={LottieOptions} height={300} width={300} />
           </div>
-
           <div className="">
-            <p className="text-[#211539] text-left relative z-20 text-[14px] lg:text-[12px] lg:font-medium mb-[6px]">
-              Es por eso que desde Launchy identificamos cada aspecto de tu CJM
-              (Customer Journey Map). Involucrando desde tu propuesta de valor,
-              buyer persona, competencias, partners, marketing inbound area,
-              marketing outbound area, area comercial y el area mas Underrated
-              “Customer success area”. Con el fin de encontrar esos accionables,
-              tácticas o estrategias que puedan dar un giro 180° a tus
-              indicadores de Revenue &amp; Profit.
-            </p>
-            <h2 className="font-bold text-2xl text-left text-[#211539] relative z-20 lg:text-[18px] mb-[6px]">
-              Nuestras consultorias principales son:
-            </h2>
+            <TranslatedParagraph
+              classes={
+                'text-[#211539] text-left relative z-20 text-[14px] lg:text-[12px] lg:font-medium mb-[6px]'
+              }
+              textEnglish="That is why at Launchy we identify every aspect of your CJM (Customer Journey Map). Involving from your value proposition, buyer person, competitors, partners, inbound and outbound marketing area, commercial area and the most underated area 'Customer success'. In order to find those actionable, tactics or strategies that can give a 180° turn to your Revenue & Profit indicators. "
+              textSpanish="Es por eso que desde Launchy identificamos cada aspecto de tu CJM
+            (Customer Journey Map). Involucrando desde tu propuesta de valor,
+            buyer persona, competencias, partners, marketing inbound area,
+            marketing outbound area, area comercial y el area mas Underrated
+            “Customer success area”. Con el fin de encontrar esos accionables,
+            tácticas o estrategias que puedan dar un giro 180° a tus
+            indicadores de Revenue &amp; Profit."
+            />
+            <TranslatedParagraph
+              classes={
+                'font-bold text-2xl text-left text-[#211539] relative z-20 lg:text-[18px] mb-[6px]'
+              }
+              textSpanish="Nuestras consultorias principales son:"
+              textEnglish={'Our main consultancies are:'}
+            />
             <ul className="flex flex-col items-start relative z-20">
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Auditoria Customer Journey Map
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Optimization B2B Outbound marketing Funnels
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Optimization B2B Inbound Marketing Funnels
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Optimization B2B Sales Funnels
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Optimization B2B Partners Funnels
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Optimization B2B Customer Success Funnel
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Optimization Semantic y Technical SEO
-              </li>
-              <li className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium">
-                - Website Optimization Conversion Rate
-              </li>
+              {listData.map((l) => (
+                <li
+                  key={l.id}
+                  className="text-[#211539] text-[14px] lg:text-[12px] lg:font-medium"
+                >
+                  {english ? l.textEng : l.textEsp}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

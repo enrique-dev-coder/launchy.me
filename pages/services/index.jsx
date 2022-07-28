@@ -9,8 +9,10 @@ import Pictures from '../../components/pagesAtom/servicios/Pictures';
 import CJMPicture from '../../components/pagesAtom/servicios/CJMPicture';
 import HeaderSlider from '../../components/pagesAtom/HeaderSlider';
 import FlippingCard from '../../components/pagesAtom/servicios/FlippingCard';
-import Wrapper from '../../components/pagesAtom/Wrapper';
 import Footer from '../../components/Footer';
+import { texts } from '../../public/Data';
+import TranslatedParagraph from '../../components/TranslatedParagraph';
+import { useMenu } from '../../context/MenuContext';
 
 // Header items
 const items = [
@@ -23,21 +25,10 @@ const items = [
   'APASIONADOS',
 ];
 
-// ServicesText texts
-const texts = {
-  research:
-    'Todo parte de la empatía. No basta con suponer por el usuario, investigamos de manera cualitativa y cuantitativa. Creemos fielmente en que lo que se puede medir se puede mejorar. Buscamos los insights claves, proponemos nuevas rutas de investigación que sumen a tus objetivos. Amamos tener inciativa y poder ofrecerte:',
-  design:
-    'Diseño con propósito e investigación. Planteamos aplicaciones y productos que sigan una linea visual clara para transmitir la propuesta de valor del cliente. Partimos de identidades creadas o de cero, co creando juntos. Vamos más allá de lo estético brindadote nuestra expertis para aconsejarte y darte opciones con criterio y en base a propósitos que se alineen con tu estrategia de marca. ',
-  develop:
-    'Ofrecemos soluciones personalizadas adaptandonos al contexto, road map y posibilidades de nuestros clientes. Para ello combinamos metodologias agiles con un equipo multidisciplinario que permite abrir una comunicación fluida estableciendo rutas claras para impulsar tus ideas al espacio.',
-  doBussiness:
-    '¿Has desarrollado un MVP o has escalado un gran producto/servicio? Si es asi seguramente pasaste horas de investigación, desarrollo, tareas operativas y un compromiso por dar a flote tu negocio.',
-};
-
 //Words Slider
 const words = ['INVESTIGAR', 'PROTOTIPAR', 'ITERAR', 'TESTEAR', 'MEJORAR'];
-
+//Words Slider ingles
+const wordsIngles = ['RESEARCH', 'PROTOTYPE', 'ITERATE', 'TESTING', 'IMPROVE'];
 //Circle
 const circles = [
   { number: 1, text: 'ROAD MAP' },
@@ -49,29 +40,51 @@ const circles = [
 
 //Flipping Cards
 const flipping = [
-  { number: 1, src: '/img/team/Research.mp4', title: 'research', video: true },
-  { number: 2, src: '/img/team/Diseño.png', title: 'diseño', video: false },
+  {
+    number: 1,
+    src: '/img/team/Research.mp4',
+    title: 'research',
+    titleEng: 'research',
+    video: true,
+  },
+  {
+    number: 2,
+    src: '/img/team/Diseño.png',
+    title: 'diseño',
+    titleEng: 'desing',
+    video: false,
+  },
   {
     number: 3,
     src: '/img/team/Desarrollo.png',
     title: 'desarrollo',
+    titleEng: 'development',
     video: false,
   },
   {
     number: 4,
     src: '/img/team/Bussiness-consulting.png',
     title: 'bussiness consulting',
+    titleEng: 'bussiness consulting',
     video: false,
   },
 ];
 
+//destructuring de la data
+//esto se hace para que no sea tantos datos en esta pagina
+const { research, design, develop, Bussiness } = texts;
+
 const Servicios = () => {
+  const { english } = useMenu();
+
   return (
     <main className="roboto_normal">
       <Header items={items} quantity={6}>
-        <h2 className="z-10 text-white text-xl sm:text-4xl mt-3">
-          SERVICIOS: ¿CÓMO EMPEZAMOS?
-        </h2>
+        <TranslatedParagraph
+          textSpanish={'SERVICIOS: ¿CÓMO EMPEZAMOS?'}
+          textEnglish={'SERVICES: HOW DO WE BEGIN?'}
+          classes={'z-10 text-white text-xl sm:text-4xl mt-3'}
+        />
       </Header>
 
       <StarBackgroundCss>
@@ -82,31 +95,22 @@ const Servicios = () => {
                 key={card.number}
                 picture={card.src}
                 title={card.title}
+                titleEng={card.titleEng}
                 link={card.title}
                 video={card.video}
               />
             ))}
           </div>
-
           <ServicesText
-            title="research"
-            text={texts.research}
-            picture="/img/team/We-research.png"
-            id="research"
-          >
-            <ul className="flex flex-col">
-              <li className="text-slate-100 text-[14px]">Product Discovery</li>
-              <li className="text-slate-100 text-[14px]">Benchmaking</li>
-              <li className="text-slate-100 text-[14px]">UX Research</li>
-              <li className="text-slate-100 text-[14px]">
-                Bussiness Model Research
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Data Analisis Marketing
-              </li>
-            </ul>
-          </ServicesText>
-
+            title={research.title}
+            titleEng={research.titleEng}
+            text={research.text}
+            textEng={research.textEng}
+            picture={research.picture}
+            id={research.id}
+            options={research.listItems}
+            optionsEng={research.listItemsEng}
+          />
           <div className="px-[8%] py-[4%] flex justify-start md:justify-center overflow-x-auto scrollbar">
             {circles.map((circle) => (
               <Circle
@@ -116,90 +120,47 @@ const Servicios = () => {
               />
             ))}
           </div>
-
           <ServicesText
-            title="design"
-            text={texts.design}
-            picture="/img/team/We-design.png"
-            id="diseño"
-          >
-            <ul className="flex flex-col">
-              <li className="text-slate-100 text-[14px]">Diseño UX</li>
-              <li className="text-slate-100 text-[14px]">Diseño UI</li>
-              <li className="text-slate-100 text-[14px]">
-                Diseño de experiencias inmersivas
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Estrategia de marca
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Aplicaciones de marca con especialidad coorporativa
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Diseño de animaciones y audiovisual
-              </li>
-            </ul>
-          </ServicesText>
-
+            title={design.title}
+            titleEng={design.titleEng}
+            text={design.text}
+            textEng={design.textEng}
+            picture={design.picture}
+            id={design.id}
+            options={design.listItems}
+            optionsEng={design.listItemsEng}
+          />
           <HeaderSlider
-            slidesItems={words}
+            slidesItems={english ? wordsIngles : words}
             slidesQuantity={2}
             slidesMobiles={1}
             styles="max-h-[200px] flex w-full z-10 tracking-wider text-[50px] sm:text-[70px] mb-[60px] md:mb-[80px] resource_text"
           />
 
           <OtherCases />
-
           <ServicesText
-            title="develop"
-            text={texts.develop}
-            picture="/img/team/We-develop.png"
-            id="desarrollo"
-          >
-            <ul className="flex flex-col">
-              <li className="text-slate-100 text-[14px]">
-                Website app development
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Frontend speciality
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                3D inmersive experiences
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Custome software development
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Web 3.0 development
-              </li>
-            </ul>
-          </ServicesText>
-
+            title={develop.title}
+            titleEng={develop.titleEng}
+            text={develop.text}
+            textEng={develop.textEng}
+            picture={develop.picture}
+            id={develop.id}
+            options={develop.listItems}
+            optionsEng={develop.listItemsEng}
+          />
           <StackSlider />
-
           <Cases />
-
           <ServicesText
-            title="do bussiness consulting"
-            text={texts.doBussiness}
-            picture="/img/team/We-do-bussiness.png"
-            id="bussiness consulting"
-          >
-            <ul className="flex flex-col">
-              <li className="text-slate-100 text-[14px]">Product Discovery</li>
-              <li className="text-slate-100 text-[14px]">Benchmaking</li>
-              <li className="text-slate-100 text-[14px]">UX Research</li>
-              <li className="text-slate-100 text-[14px]">
-                Bussiness Model Research
-              </li>
-              <li className="text-slate-100 text-[14px]">
-                Data Analisis Marketing
-              </li>
-            </ul>
-          </ServicesText>
-
+            title={Bussiness.title}
+            titleEng={Bussiness.titleEng}
+            text={Bussiness.text}
+            textEng={Bussiness.textEng}
+            picture={Bussiness.picture}
+            id={Bussiness.id}
+            options={Bussiness.listItems}
+            optionsEng={Bussiness.listItemsEng}
+          />
           <Pictures />
-
           <CJMPicture />
         </div>
 

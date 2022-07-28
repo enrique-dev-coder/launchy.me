@@ -50,16 +50,16 @@ const Navbar = () => {
           {/*links container*/}
           <div className="md:flex space-x-4 hidden  ">
             {Links.map((l) => (
-              <a href={l.src}>
-                <Link href={l.src} key={l.title}>
+              <Link href={l.src} key={l.title}>
+                <div>
                   <TranslatedParagraph
                     key={l.title}
                     textEnglish={l.titleEng}
                     textSpanish={l.title}
                     classes="text-white uppercase text-sm cursor-pointer"
                   />
-                </Link>
-              </a>
+                </div>
+              </Link>
             ))}
           </div>
           {/*button */}
