@@ -76,15 +76,17 @@ const Footer = ({ blue }) => {
                 <p className=" uppercase cursor-pointer text-[22px] gradient_text_banner  md:text-[26px] underline roboto_condesed ">
                   READY TO LAUNCH?
                 </p>
-                <Link href={'/contact'}>
-                  <TranslatedParagraph
-                    textEnglish={'Contact us'}
-                    textSpanish="CHARLEMOS"
-                    classes={
-                      'uppercase cursor-pointer text-[22px]  md:text-[26px] underline roboto_condesed '
-                    }
-                  />
-                </Link>
+                <a href="/contact">
+                  <Link href={'/contact'}>
+                    <TranslatedParagraph
+                      textEnglish={'Contact us'}
+                      textSpanish="CHARLEMOS"
+                      classes={
+                        'uppercase cursor-pointer text-[22px]  md:text-[26px] underline roboto_condesed '
+                      }
+                    />
+                  </Link>
+                </a>
               </div>
               <div className="basis-1/3 flex flex-col mb-[30px] md:mb-0  justify-between">
                 {linkData.map((l, i) => (
