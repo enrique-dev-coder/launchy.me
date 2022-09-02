@@ -24,81 +24,117 @@ const TeamPictures = () => {
         </div>
       </div>
 
-      {/* gap-4 */}
+
       <div className="grid grid-cols-1 md:grid-cols-3 px-[2%] max-w-[400px] mx-auto md:max-w-full">
-        {/* gap-4 */}
+
+        {/* Primeras dos hileras en mobile. 1 de 3 en Desktop */}
         <div className="grid col-span-1 grid-cols-2">
-          <img
-            src="/img/team-fotos/Ivana-trabajando.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
+          
+          {/* Primera hilera - Ivana trabajando /Jasu y Flor */}
+          <div className="h-[195px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Ivana-trabajando.png"
+              alt="foto"
+              className=" h-full w-full relative z-20 "
+            />
+          </div>
+          
+          <div className="h-[195px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Flor-y-jasu.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div> 
+          
+          {/* Segunda hilera - Flor con su perro /Foto de Ivana */}
 
-          <img
-            src="/img/team-fotos/Flor-y-jasu.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
+          <div className="h-[190px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Flor.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
+          
+          <div className="h-[190px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Ivana.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
 
-          <img
-            src="/img/team-fotos/Flor.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
-
-          <img
-            src="/img/team-fotos/Ivana.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
         </div>
 
-        {/* gap-4 */}
+        {/* Terce hilera en mobile. 2 de 3 en Desktop */}
         <div className="grid col-span-1 grid-cols-2 grid-rows-2">
-          <img
-            src="/img/team-fotos/Luis-jugando.png"
-            alt="foto"
-            className="row-span-2 col-span-1 p-[8px] h-full relative z-20"
-          />
+        
+          <div className="h-[392px] col-span-1 row-span-2 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Luis-jugando.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
+          
+          <div className="h-[196px] col-span-1 row-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Jasu.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
+          
+          <div className="h-[196px] col-span-1 row-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Tite.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
 
-          <img
-            src="/img/team-fotos/Jasu.png"
-            alt="foto"
-            className="row-span-1 col-span-1 p-[8px] h-full relative z-20"
-          />
-
-          <img
-            src="/img/team-fotos/Tite.png"
-            alt="foto"
-            className="row-span-1 col-span-1 p-[8px] h-full relative z-20"
-          />
+          
         </div>
 
-        {/* gap-4 */}
+        {/* Ultimas dos hileras en mobile. 3 de 3 en Desktop */}
         <div className="grid col-span-1 grid-cols-2">
-          <img
-            src="/img/team-fotos/Leyendo.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
+        
+          {/* Primera hilera - Dai / Luis */}
+          <div className="h-[195px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Leyendo.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
+          
+          <div className="h-[195px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Luis-cumple.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
+          
+          {/* Segunda hilera - Eli / Daily */}
+          
+          <div className="h-[195px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Eli.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
+          
+          <div className="h-[195px] col-span-1 mx-auto p-[8px] w-full">
+            <img
+              src="/img/team-fotos/Daily.png"
+              alt="foto"
+              className="h-full w-full relative z-20"
+            />
+          </div>
 
-          <img
-            src="/img/team-fotos/Luis-cumple.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
-
-          <img
-            src="/img/team-fotos/Eli.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
-
-          <img
-            src="/img/team-fotos/Daily.png"
-            alt="foto"
-            className="col-span-1 h-full p-[8px] relative z-20 mx-auto"
-          />
         </div>
       </div>
 

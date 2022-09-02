@@ -7,45 +7,45 @@ const Together = () => {
         juntos cada día
       </h2>
 
-      <div className="flex flex-col gap-4 my-[30px] md:my-[40px]">
-        <div className="flex justify-between overflow-x-auto scrollbar gap-4">
+      <div className="flex flex-col my-[30px] md:my-[40px]">
+        <div className="flex justify-between overflow-x-auto lg:overflow-x-visible scrollbar">
           <img
             src="/img/team-aliens/Luis.png"
             alt="foto"
-            className="relative z-20"
+            className="relative z-20 p-[8px]"
           />
           <img
             src="/img/team-aliens/Ivana.png"
             alt="foto"
-            className="relative z-20"
+            className="relative z-20 p-[8px]"
           />
           <img
             src="/img/team-aliens/Eli.png"
             alt="foto"
-            className="relative z-20"
+            className="relative z-20 p-[8px]"
           />
         </div>
 
-        <div className="flex justify-between overflow-x-auto scrollbar gap-4">
+        <div className="flex justify-between overflow-x-auto lg:overflow-x-visible scrollbar">
           <img
             src="/img/team-aliens/Jasu-y-Flor.png"
             alt="foto"
-            className="relative z-20"
+            className="relative z-20 p-[8px]"
           />
           <img
             src="/img/team-aliens/Flor.png"
             alt="foto"
-            className="relative z-20"
+            className="relative z-20 p-[8px]"
           />
           <img
             src="/img/team-aliens/Tite.png"
             alt="foto"
-            className="relative z-20"
+            className="relative z-20 p-[8px]"
           />
         </div>
       </div>
 
-      <div className="flex flex-col mx-auto sm:flex-row gap-3 lg:h-[250px] mb-[60px] md:mb-0 relative">
+      <div className="flex flex-col mx-auto sm:flex-row lg:h-[250px] mb-[60px] md:mb-0 relative">
         <img
           src="/img/team-fotos/Jasu-y-luis.png"
           alt="foto"
@@ -54,11 +54,11 @@ const Together = () => {
 
         <div className="bg-[url(/img/Fondo.png)] bg-cover w-full py-[10%] lg:py-[4%] px-[4%] relative z-0 h-full">
           <div className="team-background w-full h-full absolute z-10 top-0 left-0 bottom-0"></div>
-          <div className="flex gap-8 flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center">
             <img
               src="/img/team-fotos/Jasu-y-luis.png"
               alt="foto"
-              className="z-30 block lg:hidden h-[150px] sm:h-[200px] md:h-[225px]"
+              className="z-30 block lg:hidden h-[150px] sm:h-[200px] md:h-[225px] mb-[20px]"
             />
 
             <div className="relative z-20">
