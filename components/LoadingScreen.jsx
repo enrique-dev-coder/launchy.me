@@ -2,8 +2,7 @@ import { useMenu } from '../context/MenuContext';
 import { useEffect } from 'react';
 
 const LoadingScreen = () => {
-  const { loading } = useMenu();
-  const { setLoading } = useMenu();
+  const { loading, english, setLoading } = useMenu();
 
   useEffect(() => {
     setTimeout(() => {
@@ -23,7 +22,9 @@ const LoadingScreen = () => {
         className="  animate-spin"
       />
       <p className="text-white loading_text roboto_normal">
-        Cargando experiencias increibles ...
+        {english
+          ? 'Loading an incredible journey ...'
+          : 'Cargando experiencias increibles ...'}
       </p>
     </div>
   );

@@ -9,7 +9,7 @@ export const MenuProvider = ({ children }) => {
   const [lineAnimation, setLineAnimation] = useState(false);
   const [loading, setLoading] = useState(true);
   const [categoryFilter, setCategoryFilter] = useState(0);
-  const [english, setEnglish] = useState(false);
+  const [english, setEnglish] = useState(!false);
   const [countryCode, setCountryCode] = useState('');
   return (
     <>
